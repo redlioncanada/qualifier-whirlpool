@@ -257,7 +257,7 @@ App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr'
     $rootScope.locale = $('html').attr('lang') + '_CA';
     $rootScope.isEnglish = $rootScope.locale == 'en_CA';
     $rootScope.isFrench = $rootScope.locale == 'fr_CA';
-    $rootScope.brand = "whirlpool";
+    $rootScope.brand = "kitchenaid";
     $rootScope.isMobile = Modernizr.mobile;
     $rootScope.showTooltip = false;
 
@@ -271,7 +271,7 @@ App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr'
             "img/slider-pointer.png"
           ];
 
-          $resource("http://mywhirlpool.wpc-stage.com/api/public/wpq/product-list/index/brand/"+$rootScope.brand+"/locale/"+$rootScope.locale).get({}, function (res, headers) {
+          $resource("http://mykitchenaid.wpc-stage.com/api/public/wpq/product-list/index/brand/"+$rootScope.brand+"/locale/"+$rootScope.locale).get({}, function (res, headers) {
                 $rootScope.appliances = $dataDecorator(res.products);
 
                 var relcodes = {
