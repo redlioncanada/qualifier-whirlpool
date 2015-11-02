@@ -1,0 +1,2947 @@
+ {
+	"brand" : "kitchenaid",
+	"apptext" :{
+		"apptitle" : "Kitchenaid",
+		"appdescription" : "Welcome to the KitchenAid Qualifier tool!",
+		"previous" : "Previous",
+		"next" : "Next",
+		"results" : "Results",
+		"msrp" : "MSRP",
+		"oneLastStep" : "One Last Step: Adjust your price to find your perfect",
+		"moreInfo" : "More Info",
+		"print" : "Print",
+		"email" : "Email",
+		"colourPreference" : "Adjust your colour preference",
+		"yourBestMatch" : "Your Best Match",
+		"otherSuggestion" : "Other Suggestion",
+		"resultsPage" : "Results Page",
+		"model" : "model",
+		"changeYourAnswer" : "Click on an icon to change your answer",
+		"startover" : "Start<br />&nbsp;Over",
+		"backtoresults" : "Back to<br />Results",
+		"emailAddress" : "Email Address",
+        "personalMessage" : "Personal Message",
+        "submit" : "Submit",
+        "close" : "Close",
+        "emailModalTitle" : "Email Your Results",
+        "friendsName" : "Your Friend's Name"
+	},
+	"questions" : {
+		"Appliance" : {
+			"previous" : null,
+			"thumbnail_type" : "image",
+			"thumbnail_text" : "Appliance",
+			"text" : [
+				{
+					"question" : "What can we help you find?",
+					"type" : "categories-click",
+					"oneAnswer" : true,
+					"answers" : [
+						{
+							"text" : "Cooking",
+							"value" : "Stove",
+							"displayName": "Range",
+							"classes" : "category cooking",
+							"image" : "img/cooking.png",
+							
+							"thumbnail" : "img/walloven-double.jpg",
+							"thumbnail_current" : "img/walloven-double.jpg",
+							"thumbnail_text" : "Cooking",
+							"scoring" : {
+								"appliance" : "Cooking"
+							},
+							"next" : "Cooking - Pre-Qualifier 1",
+							"order" : 2
+						},
+						{
+							"text" : "Dishwasher",
+							"value" : "Dishwasher",
+							"displayName": "Dishwasher",
+							"classes" : "category dishwasher",
+							"image" : "img/dishwasher.png",
+							
+							"thumbnail" : "img/cat-dishwasher.jpg",
+							"thumbnail_current" : "img/cat-dishwasher.jpg",
+							"thumbnail_text" : "Dishwasher",
+							"scoring" : {
+								"appliance" : "Dishwashers"
+							},
+							"next" : "Dishwashers - Cleaning Power",
+							"order" : 4
+						},
+						{
+							"text" : "Refrigerator",
+							"value" : "Fridge",
+							"displayName": "Refrigerator",
+							"classes" : "category fridge",
+							"image" : "img/fridge.png",
+							
+							"thumbnail" : "img/cat-fridge.jpg",
+							"thumbnail_current" : "img/cat-fridge.jpg",
+							"thumbnail_text" : "Fridge",
+							"scoring" : {
+								"appliance" : "Fridges"
+							},
+							"next" : "Fridges - Size",
+							"order" : 3
+						}
+					]
+				}
+			],
+			"category" : "aesthetics"	
+		},
+		"Cooking - Pre-Qualifier 1" : {
+			"previous" : "Appliance",
+			"thumbnail_type" : "image",
+			"thumbnail_text" : "Cooking",
+			"thumbnail_current" : "img/nav-placeholder-current.png",
+			"text" : [
+				{
+					"question" : "Which product would you like to explore first?",
+					"type" : "categories",
+					"oneAnswer" : true,
+					"answers" : [
+                        {
+							"text" : "Cooktops",
+							"value" : "cooktops",
+							"displayName": "Cooktops",
+							"classes" : "sub-category wallovens",
+							"image" : "img/cook-top.png",
+							"thumbnail" : "img/walloven-single.jpg",
+							"thumbnail_current" : "img/walloven-single.jpg",
+							"thumbnail_text" : "Cooktops",
+							"scoring" : {
+								"appliance" : "Cooktops"
+							},
+							"next" : "Cooking - Cooktops - Size",						
+							"order" : 1
+						},
+						{
+							"text" : "Ranges",
+							"value" : "free stand range",
+							"displayName": "Range",
+							"classes" : "sub-category ranges",
+							"image" : "img/range.png",
+							"thumbnail" : "img/cat-cooking-sub-free-range-1-electric.jpg",
+							"thumbnail_current" : "img/cat-cooking-sub-free-range-1-electric.jpg",
+							"thumbnail_text" : "Range",
+							"scoring" : {
+								"appliance" : "Ranges"
+							},
+							"next" : "Cooking - Ranges - Size",
+							"order" : 2
+						},
+						{
+							"text" : "Wall Ovens",
+							"value" : "wall oven",
+							"displayName": "Wall Oven",
+							"classes" : "sub-category wallovens",
+							"image" : "img/walloven.png",
+							"thumbnail" : "img/walloven-single.jpg",
+							"thumbnail_current" : "img/walloven-single.jpg",
+							"thumbnail_text" : "Wall Oven",
+							"scoring" : {
+								"appliance" : "Wall Ovens"
+							},
+							"next" : "Cooking - Wall Ovens - Size",						
+							"order" : 3
+						},
+						{
+							"text" : "Vents and Hoods",
+							"value" : "vents",
+							"displayName": "Vents and Hoods",
+							"classes" : "sub-category wallovens",
+							"image" : "img/vents.png",
+							"thumbnail" : "img/walloven-single.jpg",
+							"thumbnail_current" : "img/walloven-single.jpg",
+							"thumbnail_text" : "Vents and Hoods",
+							"scoring" : {
+								"appliance" : "Vents"
+							},
+							"next" : "Cooking - Vents - Size",						
+							"order" : 4
+						}
+					]
+				}
+			],
+			"category" : "aesthetics"
+		},
+		"Cooking - Cooktops - Size" : {
+			"next" : "Cooking - Cooktops - Style",
+			"previous" : "Cooking - Pre-Qualifier 1",
+			"thumbnail_type" : "image",
+			"thumbnail_text" : "Size",
+			"thumbnail_current" : "img/icon-size-current.png",
+			"text" : [
+				{
+					"question" : "WHAT SIZE OF COOKTOP DO YOU NEED?",
+					"sub_question" : "Slide to answer",
+					"explanation_title" : "Why are you asking me about size?",
+					"explanation" : "Our cooktops come in different sizes, we want to make sure that we recommend the perfect one for your space.",
+					"type" : "slider",
+					"oneAnswer" : false,
+					"classes" : "slider-labels show-ticks left-tag label-inches",
+					"answer" : 1,
+					"options" : { 
+						"from" : 1,
+						"to" : 5,      
+					    "step": 0.0001,
+					    "dimension_label" : "WIDTH",
+					    "scale": ["Any size","15","30","36","48"]       
+					},
+					"answers" : {
+						"1" : {
+							"thumbnail" : "img/icon-size.png",
+							"thumbnail_current" : "img/icon-size-current.png",
+							"value" : 1,
+							"text" : "Any Size",
+							"scoring" : {
+							}
+						},
+						"2" : {
+							"thumbnail" : "img/icon-size.png",
+							"thumbnail_current" : "img/icon-size-current.png",
+							"value" : 2,
+							"text" : "15\"",
+							"scoring" : {
+								"width15" : 1,
+								"width30" : -30,
+								"width36" : -30,
+								"width48" : -30
+							}
+						},
+						"3" : {
+							"thumbnail" : "img/icon-size.png",
+							"thumbnail_current" : "img/icon-size-current.png",
+							"value" : 3,
+							"text" : "30\"",
+							"scoring" : {
+								"width15" : -30,
+								"width30" : 1,
+								"width36" : -30,
+								"width48" : -30
+							}
+						},
+						"4" : {
+							"thumbnail" : "img/icon-size.png",
+							"thumbnail_current" : "img/icon-size-current.png",
+							"value" : 4,
+							"text" : "36\"",
+							"scoring" : {
+								"width15" : -30,
+								"width30" : -30,
+								"width36" : 1,
+								"width48" : -30
+							}
+						},
+						"5" : {
+							"thumbnail" : "img/icon-size.png",
+							"thumbnail_current" : "img/icon-size-current.png",
+							"value" : 5,
+							"text" : "48\"",
+							"scoring" : {
+								"width15" : -30,
+								"width30" : -30,
+								"width36" : -30,
+								"width48" : 1
+							}
+						}
+					}								
+				}					
+			],
+			"notes" : [
+				{
+					"title" : "View Measurement Guide",
+					"text" : "Note: Industry standard is 30\""
+				}
+			]
+		},
+		"Cooking - Cooktops - Style" : {
+			"next" : "Cooking - Cooktops - Features",
+			"previous" : "Cooking - Cooktops - Size",
+			"thumbnail_type" : "image",
+			"thumbnail_text" : "Style",
+			"thumbnail_current" : "img/icon-style-current.png",
+			"text" : [
+				{
+					"question" : "HOW WOULD YOU DESCRIBE YOUR KITCHEN'S STYLE?",
+					"sub_question" : "Select One",
+					"explanation_title" : "Why are you asking me about style?",
+					"explanation" : "Our cooktops come in different styles. By understanding your preference, we can better recommend the perfect one for you.",
+					"type" : "boxes-picture-3-radio",
+					"oneAnswer" : true,
+					"answers" : [
+                        {
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "Classic",
+							"value" : "classic",
+							"image" : "img/classic.png",
+							"scoring" : {
+								"electric" : 1
+							},
+							"order" : 1
+						},
+						{
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "Modern",
+							"value" : "modern",
+							"image" : "img/modern.png",
+							"scoring" : {
+								"induction" : 1
+							},
+							"order" : 2
+						},
+						{
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "Professional",
+							"value" : "professional",
+							"image" : "img/professional.png",
+							"scoring" : {
+								"gas" : 1
+							},
+							"order" : 3
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Cooktops - Features" : {
+			"next" : "Cooking - Cooktops - Performance",
+			"previous" : "Cooking - Cooktops - Style",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-features-current.png",
+			"thumbnail_text" : "Features",
+			"text" : [
+				{
+					"question" : "WHEN SHOPPING FOR A COOKTOP, WHAT FEATURES ARE MOST IMPORTANT TO YOUR PURCHASE DECISION?",
+					"sub_question" : "DRAG TO REORDER. <span>1</span> IS MOST IMPORTANT AND <span>5</span> IS LEAST",
+					"explanation_title" : "Why are you asking me about preference?",
+					"explanation" : "By understanding your cooking priorities, we can better recommend the perfect cooktop for your lifestyle.",
+					"type" : "rank",
+					"oneAnswer" : false,
+					"answers" : [
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Cooking performance",
+							"value" : "performance",
+							"scoring" : {
+								  "gas":1,
+								  "5Elements":1,
+								  "5Burners":1,
+								  "6Burners":1
+							},
+							"order" : 1
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Ease of cleaning",
+							"value" : "clean",
+							"scoring" : {
+								 "induction":1,
+								 "electric":1,
+								 "dishwasherSafeKnobs":1, 
+								 "CookShield":1
+							},
+							"order" : 2
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Precise Temperature",
+							"value" : "temp",
+							"scoring" : {
+								"induction":1,
+								"touchActivated":1
+							},
+							"order" : 3
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Ease of use",
+							"value" : "ease",
+							"scoring" : {
+								"electric":1,
+								"induction":1,
+								"touchActivated":1
+							},
+							"order" : 4
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Energy efficiency",
+							"value" : "energy",
+							"scoring" : {
+								"induction": 1
+							},
+							"order" : 5
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Cooktops - Performance" : {
+			"next" : "Cooking - Cooktops - Gas",
+			"previous" : "Cooking - Cooktops - Features",
+			"thumbnail_type" : "image",
+			"thumbnail_text" : "Features",
+			"thumbnail_current" : "img/icon-features-current.png",
+			"text" : [
+				{
+					"question" : "WHAT COOKING TECHNIQUES DO YOU USE OFTEN?",
+					"sub_question" : "Select all that apply",
+					"explanation_title" : "Why are you asking me about cooking techniques?",
+					"explanation" : "Our cooktops are equipped with heat technology to go from simmer to rolling boil quickly. By understanding how you cook, we can better recommend the perfect cooktop for your lifestyle.",
+					"type" : "checkbox-4",
+					"oneAnswer" : false,
+					"answers" : [
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Melting",
+							"value" : "melting",
+							"scoring" : {
+								"5KBTUSimmer":1,
+								"meltAndHold" : 1
+							},
+							"order" : 1
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Simmering",
+							"value" : "simmering",
+							"scoring" : {
+							"15KBTU":1,
+							"5KBTUSimmer":1,
+							"inductionSimmer":1,
+							"performanceBoost":1
+							},
+							"order" : 2
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Saut&eacute;ing",
+							"value" : "saut&eacute;ing",
+							"scoring" : {
+								"15KBTU":1
+							},
+							"order" : 3
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Flamb&eacute;ing",
+							"value" : "Flamb&eacute;ing",
+							"scoring" : {
+								"20KBTUDual":1
+							},
+							"order" : 4
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Searing",
+							"value" : "searing",
+							"scoring" : {
+								"20KBTUDual":1,
+								"performanceBoost":1
+							},
+							"order" : 5
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Boiling",
+							"value" : "boiling",
+							"scoring" : {
+								"20KBTUDual":1,
+								"evenHeat":1
+							},
+							"order" : 6
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Grilling",
+							"value" : "grilling",
+							"scoring" : {
+								"18KBTUEvenHeat":1
+							},
+							"order" : 7
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Steaming",
+							"value" : "steaming",
+							"scoring" : {
+							},
+							"order" : 8
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Cooktops - Gas" : {
+			"next" : null,
+			"previous" : "Cooking - Cooktops - Performance",
+			"thumbnail_text" : "Fuel Type",
+			"thumbnail_current" : "img/icon-fueltype-current.png",
+			"thumbnail_type" : "image",
+			"text" : [
+				{
+					"question" : "Is your kitchen equipped for gas or electric?",
+					"sub_question" : "Select one",
+					"explanation_title" : "Why are you asking me about gas?", 
+					"explanation" : "Some kitchens are equipped for gas and others are not. We need to know this information to recommend the perfect range.",
+					"type" : "boxes-icon-2",
+					"oneAnswer" : true,
+					"answers" : [
+						{
+							"text" : "Gas",
+							"image" : "img/icon-thumb-gas.png",
+							"hover" : "img/icon-thumb-gas-active.png",
+							"thumbnail" : "img/icon-fueltype.png",
+							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"value" : "yes",
+							"order" : 1
+						},
+						{
+							"text" : "Electric",
+							"image" : "img/icon-thumb-electric.png",
+							"hover" : "img/icon-thumb-electric-active.png",
+							"thumbnail" : "img/icon-fueltype.png",
+							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"value" : "no",
+							"scoring" : {
+								"gas" : -30
+							},
+							"order" : 2
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Vents - Size" : {
+			"next" : "Cooking - Vents - Location",
+			"previous" : "Cooking - Pre-Qualifier 1",
+			"thumbnail_type" : "image",
+			"thumbnail_text" : "Size",
+			"thumbnail_current" : "img/icon-size-current.png",
+			"text" : [
+				{
+					"question" : "WHAT IS THE WIDTH OF YOUR COOKTOP OR RANGE?",
+					"sub_question" : "Select One",
+					"explanation_title" : "Why are you asking me about width?",
+					"explanation" : "When it comes to cooktops, size matters. It is only once we know the width of your cooktop/range we can find the best vent for you.",
+					"type" : "radio-2",
+					"oneAnswer" : true,
+					"classes" : "vents  singleAns",
+					"answers" : [
+						{
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-size-current.png",
+							"text" : "30\" or less",
+							"value" : "30",
+							"scoring" : {
+								"width30" : 1,
+								"width36": -30
+							},
+							"order" : 1
+						},
+
+						{
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-size-current.png",
+							"text" : "36\" or more",
+							"value" : "36",
+							"scoring" : {
+								"width30" : -30,
+								"width36": 1
+							},
+							"order" : 2
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Vents - Location" : {
+			"next" : "Cooking - Vents - Type",
+			"previous" : "Cooking - Vents - Size",
+			"thumbnail_type" : "image",
+			"thumbnail_text" : "Location",
+			"thumbnail_current" : "img/icon-location-current.png",
+			"text" : [
+				{
+					"question" : "WHERE IN YOUR KITCHEN CAN WE FIND YOUR COOKING SURFACE?",
+					"sub_question" : "Select One",
+					"explanation_title" : "Why are you asking me where I cook?",
+					"explanation" : "We know that every kitchen is unique. By understanding where your cooking surface is, we can recommend the perfect vent.",
+					"type" : "radio-2",
+					"oneAnswer" : true,
+					"classes" : "vents  singleAns",
+					"answers" : [
+						{     
+							"thumbnail" : "img/icon-location.png",
+							"thumbnail_current" : "img/icon-location-current.png",
+							"text" : "Against a wall",
+							"value" : "wall",
+							"scoring" : {
+								"islandMount" : -30,
+								"wallMount":1,
+								"underCabinet":1
+							},
+							"order" : 1
+						},
+
+						{ 
+							"thumbnail" : "img/icon-location.png",
+							"thumbnail_current" : "img/icon-location-current.png",
+							"text" : "On an island",
+							"value" : "island",
+							"scoring" : {
+								"islandMount" : 1,
+								"wallMount":-30,
+								"underCabinet":-30
+							},
+							"order" : 2
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Vents - Type" : {
+			"next" : "Cooking - Vents - Speed",
+			"previous" : "Cooking - Vents - Location",
+			"thumbnail_type" : "image",
+			"thumbnail_text" : "Style",
+			"thumbnail_current" : "img/icon-style-current.png",
+			"text" : [
+				{
+					"question" : "ARE THERE CABINETS ABOVE YOUR COOKING SURFACE?",
+					"sub_question" : "Select One",
+					"explanation_title" : "Why are you asking me about my cabinets?",
+					"explanation" : "Some of the by-products of cooking (steam, moisture and grease) can be destructive without the right ventilation. By understanding your specific needs we can find the perfect system for your kitchen.",
+					"type" : "boxes-icon-2",
+					"oneAnswer" : true,
+					"classes" : "vents  singleAns",
+					"answers" : [
+						{   "image" : "img/icon-thumb-yes.png",
+							"hover" : "img/icon-thumb-yes-active.png",
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "",
+							"value" : "under",
+							"scoring" : {
+								"islandMount" : -30,
+								"wallMount":-30,
+								"underCabinet":1
+							},
+							"order" : 1
+						},
+
+						{
+                            "image" : "img/icon-thumb-no.png",
+							"hover" : "img/icon-thumb-no-active.png",
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "",
+							"value" : "notUnder",
+							"scoring" : {
+								"islandMount" : 1,
+								"wallMount": 1,
+								"underCabinet":-30
+							},
+							"order" : 2
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Vents - Speed" : {
+			"next" : "Cooking - Vents - Ventilation",
+			"previous" : "Cooking - Vents - Type",
+			"thumbnail_type" : "image",
+			"thumbnail_text" : "Speed",
+			"thumbnail_current" : "img/icon-speed-current.png",
+			"text" : [
+				{
+					"question" : "DO YOU OFTEN FIND YOURSELF PREPARING A HIGH-HEAT SAUCE, SAUTÉ OR STIR-FRY?",
+					"sub_question" : "Select One",
+					"explanation_title" : "Why are you asking me about heat?",
+					"explanation" : "We know that everybody has a different cooking style. If you like to turn up the heat, we’ll find you a vent with a stronger fan.",
+					"type" : "boxes-icon-2",
+					"oneAnswer" : true,
+					"classes" : "vents  singleAns",
+					"answers" : [
+						{
+                            "image" : "img/icon-thumb-yes.png",
+							"hover" : "img/icon-thumb-yes-active.png",
+							"thumbnail" : "img/icon-speed.png",
+							"thumbnail_current" : "img/icon-speed-current.png",
+							"text" : "",
+							"value" : "high speed",
+							"scoring" : {
+								"340CFMOrHigher" : 1
+							},
+							"order" : 1
+						},
+						{
+                            "image" : "img/icon-thumb-no.png",
+							"hover" : "img/icon-thumb-no-active.png",
+							"thumbnail" : "img/icon-speed.png",
+							"thumbnail_current" : "img/icon-speed-current.png",
+							"text" : "",
+							"value" : "no speed",
+							"scoring" : {
+							},
+							"order" : 2
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Vents - Ventilation" : {
+			"next" : "Cooking - Vents - Auto",
+			"previous" : "Cooking - Vents - Speed",
+			"thumbnail_text" : "Ventilation",
+			"thumbnail_current" : "img/icon-convection-current.png",
+			"thumbnail_type" : "image",
+			"text" : [
+				{
+					"question" : "DOES YOUR VENTILATION LEAD TO YOUR HOME EXTERIOR?",
+					"sub_question" : "Select one",
+					"explanation_title" : "Why are you asking me about ventilation?", 
+					"explanation" : "As much as we want to maintain the smell of that simmering pot of soup, proper ventilation is important to keep kitchen air clean.",
+					"type" : "radio-4",
+					"oneAnswer" : true,
+					"answers" : [
+						{
+							"text" : "Yes - I need ducted ventilation",
+							"image" : "img/icon-thumb-gas.png",
+							"hover" : "img/icon-thumb-gas-active.png",
+							"thumbnail" : "img/icon-convection.png",
+							"thumbnail_current" : "img/icon-convection-current.png",
+							"value" : "yes",
+							"scoring" : {
+								 "exterior": 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "No - I need non-ducted ventilation",
+							"image" : "img/icon-thumb-gas.png",
+							"hover" : "img/icon-thumb-gas-active.png",
+							"thumbnail" : "img/icon-convection.png",
+							"thumbnail_current" : "img/icon-convection-current.png",
+							"value" : "no",
+							"scoring" : {
+								 "nonVented": 1,
+								 "convertible": 1
+							},
+							"order" : 2
+						},
+						{
+							"text" : "I'm not sure",
+							"image" : "img/icon-thumb-electric.png",
+							"hover" : "img/icon-thumb-electric-active.png",
+							"thumbnail" : "img/icon-fueltype.png",
+							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"value" : "i am no sure",
+							"scoring" : {
+								"easyConversion": 1,
+								"convertible": 1
+							},
+							"order" : 3
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Vents - Auto" : {
+			"next" : "Cooking - Vents - Warming",
+			"previous" : "Cooking - Vents - Ventilation",
+			"thumbnail_text" : "Automatic Fan",
+			"thumbnail_current" : "img/icon-convection-current.png",
+			"thumbnail_type" : "image",
+			"text" : [
+				{
+					"question" : "DO YOU EVER FORGET TO TURN ON YOUR FAN?",
+					"sub_question" : "Select one",
+					"explanation_title" : "Why are you asking me about my habits?", 
+					"explanation" : "Some of our vents are automatic which means if you need us to, we can give you a hand turning it on.",
+					"type" : "radio-4",
+					"oneAnswer" : true,
+					"answers" : [
+						{
+							"text" : "Too often",
+							"thumbnail" : "img/icon-fueltype.png",
+							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"value" : "often",
+							"scoring" : {
+								 "automaticOn": 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Sometimes",
+							"thumbnail" : "img/icon-fueltype.png",
+							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"value" : "sometimes",
+							"scoring" : {
+								 "automaticOn": 1
+							},
+							"order" : 2
+						},
+						{
+							"text" : "Never",
+							"thumbnail" : "img/icon-fueltype.png",
+							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"value" : "never",
+							"scoring" : {
+							},
+							"order" : 3
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Vents - Warming" : {
+			"next" : null,
+			"previous" : "Cooking - Vents - Auto",
+			"thumbnail_text" : "Warming",
+			"thumbnail_current" : "img/icon-features-current.png",
+			"thumbnail_type" : "image",
+			"text" : [
+				{
+					"question" : "WOULD YOU LIKE YOUR HOOD TO HAVE A WARMING LAMP?",
+					"sub_question" : "Select one",
+					"explanation_title" : "Why are you asking me about a warming lamp?", 
+					"explanation" : "Some of our models come equipped with warming lamps. If we have a better idea of your needs, we can better recommend the perfect hood.",
+					"type" : "boxes-icon-2",
+					"oneAnswer" : true,
+					"answers" : [
+						{
+							"text" : "",
+							"image" : "img/icon-thumb-yes.png",
+							"hover" : "img/icon-thumb-yes-active.png",
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"value" : "yes",
+							"scoring" : {
+								 "warmingLamps": 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "",
+							"image" : "img/icon-thumb-no.png",
+							"hover" : "img/icon-thumb-no-active.png",
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"value" : "no",
+							"scoring" : {
+							},
+							"order" : 2
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Wall Ovens - Size" : {
+			"next" : "Cooking - Wall Ovens - Style",
+			"previous" : "Cooking - Pre-Qualifier 1",
+			"thumbnail_type" : "image",
+			"thumbnail_text" : "Size",
+			"thumbnail_current" : "img/icon-size-current.png",
+			"text" : [
+				{
+					"question" : "WHAT SIZE OF WALL OVEN DO YOU NEED?",
+					"sub_question" : "Slide to answer",
+					"explanation_title" : "Why are you asking me about size?",
+					"explanation" : "Our wall ovens come in different sizes, we want to make sure that we recommend the perfect one for your space.",
+					"type" : "slider",
+					"oneAnswer" : false,
+					"classes" : "slider-labels show-ticks left-tag label-inches",
+					"answer" : 1,
+					"options" : { 
+						"from" : 1,
+						"to" : 4,      
+					    "step": 0.0001,
+					    "dimension_label" : "WIDTH",
+					    "scale": ["No Restrictions","24<br>Inches","27<br>Inches","30<br>Inches"]       
+					},
+					"answers" : {
+						"1" : {
+							"thumbnail" : "img/icon-size.png",
+							"thumbnail_current" : "img/icon-size-current.png",
+							"value" : 1,
+							"text" : "No Restrictions",
+							"scoring" : {
+								"width24" : 1,
+								"width27" : 1,
+								"width30" : 1
+							}
+						},
+						"2" : {
+							"thumbnail" : "img/icon-size.png",
+							"thumbnail_current" : "img/icon-size-current.png",
+							"value" : 2,
+							"text" : "24\"",
+							"scoring" : {
+								"width24" : 1,
+								"width27" : -30,
+								"width30" : -30
+							}
+						},
+						"3" : {
+							"thumbnail" : "img/icon-size.png",
+							"thumbnail_current" : "img/icon-size-current.png",
+							"value" : 3,
+							"text" : "27\"Inches",
+							"scoring" : {
+								"width24" : -30,
+								"width27" : 1,
+								"width30" : -30
+							}
+						},
+						"4" : {
+							"thumbnail" : "img/icon-size.png",
+							"thumbnail_current" : "img/icon-size-current.png",
+							"value" : 4,
+							"text" : "30\"Inches",
+							"scoring" : {
+								"width24" : -30,
+								"width27" : -30,
+								"width30" : 1
+							}
+						}
+					}								
+				}					
+			]
+		},
+		"Cooking - Wall Ovens - Style" : {
+			"next" : "Cooking - Wall Ovens - Features",
+			"previous" : "Cooking - Wall Ovens - Size",
+			"thumbnail_type" : "image",
+			"thumbnail_text" : "Orientation",
+			"thumbnail_current" : "img/icon-orientation-current.png",
+			"text" : [
+				{
+					"question" : "WHAT PREFERENCE DO YOU HAVE FOR YOUR WALL OVEN?",
+					"sub_question" : "Select One",
+					"explanation_title" : "Why are you asking me about orientation?",
+					"explanation" : "Our wall ovens come in different orientation options. We want to get a better idea of your preference so that we can recommend the perfect one for your home.",
+					"type" : "boxes-picture-3-radio",
+					"oneAnswer" : true,
+					"answers" : [
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-orientation-current.png",
+							"text" : "Single Wall Oven",
+							"value" : "single",
+							"image" : "img/single-wall-oven.png",
+							"scoring" : {
+								"single" : 1,
+								"combination" : -30,
+								"double" : -30
+							},
+							"order" : 1
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-orientation-current.png",
+							"text" : "Microwave Oven Combo",
+							"value" : "combo",
+							"image" : "img/microwave-oven-combo.png",
+							"scoring" : {
+								"single" : -30,
+								"combination" : 1,
+								"double" : -30
+							},
+							"order" : 2
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Double Wall Oven",
+							"value" : "double",
+							"image" : "img/double-wall-oven.png",
+							"scoring" : {
+								"single" : -30,
+								"combination" : -30,
+								"double" : 1
+							},
+							"order" : 3
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "No Preference",
+							"value" : "nopref",
+							"image" : "img/no-preference-oven.png",
+							"scoring" : {
+								"single" : -30,
+								"combination" : -30,
+								"double" : 1
+							},
+							"order" : 4
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Wall Ovens - Features" : {
+			"next" : "Cooking - Wall Ovens - Cooking Style",
+			"previous" : "Cooking - Wall Ovens - Style",
+			"thumbnail_type" : "image",
+			"thumbnail_text" : "Features",
+			"thumbnail_current" : "img/icon-features-current.png",
+			"text" : [
+				{
+					"question" : "I use my oven to...",
+					"sub_question" : "Select all that apply",
+					"explanation_title" : "Why are you asking me about cooking?",
+					"explanation" : "Our wall ovens all have unique features. We want to get a better idea of how you use yours so we can recommend the perfect one for your needs.",
+					"type" : "checkbox-4",
+					"oneAnswer" : false,
+					"answers" : [
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Reheat leftovers and frozen meals",
+							"value" : "reheat",
+							"scoring" : {
+							},
+							"order" : 1
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Cook meals for my busy family",
+							"value" : "multiple meals",
+							"scoring" : {
+								"EasyConvection":1,
+								"5CuFt": 1
+							},
+							"order" : 2
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Help me host parties and cook multi-course meals",
+							"value" : "host parties",
+							"scoring" : {
+								"EasyConvection":1,
+								"5CuFt": 1
+							},
+							"order" : 3
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Cook a large holiday roast",
+							"value" : "roast",
+							"scoring" : {
+								"EasyConvection":1,
+								"temperatureProbe":1,
+								"5CuFt": 1
+							},
+							"order" : 4
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Bake, bake, and bake some more",
+							"value" : "perfect",
+							"scoring" : {
+								"trueConvection" : 1
+							},
+							"order" : 5
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Wall Ovens - Cooking Style" : {
+			"next" : "Cooking - Wall Ovens - Energy",
+			"previous" : "Cooking - Wall Ovens - Features",
+			"thumbnail_type" : "image",
+			"thumbnail_text" : "Style",
+			"thumbnail_current" : "img/icon-style-current.png",
+			"text" : [
+				{
+					"question" : "HOW WOULD YOUR FRIENDS DESCRIBE YOU?",
+					"sub_question" : "Select One",
+					"explanation_title" : "Why are you asking me about cooking?",
+					"explanation" : "Our wall ovens all have unique features. We want to get a better idea of how you use it so we can recommend the perfect wall oven for your cooking needs.",
+					"type" : "radio-4",
+					"oneAnswer" : true,
+					"classes" : "family-describe",
+					"answers" : [
+						{
+							"thumbnail" : "img/icon-convection.png",
+							"thumbnail_current" : "img/icon-convection-current.png",
+							"text" : "A baker – I’m usually covered in flour",
+							"value" : "baker",
+							"scoring" : {
+								"trueConvection" : 1
+							},
+							"order" : 1
+						},
+
+						{
+							"thumbnail" : "img/icon-convection.png",
+							"thumbnail_current" : "img/icon-convection-current.png",
+							"text" : "A home chef – scallop ceviche and naan pizzas, I love trying new recipes",
+							"value" : "chef",
+							"scoring" : {
+								"easyConvection" : 1
+							},
+							"order" : 2
+						},
+						{
+							"thumbnail" : "img/icon-convection.png",
+							"thumbnail_current" : "img/icon-convection-current.png",
+							"text" : "I’m both – I should probably start my own food blog",
+							"value" : "both",
+							"scoring" : {
+								"trueConvection" : 1,
+								"easyConvection":1
+							},
+							"order" : 3
+						},
+						{
+							"thumbnail" : "img/icon-convection.png",
+							"thumbnail_current" : "img/icon-convection-current.png",
+							"text" : " I’m neither – my stack of take-out menus is impressive",
+							"value" : "neither",
+							"scoring" : {
+							},
+							"order" : 4
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Wall Ovens - Energy" : {
+			"next" : null,
+			"previous" : "Cooking - Wall Ovens - Cooking Style",
+			"thumbnail_type" : "image",
+			"thumbnail_text" : "Energy",
+			"thumbnail_current" : "img/icon-energy-current.png",
+			"text" : [
+				{
+					"question" : "Is being energy efficient important to your family?",
+					"sub_question" : "Slide to answer",
+					"explanation_title" : "Why are you asking me about energy?",
+					"explanation" : "All of our machines are different, just like the families they're for. If we can understand your energy usage, then we can better recommend the perfect wall oven to fit your needs.",
+					"type" : "slider",
+					"oneAnswer" : false,
+					"classes" : "slider-labels four",
+					"answer" : 0,
+					"options" : {
+					    "from": 0,
+					    "to": 3,
+					    "step": 0.0001,
+					    "dimension": "",
+					    "scale": ["Not a Concern","somewhat of<br>a concern","It's top of mind","Very Important"]       
+					},
+					"answers" : {
+						"0" : {
+							"thumbnail" : "img/icon-energy.png",
+							"thumbnail_current" : "img/icon-energy-current.png",
+							"value" : 0,
+							"text" : "Not a Concern",
+							"scoring" : {
+							}
+						},
+						"1" : {
+							"thumbnail" : "img/icon-energy.png",
+							"thumbnail_current" : "img/icon-energy-current.png",
+							"value" : 1,
+							"text" : "somewhat of<br>a concern",
+							"scoring" : {
+							}
+						},
+						"2" : {
+							"thumbnail" : "img/icon-energy.png",
+							"thumbnail_current" : "img/icon-energy-current.png",
+							"value" : 2,
+							"text" : "Important",
+							"scoring" : {
+							}
+						},
+						"3" : {
+							"thumbnail" : "img/icon-energy.png",
+							"thumbnail_current" : "img/icon-energy-current.png",
+							"value" : 3,
+							"text" : "Very Important",
+							"scoring" : {
+							}
+						}
+					}
+				}											
+			]
+		},
+		"Cooking - Ranges - Size" : {
+			"next" : "Cooking - Ranges - Features",
+			"previous" : "Cooking - Pre-Qualifier 1",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-style-current.png",
+			"thumbnail_text" : "Size",
+			"text" : [
+				{
+					"question" : "WHAT SIZE OF RANGE DO YOU NEED?",
+					"sub_question" : "Select one",
+					"explanation_title" : "Why are you asking me about size?",
+					"explanation" : "Our ranges come in different sizes, we want to make sure that we recommend the perfect one for your space.",
+					"type" : "slider",
+					"oneAnswer" : false,
+					"classes" : "slider-labels four show-ticks",
+					"answer" : 0,
+					"options" : {
+					    "from": 0,
+					    "to": 2,
+					    "step": 0.0001,
+					    "dimension": "",
+					    "scale": ["No Preference","30\"","36\""]       
+					},
+					"answers" : {
+						"0" : {
+							"thumbnail" : "img/icon-energy.png",
+							"thumbnail_current" : "img/icon-energy-current.png",
+							"value" : 0,
+							"text" : "No Preference",
+							"scoring" : {
+							}
+						},
+						"1" : {
+							"thumbnail" : "img/icon-energy.png",
+							"thumbnail_current" : "img/icon-energy-current.png",
+							"value" : 1,
+							"text" : "30\"",
+							"scoring" : {
+								"width30" : 1,
+								"width36" : -30
+							}
+						},
+						"2" : {
+							"thumbnail" : "img/icon-energy.png",
+							"thumbnail_current" : "img/icon-energy-current.png",
+							"value" : 2,
+							"text" : "36\"",
+							"scoring" : {
+								"width36" : 1,
+								"width30" : -30
+							}
+						}
+					}
+				}
+			]
+		},
+		"Cooking - Ranges - Features" : {
+			"next" : "Cooking - Ranges - Cooking Performance",
+			"previous" : "Cooking - Ranges - Size",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-features-current.png",
+			"thumbnail_text" : "Features",
+			"text" : [
+				{
+					"question" : "I use my range to...",
+					"sub_question" : "Select all that apply",
+					"explanation_title" : "Why are you asking me about cooking?",
+					"explanation" : "Our ranges all have unique features. We want to get a better idea of how you use yours so we can recommend the perfect one for your needs.",
+					"type" : "checkbox-4",
+					"oneAnswer" : false,
+					"answers" : [
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Reheat leftovers and frozen meals",
+							"value" : "reheat",
+							"scoring" : {
+							},
+							"order" : 1
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Cook meals for my busy family",
+							"value" : "multiple meals",
+							"scoring" : {
+								"warmingDrawer" : 1,
+								"aquaLift" : 1
+							},
+							"order" : 2
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Help me host parties and cook multi-course meals",
+							"value" : "host parties",
+							"scoring" : {
+								"warmingDrawer" : 1,
+								"trueConvection" : 1
+							},
+							"order" : 3
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Cook large holiday roasts",
+							"value" : "large dishes",
+							"scoring" : {
+								"temperatureProbe" : 1,
+								"steamRack" : 1
+							},
+							"order" : 4
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Bake, bake, and bake some more",
+							"value" : "perfect",
+							"scoring" : {
+								"trueConvection" : 1,
+								"bakingDrawer":1
+							},
+							"order" : 5
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Cook a high temperature stir-fry",
+							"value" : "temperature",
+							"scoring" : {
+								"gas" : 1
+							},
+							"order" : 6
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Ranges - Cooking Performance" : {
+			"next" : "Cooking - Ranges - Capacity",
+			"previous" : "Cooking - Ranges - Features",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-features-current.png",
+			"thumbnail_text" : "Features",
+			"text" : [
+				{
+					"question" : "What cooking techniques do you use often?",
+					"sub_question" : "Select all that apply",
+					"explanation_title" : "Why are you asking me about cooking performance?",
+					"explanation" : "Our ranges are equipped with heat technology to go from simmer to rolling boil quickly. By understanding how you cook, we can better recommend the perfect range for your lifestyle.",
+					"type" : "checkbox-4",
+					"oneAnswer" : false,
+					"answers" : [
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Melting",
+							"value" : "melting",
+							"scoring" : {
+								"5KBTUSimmerMelt" : 1,
+								"meltAndHold" : 1
+							},
+							"order" : 1
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Simmering",
+							"value" : "simmering",
+							"scoring" : {
+								"15KBTU" : 1,
+								"5KBTUSimmerMelt" : 1,
+								"inductionSimmer" : 1,
+								"performanceBoost" : 1
+							},
+							"order" : 2
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Sautéing",
+							"value" : "sautéing",
+							"scoring" : {
+								"15KBTU" : 1
+							},
+							"order" : 3
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Flambéing",
+							"value" : "flambéing",
+							"scoring" : {
+								"20KBTUDual" : 1
+							},
+							"order" : 4
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Searing",
+							"value" : "searing",
+							"scoring" : {
+								"20KBTUDual" : 1,
+								"performanceBoost": 1
+							},
+							"order" : 5
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Boiling",
+							"value" : "boiling",
+							"scoring" : {
+								"20KBTUDual" : 1,
+								"evenHeat" : 1
+							},
+							"order" : 6
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Grilling",
+							"value" : "grilling",
+							"scoring" : {
+								"18KBTUEvenHeat" : 1
+							},
+							"order" : 7
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Steaming",
+							"value" : "steaming",
+							"scoring" : {
+							},
+							"order" : 8
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Ranges - Capacity" : {
+			"next" : "Cooking - Ranges - Range Style",
+			"previous" : "Cooking - Ranges - Cooking Performance",
+			"thumbnail_type" : "image",
+			"thumbnail_text" : "Capacity",
+			"thumbnail_current" : "img/icon-capacity-current.png",
+			"text" : [
+				{
+					"question" : "WHAT IS THE LARGEST ITEM THAT YOU REGULARLY COOK?",
+					"sub_question" : "Slide to answer",
+					"explanation_title" : "Why are you asking me about capacity?",
+					"explanation" : "Our ranges come in different sizes and also have unique capacities. If we can understand how you use your range, we can better recommend the perfect one for your lifestyle.",
+					"type" : "slider",
+					"oneAnswer" : false,
+					"classes" : "slider-labels four",
+					"answer" : 0,
+					"options" : {       
+					    "from": 0,
+					    "to": 3,
+					    "step": 0.0001,
+					    "dimension": "",
+					    "scale": ["Appetizers", "Dinner for my family", "Cupcakes for all my friends", "A whole roasted turkey"]     
+					},
+					"answers" : {
+						"0" : {
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-capacity-current.png",
+							"value" : 0,
+							"text" : "Appetizers",
+							"scoring" : {							
+							}
+						},
+						"1" : {
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-capacity-current.png",
+							"value" : 1,
+							"text" : "Dinner for my family",
+							"scoring" : {
+								"mediumCapacity" : 1,
+								"double":1
+							}
+						},
+						"2" : {
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-capacity-current.png",
+							"value" : 2,
+							"text" : "Cupcakes for all my friends",
+							"scoring" : {
+								"largeCapacity" : 1,
+								"double":1
+							}
+						},
+						"3" : {
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-capacity-current.png",
+							"value" : 3,
+							"text" : "A whole roasted turkey",
+							"scoring" : {
+								"largestCapacity" : 1
+							}
+						}
+					}
+				}											
+			]
+		},
+		"Cooking - Ranges - Range Style" : {
+			"next" : "Cooking - Ranges - Range Style2",
+			"previous" : "Cooking - Ranges - Capacity",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-style-current.png",
+			"thumbnail_text" : "Style",
+			"text" : [
+				{
+					"question" : "Why do you cook?",
+					"sub_question" : "Select all that apply",
+					"explanation_title" : "Why are you asking me about cooking?",
+					"explanation" : "All our ranges have unique features. We want to get a better idea of how you use your range so we can recommend the perfect one for your lifestyle.",
+					"type" : "checkbox-4",
+					"oneAnswer" : false,
+					"answers" : [
+						{
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "From roasts to Mexican night, my family depends on me to make dinner",
+							"value" : "family",
+							"scoring" : {
+							},
+							"order" : 1
+						},
+						{
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "I love entertaining guests and need a range that can handle feasts for a crowd",
+							"value" : "crowd",
+							"scoring" : {
+								"double":1,
+								"5Burners":2, 
+ 								"6Burners":2
+							},
+							"order" : 2
+						},
+						{
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "I’m always trying new dishes and need a range that can handle variety",
+							"value" : "variety",
+							"scoring" : {
+								"double":1,
+								"5Burners":1, 
+ 								"6Burners":1
+							},
+							"order" : 3
+						},
+						{
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "Cook? We rely on our impressive collection of take-out menus",
+							"value" : "frozen",
+							"scoring" : {
+								"electric" : 1
+							},
+							"order" : 4
+						}
+					]
+				}
+			]
+		},
+        "Cooking - Ranges - Range Style2" : {
+			"next" : "Cooking - Ranges - Lifestyle",
+			"previous" : "Cooking - Ranges - Range Style",
+			"thumbnail_text" : "Style",
+			"thumbnail_current" : "img/icon-style-current.png",
+			"thumbnail_type" : "image",
+			"text" : [
+				{
+					"question" : "What style range do you prefer?",
+					"sub_question" : "Select one",
+					"explanation_title" : "Why are you asking me about style?", 
+					"explanation" : "NEED COPY!",
+					"type" : "boxes-picture-3-radio",
+					"oneAnswer" : true,
+					"answers" : [
+						{
+							"text" : "Front Control",
+							"text_more" : "We’re cooking with fire now",
+							"image" : "img/front-control.png",
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"value" : "yes",
+							"scoring" : {
+								"gas" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Rear Control",
+							"text_more" : "We just plug-in and go",
+							"image" : "img/rear-control.png",
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"value" : "no",
+							"scoring" : {
+								"gas" : -30
+							},
+							"order" : 2
+						}
+                        ,
+						{
+							"text" : "No Preference",
+							"text_more" : "We just plug-in and go",
+							"image" : "img/no-preference-control.png",
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"value" : "nopref",
+							"scoring" : {
+								"gas" : -30
+							},
+							"order" : 3
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Ranges - Lifestyle" : {
+			"next" : "Cooking - Ranges - Features2",
+			"previous" : "Cooking - Ranges - Range Style2",
+			"thumbnail_text" : "Lifestyle",
+			"thumbnail_current" : "img/icon-lifestyle-current.png",
+			"thumbnail_type" : "image",
+			"text" : [
+				{
+					"question" : "HOW WOULD YOUR FRIENDS DESCRIBE YOU?",
+					"sub_question" : "Select one",
+					"explanation_title" : "Why are you asking me about cooking?",
+					"explanation" : "Our ranges all have unique features. We want to get a better idea of how you use it so we can recommend the perfect range for your cooking needs.",
+					"type" : "radio-4",
+					"oneAnswer" : true,
+					"answers" : [
+						{
+							"thumbnail" : "img/icon-convection.png",
+							"thumbnail_current" : "img/icon-lifestyle-current.png",
+							"text" : "A baker – I’m usually covered in flour",
+							"value" : "baker",
+							"scoring" : {
+								"bakingDrawer" : 1,
+								"trueConvection" : 1
+							},
+							"order" : 1
+						},
+						{
+							"thumbnail" : "img/icon-convection.png",
+							"thumbnail_current" : "img/icon-lifestyle-current.png",
+							"text" : "A home chef – scallop ceviche and naan pizzas, I love trying new recipes",
+							"value" : "home chef",
+							"scoring" : {
+								"steamRack" : 1,
+								"evenHeat" : 1
+							},
+							"order" : 2
+						},
+						{
+							"thumbnail" : "img/icon-convection.png",
+							"thumbnail_current" : "img/icon-lifestyle-current.png",
+							"text" : "I’m both – I should probably start my own food blog",
+							"value" : "both",
+							"scoring" : {
+								"bakingDrawer" : 1,
+								"trueConvection" : 1,
+								"steamRack" : 1,
+								"evenHeat" : 1
+							},
+							"order" : 3
+						},
+						{
+							"thumbnail" : "img/icon-convection.png",
+							"thumbnail_current" : "img/icon-lifestyle-current.png",
+							"text" : "I’m neither – my stack of take-out menus is impressive",
+							"value" : "neither",
+							"scoring" : {
+							},
+							"order" : 4
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Ranges - Features2" : {
+			"next" : "Cooking - Ranges - Fuel Type",
+			"previous" : "Cooking - Ranges - Lifestyle",
+			"thumbnail_type" : "image",
+			"thumbnail_text" : "Features",
+			"thumbnail_current" : "img/icon-features-current.png",
+			"text" : [
+				{
+					"question" : "HOW OFTEN DO YOU FIND YOURSELF COOKING A MEAT DISH THAT REQUIRES A PRECISE TEMPERATURE?",
+					"sub_question" : "Slide to answer",
+					"explanation_title" : "Why are you asking me about temperature precision?",
+					"explanation" : "Did you know that some of our ranges are equipped with thermometer probes? The technology gives you precision results to notify you when your dish has reached completion.",
+					"type" : "slider",
+					"oneAnswer" : false,
+					"classes" : "slider-labels four",
+					"answer" : 0,
+					"options" : {       
+					    "from": 0,
+					    "to": 2,
+					    "step": 0.0001,
+					    "dimension": "",
+					    "scale": ["Very often, I'm always experimenting with new roast recipes", "Sometimes, a few times a year", "Never, I use time to figure out if my dish is done"]     
+					},
+					"answers" : {
+						"0" : {
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"value" : 0,
+							"text" : "Very often",
+							"scoring" : {			
+								"temperatureProbe" : 2,
+								"wirelessProbe" : 1				
+							}
+						},
+						"1" : {
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"value" : 1,
+							"text" : "Sometimes",
+							"scoring" : {
+								"temperatureProbe" : 1
+							}
+						},
+						"2" : {
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"value" : 2,
+							"text" : "Never",
+							"scoring" : {
+							}
+						}
+					}
+				}											
+			]
+		},
+		"Cooking - Ranges - Fuel Type" : {
+			"next" : null,
+			"previous" : "Cooking - Ranges - Features2",
+			"thumbnail_text" : "Fuel Type",
+			"thumbnail_current" : "img/icon-fueltype-current.png",
+			"thumbnail_type" : "image",
+			"text" : [
+				{
+					"question" : "Is your kitchen equipped for gas or electric?",
+					"sub_question" : "Select one",
+					"explanation_title" : "Why are you asking me about fuel type?", 
+					"explanation" : "Some kitchens are equipped with a gas line. We need to know this information to recommend the perfect range.",
+					"type" : "boxes-icon-2",
+					"oneAnswer" : true,
+					"answers" : [
+						{
+							"text" : "Gas",
+							"text_more" : "We’re cooking with fire now",
+							"image" : "img/icon-thumb-gas.png",
+							"hover" : "img/icon-thumb-gas-active.png",
+							"thumbnail" : "img/icon-fueltype.png",
+							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"value" : "yes",
+							"scoring" : {
+								"gas" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Electric",
+							"text_more" : "We just plug-in and go",
+							"image" : "img/icon-thumb-electric.png",
+							"hover" : "img/icon-thumb-electric-active.png",
+							"thumbnail" : "img/icon-fueltype.png",
+							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"value" : "no",
+							"scoring" : {
+								"gas" : -30
+							},
+							"order" : 2
+						}
+					]
+				}
+			]
+		},
+		"Fridges - Size" : {
+			"next" : "Fridges - Energy",
+			"previous" : "Appliance",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-size-current.png",
+			"thumbnail_text" : "Size",
+			"text" : [
+				{
+					"question" : "WHAT ARE YOUR REFRIGERATOR'S HEIGHT AND WIDTH RESTRICTIONS?",
+					"sub_question" : "Please slide and click to answer",
+					"explanation_title" : "Why are you asking me about size?",
+					"explanation" : "Our fridges come in many sizes, we want to make sure that we recommend the perfect one for your space.",
+					"type" : "slider-buttons",
+					"classes" : "slider-labels left-tag no-jslider-value show-ticks scale-left",
+					"oneAnswer" : false,
+					"answer" : 0,
+					"options" : { 
+						"from" : 0,
+						"to" : 5,      
+					    "step": 0.0001,
+					    "dimension_label": "WIDTH",
+					    "scale": ["No Preference","21\"","33\"", "36\"", "42\"", "48\""]       
+					},
+					"answers" : {
+						"0" : {
+							"value" : 0,
+							"text" : "No Preference",
+							"thumbnail" : "img/icon-size.png",
+							"thumbnail_current" : "img/icon-size-current.png",
+							"scoring" : {
+							}
+						},
+						"1" : {
+							"value" : 1,
+							"text" : "21",
+							"thumbnail" : "img/icon-size.png",
+							"thumbnail_current" : "img/icon-size-current.png",
+							"scoring" : {
+								"width21" : 1
+								
+							}
+						},
+						"2" : {
+							"value" : 2,
+							"text" : "33",
+							"thumbnail" : "img/icon-size.png",
+							"thumbnail_current" : "img/icon-size-current.png",
+							"scoring" : {
+								"width22" : 1,
+								"width23" : 1,
+								"width24" : 1,
+								"width25" : 1,
+								"width26" : 1,
+								"width27" : 1,
+								"width28" : 1,
+								"width29" : 1,
+								"width30" : 1,
+								"width31" : 1,
+								"width32" : 1,
+								"width33" : 1
+							}
+						},
+						"3" : {
+							"value" : 3,
+							"text" : "36",
+							"thumbnail" : "img/icon-size.png",
+							"thumbnail_current" : "img/icon-size-current.png",
+							"scoring" : {
+								"width34" : 1,
+								"width35" : 1,
+								"width33" : 1,
+								"width36" : 1
+							}
+						},
+						"4" : {
+							"value" : 4,
+							"text" : "42",
+							"thumbnail" : "img/icon-size.png",
+							"thumbnail_current" : "img/icon-size-current.png",
+							"scoring" : {
+								"width37" : 1,
+								"width38" : 1,
+								"width39" : 1,
+								"width40" : 1,
+								"width41" : 1,
+								"width42" : 1
+							}
+						},
+						"5" : {
+							"value" : 5,
+							"text" : "48",
+							"thumbnail" : "img/icon-size.png",
+							"thumbnail_current" : "img/icon-size-current.png",
+							"scoring" : {
+								"width43" : 1,
+								"width44" : 1,
+								"width45" : 1,
+								"width46" : 1,
+								"width47" : 1,
+								"width48" : 1
+							}
+						}
+					}								
+				},
+				{
+					"classes": "label-inches",
+					"dimension_label" : "height",
+					"answer" : 0,
+					"answers" : {
+						"0" : {
+                            "value" : 0,
+                            "text" : "Any",
+                            "enabled" : true,
+                            "enabledWhen" : [0,1,2,3,4,5],
+                            "scoring" : {
+                            }
+                        },
+						"70" : {
+							"value" : 70,
+							"text" : "70",
+							"enabled" : true,
+							"enabledWhen" : [0,1,2,3],
+							"scoring" : {
+								 "height66" : 1
+							}
+						},
+						"71" : {
+							"value" : 71,
+							"text" : "71",
+							"enabled" : true,
+							"enabledWhen" : [0,3],
+							"scoring" : {
+								 "height68" : 1,
+								 "height69" : 1
+							}
+						},
+						"83" : {
+							"value" : 83,
+							"text" : "83",
+							"enabled" : true,
+							"enabledWhen" : [0,3,4,5],
+							"scoring" : {
+								 "height67" : 1
+							}
+						}
+					}								
+				}					
+			]
+		},
+		"Fridges - Energy" : {
+			"next" : "Fridges - Capacity",
+			"previous" : "Fridges - Size",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-energy-current.png",
+			"thumbnail_text" : "Energy",
+			"text" : [
+				{
+					"question" : "HOW IMPORTANT IS ENERGY EFFICIENCY TO YOUR HOUSEHOLD?",
+					"sub_question" : "Slide to answer",
+					"explanation_title" : "Why are you asking me about energy?",
+					"explanation" : "All of our machines are different just like the people they're for. If we understand your energy usage, then we can better recommend the perfect fridge to fit your needs.",
+					"type" : "slider",
+					"oneAnswer" : false,
+					"classes" : "slider-labels four",
+					"answer" : 0,
+					"options" : {       
+					    "from": 0,
+					    "to": 3,
+					    "step": 0.0001,
+					    "dimension": "",
+					    "scale": ["Not a Concern","somewhat of<br>a concern","Important","Very Important"]       
+					},
+					"answers" : {
+						"0" : {
+							"value" : 0,
+							"thumbnail" : "img/icon-energy.png",
+							"thumbnail_current" : "img/icon-energy-current.png",
+							"text" : "Not a Concern",
+							"scoring" : {
+							}
+						},
+						"1" : {
+							"value" : 1,
+							"thumbnail" : "img/icon-energy.png",
+							"thumbnail_current" : "img/icon-energy-current.png",
+							"text" : "somewhat of<br>a concern",
+							"scoring" : {
+							}
+						},
+						"2" : {
+							"value" : 2,
+							"thumbnail" : "img/icon-energy.png",
+							"thumbnail_current" : "img/icon-energy-current.png",
+							"text" : "Important",
+							"scoring" : {
+							}
+						},
+						"3" : {
+							"value" : 3,
+							"thumbnail" : "img/icon-energy.png",
+							"thumbnail_current" : "img/icon-energy-current.png",
+							"text" : "Very Important",
+							"scoring" : {
+							}
+						}
+					}
+				}											
+			]
+		},
+		"Fridges - Capacity" : {
+			"next" : "Fridges - Organization",
+			"previous" : "Fridges - Energy",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-capacity-current.png",
+			"thumbnail_text" : "Capacity",
+			"text" : [
+				{
+					"question" : "I COUNT ON MY FRIDGE TO HOLD FOOD FOR…",
+					"sub_question" : "Slide to answer",
+					"explanation_title" : "Why are you asking me about capacity?",
+					"explanation" : "We want to get a better idea of how you use your fridge and what you put in it so we can find you the one that fits your lifestyle.",
+					"type" : "slider-people",
+					"oneAnswer" : false,
+					"classes" : "slider-labels five fridge-capacity",
+					"answer" : 1,
+					"options" : {       
+					    "from": 1,
+					    "to": 5,
+					    "step": 0.0001,
+					    "dimension" : "",
+					    "scale": [
+							"Myself", 
+							"Me and my better half",
+							"My Family",
+							"My large family",
+							"My dinner party guests"
+					    ]       
+					},
+					"answers" : {
+						"1" : {
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-capacity-current.png",
+							"value" : 1,
+							"text" : "Myself",
+							"scoring" : {
+							}
+						},
+						"2" : {
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-capacity-current.png",
+							"value" : 2,
+							"text" : "Me and my better half",
+							"scoring" : {
+								"mediumCapacity" : 1
+							}
+						},
+						"3" : {
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-capacity-current.png",
+							"value" : 3,
+							"text" : "My Family",
+							"scoring" : {
+								"largeCapacity" : 1
+							}
+						},
+						"4" : {
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-capacity-current.png",
+							"value" : 4,
+							"text" : "My large family",
+							"scoring" : {
+								"largerCapacity" : 1
+							}
+						},
+						"5" : {
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-capacity-current.png",
+							"value" : 5,
+							"text" : "My dinner party guests",
+							"scoring" : {
+								"largestCapacity" : 1
+							}
+						}
+					}
+				}											
+			]
+		},
+		"Fridges - Organization" : {
+			"next" : "Fridges - Water",
+			"previous" : "Fridges - Capacity",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-organization-current.png",
+			"thumbnail_text" : "Organization",
+			"text" : [
+				{
+					"question" : "I count on my fridge to… ",
+					"sub_question" : "Select all the apply",
+					"explanation_title" : "Why are you asking me about how I use my fridge?",
+					"explanation" : "Our fridges are carefully designed from the inside out. By better learning what you put in your fridge, it will help us recommend the right one for your lifestyle.",
+					"type" : "checkbox-4",
+					"oneAnswer" : false,
+					"answers" : [
+						{
+							"thumbnail" : "img/icon-organization.png",
+							"thumbnail_current" : "img/icon-organization-current.png",
+							"text" : "Chill the drinks – from cold press juices to wine",
+							"value" : "chill",
+							"scoring" : {
+								"topMount" : 1,
+								"bottomMount" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Store fresh produce from the farmers’ market",
+							"value" : "produce",
+							"thumbnail" : "img/icon-organization.png",
+							"thumbnail_current" : "img/icon-organization-current.png",
+							"scoring" : {
+								"frenchDoor5Door" : 1
+							},
+							"order" : 2
+						},
+						{
+							"thumbnail" : "img/icon-organization.png",
+							"thumbnail_current" : "img/icon-organization-current.png",
+							"text" : "Hold everything that we bought from the grocery store",
+							"value" : "groceries",
+							"scoring" : {
+								"frenchDoor" : 1
+							},
+							"order" : 3
+						},
+						{
+							"text" : "Hold our ready-to-eat prepared meals",
+							"value" : "prepared",
+							"thumbnail" : "img/icon-organization.png",
+							"thumbnail_current" : "img/icon-organization-current.png",
+							"scoring" : {
+								"topMount" : 1,
+								"bottomMount" : 1
+							},
+							"order" : 4
+						},
+						{
+							"text" : "Store platters of food for dinner parties and holidays",
+							"value" : "platters",
+							"thumbnail" : "img/icon-organization.png",
+							"thumbnail_current" : "img/icon-organization-current.png",
+							"scoring" : {
+								"frenchDoor" : 1,
+								"maxCool" : 1
+							},
+							"order" : 5
+						}
+					]
+				}
+			]
+		},
+		"Fridges - Water" : {
+			"next" : "Fridges - Style",
+			"previous" : "Fridges - Organization",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-water-current.png",
+			"thumbnail_text" : "Water",
+			"text" : [
+				{
+					"question" : "Does your kitchen have an existing waterline?",
+					"sub_question" : "Select one",
+					"explanation_title" : "Why are you asking me about water?",
+					"explanation" : "Did you know that your kitchen needs a water line in order for your fridge to dispense water? Some of our models provide water-dispensing features. By understanding how you consume water, we can recommend a fridge that will best suit your needs.",
+					"type" : "radio-4",
+					"oneAnswer" : true,
+					"answers" : [
+						{
+							"text" : "Yes - my kitchen has a waterline and my fridge dispenses water and ice",
+							"value" : "bottle of water",
+							"thumbnail" : "img/icon-water.png",
+							"thumbnail_current" : "img/icon-water-current.png",
+							"scoring" : {
+								"filtered" : 1,
+								"exteriorDispenser" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "No - I dont have a waterline and don't need one",
+							"value" : "glass of tap water",
+							"thumbnail" : "img/icon-water.png",
+							"thumbnail_current" : "img/icon-water-current.png",
+							"scoring" : {
+								"indoorDispenser" : 1
+							},
+							"order" : 2
+						},
+						{
+							"text" : "No - I don't have a waterline but would consider installing one so our fridge could dispense water",
+							"value" : "glass of filtered water",
+							"thumbnail" : "img/icon-water.png",
+							"thumbnail_current" : "img/icon-water-current.png",
+							"scoring" : {
+								"filtered" : 1,
+								"exteriorDispenser" : 1
+							},
+							"order" : 3
+						},
+						{
+							"text" : "I'm not sure",
+							"value" : "glass of milk or juice",
+							"thumbnail" : "img/icon-water.png",
+							"thumbnail_current" : "img/icon-water-current.png",
+							"scoring" : {
+							},
+							"order" : 4
+						}
+					]
+				}
+			]
+		},
+		"Fridges - Ice" : {
+			"next" : "Fridges - Style",
+			"previous" : "Fridges - Water",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-ice-current.png",
+			"thumbnail_text" : "Ice",
+			"text" : [
+				{
+					"question" : "I like to add ice to...",
+					"sub_question" : "Select all that apply",
+					"explanation_title" : "Why are you asking me about ice?",
+					"explanation" : "Did you know that your kitchen needs a water line in order for your fridge to dispense ice? Some of our models provide ice-dispensing features. By understanding how you consume ice, we can recommend a fridge that will fit your lifestyle.",
+					"type" : "boxes-icon-5-checkbox",
+					"oneAnswer" : false,
+					"answers" : [
+						{
+							"thumbnail" : "img/icon-ice.png",
+							"thumbnail_current" : "img/icon-ice-current.png",
+							"text" : "My soft drinks",
+							"value" : "soft drinks",
+							"image" : "img/icon-thumb-softdrinks.png",
+							"hover" : "img/icon-thumb-softdrinks-active.png",
+							"scoring" : {
+								"indoorDispenser" : 1
+							},
+							"order" : 1
+						},
+						{
+							"thumbnail" : "img/icon-ice.png",
+							"thumbnail_current" : "img/icon-ice-current.png",
+							"text" : "A cocktail",
+							"value" : "cocktail",
+							"image" : "img/icon-thumb-cocktails.png",
+							"hover" : "img/icon-thumb-cocktails-active.png",
+							"scoring" : {
+								"indoorDispenser" : 1		
+							},
+							"order" : 2
+						},
+						{
+							"thumbnail" : "img/icon-ice.png",
+							"thumbnail_current" : "img/icon-ice-current.png",
+							"text" : "A glass of water",
+							"value" : "water",
+							"image" : "img/icon-thumb-water.png",
+							"hover" : "img/icon-thumb-water-active.png",
+							"scoring" : {
+								"indoorDispenser" : 1							
+							},
+							"order" : 3
+						},
+						{
+							"thumbnail" : "img/icon-ice.png",
+							"thumbnail_current" : "img/icon-ice-current.png",
+							"text" : "Smoothies",
+							"value" : "smoothies",
+							"image" : "img/icon-thumb-smoothies.png",
+							"hover" : "img/icon-thumb-smoothies-active.png",
+							"scoring" : {
+								"indoorDispenser" : 1								
+							},
+							"order" : 4
+						},
+						{
+							"thumbnail" : "img/icon-ice.png",
+							"thumbnail_current" : "img/icon-ice-current.png",
+							"text" : "A cooler for parties",
+							"value" : "cooler",
+							"image" : "img/icon-thumb-cooler.png",
+							"hover" : "img/icon-thumb-cooler-active.png",
+							"scoring" : {
+								"indoorDispenser" : 1							
+							},
+							"order" : 5
+						},
+						{
+							"thumbnail" : "img/icon-ice.png",
+							"thumbnail_current" : "img/icon-ice-current.png",
+							"text" : "Nothing",
+							"value" : "nothing",
+							"image" : "img/icon-thumb-nothing.png",
+							"hover" : "img/icon-thumb-nothing-active.png",
+							"scoring" : {							
+							},
+							"order" : 6
+						}
+					]
+				}
+			]
+		},
+		"Fridges - Style" : {
+			"next" : "Fridges - Features",
+			"previous" : "Fridges - Water",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-style-current.png",
+			"thumbnail_text" : "Style",
+			"text" : [
+				{
+					"question" : "I want my kitchen to look like this...",
+					"sub_question" : "Select one",
+					"explanation_title" : "Why are you asking me about style?",
+					"explanation" : "Since some fridges are built deeper than typical counter depth, we need to know how important having a fridge that's in-line with your counters is to your purchasing decision.",
+					"type" : "boxes-picture-3-radio",
+					"oneAnswer" : false,
+					"classes" : "three form-function",
+					"answers" : [
+                        {
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "Built-In",
+                            "subtext" : "I want to be able to customize the exterior of my fridge",
+                            "image" : "img/built-in.png",
+							"value" : 2,
+							"scoring" : {
+								"builtIn" : 1
+							},
+							"order" : 1
+						},
+						{
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "Counter Depth",
+                            "subtext" : "I want my fridge to be in-line with my counters ",
+                            "image" : "img/counter-depth.png",
+							"value" : 1,
+							"scoring" : {
+								"counterDepth" : 1
+							},
+							"order" : 2
+						},
+                        {
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+                            "text" : "Standard Depth",
+                            "subtext" : "I don’t care if my fridge is in-line with my counters ",
+                            "image" : "img/standard-depth.png",
+							"value" : 0,
+							"scoring" : {
+								"standardDepth" : 1
+							},
+							"order" : 3
+						}
+					]
+				}											
+			]
+		},
+		"Fridges - Features" : {
+			"next" : null,
+			"previous" : "Fridges - Style",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-features-current.png",
+			"thumbnail_text" : "Features",
+			"text" : [
+				{
+					"question" : "How do you shop for your groceries?",
+					"sub_question" : "Select all that apply",
+					"explanation_title" : "Why are you ask me about groceries?",
+					"explanation" : "Our fridges are designed with unique features. By understanding how you shop, we learn more about how you use your fridge and can better recommend the perfect one for your lifestyle.",
+					"type" : "checkbox-4",
+					"oneAnswer" : false,
+					"answers" : [
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "I’m on a first-name basis at the farmers’ market",
+							"value" : "farmers market",
+							"scoring" : {
+ 								"freshFlowProducePreserver" : 2,
+ 								"extendFreshPlus" : 1,
+ 								"freshChill" : 2
+							},
+							"order" : 1
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "I get basics and produce from the grocery store",
+							"value" : "full grocery store",
+							"scoring" : {
+									"preservaCare" : 1,
+									"extendFresh" : 1,
+									"freshChill" : 1
+							},
+							"order" : 2
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "I go aisle-to-aisle at the grocery store",
+							"value" : "basics",
+							"scoring" : {
+								"maxCool" : 1
+							},
+							"order" : 3
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Stock up in the frozen food section",
+							"value" : "frozen food",
+							"scoring" : {
+							},
+							"order" : 4
+						}
+					]
+				}
+			]
+		},
+		"Dishwashers - Cleaning Power" : {
+			"next" : "Dishwashers - Capacity",
+			"previous" : "Appliance",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-cleaning-current.png",
+			"thumbnail_text" : "Cleaning",
+			"text" : [
+				{
+					"question" : "What would we find inside your dishwasher right now?",
+					"sub_question" : "Select all that apply",
+					"explanation_title" : "Why are you asking me what I wash? ",
+					"explanation" : "Knowing what goes into your dishwasher will allow us to recommend an option that ensures every dish gets a fresh start.",
+					"type" : "checkbox-4",
+					"oneAnswer" : false,
+					"answers" : [
+						{
+							"thumbnail" : "img/icon-cleaning.png",
+							"thumbnail_current" : "img/icon-cleaning-current.png",
+							"text" : "Wine glasses from all my closest friends",
+							"value" : "glasses",
+							"scoring" : {
+								"proScrub" : 1,
+								"bottleWash" : 1, 
+								"proDry" : 1, 
+								"proWash" : 1
+							},
+							"order" : 2
+						},
+						{
+							"thumbnail" : "img/icon-cleaning.png",
+							"thumbnail_current" : "img/icon-cleaning-current.png",
+							"text" : "A few hard-to-wash graters",
+							"value" : "graters",
+							"scoring" : {
+								"proScrub" : 1,
+								"proWash" : 1
+							},
+							"order" : 1
+						},
+						{
+							"thumbnail" : "img/icon-cleaning.png",
+							"thumbnail_current" : "img/icon-cleaning-current.png",
+							"text" : "Mixing bowls and measuring cups",
+							"value" : "mixing bowls",
+							"scoring" : {
+								"proScrub" : 1,
+								"bottleWash" : 1,
+								"proWash" : 1
+							},
+							"order" : 3
+						},
+						{
+							"thumbnail" : "img/icon-cleaning.png",
+							"thumbnail_current" : "img/icon-cleaning-current.png",
+							"text" : "Whisks and wooden spoons",
+							"value" : "whisks",
+							"scoring" : {
+								"proScrub" : 1,
+								"proWash" : 1
+							},
+							"order" : 4
+						},
+						{
+							"thumbnail" : "img/icon-cleaning.png",
+							"thumbnail_current" : "img/icon-cleaning-current.png",
+							"text" : "Cutting boards of every shape and size",
+							"value" : "cutting boards",
+							"scoring" : {
+								"proScrub" : 1,
+								"proWash" : 1
+							},
+							"order" : 5
+						},
+						{
+							"thumbnail" : "img/icon-cleaning.png",
+							"thumbnail_current" : "img/icon-cleaning-current.png",
+							"text" : "A few sets of chopsticks",
+							"value" : "chopsticks",
+							"scoring" : {
+								"proDry" : 1,
+								"proWash" : 1
+							},
+							"order" : 6
+						},
+						{
+							"thumbnail" : "img/icon-cleaning.png",
+							"thumbnail_current" : "img/icon-cleaning-current.png",
+							"text" : "Place settings from our family dinner",
+							"value" : "family",
+							"scoring" : {
+								"proDry" : 1,
+								"proWash" : 1
+							},
+							"order" : 7
+						}
+					]
+				}
+			]
+		},
+		"Dishwashers - Capacity" : {
+			"next" : "Dishwashers - Features",
+			"previous" : "Dishwashers - Cleaning Power",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-capacity-current.png",
+			"thumbnail_text" : "Capacity",
+			"text" : [
+				{
+					"question" : "How many times a week do you run the dishwasher?",
+					"sub_question" : "Slide to answer",
+					"explanation_title" : "Why are you asking me about capacity?",
+					"explanation" : "When it comes to washing your dishes there is no job too big or too small. Understanding what goes into your dishwasher will allow us to find the perfect fit for you.",
+					"type" : "slider",
+					"oneAnswer" : false,
+					"classes" : "slider-labels four",
+					"answer" : 0,
+					"options" : {       
+					    "from": 0,
+					    "to": 15,
+					    "step": 0.0001,
+					    "dimension" : "",
+					    "scale": [
+							"0<br />Maybe every other week","5","10","15+<br />I've lost count"
+					    ]       
+					},
+					"answers" : {
+						"0" : {
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-capacity-current.png",
+							"value" : 0,
+							"text" : "0",
+							"scoring" : {
+								"placeSettings14": 1
+							}
+						},
+						"5" : {
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-capacity-current.png",
+							"value" : 5,
+							"text" : "5",
+							"scoring" : {
+								"placeSettings14": 1,
+								"placeSettings15": 1
+							}
+						},
+						"10" : {
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-capacity-current.png",
+							"value" : 10,
+							"text" : "10",
+							"scoring" : {
+								"placeSettings15": 1
+							}
+						},
+						"15" : {
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-capacity-current.png",
+							"value" : 15,
+							"text" : "15+<br />I've lost count",
+							"scoring" : {
+								"placeSettings16": 1
+							}
+						}
+					}
+				}											
+			]
+		},
+		"Dishwashers - Features" : {
+			"next" : "Dishwashers - Energy",
+			"previous" : "Dishwashers - Capacity",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-features-current.png",
+			"thumbnail_text" : "Features",
+			"text" : [
+				{
+					"question" : "WHEN SHOPPING FOR A DISHWASHER, WHAT FEATURES ARE MOST IMPORTANT TO YOUR PURCHASE DECISION? ",
+					"sub_question" : "DRAG TO REORDER. <span>1</span> IS MOST IMPORTANT AND <span>6</span> IS LEAST",
+					"explanation_title" : "Why are you asking me about preference?",
+					"explanation" : "By understanding your dishwashing priorities, we can better recommend a dishwasher with features that suit your lifestyle.",
+					"type" : "rank",
+					"oneAnswer" : true,
+					"answers" : [
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Large Capacity",
+							"value" : "capacity",
+							"scoring" : {
+								 "placeSettings15": 1,
+								 "placeSettings16": 1
+							},
+							"order" : 1
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Noise Level",
+							"value" : "noise",
+							"scoring" : {
+								"quiet" : 1
+							},
+							"order" : 2
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Ease of use",
+							"value" : "ease",
+							"scoring" : {
+								"proScrub": 1,
+								"proWash": 1,
+								"cleanWater": 1
+							},
+							"order" : 3
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Features for Organization",
+							"value" : "organization",
+							"scoring" : {
+								"culinaryCaddy": 1,
+								"thirdLevelRack" : 1
+							},
+							"order" : 4
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Custom cycles",
+							"value" : "cycles",
+							"scoring" : {
+							},
+							"order" : 5
+						},
+						{
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "Energy efficiency",
+							"value" : "energy",
+							"scoring" : {
+								"cleanWater": 1
+							},
+							"order" : 6
+						}
+					]
+				}
+			]
+		},
+		"Dishwashers - Energy" : {
+			"next" : "Dishwashers - Noise1",
+			"previous" : "Dishwashers - Features",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-energy-current.png",
+			"thumbnail_text" : "Energy",
+			"text" : [
+				{
+					"question" : "HOW IMPORTANT IS ENERGY EFFICIENCY TO YOUR HOUSEHOLD?",
+					"sub_question" : "Slide to answer",
+					"explanation_title" : "Why are you asking me about energy?",
+					"explanation" : "All of our machines use energy differently. By understanding your energy use, it will help us find the machine that best fits your lifestyle.",
+					"answer" : 0,
+					"type" : "slider",
+					"oneAnswer" : false,
+					"classes" : "slider-labels four",
+					"options" : {       
+					    "from": 0,
+					    "to": 3,
+					    "step": 0.0001,
+					    "dimension": "",
+					    "scale": ["Not a Concern","somewhat of<br>a concern","Important","Very Important"]       
+					},
+					"answers" : {
+						"0" : {
+							"thumbnail" : "img/icon-energy.png",
+							"thumbnail_current" : "img/icon-energy-current.png",
+							"value" : 0,
+							"text" : "Not a Concern",
+							"scoring" : {
+							}
+						},
+						"1" : {
+							"thumbnail" : "img/icon-energy.png",
+							"thumbnail_current" : "img/icon-energy-current.png",
+							"value" : 1,
+							"text" : "somewhat of<br>a concern",
+							"scoring" : {
+								"cleanWater": 1
+							}
+						},
+						"2" : {
+							"thumbnail" : "img/icon-energy.png",
+							"thumbnail_current" : "img/icon-energy-current.png",
+							"value" : 2,
+							"text" : "Important",
+							"scoring" : {
+								"cleanWater": 2
+							}
+						},
+						"3" : {
+							"thumbnail" : "img/icon-energy.png",
+							"thumbnail_current" : "img/icon-energy-current.png",
+							"value" : 3,
+							"text" : "Very Important",
+							"scoring" : {
+								"cleanWater": 2
+							}
+						}
+					}
+				}											
+			]
+		},
+		"Dishwashers - Noise1" : {
+			"next" : "Dishwashers - Noise2",
+			"previous" : "Dishwashers - Energy",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-noise-current.png",
+			"thumbnail_text" : "Noise",
+			"text" : [
+				{
+					"question" : "When do you run your dishwasher?",
+					"sub_question" : "Select one",
+					"explanation_title" : "Why are you asking me about start time?",
+					"explanation" : "Much like each of your guests, dishwashers have different sound profiles. By understanding your start time we can determine which machine suits you best.",
+					"type" : "radio-4",
+					"oneAnswer" : true,
+					"answers" : [
+						{
+							"thumbnail" : "img/icon-noise.png",
+							"thumbnail_current" : "img/icon-noise-current.png",
+							"text" : "As soon as it's full",
+							"value" : "full",
+							"scoring" : {
+								 "quiet" : 1
+							},
+							"order" : 1
+						},
+						{
+							"thumbnail" : "img/icon-noise.png",
+							"thumbnail_current" : "img/icon-noise-current.png",
+							"text" : "Before I go to bed",
+							"value" : "night",
+							"scoring" : {
+								"quiet" : 1
+							},
+							"order" : 2
+						},
+						{
+							"thumbnail" : "img/icon-noise.png",
+							"thumbnail_current" : "img/icon-noise-current.png",
+							"text" : "Before I head out in the morning",
+							"value" : "morning",
+							"scoring" : {
+							},
+							"order" : 3
+						},
+						{
+							"thumbnail" : "img/icon-noise.png",
+							"thumbnail_current" : "img/icon-noise-current.png",
+							"text" : "Only during off-peak hours",
+							"value" : "offpeak",
+							"scoring" : {
+								"quiet" : 1
+							},
+							"order" : 4
+						}
+					]
+				}
+			]
+		},
+		"Dishwashers - Noise2" : {
+			"next" : "Dishwashers - Flexibility",
+			"previous" : "Dishwashers - Noise1",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-noise-current.png",
+			"thumbnail_text" : "Noise",
+			"text" : [
+				{
+					"question" : "Do you live in an open concept space?",
+					"sub_question" : "Select one",
+					"explanation_title" : "Why are you asking me about my space?",
+					"explanation" : "If you live in an open concept space, we want to take that into consideration to recommend the perfect machine to keep the noise at a minimum.",
+					"type" : "radio-2",
+					"oneAnswer" : true,
+					"answers" : [
+						{
+							"thumbnail" : "img/icon-noise.png",
+							"thumbnail_current" : "img/icon-noise-current.png",
+							"text" : "Yes - My kitchen opens on to another room",
+							"image" : "img/Dishwasher_Q5_MT-open-concept-yes.png",
+							"value" : "yes",
+							"scoring" : {
+								 "quiet" : 1
+							},
+							"order" : 1
+						},
+						{
+							"thumbnail" : "img/icon-noise.png",
+							"thumbnail_current" : "img/icon-noise-current.png",
+							"text" : "No - My kitchen is its own room",
+							"image" : "img/Dishwasher_Q5_MT-open-concept-no.png",
+							"value" : "no",
+							"scoring" : {
+							},
+							"order" : 2
+						}
+					]
+				}
+			]
+		},
+		"Dishwashers - Flexibility" : {
+			"next" : "Dishwashers - Style",
+			"previous" : "Dishwashers - Noise2",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-organization-current.png",
+			"thumbnail_text" : "Organization",
+			"text" : [
+				{
+					"question" : "Before running our dishwasher it is...",
+					"sub_question" : "Select one",
+					"explanation_title" : "Why are you asking me about organization?",
+					"explanation" : "After assessing your technique we can suggest ways to optimize organization for your home.",
+					"type" : "radio-4",
+					"oneAnswer" : true,
+					"answers" : [
+						{
+							"thumbnail" : "img/icon-organization.png",
+							"thumbnail_current" : "img/icon-organization-current.png",
+							"text" : "Full and organized",
+							"value" : "Full and organized",
+							"image" : "img/dishwasher-full-and-tidy.jpg",
+							"scoring" : {
+								 "culinaryCaddy": 1,
+								 "thirdLevelRack": 1
+							},
+							"order" : 1
+						},
+						{
+							"thumbnail" : "img/icon-organization.png",
+							"thumbnail_current" : "img/icon-organization-current.png",
+							"text" : "Full and messy",
+							"value" : "Full and messy",
+							"image" : "img/dishwasher-full-and-messy.jpg",
+							"scoring" : {
+								 "culinaryCaddy": 1,
+								 "thirdLevelRack": 1					
+							},
+							"order" : 2
+						},
+						{
+							"thumbnail" : "img/icon-organization.png",
+							"thumbnail_current" : "img/icon-organization-current.png",
+							"text" : "Halfway filled",
+							"value" : "Halfway filled",
+							"image" : "img/dishwasher-i-still-see-room.jpg",
+							"scoring" : {
+								 "culinaryCaddy": 1
+							},
+							"order" : 3
+						},
+						{
+							"thumbnail" : "img/icon-organization.png",
+							"thumbnail_current" : "img/icon-organization-current.png",
+							"text" : "Almost empty",
+							"value" : "Almost empty",
+							"image" : "img/dishwasher-almost-empty.jpg",
+							"scoring" : {
+							},
+							"order" : 4
+						}
+					]
+				}
+			]
+		},
+		"Dishwashers - Style" : {
+			"next" : null,
+			"previous" : "Dishwashers - Flexibility",
+			"thumbnail_type" : "image",
+			"thumbnail_current" : "img/icon-style-current.png",
+			"thumbnail_text" : "Style",
+			"text" : [
+				{
+					"question" : "Select your style:",
+					"sub_question" : "Select One",
+					"explanation_title" : "Why are you asking me about style?",
+					"explanation" : "Finding the perfect fit for your home's style is as important for us as it is for you.",
+					"type" : "boxes-picture-3-radio",
+					"oneAnswer" : true,
+					"answers" : [
+						{
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "Exterior Handle",
+							"value" : "Exterior Handle",
+							"image" : "img/exterior-handle.png",
+							"scoring" : {	
+								"FID" : 1					
+							},
+							"order" : 1
+						},
+                        { 
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "Pocket Handle",
+							"value" : "Pocket Handle",
+							"image" : "img/pocket-handle.png",
+							"scoring" : {
+								"pocketHandleConsole" : 1
+							},
+							"order" : 2
+						},
+						{
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "Custom Panel",
+							"value" : "Custom Panel",
+							"image" : "img/custom-panel.png",
+							"scoring" : {	
+								"panelReady" : 1					
+							},
+							"order" : 3
+						},
+                        {
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "No Preference",
+							"value" : "No Preference",
+							"image" : "img/no-preference-panel.png",
+							"scoring" : {	
+								"panelReady" : 1					
+							},
+							"order" : 3
+						}
+					]
+				}
+			]
+		}
+	}
+}

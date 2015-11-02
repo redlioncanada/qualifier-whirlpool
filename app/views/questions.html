@@ -1,0 +1,52 @@
+<!-- Application Start Screen -->
+<div class="main-content"> 
+
+	<div class="content-inner">
+		<div class="buttons-top">
+				<!-- Save, Share, Print -->
+				<div ng-controller="ShareCtrl" ng-if="!isTabletWidthOrLess" class="buttons-top-right-btns">
+					<share class="share-wrapper" href=""></share>
+				</div>
+		</div>
+		<!-- Top of main section -->
+		<div class="app-content-main-top">
+			<div class="app-content-main-top-left">
+				<h2 ng-if="(falsey('questionHideOnMobile', questionsData.question.show) && isTabletWidthOrLess) || !isTabletWidthOrLess" ng-bind-html="questionsData.question.show.question"></h2>
+				<h2 class="main-question-more" ng-if="!!questionsData.question.show.question_more"  ng-bind="questionsData.question.show.question_more"></h2>
+				<h3 ng-if="!!questionsData.question.show.sub_question" ng-bind-html="questionsData.question.show.sub_question"></h3>
+
+				<div class="extra-info-wrap">
+					<a class="btn-wrap" ng-class="{'tooltip-open':$root.showTooltip}" ng-if="!!questionsData.question.show.explanation_title">
+						<div class="btn-icon-wrapper">
+							<span class="btn-icon" ng-if="!$root.showTooltip" ng-click="$root.showTooltip = !$root.showTooltip;">
+								<span id="tooltip-glyph">?</span>
+							</span>
+							<span class="btn-icon inverted x"ng-if="$root.showTooltip" ng-click="$root.showTooltip = !$root.showTooltip;">
+								<span id="tooltip-glyph" >+</span>
+							</span>
+						</div>
+						<span class="btn-text" ng-if="!isTabletWidthOrLess" ng-bind="questionsData.question.show.explanation_title"></span>
+						<div class="tooltip">
+							<div class="tooltip-inner" ng-bind="questionsData.question.show.explanation"></div>
+						</div>
+					</a>
+					<a class="btn-wrap" ng-if="!!questionsData.question.show.info_title" tooltip-append-to-body="true" ng-click="$root.showTooltip = !$root.showTooltip" tooltip-trigger="none" tooltip-placement="{{isTabletWidthOrLess ? 'left' : 'bottom'}}" tooltip-toggle="$root.showTooltip" tooltip="{{questionsData.question.show.info}}">
+						<span class="btn-icon">
+							<span>i</span>
+						</span>
+						<span class="btn-text" ng-bind="questionsData.question.show.info_title"></span>
+					</a>	
+				</div>
+			</div>
+		</div>
+		
+
+	<div class="slidey-wrap-all">
+		<div ng-class="{
+				animateLeft: controls.controlClicked == 'next',
+				animateRight: controls.controlClicked == 'previous',
+				active: name==questionsData.question.name
+			}" style="min-width: 1160px" ng-repeat="(name, qs) in questionsData.questions" ng-show="name==questionsData.question.name" ng-if="!!qs.text[0].type" class="slidey app-answers ng-hide" ng-include="'views/answers/'+qs.text[0].type+'.html'">
+		</div>
+	</div>
+</div>

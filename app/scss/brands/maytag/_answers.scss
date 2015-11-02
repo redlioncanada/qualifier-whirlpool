@@ -1,0 +1,768 @@
+
+// .answer-box {
+// 	background: url('img/4-select-2-up-bg.png') center center no-repeat;
+// 	&.select-4 {
+// 		background: url('img/4-select-2-up-bg.png') center center no-repeat;
+// 	}
+// }
+
+
+
+.answers-main-content {
+	// @include
+	// margin-right: 15px;
+	// margin-left: 15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+
+	&.regular-container {
+		width: 550px;
+	}
+	// Radio, checkbox 4 and up as well as split
+	&.regular-4-container {
+		width: 1100px;
+	}
+	&.picture-2-container {
+		width: 770px;
+	}
+	&.picture-3-container {
+		width: 1155px;
+	}
+	&.picture-4-container {
+		width: 1156px;
+	}
+
+	// Boxes icon 2, 5, and split
+	&.boxes-icon-container {
+		width: 1156px;
+	}
+
+	// Two boxes icons or two split
+	&.boxes-icon-2-container {
+		width: 100%;
+
+	}
+	// &.picture-3-container {
+	// 	width: 995px;
+	// }
+
+
+}
+
+.select-icon {
+	display: block;
+	width: 33px;
+	height: 33px;
+	background: url('../img/icon-select-not-selected.png');
+	background-size: contain;
+	position: absolute;
+	top: 20px;
+	left: 24px;
+}
+
+.picture-3 {
+    .select-icon {
+        display: none;
+    }
+}
+
+
+
+.selected {
+  	.img-wrap, .select-label-wrap { // for boxes-picture
+		box-shadow: none !important;
+  	}
+	.select-icon {
+		background: url('../img/icon-select-selected.png');
+		background-size: contain;
+	}
+}
+
+.label-wrap {
+	display: inline-block;
+	text-align: left;
+}
+.label-text {
+	font-family: $AV-Light;
+	font-size: 17px;
+	color: #fff;
+	position: relative;
+	line-height: 17px;
+}
+
+// need to fix this for that really long answer...
+// &.long-answer .label-text {
+// 	font-size: 17px;
+// }
+
+// special cases........
+.longer-label-text {
+	.label-text {
+		font-size: 17px;
+	}
+}
+.answers-main-content {
+	& > :nth-child(4) .family-split { 
+		.label-more-wrap {
+			top: 26px;
+		}
+	}
+	& > :nth-child(5) .family-split {
+		.label-wrap {
+			top: 10px;
+		}
+		.label-more-wrap {
+			top: 26px;
+		}
+	}
+} 
+
+.no-touch {
+	.answer-box {
+		&.boxes-icon-2, &.picture-3, &.boxes-icon-split {
+			&:hover {
+				img.normal {
+					visibility: hidden;
+				}
+				img.hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+.answer-box {
+	transition: all 1s ease;
+	margin-left: 3px;
+	margin-right: 3px;
+	position: relative;
+	// Single select answers
+	&.radio {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&.radio, &.radio-2, &.radio-3, &.radio-4 {
+		display: block;
+		width: 530px;
+		height: 70px;
+        border-radius: 6px;
+		background: url('../img/radio-bg.png');
+		background-size: cover;
+		margin-bottom: 5px;
+		@include boxshadow;
+		.label-wrap {
+			position: absolute;
+			left: 70px;
+			max-width: 83%;
+            width: 83%; 
+            text-align: center; 
+			display: table;
+			height: 70px;
+            text-transform: uppercase;
+
+			.label-text {
+				line-height: 20px;
+				margin: 10px 0;
+				display: table-cell;
+				vertical-align: middle;
+			}
+			&.long-answer {
+				top: 15px;
+			}
+		}
+	}
+	// 4 or more = 2 columns
+	&.radio-2 {
+        margin-left: auto !important;
+        margin-right: auto !important;
+		.select-icon {
+			left: 24px;
+		}
+	}
+	&.radio-4 {
+		display: inline-block;
+		float: left;
+		.select-icon {
+			left: 24px;
+		}
+	}
+	&.form-function {
+		float: left;
+		.label-more-wrap {
+			top: 27px
+		}
+	}
+	// Fancy split bg
+	&.radio-split, &.checkbox-split {
+		width: 532px;
+		height: 70px;
+		background: url('../img/split-bg.png');
+		display: inline-block;
+		margin-bottom: 20px;
+		@include boxshadow;
+		float: left;
+		.label-wrap {
+			position: absolute;
+			left: 70px;
+			max-width: 83%;
+            width: 83%;
+            text-align: center; 
+			display: table;
+			height: 70px;
+            text-transform: uppercase;
+
+			.label-text {
+				line-height: 20px;
+				margin: 10px 0;
+				display: table-cell;
+				vertical-align: middle;
+			}
+			&.long-answer {
+				top: 15px;
+			}
+		}
+		.label-more-wrap {
+			display: inline-block;
+			width: 303px;
+			text-align: left;
+			position: absolute;
+			left: 220px;
+			top: 18px;
+		}
+		.label-text-more {
+			color: #ffffff;
+			font-size: 16px;
+			line-height: 16px;
+			font-family: $AV-Light;
+		}
+	}
+	
+	// Checkbox
+
+	&.checkbox {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&.checkbox, &.checkbox-4 {
+		width: 530px;
+		height: 70px;
+		// background: url('../img/checkbox-bg.png');
+		background: url('../img/radio-bg.png');
+		background-size: cover;
+		display: block;
+		margin-bottom: 5px;
+        border-radius: 3px;
+		@include boxshadow;
+		// .select-icon {
+		// 	top: 19px;
+		// 	left: 23px;
+		// }
+
+		.label-wrap {
+			position: absolute;
+			left: 70px;
+			max-width: 83%;
+            width: 83%;
+            text-align: center; 
+			display: table;
+			height: 70px;
+            text-transform: uppercase;
+
+			.label-text {
+				line-height: 20px;
+				margin: 10px 0;
+				display: table-cell;
+				vertical-align: middle;
+			}
+			&.long-answer {
+				top: 15px;
+			}
+		}
+	}
+	&.checkbox-4 {
+		display: inline-block;
+		float: left;
+		// .label-wrap {
+		// 	position: absolute;
+		// 	left: 100px;
+		// 	top: 23px;
+		// }
+	}
+	&.checkbox, &.checkbox-2 {
+		width: 532px;
+		height: 70px;
+		background: url('../img/radio-bg.png');
+		background-size: cover;
+		display: block;
+		margin-bottom: 5px;
+        border-radius: 3px;
+		@include boxshadow;
+		.label-wrap {
+			position: absolute;
+			top: 22px;
+			left: 100px;
+			max-width: 83%;
+            width: 83%;
+            text-align: center; 
+            text-transform: uppercase;
+
+			.label-text {
+				height: 70px;
+			}
+			&.long-answer {
+				top: 15px;
+				.label-text {
+					line-height: 20px;
+				}
+			}
+		}
+	}
+	&.checkbox-2 {
+		display: inline-block;
+		float: left;
+	}	
+
+	&.picture-2, &.picture-3 {
+		display: inline-block;
+		.img-wrap {
+			display: block;
+			width: 100%;
+			img {
+                position: absolute;
+                width: 93.5%;
+                top: 50%;
+                left: 51%;
+                transform: translate(-50%, -50%);
+			}
+		}
+		/*.select-label-wrap {
+			margin-top: 0px;
+			display: block;
+			width: 100%;
+			height: 49px;
+			border-right: 3px solid #CCC;
+			background: url('../img/boxes-picture-bg-bottom.png');
+			background-size: cover;
+			@include boxshadow;
+		}*/
+		.select-icon {
+			top: 180px;
+			left: 19px;
+		}
+		.label-wrap {
+			position: absolute;
+			bottom: 15px;
+			left: 66px;
+			text-align: left;
+		}
+	}
+	&.picture-3 {
+		float: left;
+	}
+	&.picture-4 {
+		display: inline-block;
+		.img-wrap {
+			display: block;
+			width: 277px;
+			height: 173px;
+			background: url('../img/boxes-picture-4-bg-top.png');
+			@include boxshadow;
+			img {
+				margin-top: 4px;
+				// position: relative;
+				// top: 25px;
+			}
+		}
+		.select-label-wrap {
+			margin-top: -1px;
+			display: block;
+			width: 277px;
+			height: 50px;
+			background: url('../img/boxes-picture-4-bg-bottom.png');
+			@include boxshadow;
+		}
+		.select-icon {
+			top: 181px;
+			left: 19px;
+		}
+		.label-wrap {
+			position: absolute;
+			bottom: 16px;
+			left: 66px;
+			text-align: left;
+		}
+	}
+	// Single select with icons - 2 answers
+	&.boxes-icon-2, &.picture-3, &.boxes-icon-split { // + Multiselect with icons - 5 answers
+		// @include make-md-column(6);
+		width: 213px;
+		height: 205px;
+		display: inline-block;
+        border-radius: 50%;
+        margin-bottom: 60px;
+		.icon-wrap, .img-wrap {
+            background: url('../img/icon-bg-big.png') no-repeat;
+            background-position: 50% 0;
+            background-size: contain;
+            height: 100%;
+            width:  100%;
+			img.normal, img.hover {
+				position: relative;
+                top: 50%;
+                -webkit-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+			}
+            img.hover {
+                opacity: 0;
+                top: -27px;
+            }
+		}
+		.select-icon {
+			top: 161px;
+			left: 15px;
+            display: none;
+		}
+		.label-wrap {
+			position: absolute;
+			bottom: -50px;
+            left: 50%;
+            -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+            
+            .label-text {
+                color: #747474;
+                font-weight: 800;
+                width: 190px;
+                text-align: center;
+            }
+            .label-sub-text {
+                color: #747474;
+                width: 175px;
+                text-align: center;
+                font-size: 10px;
+            }
+		}
+        
+        &.picture-3 {
+            .img-wrap {
+                .normal, .hover {
+                    width: 93.5%;
+                    top: 47.1%;
+                    left: 1.8px;
+                    visibility: visible !important;
+                }
+                .normal:hover {
+                    visibility: visible !important;
+                }
+            }
+        }
+		
+		// img.normal,  {
+		// 	display: block;
+		// 	// -webkit-transition: opacity 0.3s ease-in-out;
+		// 	// -moz-transition: opacity 0.3s ease-in-out;
+		// 	// -o-transition: opacity 0.3s ease-in-out;
+		// 	// transition: opacity 0.3s ease-in-out;
+		// }
+		&.selected {
+			img.normal {
+				opacity: 0;
+			}
+			img.hover {
+				opacity: 1;
+			}
+		}
+	}
+	&.boxes-icon-split {
+		.select {
+			left: 13px;
+		}
+		.label-wrap {
+			position: absolute;
+			bottom: -15px;
+			left: 0;
+            width: 100%;
+            span {
+                color: #737373;
+                text-align: center;
+                position: inherit;
+                width: 100%;
+                font-weight: 800;
+                font-size: 25px;
+            }
+		}
+		.label-more-wrap {
+			display: inline-block;
+			width: 303px;
+			text-align: left;
+			position: absolute;
+			left: 220px;
+			top: 18px;
+		}
+		.label-text-more {
+			color: #ffffff;
+			font-size: 16px;
+			line-height: 16px;
+			font-family: $AV-Light;
+		}
+	}
+	
+	// &.picture-3 {
+		// // @include make-md-column(6);
+		// width: 183px;
+		// height: 217px;
+		// background: url('../img/icon-thumb-bg.png');
+		// display: inline-block;
+		// position: relative;
+		// .icon-wrap {
+		// 	img {
+		// 		position: relative;
+		// 		top: 25px;
+		// 	}
+		// }
+		// .select-icon {
+		// 	top: 170px;
+		// 	left: 19px;
+		// }
+		// .label-wrap {
+		// 	position: absolute;
+		// 	bottom: 21px;
+		// }
+	// }
+}
+
+.picture-4-container {
+	.answer-box {
+		margin-left: 8px;
+		margin-right: 8px;
+		&:nth-child(1) {
+			margin-left: 0;
+		}
+		&:nth-child(4) {
+			margin-right: 0;
+		}
+	}
+}
+
+
+// temporary
+// .answer-box {
+// 	width: 285px;
+//   	height: 59px;
+//   	background: url('../img/4-select-4-up-bg.png');
+// }
+
+// width: 374px;
+// height: 59px;
+// background: url('../img/2-select-bg.png');
+
+// width: 544px;
+// height: 83px;
+// background: url('../img/4-select-2-up-bg.png');
+
+// width: 284px;
+// height: 59px;
+// background: url('../img/4-select-4-up-bg.png');
+
+
+// width: 285px;
+// height: 192px;
+// background: url('../img/4-select-4-up-item-bg.png');
+
+// width: 545px;
+// height: 84px;
+// background: url('../img/select-with-blue-bg.png');
+
+// width: 33px;
+// height: 33px;
+// background: url('../img/not-selected-box.png');
+
+// width: 861px;
+// height: 42px;
+// background: url('../img/slider-bg.png');
+
+
+// Ranking
+.as-sortable-item {
+	border: none;
+}
+.ranking {
+	position:relative;
+	ul, li, a {
+		-webkit-touch-callout: none;
+	    -webkit-user-select: none;
+	    -khtml-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	}
+	ul {
+		list-style: none;
+        padding-left: 0;
+	}
+	li {
+		background-color: #ececec;
+	}
+	li:last-child {
+		margin-bottom: 0 !important;
+	}
+	.rank-numbers-list {
+		display: inline-block;
+        background-color: #ececec;
+        position:absolute;
+        padding: 5px;
+        margin-right: -4px;
+	}
+	.rank-answers-list {
+		display: inline-block;
+        padding-left: 0;
+        height: 100% !important;
+        position: relative;
+        background-color: #ececec;
+        padding: 5px;
+        margin-left: 76px;
+		li {
+			height: 62.1px;
+            margin-bottom: 0;
+            margin: 0px 2px 4.1px 1px;
+            text-align: center;
+		}
+	}
+	.rank-numbers-list li {
+		width: 63px;
+		height: 61px;
+	}
+	.rank-number-wrap {
+		float: left;
+		margin-right: 4px;
+		@include large-square-label-wrap;
+		.rank-number {
+			@include large-square-label;
+		}	
+	}
+	.label-wrap {
+		display: inline-block;
+		width: 566px;
+		height: 62.2px;
+		background: url('../img/ranking-bg.png') no-repeat;
+        background-position: 0 -2px;
+        background-size: 100% 102%;
+        border-radius: 6px;
+        padding-left: 0 !important;
+        text-align: center;
+	}
+	.label-text {
+		top: 22px;
+        text-transform: uppercase;
+        text-align: center;
+	}
+	
+}
+
+li.dragging-rank {
+	height: 62.1px;
+    margin-bottom: 0;
+    margin: 0px 2px 4.1px 1px;
+    text-align: center;
+    list-style: none;
+    pointer-events: none;
+    -webkit-box-shadow: 7px 7px 23px -5px rgba(0,0,0,0.5);
+	-moz-box-shadow: 7px 7px 23px -5px rgba(0,0,0,0.5);
+	box-shadow: 7px 7px 23px -5px rgba(0,0,0,0.5);
+	background-color: transparent;
+
+    .rank-number-wrap {
+    	display: none;
+    }
+    .label-wrap {
+		display: inline-block;
+		width: 566px;
+		height: 62.2px;
+		background: url('../img/ranking-bg.png') no-repeat;
+		background-color: transparent;
+        background-position: 0 -2px;
+        background-size: 100% 102%;
+        border-radius: 6px;
+        padding-left: 0 !important;
+        text-align: center;
+	}
+	.label-text {
+		top: 17px;
+        text-transform: uppercase;
+        text-align: center;
+	}
+}
+
+// Slider labels
+
+.slider-label-wrap {
+	@include large-square-label-wrap;
+	.slider-label {
+		@include large-square-label;
+	}
+}
+
+.carousel {
+	.carousel-indicators {
+		display: none !important;
+	}
+	.carousel-control {
+		.right, .left {
+			background: none !important;
+		}
+	}
+	.carousel-control {
+		span {
+			background: #172F57;
+			width: 50px;
+			height: 50px;
+			border-radius: 50px;
+
+		}
+	}
+	.right .carousel-control {
+		span {
+			&:before {
+
+			}
+		}
+	}
+	.left .carousel-control {
+		span {
+			&:before {
+				
+			}
+		}
+	}
+	.carousel-caption {
+		bottom: -50px;
+	}
+}
+
+//french css begin
+div[ng-class="fr_CA"] {
+	.picture-3-container {
+		.label-wrap {
+			display: inline-block;
+			text-align: left;
+			height: 48px;
+			bottom: 4px;
+			display: table;
+		}
+		.label-text {
+			font-family: $AV-Light;
+			font-size: 17px;
+			color: #272727;
+			position: relative;
+			line-height: 17px;
+			display: table-cell;
+			vertical-align: middle;
+			max-width: 108px;
+			font-size: 12pt;
+		}
+	}
+}

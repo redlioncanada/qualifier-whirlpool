@@ -1,0 +1,64 @@
+<!--mobile start-->
+	<header class="header-mobile">
+		<a href="http://kitchenaid.ca"><div class="brand">
+			<img src="./img/img_logo.png"/>
+		</div></a>
+		<a href="http://kitchenaid.ca"><div class="home header-button">
+			<img src="./img/menu.png"/>
+			<div>Home</div>
+		</div></a>
+		<a href="http://kitchenaid.ca/en_CA/find-a-store"><div class="stores header-button">
+			<img src="./img/stores.png"/>
+			<div>Stores</div>
+		</div></a>
+	</header>
+	<!--mobile end-->
+	<!--desktop start-->
+<header class="header-desktop">
+<div id="upper-wrap"></div>
+<div id="header-wrap">
+	<div class="header-content-wrap">
+		<div class="upper">
+			<ul class="pull-left">
+				<li><a href="http://kitchenaid.ca/en_CA/find-a-store">Find a retailer</a></li>
+				<li><a href="http://kitchenaid.ca/en_CA/contact-us">Contact us</a></li>
+				<li><a href="http://kitchenaid.ca/en_CA/promotions">Special offers</a></li>
+			</ul>
+			<div class="pull-right">
+				<script>
+					$('.search-textbox').keypress(function(e) {
+						if (e.which == 13 || e.keyCode == 13) {
+							e.preventDefault();
+							doSearch();
+						}
+					});
+
+					$('.search-textbox-icon').click(function(e){
+						doSearch();
+					});
+
+					function doSearch() {
+						var val = $('.search-textbox').val();
+						if (!val) return;
+						window.location = 'http://www.kitchenaid.ca/webapp/wcs/stores/servlet/WHRORNAjaxCatalogSearchView?storeId=10231&catalogId=10581&langId=-300&beginIndex=0&searchTerm=' + val;
+					}
+				</script>
+				<input type="text" name="searchTerm" placeholder="SEARCH" class="search-textbox">
+				<img class="search-textbox-icon" src="img/search-icon.jpg"/>
+				<p class="language pull-left"><a href="http://trouvermon.mykitchenaid.ca">Français</a></p>
+			</div>
+			<a class="logo pull-left"><img src="http://www.kitchenaid.ca/wcs/images/img_logo.png"/></a>
+		</div>
+		<div class="lower">
+			<ul class="menu">
+				<li><a href="http://kitchenaid.ca/en_CA/major-appliances">Major Appliances</a></li>
+				<li><a href="http://kitchenaid.ca/en_CA/countertop-appliances">Countertop Appliances</a></li>
+				<li><a href="http://kitchenaid.ca/en_CA/kitchenware">Kitchenware</a></li>
+				<li><a href="http://kitchenaid.ca/en_CA/major-appliances">Accessories</a></li>
+				<li><a href="http://kitchenaid.ca/en_CA/customer-service">Service & Support</a></li>
+				<li><a href="http://kitchenaid.ca/en_CA/culinary-inspiration">Culinary Inspiration</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</header>

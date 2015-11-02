@@ -1,0 +1,51 @@
+// Maytag Fonts
+
+// @font-face {
+// 	font-family: 'Akzidenz Grotesk';
+//     src: url('../fonts/freight_display_book-webfont.eot');
+//     src: url('../fonts/freight_display_book-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/freight_display_book-webfont.woff') format('woff'),
+//          url('../fonts/AkzidGroStdBolCnd.ttf') format('truetype'),
+//          url('../fonts/freight_display_book-webfont.svg#freightdispbookregular') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+@font-face {
+	font-family: 'Avenir-Black';
+    src: url('../fonts/Avenir-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Avenir-Light';
+    src: url('../fonts/Avenir-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Avenir-Medium';
+    src: url('../fonts/Avenir-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Avenir-Roman';
+    src: url('../fonts/Avenir-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$AV-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$AV-Black: 'Avenir-Black', $AV-stack;
+$AV-Light: 'Avenir-Light', $AV-stack;
+$AV-Medium: 'Avenir-Medium', $AV-stack;
+$AV-Roman: 'Avenir-Roman', $AV-stack;
+
+* {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+
