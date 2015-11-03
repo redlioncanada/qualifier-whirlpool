@@ -1,3 +1,5 @@
+//paste in app.js after $resource("config/"+$rootScope.brand+"-"+$rootScope.locale+".json").get({}, function (res, headers) {
+
 // check(res.questions["Appliance"].text[0].answers[0],undefined,true);
 // check(res.questions["Appliance"].text[0].answers[2],undefined,true);
 // check(res.questions["Appliance"].text[0].answers[3],undefined,true);
