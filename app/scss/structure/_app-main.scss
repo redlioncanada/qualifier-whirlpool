@@ -473,11 +473,10 @@ a.answer-box.picture-4 {
 		}
 
 		a.answer-box.checkbox-4, a.answer-box.radio-2, a.answer-box.radio-3, a.answer-box.radio-4 {
-			border-right: 4px solid #999999;
 			width: 445px;
 
 			.label-wrap {
-				left: 72px;
+				left: 25px;
 				max-width: 80%;
 			}
 		}
@@ -1171,7 +1170,6 @@ a.answer-box.picture-4 {
 	a.answer-box.checkbox-4, a.answer-box.radio-2, a.answer-box.radio-3, a.answer-box.radio-4 {
 		width: 90%;
 		height: 55px;
-		border-right: 4px solid #999999;
 		margin: 6px auto;
 
 		.selected .select-icon {
@@ -1187,7 +1185,7 @@ a.answer-box.picture-4 {
 		}
 
 		.label-wrap {
-			left: 62px;
+			left: 25px;
 			height: 100%;
 			max-width: 75%;
 		}

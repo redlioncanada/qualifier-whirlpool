@@ -14,13 +14,13 @@ header.header-desktop {
 .app-content-main-top {
 	width: 1160px;
 	margin: 0 auto;
-	height: 128px;
+	height: 160px;
 
 	h2, h3 {
 		font-family: $AV-Light;
 	}
 	h2 {
-		color: #292929;
+		color: #aea8a6;
 		letter-spacing: 1px;
 	}
 	h2.main-question-more {
@@ -55,34 +55,34 @@ header.header-desktop {
 			opacity: 1;
 		}
 		.btn-icon {
-			background: #002e58;
-			border-radius: 24px;
-			width: 24px;
-			height: 24px;
+			background: transparent;
+			width: 20px;
+			height: 20px;
 			text-align: center;
 			display: inline-block;
             cursor: pointer;
+            border: 1px #edb129 solid;
 			span {
 				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-				color: #fff;
-				font-size: 20px;
+				color: #edb129;
+				font-size: 15px;
 				position: relative;
 				bottom: 2px;
 				display: block;
 				float: left;
 				text-align: center;
 				width: 100%;
+                font-weight: 800;
 			}
 
 		}
 		.btn-text {
 			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-			color: #000;
+			color: #555;
 			font-size: 9px;
 			position: relative;
 			left: 5px;
-			bottom: 9px;
-			text-transform: uppercase;
+			bottom: 6px;
 		}
 	}
 }
@@ -275,7 +275,7 @@ header.header-desktop {
 
 	.backtoresults-btn-wrap {
 		display: inline-block;
-	    border-left: solid 1px #002e58;
+	    border-left: solid 1px #a7a7a7;
 	    padding-left: 20px;
 	    margin-left: 20px;
 		//position: absolute;
@@ -285,22 +285,29 @@ header.header-desktop {
 		float: right; 
 		.btn-backtoresults {
 			font-family: $AV-Light;
-			@include button-variant(#ffffff, #002e58, #002e58);
+			@include button-variant(#ffffff, transparent, #a7a7a7);
 			width: 44px;
 			height: 40px;
 			font-size: 10px;
 			text-align: center;
 			//padding: 3px 18px;
 			padding-left: 5px;
-		    padding-top: 10px;
+		    padding-top: 12px;
 		    line-height: 1;
 			line-spacing: 1;
 			text-transform: uppercase;
+            border-radius: 0;
+            color: #a7a7a7 !important;
+            font-size: 8px;
+		}
+        .btn-backtoresults:hover {
+			@include button-variant(#ffffff, transparent, #edb129);
+            color: #edb129 !important;
 		}
 	}
 	.startover-btn-wrap {
 		display: inline-block;
-	    border-left: solid 1px #002e58;
+	    border-left: solid 1px #a7a7a7;
 	    padding-left: 20px;
 	    margin-left: 20px;
 		//position: absolute;
@@ -310,17 +317,24 @@ header.header-desktop {
 		float: right; 
 		.btn-startover {
 			font-family: $AV-Light;
-			@include button-variant(#ffffff, #002e58, #002e58);
+			@include button-variant(#ffffff, transparent, #a7a7a7);
 			width: 40px;
 			height: 40px;
 			font-size: 12px;
 			//padding: 3px 18px;
 			padding-left: 6px;
-		    padding-top: 8px;
+		    padding-top: 10px;
 		    text-align: center;
 		    line-height: 1;
 			line-spacing: 1;
 			text-transform: uppercase;
+            border-radius: 0;
+            color: #a7a7a7 !important;
+            font-size: 10px;
+		}
+        .btn-startover:hover {
+			@include button-variant(#ffffff, transparent, #edb129);
+            color: #edb129 !important;
 		}
 	}
 }
