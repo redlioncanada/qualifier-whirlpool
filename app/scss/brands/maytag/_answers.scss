@@ -41,10 +41,10 @@
 
 	// Two boxes icons or two split
 	&.boxes-icon-2-container {
-		width: 100%;
+		width: 398px;
 
 	}
-	// &.picture-3-container {
+	// &.boxes-icon-5-container {
 	// 	width: 995px;
 	// }
 
@@ -60,12 +60,6 @@
 	position: absolute;
 	top: 20px;
 	left: 24px;
-}
-
-.picture-3 {
-    .select-icon {
-        display: none;
-    }
 }
 
 
@@ -85,9 +79,9 @@
 	text-align: left;
 }
 .label-text {
-	font-family: $AV-Light;
+	font-family: $AG-Bold-Cnd;
 	font-size: 17px;
-	color: #fff;
+	color: #444;
 	position: relative;
 	line-height: 17px;
 }
@@ -121,7 +115,7 @@
 
 .no-touch {
 	.answer-box {
-		&.boxes-icon-2, &.picture-3, &.boxes-icon-split {
+		&.boxes-icon-2, &.boxes-icon-5, &.boxes-icon-split {
 			&:hover {
 				img.normal {
 					visibility: hidden;
@@ -136,8 +130,8 @@
 
 .answer-box {
 	transition: all 1s ease;
-	margin-left: 3px;
-	margin-right: 3px;
+	margin-left: 9px;
+	margin-right: 9px;
 	position: relative;
 	// Single select answers
 	&.radio {
@@ -146,22 +140,19 @@
 	}
 	&.radio, &.radio-2, &.radio-3, &.radio-4 {
 		display: block;
-		width: 530px;
+		width: 532px;
 		height: 70px;
-        border-radius: 6px;
+
 		background: url('../img/radio-bg.png');
 		background-size: cover;
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 		@include boxshadow;
 		.label-wrap {
 			position: absolute;
-			left: 70px;
-			max-width: 83%;
-            width: 83%; 
-            text-align: center; 
+			left: 88px;
+			max-width: 80%;
 			display: table;
 			height: 70px;
-            text-transform: uppercase;
 
 			.label-text {
 				line-height: 20px;
@@ -176,8 +167,8 @@
 	}
 	// 4 or more = 2 columns
 	&.radio-2 {
-        margin-left: auto !important;
-        margin-right: auto !important;
+		display: inline-block;
+		float: left;
 		.select-icon {
 			left: 24px;
 		}
@@ -206,13 +197,10 @@
 		float: left;
 		.label-wrap {
 			position: absolute;
-			left: 70px;
-			max-width: 83%;
-            width: 83%;
-            text-align: center; 
+			left: 88px;
+			max-width: 80%;
 			display: table;
 			height: 70px;
-            text-transform: uppercase;
 
 			.label-text {
 				line-height: 20px;
@@ -236,7 +224,7 @@
 			color: #ffffff;
 			font-size: 16px;
 			line-height: 16px;
-			font-family: $AV-Light;
+			font-family: $AG-Bold-Cnd;
 		}
 	}
 	
@@ -248,14 +236,13 @@
 	}
 
 	&.checkbox, &.checkbox-4 {
-		width: 530px;
+		width: 532px;
 		height: 70px;
 		// background: url('../img/checkbox-bg.png');
 		background: url('../img/radio-bg.png');
 		background-size: cover;
 		display: block;
-		margin-bottom: 5px;
-        border-radius: 3px;
+		margin-bottom: 10px;
 		@include boxshadow;
 		// .select-icon {
 		// 	top: 19px;
@@ -264,13 +251,10 @@
 
 		.label-wrap {
 			position: absolute;
-			left: 70px;
-			max-width: 83%;
-            width: 83%;
-            text-align: center; 
+			left: 88px;
+			max-width: 80%;
 			display: table;
 			height: 70px;
-            text-transform: uppercase;
 
 			.label-text {
 				line-height: 20px;
@@ -298,17 +282,13 @@
 		background: url('../img/radio-bg.png');
 		background-size: cover;
 		display: block;
-		margin-bottom: 5px;
-        border-radius: 3px;
+		margin-bottom: 10px;
 		@include boxshadow;
 		.label-wrap {
 			position: absolute;
 			top: 22px;
 			left: 100px;
-			max-width: 83%;
-            width: 83%;
-            text-align: center; 
-            text-transform: uppercase;
+			max-width: 80%;
 
 			.label-text {
 				height: 70px;
@@ -331,15 +311,15 @@
 		.img-wrap {
 			display: block;
 			width: 100%;
+			@include boxshadow;
 			img {
-                position: absolute;
-                width: 93.5%;
-                top: 50%;
-                left: 51%;
-                transform: translate(-50%, -50%);
+				margin-top: 4px;
+				width: 100%;
+				// position: relative;
+				// top: 25px;
 			}
 		}
-		/*.select-label-wrap {
+		.select-label-wrap {
 			margin-top: 0px;
 			display: block;
 			width: 100%;
@@ -348,7 +328,7 @@
 			background: url('../img/boxes-picture-bg-bottom.png');
 			background-size: cover;
 			@include boxshadow;
-		}*/
+		}
 		.select-icon {
 			top: 180px;
 			left: 19px;
@@ -382,7 +362,7 @@
 			display: block;
 			width: 277px;
 			height: 50px;
-			background: url('../img/boxes-picture-4-bg-bottom.png');
+			background: url('../img/boxes-picture-bg-bottom.png');
 			@include boxshadow;
 		}
 		.select-icon {
@@ -397,69 +377,36 @@
 		}
 	}
 	// Single select with icons - 2 answers
-	&.boxes-icon-2, &.picture-3, &.boxes-icon-split { // + Multiselect with icons - 5 answers
+	&.boxes-icon-2, &.boxes-icon-5, &.boxes-icon-split { // + Multiselect with icons - 5 answers
 		// @include make-md-column(6);
-		width: 213px;
-		height: 205px;
+		width: 172px;
+		height: 204px;
+		background: url('../img/boxes-icon-bg-new.png');
 		display: inline-block;
-        border-radius: 50%;
-        margin-bottom: 60px;
-		.icon-wrap, .img-wrap {
-            background: url('../img/icon-bg-big.png') no-repeat;
-            background-position: 50% 0;
-            background-size: contain;
-            height: 100%;
-            width:  100%;
-			img.normal, img.hover {
+        background-repeat: no-repeat;
+		@include boxshadow;
+		.icon-wrap {
+			img {
 				position: relative;
-                top: 50%;
-                -webkit-transform: translate(0%, -50%);
-                transform: translate(0%, -50%);
+				top: 12px;
 			}
-            img.hover {
-                opacity: 0;
-                top: -27px;
-            }
 		}
 		.select-icon {
 			top: 161px;
 			left: 15px;
-            display: none;
 		}
 		.label-wrap {
 			position: absolute;
-			bottom: -50px;
-            left: 50%;
-            -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-            
-            .label-text {
-                color: #747474;
-                font-weight: 800;
-                width: 190px;
-                text-align: center;
-            }
-            .label-sub-text {
-                color: #747474;
-                width: 175px;
-                text-align: center;
-                font-size: 10px;
-            }
+			bottom: 18px;
+			left: 60px;
 		}
-        
-        &.picture-3 {
-            .img-wrap {
-                .normal, .hover {
-                    width: 93.5%;
-                    top: 47.1%;
-                    left: 1.8px;
-                    visibility: visible !important;
-                }
-                .normal:hover {
-                    visibility: visible !important;
-                }
-            }
-        }
+
+		img.hover {
+			top: 12px;
+			left: 20px;
+			position: absolute;
+			opacity: 0;
+		}
 		
 		// img.normal,  {
 		// 	display: block;
@@ -483,17 +430,8 @@
 		}
 		.label-wrap {
 			position: absolute;
-			bottom: -15px;
-			left: 0;
-            width: 100%;
-            span {
-                color: #737373;
-                text-align: center;
-                position: inherit;
-                width: 100%;
-                font-weight: 800;
-                font-size: 25px;
-            }
+			bottom: 15px !important;
+			left: 55px;
 		}
 		.label-more-wrap {
 			display: inline-block;
@@ -507,11 +445,11 @@
 			color: #ffffff;
 			font-size: 16px;
 			line-height: 16px;
-			font-family: $AV-Light;
+			font-family: $AG-Bold-Cnd;
 		}
 	}
 	
-	// &.picture-3 {
+	// &.boxes-icon-5 {
 		// // @include make-md-column(6);
 		// width: 183px;
 		// height: 217px;
@@ -650,7 +588,7 @@
 		height: 62.2px;
 		background: url('../img/ranking-bg.png') no-repeat;
         background-position: 0 -2px;
-        background-size: 100% 102%;
+        background-size: 100% 100%;
         border-radius: 6px;
         padding-left: 0 !important;
         text-align: center;
@@ -685,7 +623,7 @@ li.dragging-rank {
 		background: url('../img/ranking-bg.png') no-repeat;
 		background-color: transparent;
         background-position: 0 -2px;
-        background-size: 100% 102%;
+        background-size: 100% 100%;
         border-radius: 6px;
         padding-left: 0 !important;
         text-align: center;
@@ -696,6 +634,7 @@ li.dragging-rank {
         text-align: center;
 	}
 }
+
 
 // Slider labels
 
@@ -745,7 +684,7 @@ li.dragging-rank {
 
 //french css begin
 div[ng-class="fr_CA"] {
-	.picture-3-container {
+	.boxes-icon-5-container {
 		.label-wrap {
 			display: inline-block;
 			text-align: left;
@@ -754,7 +693,7 @@ div[ng-class="fr_CA"] {
 			display: table;
 		}
 		.label-text {
-			font-family: $AV-Light;
+			font-family: $AG-Bold-Cnd;
 			font-size: 17px;
 			color: #272727;
 			position: relative;

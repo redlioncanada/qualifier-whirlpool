@@ -81,6 +81,9 @@
 
 			&:nth-child(1), &:nth-child(3)  {
 				.result-wrap {
+					border-radius: 5px;
+					background-color: rgba(76, 76, 76, 0);
+					box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.28);
 					width: 100%;
 				}
 			}
@@ -89,6 +92,9 @@
 				margin-left: 20px;
 				margin-right: 20px;
 				.result-wrap {
+					border-radius: 5px;
+					background-color: rgb(255, 255, 255);
+					box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.28);
 					width: 100%;
 				}
 				.result-inner {
@@ -112,6 +118,9 @@
 					margin-left: auto;
 					margin-right: auto;
 				}
+			}
+			.result-wrap {
+				padding: 5px;
 			}
 			.result-inner {
 					
@@ -162,7 +171,7 @@ by Jacoub Bondre */
     .price-slider {
         margin-bottom: 25px;
 		.jslider {
-			width: 93.5%; 
+			width: 91.5%; 
 		}
 	}
     .share-wrapper{
@@ -175,7 +184,7 @@ by Jacoub Bondre */
 		// margin-left: 100px;
 
 		.jslider-bg {
-			width: 460px !important;
+			width: 500px !important;
 			height: 23px !important;
 		}
 	}
@@ -253,10 +262,10 @@ by Jacoub Bondre */
             
             h3, span {
                 color: #767676;
-                font-size: 11px;
+                font-size: 12px;
                 text-transform: uppercase;
-                font-family: "Avenir-Black",'Helvetica Neue', Helvetica, Arial, sans-serif;
-                margin-top: 0px;
+                font-family: 'Akzidenz Grotesk Bold Condensed';
+                margin-top: 5px;
                 display: block;
             }
             
@@ -265,9 +274,9 @@ by Jacoub Bondre */
                 padding: 10%;
             }
             .active {
-                font-size: 11px;
-                color: #ac080f;
-                border-bottom: 9px solid #ac080f;
+                font-size: 13px;
+                color: #002e5f;
+                border-bottom: 9px solid #002e5f;
                 padding-bottom: 2px;
                 margin-top: 0px;
             }
@@ -391,16 +400,6 @@ by Jacoub Bondre */
         margin-top: 0px !important;
         margin-bottom: 0px !important;
         padding: 0px !important;
-        height: auto !important;
-        
-        .product-sku, .product-price {
-            display: block !important;
-            font-family: 'Avenir-Medium','Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            color: #747474;
-            letter-spacing: 0.5px;
-        }
 	}
 	.product-features-title {
         //
