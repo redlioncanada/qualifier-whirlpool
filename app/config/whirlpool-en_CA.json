@@ -234,15 +234,15 @@
 			"next" : "Cooking - Wall Ovens - Features",
 			"previous" : "Cooking - Wall Ovens - Size",
 			"thumbnail_type" : "image",
-			"thumbnail_text" : "Features",
-			"thumbnail_current" : "img/icon-features-current.png",
+			"thumbnail_text" : "Orientation",
+			"thumbnail_current" : "img/icon-orientation-current.png",
 			"text" : [
 				{
 					"question" : "What style of wall oven are you looking for?",
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about orientation?",
 					"explanation" : "Our wall ovens come in different orientation options. We want to get a better idea of your preference so that we can recommend the perfect one for your home.",
-					"type" : "boxes-picture-3-radio",
+					"type" : "boxes-picture-4-radio",
 					"oneAnswer" : true,
 					"answers" : [
 						{
@@ -250,7 +250,7 @@
 							"thumbnail_current" : "img/icon-features-current.png",
 							"text" : "Single Oven",
 							"value" : "single",
-							"image" : "img/Cooking-Q2-single.png",
+							"image" : "img/Walloven-Q2-single.jpg",
 							"scoring" : {
 								"single" : 3
 							},
@@ -261,7 +261,7 @@
 							"thumbnail_current" : "img/icon-features-current.png",
 							"text" : "Microwave Oven Combo",
 							"value" : "combo",
-							"image" : "img/Cooking-Q2-combo.png",
+							"image" : "img/Walloven-Q2-combo.jpg",
 							"scoring" : {
 								"combination" : 3
 							},
@@ -272,9 +272,19 @@
 							"thumbnail_current" : "img/icon-features-current.png",
 							"text" : "Double Oven",
 							"value" : "double",
-							"image" : "img/Cooking-Q2-double.png",
+							"image" : "img/Walloven-Q2-double.jpg",
 							"scoring" : {
 								"double" : 3
+							},
+							"order" : 3
+						},
+                        {
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "No Preference",
+							"value" : "nopreference",
+							"image" : "img/Walloven-Q2-nopreference.jpg",
+							"scoring" : {
 							},
 							"order" : 3
 						}
@@ -286,8 +296,8 @@
 			"next" : "Cooking - Wall Ovens - Lifestyle",
 			"previous" : "Cooking - Wall Ovens - Orientation",
 			"thumbnail_type" : "image",
-			"thumbnail_text" : "Energy",
-			"thumbnail_current" : "img/icon-energy-current.png",
+			"thumbnail_text" : "Features",
+			"thumbnail_current" : "img/icon-features-current.png",
 			"text" : [
 				{
 					"question" : "When shopping for a wall oven, what's most important to you?",
@@ -366,8 +376,8 @@
 			"next" : "Cooking - Wall Ovens - Energy",
 			"previous" : "Cooking - Wall Ovens - Features",
 			"thumbnail_type" : "image",
-			"thumbnail_text" : "Features",
-			"thumbnail_current" : "img/icon-features-current.png",
+			"thumbnail_text" : "Lifestyle",
+			"thumbnail_current" : "img/icon-lifestyle-current.png",
 			"text" : [
 				{
 					"question" : "How would your family describe you?",
@@ -488,7 +498,7 @@
 			"next" : "Cooking - Ranges - Capacity",
 			"previous" : "Cooking - Pre-Qualifier 1",
 			"thumbnail_type" : "image",
-			"thumbnail_text" : "Energy",
+			"thumbnail_text" : "Features",
 			"thumbnail_current" : "img/icon-features-current.png",
 			"text" : [
 				{
@@ -624,7 +634,7 @@
 			"previous" : "Cooking - Ranges - Capacity",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-lifestyle-current.png",
-			"thumbnail_text" : "Style",
+			"thumbnail_text" : "Lifestyle",
 			"text" : [
 				{
 					"question" : "Why do you cook?",
@@ -689,7 +699,7 @@
 		"Cooking - Ranges - Lifestyle" : {
 			"next" : "Cooking - Ranges - Fuel Type",
 			"previous" : "Cooking - Ranges - Cooking",
-			"thumbnail_text" : "Convection",
+			"thumbnail_text" : "Lifestyle",
 			"thumbnail_current" : "img/icon-lifestyle-current.png",
 			"thumbnail_type" : "image",
 			"text" : [
@@ -798,7 +808,7 @@
 		"Cooking - Ranges - Range Style" : {
 			"next" : null,
 			"previous" : "Cooking - Ranges - Fuel Type",
-			"thumbnail_text" : "Fuel Type",
+			"thumbnail_text" : "Style",
 			"thumbnail_current" : "img/icon-style-current.png",
 			"thumbnail_type" : "image",
 			"text" : [
@@ -807,13 +817,12 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about style?",
 					"explanation" : "Did you know that professional kitchens usually have front control ranges? Once we understand your style preference, we can recommend your perfect range.",
-					"type" : "boxes-icon-split-radio",
+					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
 					"answers" : [
 						{
 							"text" : "Front Control",
-							"image" : "img/icon-thumb-gas.png",
-							"hover" : "img/icon-thumb-gas-active.png",
+							"image" : "img/Range-Q6-front.jpg",
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "yes",
@@ -824,8 +833,7 @@
 						},
 						{
 							"text" : "Rear Control",
-							"image" : "img/icon-thumb-electric.png",
-							"hover" : "img/icon-thumb-electric-active.png",
+							"image" : "img/Range-Q6-rear.jpg",
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "no",
@@ -836,8 +844,7 @@
 						},
 						{
 							"text" : "No Preference",
-							"image" : "img/icon-thumb-electric.png",
-							"hover" : "img/icon-thumb-electric-active.png",
+							"image" : "img/Range-Q6-nopreference.jpg",
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "nopref",
@@ -1128,7 +1135,7 @@
 						{
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
-							"image" : "img/Laundry-Q4-stacked.jpg",
+							"image" : "img/Laundry-Q5-stacked.jpg",
 							"text" : "Stacked",
 							"value" : "Stacked",
 							"scoring" : {
@@ -1140,7 +1147,7 @@
 						{
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
-							"image" : "img/Laundry-Q4-side-by-side.jpg",
+							"image" : "img/Laundry-Q5-side-by-side.jpg",
 							"text" : "Side-by-side",
 							"value" : "Side-By-Side",
 							"scoring" : {
@@ -1151,7 +1158,7 @@
 						{
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
-							"image" : "img/Laundry-Q4no-preference.jpg",
+							"image" : "img/Laundry-Q5-no-preference.jpg",
 							"text" : "No Preference",
 							"value" : "No Preference",
 							"scoring" : {
@@ -1897,7 +1904,7 @@
 			]
 		},
 		"Fridges - Water" : {
-			"next" : "Fridges -  Organization 2",
+			"next" : "Fridges - Organization 2",
 			"previous" : "Fridges - Organization 1",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-water-current.png",
@@ -2033,7 +2040,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about style?",
 					"explanation" : "Did you know that some of our fridges are designed to be in-line with your counters? To better recommend the perfect fridge for your needs, we need to understand your preferences.",
-					"type" : "radio-4",
+					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
 					"classes" : "three form-function",
 					"answers" : [
@@ -2041,6 +2048,7 @@
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
 							"text" : "Counter depth fridge – I want my fridge to be in-line with my counters",
+                            "image" : "img/Fridge-Q7-counter.jpg",
 							"value" : 0,
 							"scoring" : {
 								"counterDepth" : 3
@@ -2051,6 +2059,7 @@
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
 							"text" : " Standard depth – I don’t care if my fridge is in line with my counters",
+                            "image" : "img/Fridge-Q7-standard.jpg",
 							"value" : 1,
 							"scoring" : {
 								"counterDepth" : -30
@@ -2301,8 +2310,8 @@
 			"next" : "Dishwashers - Noise 2",
 			"previous" : "Dishwashers - Capacity",
 			"thumbnail_type" : "image",
-			"thumbnail_current" : "img/icon-noise-current.png",
-			"thumbnail_text" : "Noise",
+			"thumbnail_current" : "img/icon-cycles-current.png",
+			"thumbnail_text" : "Cycles",
 			"text" : [
 				{
 					"question" : "When do you usually run your dishwasher?",
@@ -2531,15 +2540,15 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about style?",
 					"explanation" : "By telling us about your personal style, you're helping us find the machine that looks best in your home",
-					"type" : "boxes-picture-2-radio",
+					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "Modern",
-							"value" : "modern",
-							"image" : "img/Dishwasher-Q6-modern.jpg",
+							"text" : "Hidden Control",
+							"value" : "hidden",
+							"image" : "img/Dishwasher-Q7-hidden.jpg",
 							"scoring" : {
 								"FID" : 1
 							},
@@ -2548,13 +2557,25 @@
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "Traditional",
-							"value" : "traditional",
-							"image" : "img/Dishwasher-Q6-traditional.jpg",
+							"text" : "Front Control",
+							"value" : "front",
+							"image" : "img/Dishwasher-Q7-front.jpg",
 							"scoring" : {
 								"frontConsole" : 1
 							},
 							"order" : 2
+						},
+                        {
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "No Preference",
+							"value" : "nopreference",
+							"image" : "img/Dishwasher-Q7-nopreference.jpg",
+							"scoring" : {
+								"FID" : 1,
+                                "frontConsole" : 1
+							},
+							"order" : 1
 						}
 					]
 				}
@@ -2633,8 +2654,8 @@
 			"next" : "Cooking - Cooktops - Features",
 			"previous" : "Cooking - Cooktops - Size",
 			"thumbnail_type" : "image",
-			"thumbnail_text" : "Features",
-			"thumbnail_current" : "img/icon-features-current.png",
+			"thumbnail_text" : "Style",
+			"thumbnail_current" : "img/icon-style-current.png",
 			"text" : [
 				{
 					"question" : "How would you describe your kitchen's aesthetic?",
@@ -2649,7 +2670,7 @@
 							"thumbnail_current" : "img/icon-features-current.png",
 							"text" : "Traditional",
 							"value" : "traditional",
-							"image" : "img/Cooking-Q2-single.png",
+							"image" : "img/Cooktops-Q2-traditional.jpg",
 							"scoring" : {
 								"induction" : 1,
 								"electric" : 1
@@ -2661,7 +2682,7 @@
 							"thumbnail_current" : "img/icon-features-current.png",
 							"text" : "Professional",
 							"value" : "professional",
-							"image" : "img/Cooking-Q2-combo.png",
+							"image" : "img/Cooktops-Q2-professional.jpg",
 							"scoring" : {
 								"gas" : 1
 							},
@@ -2880,8 +2901,8 @@
 			"next" : "Cooking - Vents - Type",
 			"previous" : "Cooking - Vents - Location",
 			"thumbnail_type" : "image",
-			"thumbnail_text" : "Features",
-			"thumbnail_current" : "img/icon-features-current.png",
+			"thumbnail_text" : "Speed",
+			"thumbnail_current" : "img/icon-speed-current.png",
 			"text" : [
 				{
 					"question" : "Do you cook with high heat often?",
@@ -2963,8 +2984,8 @@
 		"Cooking - Vents - Ventilation" : {
 			"next" : "Cooking - Vents - Space",
 			"previous" : "Cooking - Vents - Type",
-			"thumbnail_text" : "Fuel Type",
-			"thumbnail_current" : "img/icon-fueltype-current.png",
+			"thumbnail_text" : "Convection",
+			"thumbnail_current" : "img/icon-convection-current.png",
 			"thumbnail_type" : "image",
 			"text" : [
 				{
@@ -2972,13 +2993,12 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about ventilation?",
 					"explanation" : "Proper ventilation is an important part of keeping the air in your home clean. If we know more about how yours works we can choose the best fit.",
-					"type" : "boxes-icon-split-radio",
+					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
 					"answers" : [
 						{
 							"text" : "Yes - I need ducted ventilation",
 							"image" : "img/icon-thumb-gas.png",
-							"hover" : "img/icon-thumb-gas-active.png",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "yes",
@@ -2990,7 +3010,6 @@
 						{
 							"text" : "No - I need non-ducted ventilation",
 							"image" : "img/icon-thumb-gas.png",
-							"hover" : "img/icon-thumb-gas-active.png",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "no",
@@ -3003,7 +3022,6 @@
 						{
 							"text" : "I'm not sure",
 							"image" : "img/icon-thumb-electric.png",
-							"hover" : "img/icon-thumb-electric-active.png",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "i am no sure",
@@ -3020,8 +3038,8 @@
 		"Cooking - Vents - Space" : {
 			"next" : null,
 			"previous" : "Cooking - Vents - Ventilation",
-			"thumbnail_text" : "Space",
-			"thumbnail_current" : "img/icon-fueltype-current.png",
+			"thumbnail_text" : "Style",
+			"thumbnail_current" : "img/icon-style-current.png",
 			"thumbnail_type" : "image",
 			"text" : [
 				{
