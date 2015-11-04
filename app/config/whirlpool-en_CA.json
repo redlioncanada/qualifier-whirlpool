@@ -242,7 +242,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about orientation?",
 					"explanation" : "Our wall ovens come in different orientation options. We want to get a better idea of your preference so that we can recommend the perfect one for your home.",
-					"type" : "boxes-picture-3-radio",
+					"type" : "boxes-picture-4-radio",
 					"oneAnswer" : true,
 					"answers" : [
 						{
@@ -250,7 +250,7 @@
 							"thumbnail_current" : "img/icon-features-current.png",
 							"text" : "Single Oven",
 							"value" : "single",
-							"image" : "img/Cooking-Q2-single.png",
+							"image" : "img/Walloven-Q2-single.jpg",
 							"scoring" : {
 								"single" : 3
 							},
@@ -261,7 +261,7 @@
 							"thumbnail_current" : "img/icon-features-current.png",
 							"text" : "Microwave Oven Combo",
 							"value" : "combo",
-							"image" : "img/Cooking-Q2-combo.png",
+							"image" : "img/Walloven-Q2-combo.jpg",
 							"scoring" : {
 								"combination" : 3
 							},
@@ -272,9 +272,19 @@
 							"thumbnail_current" : "img/icon-features-current.png",
 							"text" : "Double Oven",
 							"value" : "double",
-							"image" : "img/Cooking-Q2-double.png",
+							"image" : "img/Walloven-Q2-double.jpg",
 							"scoring" : {
 								"double" : 3
+							},
+							"order" : 3
+						},
+                        {
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "No Preference",
+							"value" : "nopreference",
+							"image" : "img/Walloven-Q2-nopreference.jpg",
+							"scoring" : {
 							},
 							"order" : 3
 						}
@@ -1128,7 +1138,7 @@
 						{
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
-							"image" : "img/Laundry-Q4-stacked.jpg",
+							"image" : "img/Laundry-Q5-stacked.jpg",
 							"text" : "Stacked",
 							"value" : "Stacked",
 							"scoring" : {
@@ -1140,7 +1150,7 @@
 						{
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
-							"image" : "img/Laundry-Q4-side-by-side.jpg",
+							"image" : "img/Laundry-Q5-side-by-side.jpg",
 							"text" : "Side-by-side",
 							"value" : "Side-By-Side",
 							"scoring" : {
@@ -1151,7 +1161,7 @@
 						{
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
-							"image" : "img/Laundry-Q4no-preference.jpg",
+							"image" : "img/Laundry-Q5-no-preference.jpg",
 							"text" : "No Preference",
 							"value" : "No Preference",
 							"scoring" : {
@@ -2531,15 +2541,15 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about style?",
 					"explanation" : "By telling us about your personal style, you're helping us find the machine that looks best in your home",
-					"type" : "boxes-picture-2-radio",
+					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "Modern",
-							"value" : "modern",
-							"image" : "img/Dishwasher-Q6-modern.jpg",
+							"text" : "Hidden Control",
+							"value" : "hidden",
+							"image" : "img/Dishwasher-Q7-hidden.jpg",
 							"scoring" : {
 								"FID" : 1
 							},
@@ -2548,13 +2558,25 @@
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "Traditional",
-							"value" : "traditional",
-							"image" : "img/Dishwasher-Q6-traditional.jpg",
+							"text" : "Front Control",
+							"value" : "front",
+							"image" : "img/Dishwasher-Q7-front.jpg",
 							"scoring" : {
 								"frontConsole" : 1
 							},
 							"order" : 2
+						},
+                        {
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "No Preference",
+							"value" : "nopreference",
+							"image" : "img/Dishwasher-Q7-nopreference.jpg",
+							"scoring" : {
+								"FID" : 1,
+                                "frontConsole" : 1
+							},
+							"order" : 1
 						}
 					]
 				}
@@ -2649,7 +2671,7 @@
 							"thumbnail_current" : "img/icon-features-current.png",
 							"text" : "Traditional",
 							"value" : "traditional",
-							"image" : "img/Cooking-Q2-single.png",
+							"image" : "img/Cooktops-Q2-traditional.jpg",
 							"scoring" : {
 								"induction" : 1,
 								"electric" : 1
@@ -2661,7 +2683,7 @@
 							"thumbnail_current" : "img/icon-features-current.png",
 							"text" : "Professional",
 							"value" : "professional",
-							"image" : "img/Cooking-Q2-combo.png",
+							"image" : "img/Cooktops-Q2-professional.jpg",
 							"scoring" : {
 								"gas" : 1
 							},
