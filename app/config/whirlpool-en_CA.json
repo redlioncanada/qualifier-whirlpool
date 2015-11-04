@@ -2832,12 +2832,6 @@
 						}
 					}
 				}
-			],
-			"notes" : [
-				{
-					"title" : "Note",
-					"text" : "Industry standard is 30"
-				}
 			]
 		},
 		"Cooking - Cooktops - Style" : {
@@ -2966,7 +2960,7 @@
 				{
 					"question" : "Is your kitchen equipped for gas or electric?",
 					"sub_question" : "Select one",
-					"explanation_title" : "Why are you asking me about gas?",
+					"explanation_title" : "Why are you asking me about fuel type?",
 					"explanation" : "By letting us know what works in your kitchen, you're helping us make the best recommendation.",
 					"type" : "boxes-icon-split-radio",
 					"oneAnswer" : true,
