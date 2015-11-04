@@ -11,6 +11,10 @@
 	}
 }
 
+.show-ticks .jslider .jslider-scale span {
+	border-left: 1px solid #999 !important;
+}
+
 div.people1 .jslider .jslider-value:not(.jslider-value-to) {
     background: url('../img/family-1.png') no-repeat !important;
 	background-size: contain !important;
