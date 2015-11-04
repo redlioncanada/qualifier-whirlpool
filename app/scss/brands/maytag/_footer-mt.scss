@@ -22,18 +22,18 @@ footer.desktop {
 	#footer-wrap {
 		width: 944px;
 		margin: 0 auto;
-		border-top: 1px solid #BBB;
+		border-top: 1px solid #DDD;
 		padding: 5px 0 10px 0;
 	}
 
 	a {
 		text-decoration: none;
-		color: #333;
+		color: #999;
 	}
 
 	ul {
 		float: left;
-		width: 140px;
+		width: 135px;
 		list-style: none;
 		margin: 0;
 		padding: 0;
@@ -50,7 +50,7 @@ footer.desktop {
 		margin-top: 5px;
 
 		a:hover {
-			text-decoration: underline;
+			color: #eeb111;
 			cursor: pointer;
 		}
 
@@ -68,14 +68,9 @@ footer.desktop {
 
 		&:first-child {
 			text-transform: uppercase;
-			color: black;
 			font-weight: 500;
-			padding-bottom: 5px;
-			border-bottom: 1px dotted black;
-		}
-
-		&:nth-child(2) {
-			margin-top: 8px;
+			color: #333;
+			* {color: #333;}
 		}
 
 		//normal link

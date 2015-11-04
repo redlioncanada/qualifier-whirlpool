@@ -17,12 +17,14 @@
         z-index: 2;
 
         ul {list-style: none; padding: 0; margin: 0; li {float: left;}}
-        a {color: #333; text-decoration: none;}
+        a {color: #666; text-decoration: none;}
+        .upper a {color: #999;}
          .header-content-wrap {
             width: 100%;
             height: inherit;
             z-index: 2;
-            border-bottom: 1.5px solid #BBB;
+            border-bottom: 1.5px solid #DDD;
+            background: url("http://www.whirlpool.ca/images/header_bg.jpg") repeat scroll 0 0 transparent;
 
             > * {
                 position: relative;
@@ -32,14 +34,14 @@
 
             .upper {
                 height: $upperHeight;
-                padding: 10px 0;
-                font-size: 8pt;
+                padding: 12px 0;
+                font-size: 7pt;
                 text-transform: uppercase;
                 
                 .logo {
                     position: absolute;
                     left: -6px;
-                    top: 50px;
+                    top: 55px;
                 }
 
                 ul li:not(:first-child) {
@@ -59,16 +61,39 @@
                     text-decoration: underline;
                 }
 
+                .search {
+                    width: 220px;
+                    position: absolute;
+                    right: 11px;
+                    top: 34px;
+                    z-index:5;
+                    font-size: 9pt;
+                }
                 .search-textbox {
-                    margin-top: -5px;
-                    width: 110px;
-                    padding-left: 3px;
+                    width: 192px;
+                    height: 29px;
+                    padding-left: 27px;
                 }
                 .search-textbox-icon {
                     position: absolute;
-                    right: 2px;
-                    top: 10px;
+                    left: 7px;
+                    top: 6px;
                     cursor: pointer;
+                }
+                .search-submit {
+                    position: absolute;
+                    right: 0;
+                    top: -1px;
+                    width: 29px;
+                    height: 30px;
+                    background: url(../img/img_search_submit.png);
+                    background-position: 0px 0px;
+                    text-indent: -9999px;
+                    cursor: pointer;
+                    border: 0;
+                }
+                .search-submit:hover {
+                    background-position: 0px 30px;
                 }
             }
             .lower {
@@ -77,8 +102,9 @@
             }
             .lower .menu {
                 position: absolute;
-                bottom: 0;
-                height: 22px;
+                bottom: 0px;
+                height: 39px;
+                left: 180px;
                 width: inherit;
 
                 li {
@@ -90,10 +116,10 @@
                     margin-right: 10px;
                 }
                 li:not(:last-child) {
-                    margin-right: 5%;
+                    margin-right: 4%;
                 }
                 li:hover {
-                    border-bottom: 3px solid #CC0000;
+                    border-bottom: 3px solid #eeb111;
                     cursor: pointer;
                 }
             }
