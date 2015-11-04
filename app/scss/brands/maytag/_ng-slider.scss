@@ -194,7 +194,8 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 			position: relative; 
 			width: 860px;
 			height: 40px;
-			background: url('../img/slider-bg.png');
+			background: url('../img/slider-bg.png') no-repeat center;
+            background-size: contain;
 			margin-left: -30px;
 			z-index: 10;
 			i { 
@@ -399,7 +400,7 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 			top: -30px; 
 			left: 0px; 
 
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 			font-size: 20px;
 		}	
 		.jslider-label-to { 
@@ -452,7 +453,7 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 				font-size: 0; 
 			}
 			ins { 
-				font-family: $AG-Bold-Cnd;
+				font-family: $AV-Light;
 				text-transform: uppercase;
 				font-size: 17px; 
 				text-decoration: none; 
@@ -492,7 +493,7 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 }
 
 .left-tag .jslider .jslider-bg {
-	background: url('../img/slider-gradient-bg.png');
+	background: url('../img/slider-gradient-bg.png') no-repeat center;
 	margin-left: -100px;
 	width: 945px;
 	height: 44px;
@@ -543,13 +544,13 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 			display: block;
 			padding-top: 10px;
 			text-align: center;
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 			font-size: 20px;
 			text-transform: uppercase;
 			color: #999;
 			z-index: 5;
 			span {
-				font-family: $AG-Bold-Cnd;
+				font-family: $AV-Light;
 				font-size: 28px;
 				text-transform: uppercase;
 				color: #999;
@@ -792,7 +793,7 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 // answer.text
 .slider-answer-label {
 	display: inline-block;
-	font-family: $AG-Bold-Cnd;
+	font-family: $AV-Light;
 	font-size: 20px;
 	color: #999;
 	text-transform: uppercase;
@@ -907,13 +908,13 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 				display: block;
 				padding-top: 10px;
 				text-align: center;
-				font-family: $AG-Bold-Cnd;
+				font-family: $AV-Light;
 				font-size: 20px;
 				text-transform: uppercase;
 				color: #999;
 				z-index: 5;
 				span {
-					font-family: $AG-Bold-Cnd;
+					font-family: $AV-Light;
 					font-size: 28px;
 					text-transform: uppercase;
 					color: #999;
@@ -937,7 +938,7 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 /*slider-buttons*/
 .answers-main-content.answer-buttons {
 	padding-top: 40px;
-	font-family: $AG-Bold-Cnd;
+	font-family: $AV-Light;
 
 	ul {
 		list-style: none;

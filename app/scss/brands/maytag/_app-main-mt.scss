@@ -17,7 +17,7 @@ header.header-desktop {
 	height: 128px;
 
 	h2, h3 {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 	}
 	h2 {
 		color: #292929;
@@ -35,10 +35,11 @@ header.header-desktop {
 		width: 80%;
 		padding-left: 20px;
 		padding-right: 0;
+        border-left: 3px #edb129 solid;
 	}
 	.app-content-main-top-right {
 		.btn {
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 			font-size: 21px;
 			// Bootstrap mixin
 			@include button-variant(#ffffff, #002e58, #002e58);
@@ -192,7 +193,7 @@ header.header-desktop {
 			font-size: 19px;
 			text-align: center;
 			width: 100%;
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 		}
 	}
 }
@@ -217,7 +218,7 @@ header.header-desktop {
 		}
 	}
 	.btn {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 		font-size: 21px;
 		// Bootstrap mixin
 		@include button-variant(#ffffff, #7d7d7d, #7d7d7d);
@@ -241,13 +242,13 @@ header.header-desktop {
 		background: url('../img/matches-bg.png') center center no-repeat;
 	}	
 	.results-count-number {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 		font-size: 27px;
 		color: #414141;
 		line-height: 27px;
 	}
 	.results-count-label {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 		font-size: 14px;
 		color: #414141;
 	}
@@ -258,7 +259,7 @@ header.header-desktop {
 	}
 
 	.btn-compare {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 		font-size: 21px;
 		@include button-variant(#ffffff, #002e58, #002e58);
 		padding: 3px 18px;
@@ -283,7 +284,7 @@ header.header-desktop {
 		text-align: center;	   
 		float: right; 
 		.btn-backtoresults {
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 			@include button-variant(#ffffff, #002e58, #002e58);
 			width: 44px;
 			height: 40px;
@@ -308,7 +309,7 @@ header.header-desktop {
 		text-align: center;	 
 		float: right; 
 		.btn-startover {
-			font-family: $AG-Bold-Cnd;
+			font-family: $AV-Light;
 			@include button-variant(#ffffff, #002e58, #002e58);
 			width: 40px;
 			height: 40px;
@@ -337,7 +338,7 @@ header.header-desktop {
    			margin: 0 auto;
    			position: relative;
    			top: 5px;
-   			font-family: $AG-Bold-Cnd;
+   			font-family: $AV-Light;
    			text-align: center;
    		}
 
@@ -551,7 +552,7 @@ div[ng-class="fr_CA"] {
 
 .print-page {
 	* {
-		font-family: $AG-Bold-Cnd;
+		font-family: $AV-Light;
 		color: #002e62;
 	}
 
@@ -574,7 +575,7 @@ div[ng-class="fr_CA"] {
 		}
 
 		ul {
-			font-family: $AG-Cnd;
+			font-family: $AV-Light;
 
 			li {
 				border-bottom: 1px dashed #002e62;
@@ -610,7 +611,7 @@ div[ng-class="fr_CA"] {
             color: #8b8b8b;
             text-transform: uppercase;
             padding-bottom: 40px;
-            font-family: $AG-Bold-Cnd;
+            font-family: $AV-Light;
             padding-top: 5px;
         }
     }

@@ -125,6 +125,7 @@ html, body {
 		text-transform: uppercase;
 		font-size: 23px;
 		margin-top: 0px;
+        color: #edb129 !important;
 	}
 }
 
@@ -357,6 +358,18 @@ div.mobile-app-nav-arrows {
 		// }
 	}
 }
+.category {
+    .category-image {
+        width: 50px;
+        height: 50px;
+        border: 1px #edb129 solid;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+    .category-image:hover {
+        background: #edb129;
+    }
+}
 .mobile-nav {
 	position: absolute;
 	width: 110%;
@@ -400,6 +413,7 @@ a.answer-box.picture-4 {
 	}
 
 	.app-answers {
+        
 		a.answer-box.category:first-child {
 			margin-left: 0px;
 		}
