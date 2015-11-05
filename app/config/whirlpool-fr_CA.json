@@ -572,8 +572,8 @@
 				}
 			]
 		},
-		"Cooking - Ranges - Cooking" : {
-			"next" : "Cooking - Ranges - Appareils de cuisson",
+		"Cooking - Ranges - Capacity" : {
+			"next" : "Cooking - Ranges - Cooking",
 			"previous" : "Cooking - Ranges - Features",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Capacity",
@@ -594,14 +594,14 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["Lasagna", "Casarole and shepherd’s pie for Sunday dinner", "A feast for game night", "Holiday roast"]
+					    "scale": ["lasagne", "gratin et pâté chinois pour le souper du dimanche", "un festin pour la soirée de jeux", "rôti des fêtes"]
 					},
 					"answers" : {
 						"0" : {
 							"thumbnail" : "img/icon-capacity.png",
 							"thumbnail_current" : "img/icon-capacity-current.png",
 							"value" : 0,
-							"text" : "Lasagne",
+							"text" : "lasagne",
 							"scoring" : {
 								"mediumCapacity" : 1
 							}
@@ -637,7 +637,7 @@
 				}
 			]
 		},
-		"Cooking - Ranges - Appareils de cuisson" : {
+		"Cooking - Ranges - Cooking" : {
 			"next" : "Cooking - Ranges - Lifestyle",
 			"previous" : "Cooking - Ranges - Capacity",
 			"thumbnail_type" : "image",
@@ -831,7 +831,7 @@
 					"oneAnswer" : true,
 					"answers" : [
 						{
-							"text" : "Front Control",
+							"text" : "Front Control(FR)",
 							"image" : "img/icon-thumb-gas.png",
 							"hover" : "img/icon-thumb-gas-active.png",
 							"thumbnail" : "img/icon-style.png",
@@ -843,7 +843,7 @@
 							"order" : 1
 						},
 						{
-							"text" : "Rear Control",
+							"text" : "Rear Control(FR)",
 							"image" : "img/icon-thumb-electric.png",
 							"hover" : "img/icon-thumb-electric-active.png",
 							"thumbnail" : "img/icon-style.png",
@@ -855,7 +855,7 @@
 							"order" : 2
 						},
 						{
-							"text" : "No Preference",
+							"text" : "aucune préférence",
 							"image" : "img/icon-thumb-electric.png",
 							"hover" : "img/icon-thumb-electric-active.png",
 							"thumbnail" : "img/icon-style.png",
@@ -875,12 +875,13 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-capacity-current.png",
 			"thumbnail_text" : "Capacity",
+			"thumbnail_text_fr" : "Capacité",
 			"text" : [
 				{
-					"question" : "How many people do you care for in your household?",
+					"question" : "De combien de personnes êtes-vous en charge dans votre ménage?",
 					"sub_question" : "Faites glisser pour répondre",
-					"explanation_title" : "Why are you asking me about my family size?",
-					"explanation" : "Much like your family, all of our machines are unique. If we understand a little more about your family we can recommend a machine that suits the specific needs of your home.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de la taille de ma famille?",
+					"explanation" : "Tout comme votre famille, tous nos appareils sont uniques. En connaissant un peu mieux votre famille, nous pouvons recommander un appareil adapté aux besoins précis de votre foyer.",
 					"type" : "slider",
 					"oneAnswer" : false,
 					"classes" : "slider-labels",
@@ -946,12 +947,13 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-energy-current.png",
 			"thumbnail_text" : "Energy",
+			"thumbnail_text_fr" : "Energie",
 			"text" : [
 				{
-					"question" : "How important is energy efficency to your household?",
+					"question" : "Dans quelle mesure l’économie d’énergie est-elle importante pour votre ménage?",
 					"sub_question" : "Faites glisser pour répondre",
-					"explanation_title" : "Why are you asking me about energy?",
-					"explanation" : "All of our machines are different, understanding your energy use will help us find the machine that best fits the needs of your home.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’énergie?",
+					"explanation" : "Tous nos appareils sont différents. En comprenant votre consommation d’énergie, nous pourrons trouver plus facilement l’appareil qui répond le mieux aux besoins de votre foyer.",
 					"type" : "slider",
 					"oneAnswer" : false,
 					"classes" : "slider-labels four",
@@ -1010,20 +1012,20 @@
 			"previous" : "Laundry - Energy",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-speed-current.png",
-			"thumbnail_text" : "Speed",
+			"thumbnail_text" : "Vitesse",
 			"text" : [
 				{
-					"question" : "Do you often find yourself doing laundry in a rush?",
+					"question" : "Êtes-vous souvent pressé lorsque vous faîtes la lessive?",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Why are you asking me about timing?",
-					"explanation" : "Some of our laundry machines are specifically designed to get you out the door in record time. By understanding your needs we can find the machine that best suits your lifestyle.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet du temps?",
+					"explanation" : "Certains de nos appareils de lessive sont conçus précisément pour vous faire franchir la porte en un temps record. En comprenant vos besoins, nous pouvons trouver l’appareil le mieux adapté à votre style de vie.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-speed.png",
 							"thumbnail_current" : "img/icon-speed-current.png",
-							"text" : " Yes, we are always on the go",
+							"text" : "oui, nous sommes toujours sur la brèche",
 							"value" : "yes",
 							"scoring" : {
  								"quickWash" : 2,
@@ -1036,8 +1038,8 @@
 						{
 							"thumbnail" : "img/icon-speed.png",
 							"thumbnail_current" : "img/icon-speed-current.png",
-							"text" : "Sometimes between school and practice",
-							"value" : "sometimes",
+							"text" : "parfois, entre l’école et l’entraînement",
+							"value" : "parfois",
 							"scoring" : {
  								"quickWash" : 1,
  								"quickDry" : 2
@@ -1047,7 +1049,7 @@
 						{
 							"thumbnail" : "img/icon-speed.png",
 							"thumbnail_current" : "img/icon-speed-current.png",
-							"text" : "Only when there is an unexpected spill",
+							"text" : "seulement lorsqu’un liquide est accidentellement renversé",
 							"value" : "not often",
 							"scoring" : {
  								"quickDry" : 1
@@ -1057,8 +1059,8 @@
 						{
 							"thumbnail" : "img/icon-speed.png",
 							"thumbnail_current" : "img/icon-speed-current.png",
-							"text" : "Rarely",
-							"value" : "rarely",
+							"text" : "rarement",
+							"value" : "rarement",
 							"scoring" : {
 							},
 							"order" : 4
@@ -1073,17 +1075,18 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-noise-current.png",
 			"thumbnail_text" : "Noise",
+			"thumbnail_text_fr" : "Bruit",
 			"text" : [
 				{
-					"question" : "When doing laundry, is noise a concern?",
+					"question" : "Les niveaux de bruit de vos appareils de lessive vous préoccupent-ils?",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Why are you asking me about sound?",
-					"explanation" : "Some of our laundry pairs are specifically designed to limit noise. By understanding your needs we can find the perfect machines for your home.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet du son?",
+					"explanation" : "Certains de nos appareils de lessive sont conçus précisément pour limiter le bruit. En comprenant vos besoins, nous pouvons trouver les appareils tout indiqués pour votre foyer.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
 					"answers" : [
 						{
-							"text" : "Very - our laundry is located near a bedroom",
+							"text" : "beaucoup – nos appareils de lessive sont situés près d’une chambre à coucher",
 							"value" : "sensitive",
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
@@ -1096,7 +1099,7 @@
 							"order" : 1
 						},
 						{
-							"text" : "Moderately - our laundry room is located near our main living area",
+							"text" : "modérément – nos appareils de lessive sont situés près de notre pièce de séjour principale",
 							"value" : "moderately",
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
@@ -1107,7 +1110,7 @@
 							"order" : 2
 						},
 						{
-							"text" : "Somewhat - noise doesn't bother me for the most part",
+							"text" : "quelque peu – le bruit ne me dérange pas la majeure partie du temps",
 							"value" : "somewhat",
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
@@ -1118,7 +1121,7 @@
 							"order" : 3
 						},
 						{
-							"text" : "Not at all - my laundry is in the basement",
+							"text" : "pas du tout – mes appareils de lessive sont au sous-sol",
 							"value" : "unconcerned",
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
@@ -1136,12 +1139,13 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-orientation-current.png",
 			"thumbnail_text" : "Orientation",
+			"thumbnail_text_fr" : "Orientation",
 			"text" : [
 				{
-					"question" : "What’s your laundry pair preference?",
+					"question" : "Quelduo de lessive préférez-vous?",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Why are you asking me about orientation?",
-					"explanation" : "We know that every laundry space is different. by understanding what orientation you prefer, we’re better able to find you the perfect pair.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’orientation?",
+					"explanation" : "Nous comprenons que chaque espace de lessive est différent. En comprenant vos préférences, nous sommes en mesure de trouver le duo parfait pour votre foyer.",
 					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
 					"answers" : [
@@ -1149,7 +1153,7 @@
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
 							"image" : "img/Laundry-Q4-stacked.jpg",
-							"text" : "Stacked",
+							"text" : "superposée",
 							"value" : "Stacked",
 							"scoring" : {
 								 "frontLoad" : 3,
@@ -1161,7 +1165,7 @@
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
 							"image" : "img/Laundry-Q4-side-by-side.jpg",
-							"text" : "Side-by-side",
+							"text" : "côte à côte",
 							"value" : "Side-By-Side",
 							"scoring" : {
 								"topLoad" : 1
@@ -1172,8 +1176,8 @@
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
 							"image" : "img/Laundry-Q4no-preference.jpg",
-							"text" : "No Preference",
-							"value" : "No Preference",
+							"text" : "aucune préférence",
+							"value" : "aucune préférence",
 							"scoring" : {
 							},
 							"order" : 3
@@ -1188,19 +1192,20 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-fabric-current.png",
 			"thumbnail_text" : "Fabric",
+			"thumbnail_text_fr" : "Tissus",
 			"text" : [
 				{
-					"question" : "What kind of fabrics do you wash together?",
+					"question" : "Quelles sortes de tissus lavez-vous ensemble?",
 					"sub_question" : "Sélectionnez toutes les réponses pertinentes",
-					"explanation_title" : "Why are you asking me about fabrics?",
-					"explanation" : "Everyone does laundry differently. By understanding how you separate your fabrics, we will be better able to suggest cycle options that fit your specific lifestyle needs.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet des tissus?",
+					"explanation" : "Tout le monde fait sa lessive différemment. En comprenant la façon dont vous triez les tissus, nous serons mieux en mesure de proposer des options de programme adaptées à votre style de vie et vos besoins précis.",
 					"type" : "checkbox-4",
 					"oneAnswer" : false,
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-fabric.png",
 							"thumbnail_current" : "img/icon-fabric-current.png",
-							"text" : "Denim",
+							"text" : "denim",
 							"value" : "denim",
 							"scoring" : {
  								"adaptiveWash" : 1,
@@ -1211,7 +1216,7 @@
 						{
 							"thumbnail" : "img/icon-fabric.png",
 							"thumbnail_current" : "img/icon-fabric-current.png",
-							"text" : "Delicates",
+							"text" : "tissus légers",
 							"value" : "delicates",
 							"scoring" : {
  								"smoothWave" : 1,
@@ -1222,7 +1227,7 @@
 						{
 							"thumbnail" : "img/icon-fabric.png",
 							"thumbnail_current" : "img/icon-fabric-current.png",
-							"text" : "Gym clothes",
+							"text" : "vêtements de gymnastique",
 							"value" : "gym clothes",
 							"scoring" : {
  								"adaptiveWash" : 1
@@ -1232,7 +1237,7 @@
 						{
 							"thumbnail" : "img/icon-fabric.png",
 							"thumbnail_current" : "img/icon-fabric-current.png",
-							"text" : "Ballet tights and soccer socks",
+							"text" : "collants de ballet et chaussettes de soccer",
 							"value" : "ballet tights",
 							"scoring" : {
  								"smoothWave" : 1,
@@ -1243,7 +1248,7 @@
 						{
 							"thumbnail" : "img/icon-fabric.png",
 							"thumbnail_current" : "img/icon-fabric-current.png",
-							"text" : "Everyday wear",
+							"text" : "vêtements de tous les jours",
 							"value" : "everyday wear",
 							"scoring" : {
  								"adaptiveWash" : 1,
@@ -1254,7 +1259,7 @@
 						{
 							"thumbnail" : "img/icon-fabric.png",
 							"thumbnail_current" : "img/icon-fabric-current.png",
-							"text" : "Towels",
+							"text" : "serviettes",
 							"value" : "towels",
 							"scoring" : {
  								"quadBaffles" : 1
@@ -1264,7 +1269,7 @@
 						{
 							"thumbnail" : "img/icon-fabric.png",
 							"thumbnail_current" : "img/icon-fabric-current.png",
-							"text" : "Bedding",
+							"text" : "literie",
 							"value" : "bedding",
 							"scoring" : {
  								"adaptiveWash" : 1,
@@ -1282,12 +1287,13 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-features-current.png",
 			"thumbnail_text" : "Features",
+			"thumbnail_text_fr" : "Capteur",
 			"text" : [
 				{
-					"question" : "Do you frequently adjust the drying cycle time?",
+					"question" : "Vous-arrive-t-il souvent d’ajuster le temps de séchage?",
 					"sub_question" : "Faites glisser pour répondre",
-					"explanation_title" : "Why are you asking me about time?",
-					"explanation" : "We would like to save you time by offering you cycles that will minimize your need to continually check your laundry progress.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet du temps?",
+					"explanation" : "Nous aimerions vous faire gagner du temps en vous proposant des programmes qui réduiront au minimum votre besoin de vérifier continuellement le déroulement de la lessive.",
 					"type" : "slider",
 					"oneAnswer" : false,
 					"classes" : "slider-labels four",
@@ -1297,14 +1303,14 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["Never", "Occasionally", "Often", "Very often"]
+					    "scale": ["jamais", "occasionnellement", "souvent", "très souvent"]
 					},
 					"answers" : {
 						"0" : {
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
 							"value" : 0,
-							"text" : "Never",
+							"text" : "jamais",
 							"scoring" : {
 							}
 						},
@@ -1312,7 +1318,7 @@
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
 							"value" : 1,
-							"text" : "Occasionally",
+							"text" : "occasionnellement",
 							"scoring" : {
 								"advancedMoistureSensing" : 1
 							}
@@ -1321,7 +1327,7 @@
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
 							"value" : 2,
-							"text" : "Often",
+							"text" : "souvent",
 							"scoring" : {
 								"advancedMoistureSensing" : 2,
 								"accuDry" : 1
@@ -1331,7 +1337,7 @@
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
 							"value" : 3,
-							"text" : "Very often",
+							"text" : "très souvent",
 							"scoring" : {
 								"advancedMoistureSensing" : 3,
 								"accuDry" : 2
@@ -1347,17 +1353,18 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-wrinkles-current.png",
 			"thumbnail_text" : "Features",
+			"thumbnail_text_fr" : "Caractéristiques",
 			"text" : [
 				{
-					"question" : "Do you often worry about the wear and tear doing laundry might have on your clothes?",
+					"question" : "Vous préoccupez-vous souvent de l’usure que pourrait provoquer la lessive sur vos vêtements?",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Why are you asking me about wear?",
-					"explanation" : "Some of our machines are designed to minimize wrinkles. By helping us determine your needs, we are better able to provide for them.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’usure?",
+					"explanation" : "Parce que nous tenons autant que vous à préserver l’aspect et le toucher de vos vêtements, nous avons doté nos appareils de caractéristiques uniques qui protégeront vos vêtements.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
 					"answers" : [
 						{
-							"text" : "Always",
+							"text" : "toujours",
 							"value" : "always",
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
@@ -1368,8 +1375,8 @@
 							"order" : 1
 						},
 						{
-							"text" : "Sometimes",
-							"value" : "sometimes",
+							"text" : "parfois",
+							"value" : "parfois",
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
 							"scoring" : {
@@ -1379,7 +1386,7 @@
 							"order" : 2
 						},
 						{
-							"text" : "Never",
+							"text" : "jamais",
 							"value" : "never",
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
@@ -1397,12 +1404,13 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-wrinkles-current.png",
 			"thumbnail_text" : "Features",
+			"thumbnail_text_fr" : "Caractéristiques",
 			"text" : [
 				{
-					"question" : "Do you frequently refresh your clothes by putting them in the dryer?",
+					"question" : "Rafraîchissez-vous souvent vos vêtements en les mettant dans la sécheuse?",
 					"sub_question" : "Faites glisser pour répondre",
-					"explanation_title" : "Why are you asking me about refreshing my clothes?",
-					"explanation" : "Did you know that some of our dryers are equipped with steam technology? This feature cares for garments by adding freshness without drying them out or the need for a full wash.",
+					"explanation_title" : "Pourquoi me demandez-vous si je rafraîchis mes vêtements?",
+					"explanation" : "Saviez-vous que certaines de nos sécheuses sont dotées de la technologie de vapeur? Cette caractéristique ajoute de la fraîcheur aux vêtements sans qu’il soit nécessaire de les faire sécher ou de faire un lavage complet.",
 					"type" : "slider",
 					"oneAnswer" : false,
 					"classes" : "slider-labels four",
@@ -1412,14 +1420,14 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["Never","Rarely","Sometimes","Often"]
+					    "scale": ["jamais","rarement","parfois","souvent"]
 					},
 					"answers" : {
 						"0" : {
 							"thumbnail" : "img/icon-wrinkles.png",
 							"thumbnail_current" : "img/icon-wrinkles-current.png",
 							"value" : 0,
-							"text" : "Never",
+							"text" : "jamais",
 							"scoring" : {
 							}
 						},
@@ -1427,7 +1435,7 @@
 							"thumbnail" : "img/icon-wrinkles.png",
 							"thumbnail_current" : "img/icon-wrinkles-current.png",
 							"value" : 1,
-							"text" : "Rarely",
+							"text" : "rarement",
 							"scoring" : {
 								"wrinkleShield" : 1
 							}
@@ -1436,7 +1444,7 @@
 							"thumbnail" : "img/icon-wrinkles.png",
 							"thumbnail_current" : "img/icon-wrinkles-current.png",
 							"value" : 2,
-							"text" : "Sometimes",
+							"text" : "parfois",
 							"scoring" : {
 								"wrinkleShield" : 2,
 								"steamRefresh" : 1
@@ -1446,7 +1454,7 @@
 							"thumbnail" : "img/icon-wrinkles.png",
 							"thumbnail_current" : "img/icon-wrinkles-current.png",
 							"value" : 3,
-							"text" : "Often",
+							"text" : "souvent",
 							"scoring" : {
 								"wrinkleShield" : 3,
 								"steamRefresh" : 2
@@ -1462,17 +1470,18 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-fueltype-current.png",
 			"thumbnail_text" : "Fuel Type",
+			"thumbnail_text_fr" : "Type d’alimentation",
 			"text" : [
 				{
-					"question" : "Is your laundry room equipped for a gas or electric dryer?",
+					"question" : "Votre salle de lavage est-elle équippée pour une sécheuse au gaz ou électrique?",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Why are you asking me about fuel type?",
-					"explanation" : "Some laundry rooms are fitted for gas dryers. Selecting your preference will help us filter the search results and provide the option best suited for your home.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet des sécheuses à gaz?",
+					"explanation" : "Certaines salles de lavage sont équipées pour accueillir les sécheuses à gaz. La sélection de votre préférence nous aidera à filtrer les résultats de recherche et à fournir l’option qui convient le mieux à votre foyer.",
 					"type" : "boxes-icon-2-radio",
 					"oneAnswer" : true,
 					"answers" : [
 						{
-							"text" : "Gas",
+							"text" : "àu gaz",
 							"value" : "gas",
 							"image" : "img/icon-thumb-gas.png",
 							"hover" : "img/icon-thumb-gas-active.png",
@@ -1483,7 +1492,7 @@
 							"order" : 1
 						},
 						{
-							"text" : "Electric",
+							"text" : "électrique",
 							"value" : "electric",
 							"image" : "img/icon-thumb-electric.png",
 							"hover" : "img/icon-thumb-electric-active.png",
@@ -1504,13 +1513,14 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-size-current.png",
 			"thumbnail_text" : "Size",
+			"thumbnail_text_fr" : "Taille",
 			"text" : [
 				{
-					"question" : "We've got the perfect fridge for your family.",
-					"question_more" : "Just tell us how much space you have to fill.",
+					"question" : "Nous avons le réfrigérateur parfait pour votre famille.",
+					"question_more" : "Il suffit de nous indiquer l’espace que vous avez à combler. ",
 					"sub_question" : "Faites glisser et cliquez pour répondre",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de la taille?",
-					"explanation" : "Our fridges come in mAny sizes, we want to make sure that we recommend the perfect one for your space.",
+					"explanation" : "Nos réfrigérateurs sont offerts en de nombreuses tailles; nous voulons nous assurer de recommander celui qui convient parfaitement à votre espace.",
 					"type" : "slider-buttons",
 					"classes" : "slider-labels left-tag no-jslider-value show-ticks scale-left",
 					"oneAnswer" : false,
@@ -1520,12 +1530,12 @@
 						"to" : 7,      
 					    "step": 0.0001,
 					    "dimension_label": "LARGEUR",
-					    "scale": ["No Preference","25 po","28 po","29 po", "30 po", "31 po", "33 po", "36 po"]       
+					    "scale": ["Aucune préférence","25 po","28 po","29 po", "30 po", "31 po", "33 po", "36 po"]       
 					},
 					"answers" : {
 						"0" : {
 							"value" : 0,
-							"text" : "No Preference",
+							"text" : "aucune préférence",
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
@@ -1638,7 +1648,7 @@
 				},
 				{
 					"classes": "label-inches",
-					"dimension_label" : "height",
+					"dimension_label" : "HAUTER",
 					"answer" : 0,
 					"answers" : {
 						"0" : {
@@ -1651,7 +1661,7 @@
                         },
 						"63" : {
 							"value" : 63,
-							"text" : "63",
+							"text" : "63 po",
 							"enabled" : true,
 							"enabledWhen" : [0,1,2],
 							"scoring" : {
@@ -1668,7 +1678,7 @@
 						},
 						"66" : {
 							"value" : 66,
-							"text" : "66",
+							"text" : "66 po",
 							"enabled" : true,
 							"enabledWhen" : [0,3,4,6],
 							"scoring" : {
@@ -1682,7 +1692,7 @@
 						},
 						"67" : {
 							"value" : 67,
-							"text" : "67",
+							"text" : "67 po",
 							"enabled" : true,
 							"enabledWhen" : [0,4,5,6],
 							"scoring" : {
@@ -1695,7 +1705,7 @@
 						},
 						"69" : {
 							"value" : 69,
-							"text" : "69",
+							"text" : "69 po",
 							"enabled" : true,
 							"enabledWhen" : [0,4,7],
 							"scoring" : {
@@ -1706,7 +1716,7 @@
 						},
 						"71" : {
 							"value" : 71,
-							"text" : "71",
+							"text" : "71 po",
 							"enabled" : true,
 							"enabledWhen" : [0,6,7],
 							"scoring" : {
@@ -1723,12 +1733,13 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-energy-current.png",
 			"thumbnail_text" : "Energy",
+			"thumbnail_text_fr" : "Énergie",
 			"text" : [
 				{
-					"question" : "How important is energy efficency to your household?",
+					"question" : "Dans quelle mesure l’économie d’énergie est-elle importante pour votre ménage?",
 					"sub_question" : "Faites glisser pour répondre",
-					"explanation_title" : "Why are you asking me about energy?",
-					"explanation" : "All of our fridges are different, just like the families they're for. If we can understand your energy usage, then we can better recommend the perfect fridge to fit your needs.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’énergie?",
+					"explanation" : "Tous nos appareils sont différents, tout comme les familles auxquelles ils sont destinés. Si nous pouvons comprendre votre consommation d’énergie, nous pouvons mieux recommander le réfrigérateur qui est parfaitement adapté à vos besoins.",
 					"type" : "slider",
 					"oneAnswer" : false,
 					"classes" : "slider-labels four",
@@ -1786,19 +1797,20 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-capacity-current.png",
 			"thumbnail_text" : "Capacity",
+			"thumbnail_text_fr" : "Capacité",
 			"text" : [
 				{
-					"question" : "On a regular basis, my fridge feeds...",
+					"question" : "Régulièrement, mon réfrigérateur permet de nourrir...",
 					"sub_question" : "Sélectionnez toutes les réponses pertinentes",
-					"explanation_title" : "Why are you asking me about capacity?",
-					"explanation" : "We want to get a better idea of how you use your fridge and what you put in it so we can find you the one that fits your lifestyle.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de la capacité?",
+					"explanation" : "Nous voulons nous faire une meilleure idée de la façon dont vous utilisez votre frigo et de ce que vous y mettez afin de pouvoir trouver celui qui convient à votre style de vie.",
 					"type" : "checkbox-4",
 					"oneAnswer" : false,
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
-							"text" : "Myself, to keep me fueled all week",
+							"text" : "ma propre personne, pour bien m’alimenter pendant toute la semaine",
 							"value" : "myself",
 							"scoring" : {
 								"smallCapacity" : 1
@@ -1806,7 +1818,7 @@
 							"order" : 1
 						},
 						{
-							"text" : "Me and my better half, we enjoy taking care of each other",
+							"text" : "moi-même et ma douce moitié; nous aimons prendre soin l’un de l’autre",
 							"value" : "couple",
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
@@ -1819,7 +1831,7 @@
 						{
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
-							"text" : "My family, from lasagna night to Sunday roasts, we’re a hungry bunch",
+							"text" : "ma famille; de la soirée lasagne aux rôtis du dimanche, nous sommes une bande d’affamés",
 							"value" : "family",
 							"scoring" : {
 								"mediumCapacity" : 1,
@@ -1828,7 +1840,7 @@
 							"order" : 3
 						},
 						{
-							"text" : "My large family, the cooking never ends but we have leftovers for packed lunches",
+							"text" : "ma grande famille; la cuisine ne cesse jamais, mais nous avons souvent des restes pour les paniers repas",
 							"value" : "large family",
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
@@ -1839,7 +1851,7 @@
 							"order" : 4
 						},
 						{
-							"text" : "Our guests, I love family bbqs",
+							"text" : "nos invités; j’adore les barbecues en famille",
 							"value" : "host parties",
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
@@ -1859,19 +1871,20 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-organization-current.png",
 			"thumbnail_text" : "Organization",
+			"thumbnail_text_fr" : "Organisation",
 			"text" : [
 				{
-					"question" : "My fridge...",
+					"question" : "Mon réfrigérateur...",
 					"sub_question" : "Sélectionnez toutes les réponses pertinentes",
-					"explanation_title" : "Why are you asking me about organization?",
-					"explanation" : "Our fridges are carefully designed from the inside out. By better learning what you put in your fridge, it will help us recommend the right one for your lifestyle.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’organisation?",
+					"explanation" : "Nos réfrigérateurs sont conçus avec soin, sur tous les plans. En sachant mieux ce que vous mettez dans votre frigo, nous pourrons mieux recommander celui qui convient à votre style de vie.",
 					"type" : "checkbox-4",
 					"oneAnswer" : false,
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
-							"text" : "Keeps the drinks cold – from milk to fruit juice and everything in between",
+							"text" : "garde les boissons au froid – du lait aux jus de fruit en passant par tout ce qu’il a entre les deux",
 							"value" : "drinks",
 							"scoring" : {
 								"topMount" : 1,
@@ -1880,7 +1893,7 @@
 							"order" : 1
 						},
 						{
-							"text" : "Feeds my always-hungry family",
+							"text" : "permet de nourrir ma famille toujours affamée",
 							"value" : "family",
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
@@ -1893,7 +1906,7 @@
 						{
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
-							"text" : "Holds ready-to-eat prepared meals",
+							"text" : "contient des repas préparés prêts-à-manger",
 							"value" : "reheat",
 							"scoring" : {
 								"topMount" : 1,
@@ -1902,7 +1915,7 @@
 							"order" : 3
 						},
 						{
-							"text" : "Stores our party eats, from team celebrations and birthday bashes",
+							"text" : "conserve notre bouffe pour les réceptions, les fêtes et les anniversaires",
 							"value" : "parties",
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
@@ -1922,6 +1935,7 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-water-current.png",
 			"thumbnail_text" : "Water",
+			"thumbnail_text_fr" : "Eau",
 			"text" : [
 				{
 					"question" : "Does your kitchen have an existing waterline?",
@@ -1982,19 +1996,20 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-orientation-current.png",
 			"thumbnail_text" : "Orientation",
+			"thumbnail_text_fr" : "Organisation",
 			"text" : [
 				{
-					"question" : "For the most part, your family’s fridge is...",
+					"question" : "En général, le réfrigérateur de votre famille est...",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Why are you asking me about organization?",
-					"explanation" : "Did you know that the orientation of the fridge affects how you organize your food? By better understanding how you use your fridge, we can recommend your perfect match.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’organisation?",
+					"explanation" : "Saviez-vous que l’orientation du réfrigérateur a une incidence sur la façon dont vous organisez les aliments? En comprenant mieux l’utilisation que vous faites de votre réfrigérateur, nous pouvons recommander celui qui vous convient parfaitement.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
-							"text" : "Perfectly organized",
+							"text" : "parfaitement organisé",
 							"value" : "perfect",
 							"scoring" : {
 								"sideBySide" : 1,
@@ -2007,7 +2022,7 @@
 						{
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
-							"text" : "Organized with lots of stuff",
+							"text" : "organisé et bien rempli",
 							"value" : "organized",
 							"scoring" : {
 								"frenchDoor" : 1,
@@ -2019,7 +2034,7 @@
 						{
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
-							"text" : "Disorganized with lots of stuff",
+							"text" : "désorganisé et bien rempli",
 							"value" : "disorganized",
 							"scoring" : {
 								"frenchDoor" : 1
@@ -2029,7 +2044,7 @@
 						{
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
-							"text" : "Sparsely filled",
+							"text" : "peu rempli",
 							"value" : "sparse",
 							"scoring" : {
 								"topMount" : 1,
@@ -2047,12 +2062,13 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-style-current.png",
 			"thumbnail_text" : "Style",
+			"thumbnail_text_fr" : "Style",
 			"text" : [
 				{
-					"question" : "I want my fridge to look like this...",
+					"question" : "Je veux que mon réfrigérateur soit...",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Why are you asking me about style?",
-					"explanation" : "Did you know that some of our fridges are designed to be in-line with your counters? To better recommend the perfect fridge for your needs, we need to understand your preferences.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de mon style?",
+					"explanation" : "Saviez-vous que certains réfrigérateurs sont conçus pour s’aligner aux comptoirs? Afin de mieux recommander le réfrigérateur qui répond parfaitement à vos besoins, nous avons besoin de comprendre vos préférences.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
 					"classes" : "three form-function",
@@ -2060,7 +2076,7 @@
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "Counter depth fridge – I want my fridge to be in-line with my counters",
+							"text" : "un modèle à profondeur de comptoir – je veux que mon réfrigérateur soit aligné avec mon comptoir",
 							"value" : 0,
 							"scoring" : {
 								"counterDepth" : 3
@@ -2070,7 +2086,7 @@
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : " Standard depth – I don’t care if my fridge is in line with my counters",
+							"text" : "un modèle à profondeur standard – il m’importe peu que mon réfrigérateur soit aligné avec mon comptoir",
 							"value" : 1,
 							"scoring" : {
 								"counterDepth" : -30
@@ -2087,19 +2103,20 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-features-current.png",
 			"thumbnail_text" : "Features",
+			"thumbnail_text_fr" : "Caractéristiques",
 			"text" : [
 				{
-					"question" : "How do you shop for groceries?",
+					"question" : "Comment faites-vous l’épicerie?",
 					"sub_question" : "Sélectionnez toutes les réponses pertinentes",
-					"explanation_title" : "Why are you asking me about groceries?",
-					"explanation" : "Our fridges are designed with unique features. By understanding how you shop, we learn more about how you use your fridge and can better recommend the perfect one for your lifestyle.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’épicerie?",
+					"explanation" : "Nos réfrigérateurs sont conçus avec des caractéristiques uniques. En comprenant la façon dont vous magasinez, nous en apprenons davantage sur l’utilisation que vous faites de votre réfrigérateur et pouvons mieux vous recommander celui qui est parfait pour votre style de vie.",
 					"type" : "checkbox-4",
 					"oneAnswer" : false,
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"text" : "I’m on a first-name basis at the farmers’ market",
+							"text" : "je vais au marché de producteurs où on  m’appelle par mon prénom",
 							"value" : "farmers market",
 							"scoring" : {
  								"freshFlow" : 2,
@@ -2112,7 +2129,7 @@
 						{
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"text" : "I visit the grocery store but stick to the perimeter to get the basics",
+							"text" : "je passe à l’épicerie, mais je reste dans le périmètre du magasin pour me procurer les articles essentiels",
 							"value" : "basics",
 							"scoring" : {
 								"freshFlow" : 1,
@@ -2125,7 +2142,7 @@
 						{
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"text" : "I go aisle-to-aisle at the grocery store and always fill my cart",
+							"text" : "je fais toutes les allées du magasin et je remplis toujours mon chariot",
 							"value" : "full grocery store",
 							"scoring" : {
 
@@ -2137,7 +2154,7 @@
 						{
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"text" : " I stock up on staples from the frozen food aisle",
+							"text" : "je m’approvisionne en denrées de première nécessité dans l’allée des aliments congelés",
 							"value" : "frozen food",
 							"scoring" : {
 							},
@@ -2153,19 +2170,20 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-cleaning-current.png",
 			"thumbnail_text" : "Cleaning",
+			"thumbnail_text_fr" : "Nettoyage",
 			"text" : [
 				{
-					"question" : "If we looked in your dishwasher right now we would probably find...",
+					"question" : "Si nous regardions à l’intérieur de votre lave-vaisselle en ce moment, nous trouverions probablement...",
 					"sub_question" : "Sélectionnez toutes les réponses pertinentes",
-					"explanation_title" : "why are you asking me about what i wash?",
-					"explanation" : "Knowing what goes into your dishwasher will allow us to recommend options that ensure all your dishes sparkle and shine.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de ce que je lave?",
+					"explanation" : "Si nous savons ce que vous mettez au lave-vaisselle,  nous pourrons recommander des options qui feront briller et étinceler toute votre vaisselle.",
 					"type" : "checkbox-4",
 					"oneAnswer" : false,
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-cleaning.png",
 							"thumbnail_current" : "img/icon-cleaning-current.png",
-							"text" : "Pots and pans",
+							"text" : "chaudrons et casseroles",
 							"value" : "pots",
 							"scoring" : {
 								"targetClean" : 1,
@@ -2178,7 +2196,7 @@
 						{
 							"thumbnail" : "img/icon-cleaning.png",
 							"thumbnail_current" : "img/icon-cleaning-current.png",
-							"text" : "Casserole dishes",
+							"text" : "plats allant au four",
 							"value" : "casserole",
 							"scoring" : {
 								"targetClean" : 1,
@@ -2191,7 +2209,7 @@
 						{
 							"thumbnail" : "img/icon-cleaning.png",
 							"thumbnail_current" : "img/icon-cleaning-current.png",
-							"text" : "Sport bottles",
+							"text" : "bouteilles de sport",
 							"value" : "sports",
 							"scoring" : {
 								"sensorCycle" : 1
@@ -2201,7 +2219,7 @@
 						{
 							"thumbnail" : "img/icon-cleaning.png",
 							"thumbnail_current" : "img/icon-cleaning-current.png",
-							"text" : "My must-have coffee mug",
+							"text" : "la tasse à café dont je ne peux me passer",
 							"value" : "mug",
 							"scoring" : {
 								"silverwareSpray" : 1,
@@ -2212,7 +2230,7 @@
 						{
 							"thumbnail" : "img/icon-cleaning.png",
 							"thumbnail_current" : "img/icon-cleaning-current.png",
-							"text" : "Cutting boards",
+							"text" : "planches à découper",
 							"value" : "cutting boards",
 							"scoring" : {
 								"targetClean" : 1,
@@ -2224,7 +2242,7 @@
 						{
 							"thumbnail" : "img/icon-cleaning.png",
 							"thumbnail_current" : "img/icon-cleaning-current.png",
-							"text" : "Wine glasses",
+							"text" : "verres à vin",
 							"value" : "wine glasses",
 							"scoring" : {
 								"silverwareSpray" : 1,
@@ -2235,7 +2253,7 @@
 						{
 							"thumbnail" : "img/icon-cleaning.png",
 							"thumbnail_current" : "img/icon-cleaning-current.png",
-							"text" : "Sippy cups and lunch containers",
+							"text" : "gobelets et boîtes à lunch",
 							"value" : "kids",
 							"scoring" : {
 								"accuSense" : 1,
@@ -2253,12 +2271,13 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-capacity-current.png",
 			"thumbnail_text" : "Capacity",
+			"thumbnail_text_fr" : "Capacité",
 			"text" : [
 				{
-					"question" : "How many times a week does your family run the dishwasher?",
+					"question" : "Combien de fois par semaine votre famille utilise-t-elle le lave-vaisselle?",
 					"sub_question" : "Faites glisser pour répondre",
-					"explanation_title" : "Why are you asking me about capacity?",
-					"explanation" : "When it comes to washing dishes there is no job too big or too small. By understanding what goes into your dishwasher we can find the perfect fit for your home.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de la capacité?",
+					"explanation" : "Lorsqu’il s’agit de laver la vaisselle, il n’y a pas de tâche trop grande ou trop petite. En comprenant ce que vous mettez au lave-vaisselle, nous pouvons trouver ce qui convient parfaitement à votre foyer.",
 					"type" : "slider",
 					"oneAnswer" : false,
 					"classes" : "slider-labels four",
@@ -2269,7 +2288,7 @@
 					    "step": 0.0001,
 					    "dimension" : "",
 					    "scale": [
-							"0","5","10","15+<br />I've lost count"
+							"0","5","10","15+<br />J’ai perdu le compte"
 					    ]
 					},
 					"answers" : {
@@ -2277,7 +2296,7 @@
 							"thumbnail" : "img/icon-capacity.png",
 							"thumbnail_current" : "img/icon-capacity-current.png",
 							"value" : 0,
-							"text" : "0 - Maybe every other week",
+							"text" : "0 - Environ toutes les deux semaines",
 							"scoring" : {
 								"placeSettings13": 1,
 								"compactTallTub": 1
@@ -2307,7 +2326,7 @@
 							"thumbnail" : "img/icon-capacity.png",
 							"thumbnail_current" : "img/icon-capacity-current.png",
 							"value" : 15,
-							"text" : "15+<br />I've lost count",
+							"text" : "15+<br />J’ai perdu le compte",
 							"scoring" : {
 								"placeSettings15": 1,
 								"placeSettings16": 1
@@ -2323,19 +2342,20 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-noise-current.png",
 			"thumbnail_text" : "Noise",
+			"thumbnail_text_fr" : "Bruit",
 			"text" : [
 				{
-					"question" : "When do you usually run your dishwasher?",
+					"question" : "Quand mettez-vous habituellement le lave-vaisselle en marche?",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Why are you asking me about start time?",
-					"explanation" : "Our dishwashers have different sound profiles. By understanding your start time we can determine which machine is best for your busy family.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet du moment de la mise en marche?",
+					"explanation" : "Tous nos lave-vaisselle offrent différents profils sonores. En sachant à quel moment vous mettez le vôtre en marche, nous pouvons déterminer quel appareil convient le mieux à votre famille occupée.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
-							"text" : "As soon as it's full",
+							"text" : "dès qu’il est plein",
 							"value" : "full",
 							"scoring" : {
 								 "quiet" : 1
@@ -2345,7 +2365,7 @@
 						{
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
-							"text" : "Before I go to bed",
+							"text" : "avant d’aller me coucher",
 							"value" : "night",
 							"scoring" : {
 								"quiet" : 1
@@ -2355,7 +2375,7 @@
 						{
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
-							"text" : "Before we leave for work and school",
+							"text" : "avant que nous allions au travail ou à l’école",
 							"value" : "morning",
 							"scoring" : {
 							},
@@ -2364,7 +2384,7 @@
 						{
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
-							"text" : "During off-peak hours",
+							"text" : "durant les heures creuses",
 							"value" : "offpeak",
 							"scoring" : {
 								"quiet" : 1
@@ -2381,19 +2401,20 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-noise-current.png",
 			"thumbnail_text" : "Noise",
+			"thumbnail_text_fr" : "Bruit",
 			"text" : [
 				{
-					"question" : "Do you live in an open concept space?",
+					"question" : "Vivez-vous dans un espace ouvert?",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Why are you asking me about my space?",
-					"explanation" : "If you live in an open concept space, we want to take that into consideration to recommend the perfect machine to keep the noise at a minimum.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de mon espace?",
+					"explanation" : "Si vous vivez dans un espace ouvert, nous voulons en tenir compte afin de recommander l’appareil tout indiqué pour réduire le bruit au minimum.",
 					"type" : "radio-2",
 					"oneAnswer" : true,
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
-							"text" : "Yes - My kitchen opens onto another room",
+							"text" : "oui – ma cuisine s’ouvre sur une autre pièce",
 							"image" : "/img/Dishwasher_Q5_MT-open-concept-yes.png",
 							"value" : "yes",
 							"scoring" : {
@@ -2404,7 +2425,7 @@
 						{
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
-							"text" : "No - My kitchen is its own room",
+							"text" : "non – j’ai une cuisine séparée",
 							"image" : "/img/Dishwasher_Q5_MT-open-concept-no.png",
 							"value" : "no",
 							"scoring" : {
@@ -2421,12 +2442,13 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-energy-current.png",
 			"thumbnail_text" : "Energy",
+			"thumbnail_text_fr" : "Energie",
 			"text" : [
 				{
-					"question" : "How important is energy efficency to your household?",
+					"question" : "Dans quelle mesure l’économie d’énergie est-elle importante pour votre ménage?",
 					"sub_question" : "Faites glisser pour répondre",
-					"explanation_title" : "Why are you asking me about energy?",
-					"explanation" : "All of our machines use energy differently. By understanding your energy use, it will help us find the machine that best fits your lifestyle.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’énergie?",
+					"explanation" : "Tous nos appareils utilisent l’énergie différemment. En comprenant votre consommation d’énergie, nous pourrons trouver plus facilement l’appareil qui convient le mieux à votre style de vie.",
 					"answer" : 0,
 					"type" : "slider",
 					"oneAnswer" : false,
@@ -2481,19 +2503,20 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-organization-current.png",
 			"thumbnail_text" : "Organization",
+			"thumbnail_text_fr" : "Organisation",
 			"text" : [
 				{
-					"question" : "Before running your dishwasher, it is...",
+					"question" : "Avant de mettre en marche votre lave-vaisselle, il est",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Why are you asking me about organization?",
-					"explanation" : "Everyone washes kitchenware differently. By understanding what goes into your dishwasher, we can better recommend the perfect one for your lifestyle.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’organisation?",
+					"explanation" : "Tout le monde lave ses ustensiles de cuisine différemment. En comprenant ce que vous mettez dans votre lave-vaisselle, nous pouvons mieux recommander celui qui convient parfaitement à votre style de vie.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
-							"text" : "Full and tidy",
+							"text" : "plein et bien organisé",
 							"value" : "Full and tidy",
 							"image" : "img/dishwasher-full-and-tidy.jpg",
 							"scoring" : {
@@ -2505,7 +2528,7 @@
 						{
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
-							"text" : "Full and messy",
+							"text" : "plein mal organisé",
 							"value" : "Full and messy",
 							"image" : "img/dishwasher-full-and-messy.jpg",
 							"scoring" : {
@@ -2517,7 +2540,7 @@
 						{
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
-							"text" : "Halfway filled",
+							"text" : "à moitié plein",
 							"value" : "Sparsely filled",
 							"image" : "img/dishwasher-i-still-see-room.jpg",
 							"scoring" : {
@@ -2528,7 +2551,7 @@
 						{
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
-							"text" : "Almost empty",
+							"text" : "presque vide",
 							"value" : "Almost empty",
 							"image" : "img/dishwasher-almost-empty.jpg",
 							"scoring" : {
@@ -2545,19 +2568,20 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-style-current.png",
 			"thumbnail_text" : "Style",
+			"thumbnail_text_fr" : "Style",
 			"text" : [
 				{
-					"question" : "Select your style...",
+					"question" : "Sélectionnez votre style...",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Why are you asking me about style?",
-					"explanation" : "By telling us about your personal style, you're helping us find the machine that looks best in your home",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet du style?",
+					"explanation" : "En nous parlant de votre style personnel, vous nous aidez à trouver l’appareil qui paraîtra le mieux dans votre foyer.",
 					"type" : "boxes-picture-2-radio",
 					"oneAnswer" : true,
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "Modern",
+							"text" : "moderne",
 							"value" : "modern",
 							"image" : "img/Dishwasher-Q6-modern.jpg",
 							"scoring" : {
@@ -2568,7 +2592,7 @@
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "Traditional",
+							"text" : "traditionnel",
 							"value" : "traditional",
 							"image" : "img/Dishwasher-Q6-traditional.jpg",
 							"scoring" : {
@@ -2585,13 +2609,14 @@
 			"previous" : "Cooking - Pre-Qualifier 1",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Size",
+			"thumbnail_text_fr" : "Taille",
 			"thumbnail_current" : "img/icon-size-current.png",
 			"text" : [
 				{
-					"question" : "My cooktop needs to be...",
+					"question" : "Ma table de cuisson doit être...",
 					"sub_question" : "Faites glisser pour répondre",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de la taille?",
-					"explanation" : "Not all cooktops are the same size.  By measuring your space we can provide you with a perfect fit for your home.",
+					"explanation" : "Les tables de cuisson ne sont pas toutes de la même taille.  En mesurant votre espace, nous pouvons vous fournir l’appareil qui convient parfaitement à votre foyer.",
 					"type" : "slider",
 					"oneAnswer" : false,
 					"classes" : "pointer-labels label-inches no-jslider-value show-ticks",
@@ -2601,7 +2626,7 @@
 						"to" : 3,
 					    "step": 0.0001,
 					    "dimension_label" : "LARGEUR",
-					    "scale": ["24","30","36","Any size"]
+					    "scale": ["24 po","30 po","36 po","n’importe quelle taille"]
 					},
 					"answers" : {
 						"0" : {
@@ -2654,20 +2679,21 @@
 			"previous" : "Cooking - Cooktops - Size",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Features",
+			"thumbnail_text_fr" : "Style",
 			"thumbnail_current" : "img/icon-features-current.png",
 			"text" : [
 				{
-					"question" : "How would you describe your kitchen's aesthetic?",
+					"question" : "Comment décririez-vous l’aspect esthétique de votre cuisine?",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Why are you asking me about style?",
-					"explanation" : "Did you know that professional kitchens usually have front control cooktops? Once we understand your style preference, we can recommend your perfect cooktop.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet du style?",
+					"explanation" : "Saviez-vous que les cuisines professionnelles comportent habituellement des tables de cuisson à commandes frontales? Une fois que nous comprenons vos préférences en matière de style, nous pouvons recommander la table de cuisson parfaite pour vous.",
 					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"text" : "Traditional",
+							"text" : "traditionnel",
 							"value" : "traditional",
 							"image" : "img/Cooking-Q2-single.png",
 							"scoring" : {
@@ -2679,7 +2705,7 @@
 						{
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"text" : "Professional",
+							"text" : "professionnel",
 							"value" : "professional",
 							"image" : "img/Cooking-Q2-combo.png",
 							"scoring" : {
@@ -2697,12 +2723,13 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-features-current.png",
 			"thumbnail_text" : "Features",
+			"thumbnail_text_fr" : "Caractéristiques",
 			"text" : [
 				{
-					"question" : "When shopping for a cooktop, what features are most important to you?",
+					"question" : "Lorsque vous magasiner une table de cuisson, quelles caractéristiques vous importent le plus?",
 					"sub_question" : "Faites glisser pour reclasser par ordre d’omportance, 1 étant  la caractéristique la plus importante et 5 à la moins importante",
-					"explanation_title" : "Why are you asking me about these features?",
-					"explanation" : "By understanding what matters most, we can help you choose the best cooktop for your needs.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de ces caractéristiques?",
+					"explanation" : "En comprenant ce qui vous importe le plus, nous pouvons vous aider à choisir la table de cuisson qui répond le mieux à vos besoins.",
 					"type" : "rank",
 					"oneAnswer" : true,
 					"answers" : [
@@ -2768,14 +2795,15 @@
 			"next" : null,
 			"previous" : "Cooking - Cooktops - Features",
 			"thumbnail_text" : "Fuel Type",
+			"thumbnail_text_fr" : "Type d’alimentation",
 			"thumbnail_current" : "img/icon-fueltype-current.png",
 			"thumbnail_type" : "image",
 			"text" : [
 				{
-					"question" : "Is your kitchen equipped for gas or electric?",
+					"question" : "Votre cuisine est-elle équipée pour une alimentation au gaz ou électrique?",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Why are you asking me about fuel type?",
-					"explanation" : "By letting us know what works in your kitchen, you're helping us make the best recommendation.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’alimentation au gaz?",
+					"explanation" : "En nous faisant savoir ce qui fonctionne dans votre cuisine, vous nous aidez à faire la meilleure recommandation.",
 					"type" : "boxes-icon-split-radio",
 					"oneAnswer" : true,
 					"answers" : [
@@ -2809,13 +2837,14 @@
 			"previous" : "Cooking - Pre-Qualifier 1",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Size",
+			"thumbnail_text_fr" : "Taille",
 			"thumbnail_current" : "img/icon-size-current.png",
 			"text" : [
 				{
-					"question" : "What is the width of your cooktop or range?",
+					"question" : "Quelle est la largeur de votre table de cuisson ou cuisinière?",
 					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de la taille?",
-					"explanation" : "Every kitchen is different. We want to make sure that your vent matches the size of your cooktop.",
+					"explanation" : "Chaque cuisine est différente. Nous voulons nous assurer que la taille de votre hotte correspond à celle de votre table de cuisson.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
 					"classes" : "vents  singleAns",
@@ -2823,7 +2852,7 @@
 						{
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-convection-current.png",
-							"text" : "30 po or less",
+							"text" : "30 po ou moins",
 							"value" : "wall",
 							"scoring" : {
 								"width30" : 5,
@@ -2840,7 +2869,7 @@
 						{
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-convection-current.png",
-							"text" : "36 po or more",
+							"text" : "36 po ou plus",
 							"value" : "island",
 							"scoring" : {
 								"width36" : 5
@@ -2856,13 +2885,14 @@
 			"previous" : "Cooking - Vents - Size",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Style",
+			"thumbnail_text_fr" : "Emplacement",
 			"thumbnail_current" : "img/icon-style-current.png",
 			"text" : [
 				{
-					"question" : "Where in your kitchen can we find your cooking surface?",
+					"question" : "Où se trouve votre surface de cuisson dans la cuisine?",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Why are you asking me about location?",
-					"explanation" : "Every kitchen is different. We need to get a better idea of where your cooking surface is in order to find the vent best suited for your space.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’emplacement?",
+					"explanation" : "Chaque cuisine est différente. Nous avons besoin de nous faire une meilleure idée de l’emplacement de votre surface de cuisson afin de trouver la hotte la mieux adaptée à votre espace.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
 					"classes" : "vents  singleAns",
@@ -2870,7 +2900,7 @@
 						{
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-convection-current.png",
-							"text" : "Against a wall",
+							"text" : "contre un mur",
 							"value" : "wall",
 							"scoring" : {
 								"islandMount" : -30,
@@ -2883,7 +2913,7 @@
 						{
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-convection-current.png",
-							"text" : "On an island",
+							"text" : "sur un îlot",
 							"value" : "island",
 							"scoring" : {
 								"islandMount" : 1,
@@ -2901,13 +2931,14 @@
 			"previous" : "Cooking - Vents - Location",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Features",
+			"thumbnail_text_fr" : "Vitesse",
 			"thumbnail_current" : "img/icon-features-current.png",
 			"text" : [
 				{
-					"question" : "Do you cook with high heat often?",
+					"question" : "Cuisinez-vous souvent à haute température?",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Why are you asking me about temperature?",
-					"explanation" : "If you like to turn up the heat, we will have to find you a stronger fan.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de la température?",
+					"explanation" : "Si vous aimez monter le feu, nous devrons vous trouver un ventilateur plus résistant.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
 					"classes" : "vents  singleAns",
@@ -2915,7 +2946,7 @@
 						{
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-convection-current.png",
-							"text" : "Yes",
+							"text" : "Oui",
 							"value" : "high speed",
 							"scoring" : {
 								"350CFMOrHigher" : 1
@@ -2925,7 +2956,7 @@
 						{
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-convection-current.png",
-							"text" : "No",
+							"text" : "Non",
 							"value" : "no speed",
 							"scoring" : {
 							},
@@ -2940,13 +2971,14 @@
 			"previous" : "Cooking - Vents - Speed",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Style",
+			"thumbnail_text_fr" : "Type",
 			"thumbnail_current" : "img/icon-style-current.png",
 			"text" : [
 				{
-					"question" : "Are there cabinets above your cooking surface?",
+					"question" : "Y a-t-il des armoires au-dessus de votre surface de cuisson?",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Why are you asking me about my cabinets?",
-					"explanation" : "We know that every kitchen is different. If we know where your current cabinets are, we can recommend the perfect vent for your space.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de mes armoires?",
+					"explanation" : "Nous savons que chaque cuisine est différente. Si nous savons où se trouvent vos armoires actuelles, nous pouvons recommander la hotte qui convient parfaitement à votre espace.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
 					"classes" : "vents  singleAns",
@@ -2954,7 +2986,7 @@
 						{
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-convection-current.png",
-							"text" : "Yes",
+							"text" : "Oui",
 							"value" : "under",
 							"scoring" : {
 								"islandMount" : -30,
@@ -2967,7 +2999,7 @@
 						{
 							"thumbnail" : "img/icon-convection.png",
 							"thumbnail_current" : "img/icon-convection-current.png",
-							"text" : "No",
+							"text" : "Non",
 							"value" : "notUnder",
 							"scoring" : {
 								"islandMount" : 1,
@@ -2984,19 +3016,20 @@
 			"next" : "Cooking - Vents - Space",
 			"previous" : "Cooking - Vents - Type",
 			"thumbnail_text" : "Fuel Type",
+			"thumbnail_text_fr" : "Ventilation",
 			"thumbnail_current" : "img/icon-fueltype-current.png",
 			"thumbnail_type" : "image",
 			"text" : [
 				{
-					"question" : "Does your ventilation lead to your home's exterior?",
+					"question" : "Votre système de ventilation est-il conduit vers l’extérieur de la maison?",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Why are you asking me about ventilation?",
-					"explanation" : "Proper ventilation is an important part of keeping the air in your home clean. If we know more about how yours works we can choose the best fit.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de la ventilation?",
+					"explanation" : "Une ventilation adéquate est importante pour maintenir l’air propre dans la maison. Si nous en savons plus sur la façon dont la vôtre fonctionne, nous pouvons choisir ce qui convient le mieux.",
 					"type" : "boxes-icon-split-radio",
 					"oneAnswer" : true,
 					"answers" : [
 						{
-							"text" : "Yes - I need ducted ventilation",
+							"text" : "oui - j’ai besoin d’une ventilation avec conduit",
 							"image" : "img/icon-thumb-gas.png",
 							"hover" : "img/icon-thumb-gas-active.png",
 							"thumbnail" : "img/icon-fueltype.png",
@@ -3008,7 +3041,7 @@
 							"order" : 1
 						},
 						{
-							"text" : "No - I need non-ducted ventilation",
+							"text" : "non - j’ai besoin d’une ventilation sans conduit",
 							"image" : "img/icon-thumb-gas.png",
 							"hover" : "img/icon-thumb-gas-active.png",
 							"thumbnail" : "img/icon-fueltype.png",
@@ -3021,7 +3054,7 @@
 							"order" : 2
 						},
 						{
-							"text" : "I'm not sure",
+							"text" : "je ne suis pas certain",
 							"image" : "img/icon-thumb-electric.png",
 							"hover" : "img/icon-thumb-electric-active.png",
 							"thumbnail" : "img/icon-fueltype.png",
@@ -3041,19 +3074,20 @@
 			"next" : null,
 			"previous" : "Cooking - Vents - Ventilation",
 			"thumbnail_text" : "Space",
+			"thumbnail_text_fr" : "Espace",
 			"thumbnail_current" : "img/icon-fueltype-current.png",
 			"thumbnail_type" : "image",
 			"text" : [
 				{
-					"question" : "Do you find yourself limited by counter space?",
+					"question" : "Pensez-vous que l’espace de votre comptoir est limité?",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Why are you asking me about counter space?",
-					"explanation" : "Much like your ingredients work together to create the perfect meal, some of our vent models come together to save you space. By understanding your needs we can help you find the perfect fit.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’espace de comptoir?",
+					"explanation" : "De la même manière que vos ingrédients travaillent ensemble pour créer le repas parfait, certains de nos modèles de ventilation se rassemblent pour faire plus de place. En comprenant vos besoins, nous pouvons vous aider à trouver l’installation parfaite.",
 					"type" : "boxes-icon-split-radio",
 					"oneAnswer" : true,
 					"answers" : [
 						{
-							"text" : "Yes",
+							"text" : "Oui",
 							"image" : "img/icon-thumb-gas.png",
 							"hover" : "img/icon-thumb-gas-active.png",
 							"thumbnail" : "img/icon-fueltype.png",
@@ -3065,7 +3099,7 @@
 							"order" : 1
 						},
 						{
-							"text" : "No",
+							"text" : "Non",
 							"image" : "img/icon-thumb-gas.png",
 							"hover" : "img/icon-thumb-gas-active.png",
 							"thumbnail" : "img/icon-fueltype.png",
