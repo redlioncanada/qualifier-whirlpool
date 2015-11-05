@@ -831,7 +831,7 @@
 					"oneAnswer" : true,
 					"answers" : [
 						{
-							"text" : "Front Control(FR)",
+							"text" : "commandes frontales",
 							"image" : "img/icon-thumb-gas.png",
 							"hover" : "img/icon-thumb-gas-active.png",
 							"thumbnail" : "img/icon-style.png",
@@ -843,7 +843,7 @@
 							"order" : 1
 						},
 						{
-							"text" : "Rear Control(FR)",
+							"text" : "panneau de commandes arrière",
 							"image" : "img/icon-thumb-electric.png",
 							"hover" : "img/icon-thumb-electric-active.png",
 							"thumbnail" : "img/icon-style.png",
