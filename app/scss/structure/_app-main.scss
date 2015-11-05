@@ -487,13 +487,7 @@ a.answer-box.picture-4 {
 			height: 160px;
 
 			img.normal, img.hover {
-				top: 0px;
-				left: 0px;
-				width: 85%;
-			}
-
-			img.hover {
-				left: 10px;
+				width: 60%;
 			}
 
 			.select-icon {
@@ -859,7 +853,7 @@ a.answer-box.picture-4 {
 	}
 
 	.boxes-icon-2-container {
-		width: 100% !important;
+		width: 50% !important;
 	}
 
 	a.boxes-icon-5 {
@@ -895,15 +889,6 @@ a.answer-box.picture-4 {
 
 		.select-icon {
 			top: 134px;
-		}
-
-		img.hover {
-			top: 0;
-			left: 8px;
-		}
-
-		.icon-wrap {
-			.normal {top: 0;}
 		}
 	}
 
@@ -1349,7 +1334,6 @@ a.answer-box.picture-4 {
     .boxes-icon-2-container {
         a.answer-box {
             width: 143px;
-            height: 159px;
             background-size: 100% 100%;
             
             .select-icon {

@@ -402,13 +402,18 @@
 		// @include make-md-column(6);
 		width: 172px;
 		height: 204px;
-		background: url('../img/boxes-icon-bg-new.png');
 		display: inline-block;
         background-repeat: no-repeat;
 		.icon-wrap {
+            height: 75%;
+            position: relative;
+            border: 1px #edb129 solid;
 			img {
-				position: relative;
-				top: 12px;
+				position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);                
 			}
 		}
 		.select-icon {
@@ -416,15 +421,24 @@
 			left: 15px;
 		}
 		.label-wrap {
-			position: absolute;
-			bottom: 18px;
-			left: 60px;
+			position: relative;
+            width: 100%;
+            left: 0 !important;
+            top: 75% !important;
+            height: 25%;
+            border: 1px #edb129 solid;
+            border-top: none;
+            
+            .label-text {
+                position: absolute;
+                top: 50%;
+                left: 25%;
+                -webkit-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);      
+            }
 		}
 
 		img.hover {
-			top: 12px;
-			left: 20px;
-			position: absolute;
 			opacity: 0;
 		}
 		
@@ -435,13 +449,21 @@
 		// 	// -o-transition: opacity 0.3s ease-in-out;
 		// 	// transition: opacity 0.3s ease-in-out;
 		// }
-		&.selected {
+		&.selected, &:hover {
 			img.normal {
 				opacity: 0;
 			}
 			img.hover {
 				opacity: 1;
 			}
+            .label-wrap {
+            transition: all 1s ease;
+            background-color: #edb129;
+
+            .label-text {
+               color: white;   
+            }
+		}
 		}
 	}
 	&.boxes-icon-split {
