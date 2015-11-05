@@ -159,7 +159,7 @@
 							"text" : "Vents and Hoods",
 							"value" : "vents and hoods",
 							"displayName": "VENTS AND HOODS",
-							"classes" : "sub-category wallovens",
+							"classes" : "sub-category vents",
 							"image" : "img/vents.png",
 							"thumbnail" : "img/walloven-single.jpg",
 							"thumbnail_current" : "img/walloven-single.jpg",
@@ -2601,8 +2601,7 @@
 						"from" : 0,
 						"to" : 3,
 					    "step": 0.0001,
-					    "dimension_label" : "Width",
-					    "scale": ["24","30","36","Any size"]
+					    "scale": ["24\"","30\"","36\"","Any size"]
 					},
 					"answers" : {
 						"0" : {

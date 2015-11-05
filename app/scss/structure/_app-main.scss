@@ -96,6 +96,22 @@ html, body {
 	}
 }
 
+.answers-main-content {
+    .category-spacer {
+        float: right;
+        height: 170px;
+        border-right: 1px #CCC dotted;
+        position: absolute;
+        bottom: 80px;
+        right: -35px;
+    }
+    .vents {
+        .category-spacer {
+            display: none;
+        }
+    }
+}
+
 .app-content-main-top {
 	@include make-row;
 	padding-bottom: 25px;
@@ -406,6 +422,13 @@ a.answer-box.picture-4 {
 }
 
 @media(max-width:1180px) and (min-width:1024px) {
+    .answers-main-content {
+        .category-spacer {
+             height: 140px;
+            bottom: 75px;
+            right: -22px;
+        }
+    }
 	.slidey {
 		width: 927px !important;
 		min-width: 927px !important;
@@ -580,6 +603,13 @@ a.answer-box.picture-4 {
 }
 
 @media(max-width:1023px) {
+    .answers-main-content {
+        .category-spacer {
+            height: 100px;
+            bottom: 50px !important;
+            right: -33px !important;
+        }
+    }
     .slidey-wrap-all {
 		/*min-height: 586px !important;*/
 	}

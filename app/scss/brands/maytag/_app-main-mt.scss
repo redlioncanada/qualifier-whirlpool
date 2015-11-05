@@ -605,6 +605,14 @@ div[ng-class="fr_CA"] {
 /* Added by Jacoub Bondre Sept 8th 2015 */
 /* If time allots lets refactor progress bar styles into its own .scss file */
 @media(max-width:1023px) {
+    .app-answers {
+	float: left;
+	.answer-option {
+		.category-name {
+			font-size: 10px;
+		}
+	}
+}
 	header.header-desktop {
 		display: none;
 	}
