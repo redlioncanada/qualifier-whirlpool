@@ -78,7 +78,7 @@
 	display: inline-block;
 	text-align: left;
 }
-.label-text {
+.label-text, .label-sub-text {
 	font-family: $AV-Light;
 	font-size: 17px;
 	color: #444;
@@ -354,6 +354,12 @@
 			bottom: 15px;
 			left: 24px;
 			text-align: left;
+            
+            .label-sub-text {
+                font-size: 10px;
+                position: relative;
+                height: 8px;
+            }
 		}
 	}
     &.picture-2:hover, &.picture-3:hover,&.picture-4:hover {        
@@ -361,7 +367,7 @@
             background: #edb129;
             transition: all 1s ease;
             .label-wrap {
-                .label-text {
+                .label-text, .label-sub-text {
                     color: white;
                 }
             }
@@ -393,7 +399,6 @@
 		}
 		.label-wrap {
 			position: absolute;
-			bottom: 16px;
 			text-align: left;
 		}
 	}

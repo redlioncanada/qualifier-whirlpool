@@ -1330,7 +1330,7 @@ a.answer-box.picture-4 {
         }
     }
     a.answer-box.picture-4, a.answer-box.picture-3 {
-        width: 155px !important;
+        width: 200px !important;
         background-size: cover;
         margin-top: 1px;
         margin-bottom: 0px;
@@ -1350,11 +1350,16 @@ a.answer-box.picture-4 {
         }
         .label-wrap {
             width: 100%;
+            bottom: 10px !important;
+            left: 10px !important;
             
             .label-text {
                 top: 8px;
                 left: 0px;
                 font-size: 10px !important;
+            }
+            .label-sub-text {
+                font-size: 8px !important;
             }
         }
     }
@@ -1428,11 +1433,11 @@ a.answer-box.picture-4 {
             display: inline-block;
             height: 50px !important;
             width: 100% !important;
-            padding-left: 13% !important;
+            padding-left: 12% !important;
         }
         .label-text {
             top: 13px !important;
-            font-size: 11px !important;
+            font-size: 10px !important;
         }
 
     }
