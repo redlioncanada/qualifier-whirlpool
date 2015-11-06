@@ -83,7 +83,6 @@
 				.result-wrap {
 					border-radius: 5px;
 					background-color: rgba(76, 76, 76, 0);
-					box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.28);
 					width: 100%;
 				}
 			}
@@ -260,7 +259,6 @@ by Jacoub Bondre */
                 color: #767676;
                 font-size: 12px;
                 text-transform: uppercase;
-                font-family: 'Akzidenz Grotesk Bold Condensed';
                 margin-top: 5px;
                 display: block;
             }
@@ -396,6 +394,7 @@ by Jacoub Bondre */
         margin-top: 0px !important;
         margin-bottom: 0px !important;
         padding: 0px !important;
+        height: 43px !important;
 	}
 	.product-features-title {
         //
@@ -437,6 +436,7 @@ by Jacoub Bondre */
 					width: 100%;
 					padding: 0 10px;
 					display: block;
+                    text-align: center;
 				}
 			}
 		}
