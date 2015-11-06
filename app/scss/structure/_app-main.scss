@@ -203,12 +203,12 @@ div.mobile-app-nav-arrows {
 		z-index: 2;
 		top: 33px;
 		width: 100%;
-		background-color: #002e5f;
+		background-color: #edb129;
 
 		> div {
 			position: absolute;
 			width: 100%;
-			background-color: #002e5f;
+			background-color: #edb129;
 		}
 
 		.results-menu-tab-wrapper {
@@ -909,9 +909,7 @@ a.answer-box.picture-4 {
 		height: 174px;
 		background-size: cover;
 
-        .label-wrap {
-			bottom: 13px;
-			
+        .label-wrap {			
 			.label-text {
 				font-size: 14px !important;
 			}
@@ -1027,11 +1025,11 @@ a.answer-box.picture-4 {
 
 		.jslider {
 			div.jslider-pointer {
-				left: 11.5px;
+				left: 12.5px;
 				width: 43px;
 				height: 37px;
-				background: url("../img/slider-pointer-small.png") !important;
-				background-size: 43px 37px !important;
+				background: url("../img/slider-pointer.png") no-repeat !important;
+				background-size: 37px 37px !important;
 			}
 
 			.jslider-bg {

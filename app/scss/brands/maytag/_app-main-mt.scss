@@ -89,16 +89,16 @@ header.header-desktop {
 
 .tooltip {
 	&.top .tooltip-arrow {
-		border-top-color: #002e5f;
+		border-top-color: #edb129;
 	}
 	&.bottom .tooltip-arrow {
-		border-bottom-color: #002e5f;
+		border-bottom-color: #edb129;
 	}
 	&.left .tooltip-arrow {
-		border-right-color: #002e5f;
+		border-right-color: #edb129;
 	}
 	&.right .tooltip-arrow {
-		border-left-color: #002e5f;
+		border-left-color: #edb129;
 	}
 	.tooltip-arrow {
 		margin-left: -5px;
@@ -107,7 +107,7 @@ header.header-desktop {
 	}
 	.tooltip-inner {
 		color: #fff;
-		background: #002e5f;
+		background: #edb129;
 		font-size: 11px;
 		line-height: 13px;
 		padding: 30px 15px;
@@ -286,19 +286,18 @@ header.header-desktop {
 		.btn-backtoresults {
 			font-family: $AV-Light;
 			@include button-variant(#ffffff, transparent, #a7a7a7);
-			width: 44px;
+			width: 40px;
 			height: 40px;
-			font-size: 10px;
+			font-size: 7px;
 			text-align: center;
 			//padding: 3px 18px;
-			padding-left: 5px;
-		    padding-top: 12px;
+			padding-left: 4px;
+		    padding-top: 13px;
 		    line-height: 1;
 			line-spacing: 1;
 			text-transform: uppercase;
-            border-radius: 0;
+            border-radius: 50%;
             color: #a7a7a7 !important;
-            font-size: 8px;
 		}
         .btn-backtoresults:hover {
 			@include button-variant(#ffffff, transparent, #edb129);
@@ -320,17 +319,16 @@ header.header-desktop {
 			@include button-variant(#ffffff, transparent, #a7a7a7);
 			width: 40px;
 			height: 40px;
-			font-size: 12px;
+			font-size: 9px;
 			//padding: 3px 18px;
 			padding-left: 6px;
-		    padding-top: 10px;
+		    padding-top: 11px;
 		    text-align: center;
 		    line-height: 1;
 			line-spacing: 1;
 			text-transform: uppercase;
-            border-radius: 0;
+            border-radius: 50%;
             color: #a7a7a7 !important;
-            font-size: 10px;
 		}
         .btn-startover:hover {
 			@include button-variant(#ffffff, transparent, #edb129);
@@ -346,7 +344,7 @@ header.header-desktop {
 
    		div {
    			color: white;
-   			background-color: #002e5f;
+   			background-color: #edb129;
    			height: 30px;
    			line-height: 30px;
    			margin: 0 auto;
@@ -665,7 +663,7 @@ div[ng-class="fr_CA"] {
         transform: translate(-50%, 0%);
         border-style: solid;
         border-color: transparent;
-        border-top-color: #002e5f;
+        border-top-color: #edb129;
         border-width: 10px;
         left: 50%;  
     }  

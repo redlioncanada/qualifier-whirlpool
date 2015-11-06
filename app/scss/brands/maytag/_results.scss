@@ -21,7 +21,7 @@
 		font-family: $AV-Light;
 	}
 	h2, h4 {
-		color: #002e5f;
+		color: #edb129;
 	}
 	.price-slider-label-wrap {
 		@include large-square-label-wrap;
@@ -30,8 +30,8 @@
 		}	
 	}
 	li.result {
-		//box-shadow: inset 0px 0px 5px 0px #002e5f;
-		border: 2px solid #002e5f;
+		//box-shadow: inset 0px 0px 5px 0px #edb129;
+		border: 2px solid #CCC;
 		.product-details {
 			padding-top: 1px;
 		}
@@ -98,7 +98,7 @@
 				//padding-top: 25px;
 				h3 {	
 					text-align: center;
-					background-color: #002e5f;
+					background-color: #edb129;
 					padding-top: 10px;
 					padding-bottom: 10px;
 					color: #fff;
@@ -169,7 +169,7 @@
 		&:nth-child(2) { // this is for the middle result
 			h3 {	
 				text-align: center;
-				background-color: #002e5f;
+				background-color: #edb129;
 				padding-top: 10px;
 				padding-bottom: 10px;
 				color: #fff;
