@@ -626,13 +626,13 @@
 	}
 	.label-wrap {
 		display: inline-block;
-		width: 566px;
+		width: 500px;
 		height: 63px;
 		background: url('../img/ranking-bg.png') no-repeat;
         border: 1px #edb129 solid;
         background-position: 0 -2px;
         background-size: 100% 100%;
-        padding-left: 80px !important;
+        padding-left: 80px;
 	}
 	.label-text {
 		top: 22px;
@@ -657,7 +657,7 @@ li.dragging-rank {
     }
     .label-wrap {
         display: inline-block;
-		width: 566px;
+		width: 500px;
 		height: 63px;
 		background: url('../img/ranking-bg.png') no-repeat;
         border: 1px #edb129 solid;
