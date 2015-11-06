@@ -1,8 +1,17 @@
 'use strict';
 
 angular.module('App')
-  .controller('SliderCtrl', function ($scope, $rootScope) {
+  .controller('SliderCtrl', function ($scope, $rootScope, $timeout, $element) {
   	// jslider-value
+
+    $timeout(function(){
+      $($element).find('.jslider:not(.vertical) td').append('<div class="jslider-true-bg"><img src="../img/slider-true-bg.png"/></div>');
+      $($element).find('.jslider.vertical td').append('<div class="jslider-true-bg"><img src="../img/slider-true-bg-vertical.png"/></div>');
+       $scope.sliderBackground = $($element).find('.jslider:not(.vertical) .jslider-true-bg');
+       $scope.sliderIndicator = $($element).find('.jslider:not(.vertical) .jslider-pointer').eq(0);
+       $scope.sliderBackgroundVertical = $($element).parent().find('.vertical .jslider-true-bg');
+       $scope.sliderIndicatorVertical = $($element).parent().find('.vertical .jslider-pointer').eq(0);
+    })
 
   	$scope.setAnswer = function () {
       $rootScope.showTooltip = false;
@@ -17,6 +26,8 @@ angular.module('App')
   	}
 
     $scope.setLast = function (qs,isVertical) {
+      $scope.isVertical = true;
+
       qs.text[0].options.round = 5;
       var last = null;
       for (var a in qs.text[0].answers) {
@@ -57,6 +68,13 @@ angular.module('App')
             } else {
               //released
             } 
+
+            var left = parseFloat($($scope.sliderIndicator).css('left'));
+            left += $($scope.sliderIndicator).width()/2;
+            $($scope.sliderBackground).css('width', left);
+            var top = parseFloat($($scope.sliderIndicatorVertical).css('top'));
+            top += $($scope.sliderIndicatorVertical).height()/2;
+            $($scope.sliderBackgroundVertical).css('height', top);
           }
         }
       })

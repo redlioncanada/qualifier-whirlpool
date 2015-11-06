@@ -14,7 +14,8 @@ var nglibs = [
   'angularAwesomeSlider',
   'ngAnimate',
   'AppstateService',
-  'ApplianceDataDecoratorService'
+  'ApplianceDataDecoratorService',
+  'TestsService'
 ];
 
 var App = angular.module('App', nglibs);
@@ -198,7 +199,7 @@ App.filter('byPrice', function($rootScope) {
 
 // New byPrice works by re-ranking the results, prices within the range are ranked, then prices without
 
-App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr', '$location', '$appstate', '$dataDecorator', function ($rootScope, $state, $resource, localStorageService, Modernizr, $location, $appstate, $dataDecorator) {
+App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr', '$location', '$appstate', '$dataDecorator', '$tests', function ($rootScope, $state, $resource, localStorageService, Modernizr, $location, $appstate, $dataDecorator, $tests) {
     $location.path('');
 
     $state.go('loading');
@@ -271,8 +272,12 @@ App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr'
             "img/slider-pointer.png"
           ];
 
+
           $resource("http://mywhirlpool.wpc-stage.com/api/public/wpq/product-list/index/brand/"+$rootScope.brand+"/locale/"+$rootScope.locale).get({}, function (res, headers) {
                 $rootScope.appliances = $dataDecorator(res.products);
+                // @if ENV='development'
+                // $tests.run($rootScope.appliances, $rootScope.brandData.questions);
+                // @endif
                 $appstate.restore();
           }, function () {
               $rootScope.errorMessage = "We're having connectivity issues. Please reload."

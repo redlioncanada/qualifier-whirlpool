@@ -130,6 +130,22 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 	margin-left: auto;
 	margin-right: auto;
 
+	.jslider.vertical {
+		div.jslider-true-bg {
+			position: absolute;
+			margin-left: -18px;
+			height: 45px;
+			width: 26px;
+			top: 0;
+			z-index: 10;
+
+			img {
+				width: inherit;
+				height: 111%;
+			}
+		}
+	}
+
 	.jslider {
 		cursor: pointer; 
 		display: block; 
@@ -193,6 +209,20 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 			vertical-align: top; 
 			text-align: left; 
 			border: 0; 
+		}
+		.jslider-true-bg {
+			position: absolute;
+			margin-left: -30px;
+			width: 5px;
+			top: 4px;
+			height: 32px;
+			pointer-events: none;
+			overflow: hidden;
+
+			img {
+				width: 860px;
+				height: inherit;
+			}
 		}
 		.jslider-bg {
 			position: relative; 
@@ -1021,6 +1051,17 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	}
 }
 
+.multi-slider-wrap {
+	.jslider .jslider-true-bg {
+		margin-left: -10px;
+		top: 6px;
+
+		img {
+			width: 907px;
+		}
+	}
+}
+
 /*french css start*/
 div[ng-class="fr_CA"] {
 	.price-slider {
@@ -1071,6 +1112,13 @@ div[ng-class="fr_CA"] {
 }
 
 @media(max-width: 580px) {
+	.jslider {
+		.jslider-true-bg {
+			margin-left: -21px !important;
+			width: 20px !important;
+		}
+	}
+
 	div.price-slider .jslider {
 		.jslider-bg {
 			margin-left: -16px;
