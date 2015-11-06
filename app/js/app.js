@@ -271,8 +271,7 @@ App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr'
             "img/slider-pointer.png"
           ];
 
-          //$resource("http://mykitchenaid.wpc-stage.com/api/public/wpq/product-list/index/brand/"+$rootScope.brand+"/locale/"+$rootScope.locale).get({}, function (res, headers) {
-          $resource("http://mykitchenaid.wpc-stage.com/api/public/wpq/product-list/index/brand/kitchenaid/locale/"+$rootScope.locale).get({}, function (res, headers) {
+          $resource("http://mywhirlpool.wpc-stage.com/api/public/wpq/product-list/index/brand/"+$rootScope.brand+"/locale/"+$rootScope.locale).get({}, function (res, headers) {
                 $rootScope.appliances = $dataDecorator(res.products);
                 $appstate.restore();
           }, function () {
