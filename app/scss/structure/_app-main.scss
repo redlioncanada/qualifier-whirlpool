@@ -166,7 +166,6 @@ html, body {
 	// margin-left: 15px;
 }
 
-
 .app-answers {
 	text-align: center;
 	display: block;
@@ -183,7 +182,7 @@ div.mobile-app-nav-arrows {
 	position: relative;
 	height: 25px;
 
-	.btn-next, .btn-prev {bottom: initial;}
+	.btn-next, .btn-prev {bottom: -20px;}
 	.btn-next {right: 35px;}
 	.btn-prev {left: 35px;}
 }
@@ -435,6 +434,40 @@ a.answer-box.picture-4 {
 .regular-3-container {
     width: 1100px;
 }
+
+.radio-2.circular {
+    width: 200px !important;
+    height: 200px !important;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: 1px #CCC solid !important;
+    float: none !important;
+    
+    .label-wrap {
+        left: 50% !important;
+        top: 50%;
+        height: auto !important;
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        .label-text {
+            font-size: 25px !important;
+            color: #CCC !important;
+            padding-bottom: 10px !important;
+            text-transform: uppercase;
+        }
+    }
+    &:hover, &.selected {
+        border: 1px #edb129 solid !important;
+        background-color: white !important;
+            .label-wrap {
+                .label-text {
+                        color: #edb129 !important;
+                        border-bottom: 5px #edb129 solid !important;
+                }
+        }
+    }
+}
+
 
 @media(max-width:1180px) and (min-width:1024px) {
     .answers-main-content {
@@ -1269,15 +1302,15 @@ a.answer-box.picture-4 {
 		height: 0px; 
 		
 		a.btn-prev img, a.btn-next img {
-			height: 25px;
+			height: 35px;
 		}
 
 		a.btn-prev {
-			left: 35px;
+			left: 20px;
 		}
 
 		a.btn-next {
-			right: 35px;
+			right: 20px;
 		}
 	}
 
@@ -1294,7 +1327,7 @@ a.answer-box.picture-4 {
         }
         .label-wrap {
             .label-text {
-                font-size: 11px !important;   
+                font-size: 11px;   
             }
         }
 	}
@@ -1345,7 +1378,7 @@ a.answer-box.picture-4 {
         }
     }
     a.answer-box.picture-4, a.answer-box.picture-3 {
-        width: 200px !important;
+        width: 160px !important;
         background-size: cover;
         margin-top: 1px;
         margin-bottom: 0px;
@@ -1365,16 +1398,21 @@ a.answer-box.picture-4 {
         }
         .label-wrap {
             width: 100%;
-            bottom: 10px !important;
+            position: relative;
+            bottom: auto !important;
             left: 10px !important;
-            
+            top: 50% !important;
+            -webkit-transform: translate(0,-50%);
+            transform: translate(0,-50%);
             .label-text {
-                top: 8px;
+                top: 0px;
                 left: 0px;
                 font-size: 10px !important;
+                line-height: 30px !important;
             }
             .label-sub-text {
-                font-size: 8px !important;
+                font-size: 7px !important;
+                top: -13px;
             }
         }
     }
@@ -1430,28 +1468,29 @@ a.answer-box.picture-4 {
             margin-left: 49px !important;
             width: 85% !important;
             li {
-                height: 50px !important;
+                height: 40px !important;
             }
         }
         .rank-numbers-list li {
            width: 50px !important;
-            height: 50px !important;
+            height: 40px !important;
         }
         .rank-number-wrap {
             width: 50px !important;
-            height: 50px !important;
+            height: 40px !important;
             .rank-number {
+                top: 8px !important;
                 font-size: 18px !important;
             }
         }
         .label-wrap {
             display: inline-block;
-            height: 50px !important;
+            height: 40px !important;
             width: 100% !important;
             padding-left: 12% !important;
         }
         .label-text {
-            top: 13px !important;
+            top: 7px !important;
             font-size: 10px !important;
         }
 
@@ -1459,6 +1498,11 @@ a.answer-box.picture-4 {
     .ranking > div:first-of-type {
         width: 90%;
         margin: 0 auto;
+    }
+    .radio-2.circular {
+        width: 130px !important;
+        height: 130px !important;
+        margin: 10px 90px !important;
     }
 }
 
