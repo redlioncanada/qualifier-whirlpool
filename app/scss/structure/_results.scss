@@ -94,7 +94,6 @@
 				.result-wrap {
 					border-radius: 5px;
 					background-color: rgb(255, 255, 255);
-					box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.28);
 					width: 100%;
 				}
 				.result-inner {
@@ -118,9 +117,6 @@
 					margin-left: auto;
 					margin-right: auto;
 				}
-			}
-			.result-wrap {
-				padding: 5px;
 			}
 			.result-inner {
 					
@@ -275,8 +271,8 @@ by Jacoub Bondre */
             }
             .active {
                 font-size: 13px;
-                color: #002e5f;
-                border-bottom: 9px solid #002e5f;
+                color: #edb129;
+                border-bottom: 9px solid #edb129;
                 padding-bottom: 2px;
                 margin-top: 0px;
             }

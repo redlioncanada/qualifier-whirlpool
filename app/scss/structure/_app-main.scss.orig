@@ -180,12 +180,12 @@ div.mobile-app-nav-arrows {
 		z-index: 2;
 		top: 33px;
 		width: 100%;
-		background-color: #002e5f;
+		background-color: #edb129;
 
 		> div {
 			position: absolute;
 			width: 100%;
-			background-color: #002e5f;
+			background-color: #edb129;
 		}
 
 		.results-menu-tab-wrapper {

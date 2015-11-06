@@ -828,17 +828,6 @@
 					"oneAnswer" : true,
 					"answers" : [
 						{
-							"text" : "Front Control",
-							"image" : "img/Range-Q6-front.jpg",
-							"thumbnail" : "img/icon-style.png",
-							"thumbnail_current" : "img/icon-style-current.png",
-							"value" : "yes",
-							"scoring": {
-								"rearControl" : 1
-							},
-							"order" : 1
-						},
-						{
 							"text" : "Rear Control",
 							"image" : "img/Range-Q6-rear.jpg",
 							"thumbnail" : "img/icon-style.png",
@@ -848,6 +837,17 @@
 								"frontControl" : 1
 							},
 							"order" : 2
+						},	
+                        {
+							"text" : "Front Control",
+							"image" : "img/Range-Q6-front.jpg",
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"value" : "yes",
+							"scoring": {
+								"rearControl" : 1
+							},
+							"order" : 1
 						},
 						{
 							"text" : "No Preference",
