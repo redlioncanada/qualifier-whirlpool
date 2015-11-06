@@ -655,7 +655,6 @@ a.answer-box.picture-4 {
 	}
 
 	.app-content-main-top .extra-info-wrap {
-		position: absolute;
 		top: 10px;
 		right: -32px;
 
@@ -711,6 +710,7 @@ a.answer-box.picture-4 {
 	.app-content-main-top-left {
 		width: 87% !important;
 		padding-left: 50px;
+        height: auto !important;
 	}
 
 	.main-content {
@@ -879,7 +879,7 @@ a.answer-box.picture-4 {
 
 	.picture-2-container, .picture-3-container, .picture-4-container {
 		width: 100% !important;
-		margin-top: 12px !important;
+		margin-top: 1px !important;
 	}
 
 	.boxes-icon-2-container {
@@ -1154,10 +1154,13 @@ a.answer-box.picture-4 {
 	}
 
 	.app-content-main-top-left {
-		/*min-height: 62px !important;*/
+		height: auto !important;
 		h2 {
-			font-size: 11pt;
+			font-size: 8pt;
 		}
+        h3 {
+            font-size: 7pt;
+        }
 	}
 
 	a.answer-box.boxes-icon-5 {
@@ -1341,6 +1344,7 @@ a.answer-box.picture-4 {
         
         .select-label-wrap {
             height: 30px;
+            margin: 1px auto 5px auto;
         }
         
         .select-icon {
