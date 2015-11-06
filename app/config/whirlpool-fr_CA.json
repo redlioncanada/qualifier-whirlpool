@@ -317,7 +317,7 @@
 							"text" : "de l’espace pour faire cuire de grands plats",
 							"value" : "space",
 							"scoring" : {
-								"doubleOven" : 1,
+								"double" : 1,
 								"comboOven" : 1
 							},
 							"order" : 1
@@ -339,7 +339,7 @@
 							"text" : "des caractéristiques permettant de faire cuire des repas à plusieurs services",
 							"value" : "meals",
 							"scoring" : {
-								"doubleOven" : 1,
+								"double" : 1,
 								"comboOven" : 1
 							},
 							"order" : 3
@@ -359,7 +359,7 @@
 							"text" : "technologie de pointe",
 							"value" : "tech",
 							"scoring" : {
-								"thermometer" : 1
+								"digitalThermometer" : 1
 							},
 							"order" : 5
 						},
@@ -431,7 +431,7 @@
 							"text" : "ni un ni l’autre – notre famille s’intéresse plus aux mets à emporter",
 							"value" : "perfect",
 							"scoring" : {
-								"singleOven" : 1
+								"single" : 1
 							},
 							"order" : 4
 						}
@@ -659,7 +659,7 @@
 							"text" : "j’adore cuisiner pour d’autres personnes et recevoir des invités",
 							"value" : "family",
 							"scoring" : {
-								"doubleOven" : 2,
+								"double" : 2,
 								"warmingDrawer" : 1,
 								"rapidPreheat" : 1
 							},
@@ -672,7 +672,7 @@
 							"value" : "crowd",
 							"scoring" : {
 								"electric" : 1,
-								"doubleOven" : 1,
+								"double" : 1,
 								"rapidPreheat" : 1
 							},
 							"order" : 2
@@ -684,7 +684,7 @@
 							"value" : "variety",
 							"scoring" : {
 								"gas" : 1,
-								"singleOven" : 1,
+								"single" : 1,
 								"accuBake" : 1
 							},
 							"order" : 3
@@ -696,7 +696,7 @@
 							"value" : "frozen",
 							"scoring" : {
 								"electric" : 1,
-								"singleOven" : 1,
+								"single" : 1,
 								"frozenBake" : 1
 							},
 							"order" : 4
@@ -1920,8 +1920,7 @@
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
 							"scoring" : {
-								"frenchFiveDoor" : 1,
-								"frenchFourDoor" : 1
+								"4or5door" : 1
 							},
 							"order" : 4
 						}
@@ -1952,7 +1951,7 @@
 							"thumbnail_current" : "img/icon-water-current.png",
 							"scoring" : {
 								"filtered" : 1,
-								"exteriorDispenser" : 1
+								"exteriorWater" : 1
 							},
 							"order" : 1
 						},
@@ -1963,7 +1962,7 @@
 							"thumbnail_current" : "img/icon-water-current.png",
 							"scoring" : {
 								"filtered" : 1,
-								"exteriorDispenser" : 1
+								"exteriorWater" : 1
 							},
 							"order" : 2
 						},
@@ -1973,7 +1972,7 @@
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
 							"scoring" : {
-								"indoorDispenser" : 1
+								"exteriorWater" : 1
 							},
 							"order" : 3
 						},
@@ -2014,8 +2013,7 @@
 							"scoring" : {
 								"sideBySide" : 1,
 								"frenchDoor" : 1,
-								"frenchFourDoor" : 1,
-								"frenchFiveDoor" : 2
+								"4or5door" : 1
 							},
 							"order" : 1
 						},
@@ -2026,8 +2024,7 @@
 							"value" : "organized",
 							"scoring" : {
 								"frenchDoor" : 1,
-								"frenchFourDoor" : 1,
-								"frenchFiveDoor" : 2
+								"4or5door" : 1
 							},
 							"order" : 2
 						},
@@ -2119,7 +2116,7 @@
 							"text" : "je vais au marché de producteurs où on  m’appelle par mon prénom",
 							"value" : "farmers market",
 							"scoring" : {
- 								"freshFlow" : 2,
+ 								"freshFlowProducePreserver" : 2,
  								"freshStor" : 2,
  								"accuFresh" : 2,
  								"tripleCrisper" : 1
@@ -2132,7 +2129,7 @@
 							"text" : "je passe à l’épicerie, mais je reste dans le périmètre du magasin pour me procurer les articles essentiels",
 							"value" : "basics",
 							"scoring" : {
-								"freshFlow" : 1,
+								"freshFlowProducePreserver" : 1,
  								"freshStor" : 1,
  								"accuFresh" : 1,
  								"accuChill" : 1
@@ -2146,7 +2143,7 @@
 							"value" : "full grocery store",
 							"scoring" : {
 
-								"freshFlow" : 1,
+								"freshFlowProducePreserver" : 1,
 								"accuChill" : 1
 							},
 							"order" : 3
@@ -2189,7 +2186,7 @@
 								"targetClean" : 1,
  								"totalCoverageArm" : 1,
  								"sensorCycle" : 1,
- 								"EZ2Lift" : 1
+ 								"ez2Lift" : 1
 							},
 							"order" : 1
 						},
@@ -2202,7 +2199,7 @@
 								"targetClean" : 1,
  								"totalCoverageArm" : 1,
  								"sensorCycle" : 1,
- 								"EZ2Lift" : 1
+ 								"ez2Lift" : 1
 							},
 							"order" : 2
 						},
@@ -2235,7 +2232,7 @@
 							"scoring" : {
 								"targetClean" : 1,
  								"sensorCycle" : 1,
- 								"EZ2Lift" : 1
+ 								"ez2Lift" : 1
 							},
 							"order" : 5
 						},
@@ -2521,7 +2518,7 @@
 							"image" : "img/dishwasher-full-and-tidy.jpg",
 							"scoring" : {
 								"anyWarePlusBasket" : 2,
-								"EZ2Lift" : 1
+								"ez2Lift" : 1
 							},
 							"order" : 1
 						},
@@ -2533,7 +2530,7 @@
 							"image" : "img/dishwasher-full-and-messy.jpg",
 							"scoring" : {
 								"anyWarePlusBasket" : 1,
-								"EZ2Lift" : 1
+								"ez2Lift" : 1
 							},
 							"order" : 2
 						},
@@ -2949,7 +2946,7 @@
 							"text" : "Oui",
 							"value" : "high speed",
 							"scoring" : {
-								"350CFMOrHigher" : 1
+								"340CFMOrHigher" : 1
 							},
 							"order" : 1
 						},
