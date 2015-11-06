@@ -121,8 +121,9 @@ html, body {
     	.answers-background {
 			position: absolute;
 			top: -163px;
-			left: 0;
-			width: 100%;
+			left: 50%;
+			margin-left: -466px;
+			width: 80%;
 		}
     }
 }
@@ -1172,7 +1173,11 @@ a.answer-box.picture-4 {
 			}
 		}
 
-
+		.answers-background {
+			left: 0 !important;
+			margin-left: initial !important;
+			width: 100% !important;
+		}
 	}
 
 	.app-answers {
