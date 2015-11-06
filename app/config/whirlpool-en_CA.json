@@ -2917,9 +2917,9 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about temperature?",
 					"explanation" : "If you like to turn up the heat, we will have to find you a stronger fan.",
-					"type" : "radio-4",
+					"type" : "radio-2",
 					"oneAnswer" : true,
-					"classes" : "vents  singleAns",
+					"classes" : "vents singleAns circular",
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-convection.png",
@@ -2956,9 +2956,9 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about my cabinets?",
 					"explanation" : "We know that every kitchen is different. If we know where your current cabinets are, we can recommend the perfect vent for your space.",
-					"type" : "radio-4",
+					"type" : "radio-2",
 					"oneAnswer" : true,
-					"classes" : "vents  singleAns",
+					"classes" : "vents circular singleAns",
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-convection.png",
@@ -3055,8 +3055,9 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about counter space?",
 					"explanation" : "Much like your ingredients work together to create the perfect meal, some of our vent models come together to save you space. By understanding your needs we can help you find the perfect fit.",
-					"type" : "boxes-icon-split-radio",
+				    "type" : "radio-2",
 					"oneAnswer" : true,
+					"classes" : "vents circular singleAns",
 					"answers" : [
 						{
 							"text" : "Yes",

@@ -437,9 +437,9 @@
             .label-text {
                 position: absolute;
                 top: 50%;
-                left: 25%;
-                -webkit-transform: translate(-50%,-50%);
-                transform: translate(-50%,-50%);      
+                left: 10px;
+                -webkit-transform: translate(0%,-50%);
+                transform: translate(0%,-50%);      
             }
 		}
 
@@ -641,7 +641,6 @@
 	}
 	.label-text {
 		top: 22px;
-        text-transform: uppercase;
 	}
 	
 }
