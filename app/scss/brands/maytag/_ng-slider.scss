@@ -488,7 +488,6 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 			}
 			ins { 
 				font-family: $AV-Light;
-				text-transform: lowercase;
 				font-size: 14px; 
 				text-decoration: none; 
 				position: absolute; 
@@ -501,9 +500,6 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 				text-align: center;
                 line-height: 20px;
 			}
-            ins:first-letter {
-                text-transform: capitalize;
-            }
 		}
 		.jslider-label, .jslider-value {
 			small { 

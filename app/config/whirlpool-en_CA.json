@@ -2051,7 +2051,8 @@
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "Counter depth fridge – I want my fridge to be in-line with my counters",
+							"text" : "Counter depth fridge",
+                            "subtext" : "I want my fridge to be in-line with my counters",
                             "image" : "img/Fridge-Q7-counter.jpg",
 							"value" : 0,
 							"scoring" : {
@@ -2062,7 +2063,8 @@
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : " Standard depth – I don’t care if my fridge is in line with my counters",
+							"text" : " Standard depth",
+                            "subtext" : "I don’t care if my fridge is in line with my counters",
                             "image" : "img/Fridge-Q7-standard.jpg",
 							"value" : 1,
 							"scoring" : {
@@ -2262,7 +2264,7 @@
 					    "step": 0.0001,
 					    "dimension" : "",
 					    "scale": [
-							"0","5","10","15+<br />I've lost count"
+							"0<br />Maybe every other week","5","10","15+<br />I've lost count"
 					    ]
 					},
 					"answers" : {

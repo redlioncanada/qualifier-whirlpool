@@ -603,14 +603,48 @@ div[ng-class="fr_CA"] {
 /* Added by Jacoub Bondre Sept 8th 2015 */
 /* If time allots lets refactor progress bar styles into its own .scss file */
 @media(max-width:1023px) {
-    .app-answers {
-	float: left;
-	.answer-option {
-		.category-name {
+    .app-content-main-top {
+        .app-content-main-top-left {
+            padding-left: 10px;
+            padding-right: 0;
+            border-left: 1px #edb129 solid;
+        }
+        h2 {
+            color: #777;
+        }
+        h3 {
+            margin-bottom: 5px;
+        }
+    }
+    .extra-info-wrap {
+        height: 15px !important;
+		.btn-icon {
+			width: 37px !important;
+			height: 15px !important;
+            background-color: #edb129 !important;
+			span {
+				font-size: 12px !important;
+                color: white !important;
+			}
+
+		}
+		.btn-text {
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			color: #555;
 			font-size: 10px;
+			position: relative;
+			left: 5px;
+			bottom: 6px;
 		}
 	}
-}
+    .app-answers {
+        float: left;
+        .answer-option {
+            .category-name {
+                font-size: 10px;
+            }
+        }
+    }   
 	header.header-desktop {
 		display: none;
 	}
