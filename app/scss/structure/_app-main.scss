@@ -110,6 +110,22 @@ html, body {
             display: none;
         }
     }
+    &.answers-category {
+    	.answers-title {
+    		color: white;
+    		z-index: 10;
+    		position: relative;
+    		text-transform: uppercase;
+    		padding-bottom: 50px;
+    	}
+    	.answers-background {
+			position: absolute;
+			top: -163px;
+			left: 50%;
+			margin-left: -466px;
+			width: 80%;
+		}
+    }
 }
 
 .app-content-main-top {
@@ -1157,7 +1173,11 @@ a.answer-box.picture-4 {
 			}
 		}
 
-
+		.answers-background {
+			left: 0 !important;
+			margin-left: initial !important;
+			width: 100% !important;
+		}
 	}
 
 	.app-answers {
