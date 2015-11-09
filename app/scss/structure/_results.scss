@@ -15,10 +15,13 @@
 		}
 		.results-adjust-desc {
 			text-align: center;
-			text-transform: uppercase;
+			text-transform: lowercase;
 			position: relative;
 			top: 9px;
 		}
+        .results-adjust-desc:first-letter {
+            text-transform: uppercase;
+        }
 		.price-slider {
 			display: inline-block;
 			width: 609px;
