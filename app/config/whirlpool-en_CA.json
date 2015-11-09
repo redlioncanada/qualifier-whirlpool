@@ -704,7 +704,7 @@
 			]
 		},
 		"Cooking - Ranges - Lifestyle" : {
-			"next" : "Cooking - Ranges - Fuel Type",
+			"next" : "Cooking - Ranges - Range Style",
 			"previous" : "Cooking - Ranges - Cooking",
 			"thumbnail_text" : "Lifestyle",
 			"thumbnail_current" : "img/icon-lifestyle-current.png",
@@ -767,54 +767,9 @@
 				}
 			]
 		},
-		"Cooking - Ranges - Fuel Type" : {
-			"next" : "Cooking - Ranges - Range Style",
-			"previous" : "Cooking - Ranges - Lifestyle",
-			"thumbnail_text" : "Fuel Type",
-			"thumbnail_current" : "img/icon-fueltype-current.png",
-			"thumbnail_type" : "image",
-			"text" : [
-				{
-					"question" : "Is your kitchen equipped for gas or electric?",
-					"sub_question" : "Select one",
-					"explanation_title" : "Why are you asking me about fuel type?",
-					"explanation" : "Some kitchens are equipped for gas and others are not. We need to know this information to recommend the perfect range.",
-					"type" : "boxes-icon-split-radio",
-					"oneAnswer" : true,
-					"answers" : [
-						{
-							"text" : "Gas",
-							"text_more" : "We’re cooking with fire now",
-							"image" : "img/icon-thumb-gas.png",
-							"hover" : "img/icon-thumb-gas-active.png",
-							"thumbnail" : "img/icon-fueltype.png",
-							"thumbnail_current" : "img/icon-fueltype-current.png",
-							"value" : "yes",
-							"scoring": {
-								"gas" : 1
-							},
-							"order" : 1
-						},
-						{
-							"text" : "Electric",
-							"text_more" : "We just plug-in and go",
-							"image" : "img/icon-thumb-electric.png",
-							"hover" : "img/icon-thumb-electric-active.png",
-							"thumbnail" : "img/icon-fueltype.png",
-							"thumbnail_current" : "img/icon-fueltype-current.png",
-							"value" : "no",
-							"scoring" : {
-								"gas" : -30
-							},
-							"order" : 2
-						}
-					]
-				}
-			]
-		},
 		"Cooking - Ranges - Range Style" : {
-			"next" : null,
-			"previous" : "Cooking - Ranges - Fuel Type",
+			"next" : "Cooking - Ranges - Fuel Type",
+			"previous" : "Cooking - Ranges - Lifestyle",
 			"thumbnail_text" : "Style",
 			"thumbnail_current" : "img/icon-style-current.png",
 			"thumbnail_type" : "image",
@@ -858,6 +813,51 @@
 							"scoring" : {
 							},
 							"order" : 3
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Ranges - Fuel Type" : {
+			"next" : null,
+			"previous" : "Cooking - Ranges - Range Style",
+			"thumbnail_text" : "Fuel Type",
+			"thumbnail_current" : "img/icon-fueltype-current.png",
+			"thumbnail_type" : "image",
+			"text" : [
+				{
+					"question" : "Is your kitchen equipped for gas or electric?",
+					"sub_question" : "Select one",
+					"explanation_title" : "Why are you asking me about fuel type?",
+					"explanation" : "Some kitchens are equipped for gas and others are not. We need to know this information to recommend the perfect range.",
+					"type" : "boxes-icon-split-radio",
+					"oneAnswer" : true,
+					"answers" : [
+						{
+							"text" : "Gas",
+							"text_more" : "We’re cooking with fire now",
+							"image" : "img/icon-thumb-gas.png",
+							"hover" : "img/icon-thumb-gas-active.png",
+							"thumbnail" : "img/icon-fueltype.png",
+							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"value" : "yes",
+							"scoring": {
+								"gas" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Electric",
+							"text_more" : "We just plug-in and go",
+							"image" : "img/icon-thumb-electric.png",
+							"hover" : "img/icon-thumb-electric-active.png",
+							"thumbnail" : "img/icon-fueltype.png",
+							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"value" : "no",
+							"scoring" : {
+								"gas" : -30
+							},
+							"order" : 2
 						}
 					]
 				}

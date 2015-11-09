@@ -706,7 +706,7 @@
 			]
 		},
 		"Cooking - Ranges - Lifestyle" : {
-			"next" : "Cooking - Ranges - Fuel Type",
+			"next" : "Cooking - Ranges - Range Style",
 			"previous" : "Cooking - Ranges - Appareils de cuisson",
 			"thumbnail_text" : "Convection",
 			"thumbnail_text_fr" : "Appareils de cuisson",
@@ -770,53 +770,9 @@
 				}
 			]
 		},
-		"Cooking - Ranges - Fuel Type" : {
-			"next" : "Cooking - Ranges - Range Style",
+        "Cooking - Ranges - Range Style" : {
+			"next" : "Cooking - Ranges - Fuel Type",
 			"previous" : "Cooking - Ranges - Lifestyle",
-			"thumbnail_text" : "Fuel Type",
-			"thumbnail_text_fr" : "Type d’alimentation",
-			"thumbnail_current" : "img/icon-fueltype-current.png",
-			"thumbnail_type" : "image",
-			"text" : [
-				{
-					"question" : "Votre cuisine est-elle équipée pour une alimentation au gaz ou électrique?",
-					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’alimentation au gaz?",
-					"explanation" : "Certaines cuisines sont équipées pour l’alimentation au gaz, d’autres non. Nous avons besoin de connaître cette information pour recommander la cuisinière parfaite.",
-					"type" : "boxes-icon-split-radio",
-					"oneAnswer" : true,
-					"answers" : [
-						{
-							"text" : "au gaz",
-							"image" : "img/icon-thumb-gas.png",
-							"hover" : "img/icon-thumb-gas-active.png",
-							"thumbnail" : "img/icon-fueltype.png",
-							"thumbnail_current" : "img/icon-fueltype-current.png",
-							"value" : "yes",
-							"scoring": {
-								"gas" : 1
-							},
-							"order" : 1
-						},
-						{
-							"text" : "électrique",
-							"image" : "img/icon-thumb-electric.png",
-							"hover" : "img/icon-thumb-electric-active.png",
-							"thumbnail" : "img/icon-fueltype.png",
-							"thumbnail_current" : "img/icon-fueltype-current.png",
-							"value" : "no",
-							"scoring" : {
-								"gas" : -30
-							},
-							"order" : 2
-						}
-					]
-				}
-			]
-		},
-		"Cooking - Ranges - Range Style" : {
-			"next" : null,
-			"previous" : "Cooking - Ranges - Fuel Type",
 			"thumbnail_text" : "Fuel Type",
 			"thumbnail_text_fr" : "Style de cuisinière",
 			"thumbnail_current" : "img/icon-style-current.png",
@@ -864,6 +820,50 @@
 							"scoring" : {
 							},
 							"order" : 3
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Ranges - Fuel Type" : {
+			"next" : null,
+			"previous" : "Cooking - Ranges - Range Style",
+			"thumbnail_text" : "Fuel Type",
+			"thumbnail_text_fr" : "Type d’alimentation",
+			"thumbnail_current" : "img/icon-fueltype-current.png",
+			"thumbnail_type" : "image",
+			"text" : [
+				{
+					"question" : "Votre cuisine est-elle équipée pour une alimentation au gaz ou électrique?",
+					"sub_question" : "Sélectionnez une réponse",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’alimentation au gaz?",
+					"explanation" : "Certaines cuisines sont équipées pour l’alimentation au gaz, d’autres non. Nous avons besoin de connaître cette information pour recommander la cuisinière parfaite.",
+					"type" : "boxes-icon-split-radio",
+					"oneAnswer" : true,
+					"answers" : [
+						{
+							"text" : "au gaz",
+							"image" : "img/icon-thumb-gas.png",
+							"hover" : "img/icon-thumb-gas-active.png",
+							"thumbnail" : "img/icon-fueltype.png",
+							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"value" : "yes",
+							"scoring": {
+								"gas" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "électrique",
+							"image" : "img/icon-thumb-electric.png",
+							"hover" : "img/icon-thumb-electric-active.png",
+							"thumbnail" : "img/icon-fueltype.png",
+							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"value" : "no",
+							"scoring" : {
+								"gas" : -30
+							},
+							"order" : 2
 						}
 					]
 				}
