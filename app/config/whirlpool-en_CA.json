@@ -183,9 +183,9 @@
 			"thumbnail_current" : "img/icon-size-current.png",
 			"text" : [
 				{
-					"question" : "Do you have Any size restrictions?",
+					"question" : "My Wall Oven Needs to Be...",
 					"sub_question" : "Slide to answer",
-					"explanation_title" : "Why qre you qsking me about size?",
+					"explanation_title" : "Why are you asking me about size?",
 					"explanation" : "Our wall ovens come in different sizes, we want to make sure that we recommend the perfect one for your space.",
 					"type" : "slider",
 					"oneAnswer" : false,
@@ -195,6 +195,7 @@
 						"from" : 0,
 						"to" : 3,
 					    "step": 0.0001,
+                        "dimension_label": "Width",
 					    "scale": ["24\"","27\"","30\"","Any Size"]
 					},
 					"answers" : {
