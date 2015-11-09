@@ -185,7 +185,7 @@
 				{
 					"question" : "Do you have Any size restrictions?",
 					"sub_question" : "Slide to answer",
-					"explanation_title" : "Why Are You Asking Me About Size?",
+					"explanation_title" : "Why qre you qsking me about size?",
 					"explanation" : "Our wall ovens come in different sizes, we want to make sure that we recommend the perfect one for your space.",
 					"type" : "slider",
 					"oneAnswer" : false,
@@ -1504,7 +1504,7 @@
 					"question_more" : "Just tell us how much space you have to fill.",
 					"sub_question" : "Please slide and click to answer",
 					"explanation_title" : "Why are you asking me about size?",
-					"explanation" : "Our fridges come in mAny sizes, we want to make sure that we recommend the perfect one for your space.",
+					"explanation" : "Our fridges come in many sizes, we want to make sure that we recommend the perfect one for your space.",
 					"type" : "slider-buttons",
 					"classes" : "slider-labels left-tag no-jslider-value show-ticks scale-left",
 					"oneAnswer" : false,
@@ -2152,7 +2152,7 @@
 				{
 					"question" : "If we looked in your dishwasher right now we would probably find...",
 					"sub_question" : "Select all that apply",
-					"explanation_title" : "why are you asking me about what i wash?",
+					"explanation_title" : "Why are you asking me about what I wash?",
 					"explanation" : "Knowing what goes into your dishwasher will allow us to recommend options that ensure all your dishes sparkle and shine.",
 					"type" : "checkbox-4",
 					"oneAnswer" : false,
