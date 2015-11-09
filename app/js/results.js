@@ -30,6 +30,7 @@ angular.module('App')
       if (!$rootScope.questionsData && !$rootScope.questionsData.scoringQuestions) console.log('no init');
       $appstate.store();
 
+
       if (!$rootScope.isTabletWidthOrLess && !$rootScope.isMobile && $location.path().indexOf('results') != -1) {
         $("html, body").animate({scrollTop: "125px"}, 400);
       }
@@ -86,9 +87,12 @@ angular.module('App')
   $rootScope.setFirstColour = function (appliance) {
     for (var c in appliance.colours) {
       if (appliance.colours[c].colourCode == "CS" || appliance.colours[c].colourCode == "SS" || appliance.colours[c].colourCode == "PA") {
+        if ("dryers" in appliance) appliance.colours[c].dryer = appliance.dryers[0];
         return appliance.colours[c]
       }
     }
+    if ("dryers" in appliance) appliance.colours[0].dryer = appliance.dryers[0]
+    console.log(appliance.colours[0])
     return appliance.colours[0]
   }
 
