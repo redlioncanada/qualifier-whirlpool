@@ -365,7 +365,6 @@
     &.picture-2:hover, &.picture-3:hover,&.picture-4:hover {        
         .select-label-wrap {
             background: #edb129;
-            transition: all 1s ease;
             .label-wrap {
                 .label-text, .label-sub-text {
                     color: white;
@@ -462,7 +461,6 @@
 				opacity: 1;
 			}
             .label-wrap {
-            transition: all 1s ease;
             background-color: #edb129;
 
             .label-text {

@@ -396,7 +396,7 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 			// background-position: -1px -60px; 
 			position: absolute; 
 			left: 20%; 
-			top: -15px; 
+			top: -17px; 
 			// margin-left: -39px; 
 			margin-left: -43px; 
 			cursor: pointer; 
@@ -567,8 +567,6 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 			// top: -52px;
 			top: 0;
 			opacity: 1 !important;
-			background: rgba(76, 76, 76, 0.161) !important;
-			box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.28);
 			width: 63px;
 			height: 61px;
 			margin-top: -48px;
@@ -577,7 +575,7 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 			padding-top: 10px;
 			text-align: center;
 			font-family: $AV-Light;
-			font-size: 20px;
+			font-size: 10px;
 			text-transform: uppercase;
 			color: #CCC;
 			z-index: 5;
@@ -928,29 +926,32 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	}
 	.price-slider.pointer-labels {
 		.jslider {
+            div.jslider-pointer {
+                top: -21px !important;
+            }
 			.jslider-value {
 				// top: -52px;
 				top: 0;
 				opacity: 1 !important;
-				background: rgba(76, 76, 76, 0.161) !important;
-				box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.28);
 				width: 63px;
 				height: 61px;
+                background: url(/img/slider-tab.png) no-repeat center !important;
+                background-position: (20px, 20px);
 				margin-top: -48px;
 				margin-left: -32px !important;
 				display: block;
 				padding-top: 10px;
 				text-align: center;
 				font-family: $AV-Light;
-				font-size: 20px;
+				font-size: 10px;
 				text-transform: uppercase;
 				color: #CCC;
 				z-index: 5;
 				span {
 					font-family: $AV-Light;
-					font-size: 28px;
+					font-size: 17px;
 					text-transform: uppercase;
-					color: #CCC;
+					color: #777;
 					opacity: 1;
 				}
 			}
@@ -1133,7 +1134,6 @@ div[ng-class="fr_CA"] {
 			margin-right: -26px !important;
 		}
 	}
-
 	#results div.price-slider.pointer-labels .jslider {
 		div.jslider-value {
 			width: 54px;
