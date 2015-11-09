@@ -606,22 +606,21 @@
         padding: 5px;
         margin-left: 62px;
 		li {
-			height: 63px;
             margin-bottom: 0;
             text-align: center;
-            margin: 10px 0 10px 0;
+            margin: 0px 0 6px 0;
 		}
 	}
 	.rank-numbers-list li {
 		width: 63px;
-		height: 63px;
-        margin: 10px 0 10px 0;
+		height: 53px;
+        margin: 0px 0 6px 0;
 	}
 	.rank-number-wrap {
         float: left;
         display: inline-block;
         width: 63px;
-        height: 63px;
+        height: 53px;
         border: 1px #edb129 solid;
 		.rank-number {
 			@include large-square-label;
@@ -630,7 +629,7 @@
 	.label-wrap {
 		display: inline-block;
 		width: 500px;
-		height: 63px;
+		height: 53px;
 		background: url('../img/ranking-bg.png') no-repeat;
         border: 1px #edb129 solid;
         background-position: 0 -2px;
@@ -638,13 +637,13 @@
         padding-left: 80px;
 	}
 	.label-text {
-		top: 22px;
+		top: 17px;
 	}
 	
 }
 
 li.dragging-rank {
-	height: 63px;
+	height: 53px;
     margin-bottom: 0;
     text-align: center;
     list-style: none;
@@ -660,7 +659,7 @@ li.dragging-rank {
     .label-wrap {
         display: inline-block;
 		width: 500px;
-		height: 63px;
+		height: 53px;
 		background: url('../img/ranking-bg.png') no-repeat;
         border: 1px #edb129 solid;
         background-position: 0 -2px;
@@ -669,7 +668,7 @@ li.dragging-rank {
         background-color: white;
 	}
 	.label-text {
-		top: 22px;
+		top: 17px;
 	}
 }
 
