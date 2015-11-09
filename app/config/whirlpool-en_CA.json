@@ -2822,7 +2822,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about size?",
 					"explanation" : "Every kitchen is different. We want to make sure that your vent matches the size of your cooktop.",
-					"type" : "radio-4",
+					"type" : "radio-2",
 					"oneAnswer" : true,
 					"classes" : "vents  singleAns",
 					"answers" : [
@@ -2869,7 +2869,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about location?",
 					"explanation" : "Every kitchen is different. We need to get a better idea of where your cooking surface is in order to find the vent best suited for your space.",
-					"type" : "radio-4",
+					"type" : "radio-2",
 					"oneAnswer" : true,
 					"classes" : "vents  singleAns",
 					"answers" : [
@@ -2998,7 +2998,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about ventilation?",
 					"explanation" : "Proper ventilation is an important part of keeping the air in your home clean. If we know more about how yours works we can choose the best fit.",
-					"type" : "radio-4",
+					"type" : "radio-2",
 					"oneAnswer" : true,
 					"answers" : [
 						{
