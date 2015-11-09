@@ -456,8 +456,9 @@ a.answer-box.picture-4 {
         .label-text {
             font-size: 25px !important;
             color: #CCC !important;
-            padding-bottom: 10px !important;
             text-transform: uppercase;
+            padding-bottom: 8px;
+            text-align: center;
         }
     }
     &:hover, &.selected {
@@ -465,8 +466,10 @@ a.answer-box.picture-4 {
         background-color: white !important;
             .label-wrap {
                 .label-text {
+                        position: relative;
                         color: #edb129 !important;
                         border-bottom: 5px #edb129 solid !important;
+                        top: 2px;
                 }
         }
     }
