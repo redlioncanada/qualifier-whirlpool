@@ -568,24 +568,18 @@ div[ng-class="fr_CA"] {
 .print-page {
 	* {
 		font-family: $AV-Light;
-		color: #002e62;
+		color: #000;
 	}
 
-	.print-page-header, .print-page-footer {
-		background-color: #002e62;
-	}
-
-	.print-page-callout .print-page-title {
-		.sku {
-			color: #AAA;
-		}
+	.print-page-header{
+		background-color: #efb112;
 	}
 
 	.print-page-content-wrapper {
 		.print-page-content {
 			.print-page-content-title {
 				color: white;
- 				background-color: #CCC;
+ 				background-color: #efb112;
 			}
 		}
 

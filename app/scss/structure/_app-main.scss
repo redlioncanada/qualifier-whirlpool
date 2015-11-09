@@ -1518,7 +1518,7 @@ a.answer-box.picture-4 {
 	width: 670px;
 
 	.print-page-header, .print-page-footer {
-		height: 50px;
+		height: 30px;
 		width: inherit;
 		text-align: center;
 		color: white;
@@ -1526,11 +1526,16 @@ a.answer-box.picture-4 {
 		line-height: 50px;
 
 		img {
-			margin: 0 auto;
-			height: 50px;
+			float: right;
+			margin-right: 3px;
+			height: 100%;
 		}
 	}
 
+	.print-page-header{
+		height: 50px;
+	}
+	
 	.print-page-callout-wrapper {
 		overflow: auto;
 	}
@@ -1577,11 +1582,11 @@ a.answer-box.picture-4 {
 
 		.print-page-price {
 			color: initial;
-			font-size: 80pt;
+			font-size: 60pt;
 			margin: 0;
 			padding: 0;
 			text-align: center;
-			margin-top: 5px;
+			margin-top: 10px;
 		}
  	}
  	.print-page-content-wrapper {

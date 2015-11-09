@@ -1,0 +1,140 @@
+$textColor: #5a5152;
+$inputBackgroundColor: #FFF;
+$accentColor: #f0b213;
+
+.modal-content {
+	background-color: #FFF;
+	border: 1px solid $accentColor;
+	border-radius: 0;
+	color: $textColor;
+	box-shadow: none;
+
+	.modal-header {
+		border-bottom: none;
+		font-family: $AV-Light;
+		padding-bottom: 10px;
+
+		h3 {
+			display: inline-block;
+			padding: 0;
+			margin: 0;
+		}
+
+		.modal-title {
+			text-transform: uppercase;
+			font-size: 12pt;
+			margin-top: 8px;
+			margin-left: 8px;
+		}
+
+		.modal-title-accent {
+			position: absolute;
+			background-color: $accentColor;
+			height: 13px;
+			width: 1px;
+			top: 27px;
+			z-index: 3;
+		}
+
+		.modal-close {
+			color: $accentColor;
+			float: right;
+			margin-top: -3px;
+			transform: rotate(45deg) ;
+			-webkit-transform: rotate(45deg) ;
+			-moz-transform: rotate(45deg) ;
+			-o-transform: rotate(45deg) ;
+			-ms-transform: rotate(45deg) ;
+			font-weight: 100;
+			font-size: 25pt;
+			cursor: pointer;
+		}
+	}
+
+	.modal-body {
+		margin-top: 0;
+		padding-top: 0;
+
+		input,textarea,.input-title {
+			font-family: $AV-Light;
+		}
+		input,textarea {
+			background-color: $inputBackgroundColor;
+			outline: none;
+			border: 1px solid $accentColor;
+		}
+		textarea {
+			resize: none;
+		}
+
+		.input-wrapper:not(:first-child) {
+			margin-top: 10px;
+		}
+
+		.input-wrapper {
+			position: relative;
+			height: 30px;
+
+			.input-title {
+				position: absolute;
+				top: 6px;
+				margin-left: 7px;
+			}
+
+			input {
+				width: 100%;
+				height: 100%;
+			}
+
+			.email {
+				padding-left: 31px;
+			}
+
+			.name {
+				padding-left: 48px;
+			}
+		}
+
+		.subject {
+			height: 30px;
+		}
+
+		.subject, .message {
+			width: 100%;
+			padding-left: 7px;
+			margin-top: 10px;
+		}
+
+		.message {
+			padding-top: 25px;
+			margin-top: 25px;
+			height: 270px;
+		}
+	}
+
+	.modal-footer {
+		padding-top: 0;
+		margin-top: 0;
+		border-top: none;
+
+		button.btn {
+			border-radius: 0;
+			color: $textColor;
+			font-family: $AV-Light;
+			border: 1px solid $accentColor;
+			background-color: #FFF;
+		}
+
+		button.btn[disabled="disabled"] {
+			background-color: #EEE;
+		}
+	}
+
+	input.ng-invalid.ng-touched {
+		background-color: #ea7f7f;
+	}
+
+	input[disabled="disabled"] {
+		background-color: #DDD;
+	}
+}
