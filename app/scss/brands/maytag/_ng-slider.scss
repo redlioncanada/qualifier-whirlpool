@@ -927,7 +927,7 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	.price-slider.pointer-labels {
 		.jslider {
             div.jslider-pointer {
-                top: -21px !important;
+                top: -21px;
             }
 			.jslider-value {
 				// top: -52px;
@@ -1126,7 +1126,7 @@ div[ng-class="fr_CA"] {
 			height: 37px;
 			background: url('../img/slider-pointer-small.png') center center no-repeat !important;
 			background-size: 43px 37px;
-			top: -8px;
+			top: -8px !important;
 			margin-left: -23px;
 		}
 
@@ -1142,7 +1142,8 @@ div[ng-class="fr_CA"] {
 			margin-left: -28px !important;
 
 			span {
-				font-size: 20px !important;
+				font-size: 12px !important;
+                margin-left: -3px;
 			}
 		}
 	}
