@@ -124,6 +124,10 @@ $accentColor: #f0b213;
 			border: 1px solid $accentColor;
 			background-color: #FFF;
 		}
+
+		button.btn[disabled="disabled"] {
+			background-color: #EEE;
+		}
 	}
 
 	input.ng-invalid.ng-touched {
