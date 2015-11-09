@@ -1187,7 +1187,7 @@
 			]
 		},
 		"Laundry - Fabrics" : {
-			"next" : "Laundry - Sensor",
+			"next" : "Laundry - Features 1",
 			"previous" : "Laundry - Orientation",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-fabric-current.png",
@@ -1348,8 +1348,8 @@
 			]
 		},
 		"Laundry - Features 1" : {
-			"next" : "Laundry - Features 2",
-			"previous" : "Laundry - Sensor",
+			"next" : null,
+			"previous" : "Laundry - Fabrics",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-wrinkles-current.png",
 			"thumbnail_text" : "Features",
