@@ -1938,11 +1938,11 @@
 			"text" : [
 				{
 					"question" : "Does your kitchen have an existing waterline?",
-					"sub_question" : "Sélectionnez toutes les réponses pertinentes",
+					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Why are you asking me about a waterline?",
 					"explanation" : "Did you know that your kitchen needs a water line in order for your fridge to dispense water? Some of our models provide water-dispensing features. By understanding how you consume water, we can recommend a fridge that will best suit your needs.",
-					"type" : "checkbox-4",
-					"oneAnswer" : false,
+					"type" : "radio-4",
+					"oneAnswer" : true,
 					"answers" : [
 						{
 							"text" : "Yes - it's great because we love water and ice dispensed from our fridge",
