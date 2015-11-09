@@ -79,9 +79,9 @@
 	text-align: left;
 }
 .label-text, .label-sub-text {
-	font-family: $AV-Light;
+	font-family: $AV-stack;
 	font-size: 17px;
-	color: #444;
+	color: #777;
 	position: relative;
 	line-height: 17px;
 }
@@ -356,7 +356,7 @@
 			text-align: left;
             
             .label-sub-text {
-                font-size: 10px;
+                font-size: 11px;
                 position: relative;
                 height: 8px;
             }
@@ -436,7 +436,7 @@
             .label-text {
                 position: absolute;
                 top: 50%;
-                left: 10px;
+                left: 24px;
                 -webkit-transform: translate(0%,-50%);
                 transform: translate(0%,-50%);      
             }
@@ -669,8 +669,7 @@ li.dragging-rank {
         background-color: white;
 	}
 	.label-text {
-		top: 17px;
-        text-transform: uppercase;
+		top: 22px;
 	}
 }
 

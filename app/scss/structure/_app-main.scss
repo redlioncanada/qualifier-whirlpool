@@ -456,8 +456,9 @@ a.answer-box.picture-4 {
         .label-text {
             font-size: 25px !important;
             color: #CCC !important;
-            padding-bottom: 10px !important;
             text-transform: uppercase;
+            padding-bottom: 8px;
+            text-align: center;
         }
     }
     &:hover, &.selected {
@@ -465,8 +466,10 @@ a.answer-box.picture-4 {
         background-color: white !important;
             .label-wrap {
                 .label-text {
+                        position: relative;
                         color: #edb129 !important;
                         border-bottom: 5px #edb129 solid !important;
+                        top: 2px;
                 }
         }
     }
@@ -1033,7 +1036,7 @@ a.answer-box.picture-4 {
         width: 400px;   
     }
     .label-text {
-        font-size: 15px !important;
+        font-size: 11px !important;
     }
     .ng-binding::first-letter {
         text-transform: capitalize;        
@@ -1419,7 +1422,7 @@ a.answer-box.picture-4 {
                 line-height: 30px !important;
             }
             .label-sub-text {
-                font-size: 7px !important;
+                font-size: 6px !important;
                 top: -13px;
             }
         }

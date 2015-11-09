@@ -17,10 +17,11 @@ header.header-desktop {
 	min-height: 128px;
 
 	h2, h3 {
-		font-family: $AV-Light;
+		font-family: $AV-stack;
+        font-weight: 300;
 	}
 	h2 {
-		color: #aea8a6;
+		color: #999;
 		letter-spacing: 1px;
 	}
 	h2.main-question-more {
@@ -78,7 +79,7 @@ header.header-desktop {
 		}
 		.btn-text {
 			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-			color: #555;
+			color: #777;
 			font-size: 10px;
 			position: relative;
 			left: 5px;
@@ -684,7 +685,7 @@ div[ng-class="fr_CA"] {
         letter-spacing: .2px;
     }
     .mobile-results-nav li span {
-        font-size: 12px !important;
+        font-size: 11px !important;
         margin-top: 2px !important;
     }
     #results .mobile-results-nav li .active:after{
@@ -692,7 +693,7 @@ div[ng-class="fr_CA"] {
         position: absolute;
         height: 22px;
         width: 10px;
-        margin: 25px 0 0 0;
+        margin: 18px 0 0 0;
         -webkit-transform: translate(-50%, 0%);
         transform: translate(-50%, 0%);
         border-style: solid;
@@ -705,4 +706,35 @@ div[ng-class="fr_CA"] {
         width: 80%;
         margin: 0 auto;
     }
+
+    #result-column-1,  #result-column-0,  #result-column-2 {
+        .result-wrap {
+            .product-details-wrap {
+                h2 {
+                    padding-top: 0px;
+                    margin-bottom: 0px;
+                    
+                    .product-name {
+                        font-size: 13px;
+                        padding-top: 0px;
+                        font-family: $AV-stack;
+                        font-weight: 500;
+                    }
+                }
+                .sales-feature-spacer {
+                    border-top: thin #aaa solid;
+                }
+                
+                .product-price-sku-wrap {
+                    .product-price, .product-sku {
+                        width: 100%;
+                        font-size: 17px;
+                        font-family: $AV-stack;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
 }

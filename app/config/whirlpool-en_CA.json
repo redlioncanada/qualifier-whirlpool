@@ -189,9 +189,9 @@
 			"thumbnail_current" : "img/icon-size-current.png",
 			"text" : [
 				{
-					"question" : "Do you have Any size restrictions?",
+					"question" : "My Wall Oven Needs to Be...",
 					"sub_question" : "Slide to answer",
-					"explanation_title" : "Why Are You Asking Me About Size?",
+					"explanation_title" : "Why are you asking me about size?",
 					"explanation" : "Our wall ovens come in different sizes, we want to make sure that we recommend the perfect one for your space.",
 					"type" : "slider",
 					"oneAnswer" : false,
@@ -201,6 +201,7 @@
 						"from" : 0,
 						"to" : 3,
 					    "step": 0.0001,
+                        "dimension_label": "Width",
 					    "scale": ["24\"","27\"","30\"","Any Size"]
 					},
 					"answers" : {
@@ -468,14 +469,14 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["Not a Concern","Somewhat a concern","Somewhat important","Very important"]
+					    "scale": ["Not a concern","Somewhat a concern","Somewhat important","Very important"]
 					},
 					"answers" : {
 						"0" : {
 							"thumbnail" : "img/icon-energy.png",
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"value" : 0,
-							"text" : "Not a Concern",
+							"text" : "Not a concern",
 							"scoring" : {
 							}
 						},
@@ -710,7 +711,7 @@
 			]
 		},
 		"Cooking - Ranges - Lifestyle" : {
-			"next" : "Cooking - Ranges - Fuel Type",
+			"next" : "Cooking - Ranges - Range Style",
 			"previous" : "Cooking - Ranges - Cooking",
 			"thumbnail_text" : "Lifestyle",
 			"thumbnail_current" : "img/icon-lifestyle-current.png",
@@ -773,54 +774,9 @@
 				}
 			]
 		},
-		"Cooking - Ranges - Fuel Type" : {
-			"next" : "Cooking - Ranges - Range Style",
-			"previous" : "Cooking - Ranges - Lifestyle",
-			"thumbnail_text" : "Fuel Type",
-			"thumbnail_current" : "img/icon-fueltype-current.png",
-			"thumbnail_type" : "image",
-			"text" : [
-				{
-					"question" : "Is your kitchen equipped for gas or electric?",
-					"sub_question" : "Select one",
-					"explanation_title" : "Why are you asking me about fuel type?",
-					"explanation" : "Some kitchens are equipped for gas and others are not. We need to know this information to recommend the perfect range.",
-					"type" : "boxes-icon-split-radio",
-					"oneAnswer" : true,
-					"answers" : [
-						{
-							"text" : "Gas",
-							"text_more" : "We’re cooking with fire now",
-							"image" : "img/icon-thumb-gas.png",
-							"hover" : "img/icon-thumb-gas-active.png",
-							"thumbnail" : "img/icon-fueltype.png",
-							"thumbnail_current" : "img/icon-fueltype-current.png",
-							"value" : "yes",
-							"scoring": {
-								"gas" : 1
-							},
-							"order" : 1
-						},
-						{
-							"text" : "Electric",
-							"text_more" : "We just plug-in and go",
-							"image" : "img/icon-thumb-electric.png",
-							"hover" : "img/icon-thumb-electric-active.png",
-							"thumbnail" : "img/icon-fueltype.png",
-							"thumbnail_current" : "img/icon-fueltype-current.png",
-							"value" : "no",
-							"scoring" : {
-								"gas" : -30
-							},
-							"order" : 2
-						}
-					]
-				}
-			]
-		},
 		"Cooking - Ranges - Range Style" : {
-			"next" : null,
-			"previous" : "Cooking - Ranges - Fuel Type",
+			"next" : "Cooking - Ranges - Fuel Type",
+			"previous" : "Cooking - Ranges - Lifestyle",
 			"thumbnail_text" : "Style",
 			"thumbnail_current" : "img/icon-style-current.png",
 			"thumbnail_type" : "image",
@@ -864,6 +820,51 @@
 							"scoring" : {
 							},
 							"order" : 3
+						}
+					]
+				}
+			]
+		},
+		"Cooking - Ranges - Fuel Type" : {
+			"next" : null,
+			"previous" : "Cooking - Ranges - Range Style",
+			"thumbnail_text" : "Fuel Type",
+			"thumbnail_current" : "img/icon-fueltype-current.png",
+			"thumbnail_type" : "image",
+			"text" : [
+				{
+					"question" : "Is your kitchen equipped for gas or electric?",
+					"sub_question" : "Select one",
+					"explanation_title" : "Why are you asking me about fuel type?",
+					"explanation" : "Some kitchens are equipped for gas and others are not. We need to know this information to recommend the perfect range.",
+					"type" : "boxes-icon-split-radio",
+					"oneAnswer" : true,
+					"answers" : [
+						{
+							"text" : "Gas",
+							"text_more" : "We’re cooking with fire now",
+							"image" : "img/icon-thumb-gas.png",
+							"hover" : "img/icon-thumb-gas-active.png",
+							"thumbnail" : "img/icon-fueltype.png",
+							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"value" : "yes",
+							"scoring": {
+								"gas" : 1
+							},
+							"order" : 1
+						},
+						{
+							"text" : "Electric",
+							"text_more" : "We just plug-in and go",
+							"image" : "img/icon-thumb-electric.png",
+							"hover" : "img/icon-thumb-electric-active.png",
+							"thumbnail" : "img/icon-fueltype.png",
+							"thumbnail_current" : "img/icon-fueltype-current.png",
+							"value" : "no",
+							"scoring" : {
+								"gas" : -30
+							},
+							"order" : 2
 						}
 					]
 				}
@@ -961,14 +962,14 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["Not a Concern","Somewhat of a concern","Somewhat important","Very important"]
+					    "scale": ["Not a concern","Somewhat of a concern","Somewhat important","Very important"]
 					},
 					"answers" : {
 						"0" : {
 							"thumbnail" : "img/icon-energy.png",
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"value" : 0,
-							"text" : "Not a Concern",
+							"text" : "Not a concern",
 							"scoring" : {
 							}
 						},
@@ -1183,7 +1184,7 @@
 			]
 		},
 		"Laundry - Fabrics" : {
-			"next" : "Laundry - Sensor",
+			"next" : "Laundry - Features 1",
 			"previous" : "Laundry - Orientation",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-fabric-current.png",
@@ -1342,8 +1343,8 @@
 			]
 		},
 		"Laundry - Features 1" : {
-			"next" : "Laundry - Features 2",
-			"previous" : "Laundry - Sensor",
+			"next" : null,
+			"previous" : "Laundry - Fabrics",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-wrinkles-current.png",
 			"thumbnail_text" : "Features",
@@ -1506,11 +1507,10 @@
 			"thumbnail_text" : "Size",
 			"text" : [
 				{
-					"question" : "We've got the perfect fridge for your family.",
-					"question_more" : "Just tell us how much space you have to fill.",
+					"question" : "What size fridge do you need?",
 					"sub_question" : "Please slide and click to answer",
 					"explanation_title" : "Why are you asking me about size?",
-					"explanation" : "Our fridges come in mAny sizes, we want to make sure that we recommend the perfect one for your space.",
+					"explanation" : "Our fridges come in many sizes, we want to make sure that we recommend the perfect one for your space.",
 					"type" : "slider-buttons",
 					"classes" : "slider-labels left-tag no-jslider-value show-ticks scale-left",
 					"oneAnswer" : false,
@@ -1738,7 +1738,7 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["Not a Concern","Somewhat of a concern","Somewhat important","Very Important"]
+					    "scale": ["Not a concern","Somewhat of a concern","Somewhat important","Very important"]
 					},
 					"answers" : {
 						"0" : {
@@ -1924,11 +1924,11 @@
 			"text" : [
 				{
 					"question" : "Does your kitchen have an existing waterline?",
-					"sub_question" : "Select all that apply",
+					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about a waterline?",
 					"explanation" : "Did you know that your kitchen needs a water line in order for your fridge to dispense water? Some of our models provide water-dispensing features. By understanding how you consume water, we can recommend a fridge that will best suit your needs.",
-					"type" : "checkbox-4",
-					"oneAnswer" : false,
+					"type" : "radio-4",
+					"oneAnswer" : true,
 					"answers" : [
 						{
 							"text" : "Yes - it's great because we love water and ice dispensed from our fridge",
@@ -2158,7 +2158,7 @@
 				{
 					"question" : "If we looked in your dishwasher right now we would probably find...",
 					"sub_question" : "Select all that apply",
-					"explanation_title" : "why are you asking me about what i wash?",
+					"explanation_title" : "Why are you asking me about what I wash?",
 					"explanation" : "Knowing what goes into your dishwasher will allow us to recommend options that ensure all your dishes sparkle and shine.",
 					"type" : "checkbox-4",
 					"oneAnswer" : false,
@@ -2437,14 +2437,14 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["Not a Concern","Somewhat of a concern","Somewhat important","Very Important"]
+					    "scale": ["Not a concern","Somewhat of a concern","Somewhat important","Very important"]
 					},
 					"answers" : {
 						"0" : {
 							"thumbnail" : "img/icon-energy.png",
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"value" : 0,
-							"text" : "Not a Concern",
+							"text" : "Not a concern",
 							"scoring" : {
 							}
 						},
@@ -2828,7 +2828,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about size?",
 					"explanation" : "Every kitchen is different. We want to make sure that your vent matches the size of your cooktop.",
-					"type" : "radio-4",
+					"type" : "radio-2",
 					"oneAnswer" : true,
 					"classes" : "vents  singleAns",
 					"answers" : [
@@ -2875,7 +2875,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about location?",
 					"explanation" : "Every kitchen is different. We need to get a better idea of where your cooking surface is in order to find the vent best suited for your space.",
-					"type" : "radio-4",
+					"type" : "radio-2",
 					"oneAnswer" : true,
 					"classes" : "vents  singleAns",
 					"answers" : [
@@ -3004,7 +3004,7 @@
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about ventilation?",
 					"explanation" : "Proper ventilation is an important part of keeping the air in your home clean. If we know more about how yours works we can choose the best fit.",
-					"type" : "radio-4",
+					"type" : "radio-2",
 					"oneAnswer" : true,
 					"answers" : [
 						{
