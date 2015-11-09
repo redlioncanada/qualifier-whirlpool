@@ -1500,8 +1500,7 @@
 			"thumbnail_text" : "Size",
 			"text" : [
 				{
-					"question" : "We've got the perfect fridge for your family.",
-					"question_more" : "Just tell us how much space you have to fill.",
+					"question" : "What size fridge do you need?",
 					"sub_question" : "Please slide and click to answer",
 					"explanation_title" : "Why are you asking me about size?",
 					"explanation" : "Our fridges come in many sizes, we want to make sure that we recommend the perfect one for your space.",
