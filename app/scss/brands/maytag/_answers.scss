@@ -362,7 +362,7 @@
             }
 		}
 	}
-    &.picture-2:hover, &.picture-3:hover,&.picture-4:hover {        
+    &.picture-2:hover, &.picture-3:hover,&.picture-4:hover,&.picture-2.selected, &.picture-3.selected,&.picture-4.selected {        
         .select-label-wrap {
             background: #edb129;
             .label-wrap {
