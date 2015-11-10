@@ -884,7 +884,8 @@ a.answer-box.picture-4 {
 			height: 100%;
 
 			.jslider-pointer {
-				left: -40%;
+				left: -6%;
+                margin-top: -7px;
 			}
 
 			.jslider-value {
@@ -899,10 +900,9 @@ a.answer-box.picture-4 {
 
 			.jslider-bg {
 				height: 111%;
-				width: 26px;
-				background: url("../img/slider-bg-vertical.jpg");
-				background-size: contain;
-                background-repeat: no-repeat;
+				width: 36px;
+				background: url("../img/slider-bg-vertical.jpg") no-repeat;
+				background-size: 100% 100%;
 				margin-left: -18px;
 			}
 
@@ -1153,16 +1153,17 @@ a.answer-box.picture-4 {
 
 		.jslider {
 			div.jslider-pointer {
-				left: 12.5px;
+				left: 21.5px;
 				width: 43px;
 				height: 37px;
 				background: url("../img/slider-pointer.png") no-repeat !important;
 				background-size: 37px 37px !important;
+                margin-top: -2px;
 			}
 
 			.jslider-bg {
 				height: 109%;
-				width: 18px;
+				width: 35px;
 				margin-left: -18px;
 			}
 

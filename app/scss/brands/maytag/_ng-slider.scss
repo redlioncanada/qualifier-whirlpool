@@ -135,7 +135,7 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 			position: absolute;
 			margin-left: -18px;
 			height: 25px;
-			width: 26px;
+			width: 36px;
 			top: 0;
 			z-index: 10;
 
@@ -1117,8 +1117,8 @@ div[ng-class="fr_CA"] {
 @media(max-width: 580px) {
 	.jslider {
 		.jslider-true-bg {
-			margin-left: -21px !important;
-			width: 20px !important;
+			margin-left: -18px !important;
+			width: 35px !important;
 		}
 	}
 
