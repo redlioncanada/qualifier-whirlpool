@@ -102,7 +102,7 @@ html, body {
         height: 170px;
         border-right: 1px #CCC dotted;
         position: absolute;
-        bottom: 80px;
+        bottom: 95px;
         right: -35px;
     }
     .vents {
@@ -112,11 +112,13 @@ html, body {
     }
     &.answers-category {
     	.answers-title {
+            font-family: "Helvetica", Arial, sans-serif;
     		color: white;
     		z-index: 10;
     		position: relative;
     		text-transform: uppercase;
     		padding-bottom: 50px;
+            font-weight: 400;
     	}
     	.answers-background {
 			position: absolute;
@@ -481,7 +483,7 @@ a.answer-box.picture-4 {
     .answers-main-content {
         .category-spacer {
              height: 140px;
-            bottom: 75px;
+            bottom: 89px;
             right: -22px;
         }
         &.answers-category {

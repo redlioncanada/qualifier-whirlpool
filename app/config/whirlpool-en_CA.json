@@ -202,42 +202,42 @@
 						"to" : 3,
 					    "step": 0.0001,
                         "dimension_label": "Width",
-					    "scale": ["24\"","27\"","30\"","Any Size"]
+					    "scale": ["Any Size","24\"","27\"","30\""]
 					},
 					"answers" : {
 						"0" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"value" : 0,
-							"text" : "24\"",
+							"text" : "Any size",
 							"scoring" : {
-								"width24" : 1
 							}
 						},
 						"1" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"value" : 1,
-							"text" : "27\"",
+							"text" : "24\"",
 							"scoring" : {
-								"width27" : 1
+								"width24" : 1
 							}
 						},
 						"2" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"value" : 2,
-							"text" : "30\"",
+							"text" : "27\"",
 							"scoring" : {
-								"width30" : 1
+								"width27" : 1
 							}
 						},
 						"3" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 4,
-							"text" : "Any size",
+							"value" : 3,
+							"text" : "30\"",
 							"scoring" : {
+								"width30" : 1
 							}
 						}
 					}
@@ -469,7 +469,7 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["Not a concern","Somewhat a concern","Somewhat important","Very important"]
+					    "scale": ["Not a concern","Somewhat of a concern","Somewhat important","Very important"]
 					},
 					"answers" : {
 						"0" : {
@@ -600,7 +600,7 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["Lasagna", "Casarole and shepherd’s pie for Sunday dinner", "A feast for game night", "Holiday roast"]
+					    "scale": ["Lasagna", "Casarole and shepherd’s<br />pie for Sunday dinner", "A feast for game night", "Holiday roast"]
 					},
 					"answers" : {
 						"0" : {
@@ -1942,7 +1942,7 @@
 							"order" : 1
 						},
 						{
-							"text" : "No - but we would consider installing one so out fridge could dispense water and ice",
+							"text" : "No - but we would consider installing one so our fridge could dispense water and ice",
 							"value" : "glass of tap water",
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
@@ -2156,7 +2156,7 @@
 			"thumbnail_text" : "Cleaning",
 			"text" : [
 				{
-					"question" : "If we looked in your dishwasher right now we would probably find...",
+					"question" : "If we looked in your dishwasher<br/>right now we would probably find...",
 					"sub_question" : "Select all that apply",
 					"explanation_title" : "Why are you asking me about what I wash?",
 					"explanation" : "Knowing what goes into your dishwasher will allow us to recommend options that ensure all your dishes sparkle and shine.",
@@ -2256,7 +2256,7 @@
 			"thumbnail_text" : "Capacity",
 			"text" : [
 				{
-					"question" : "How many times a week does your family run the dishwasher?",
+					"question" : "How many times a week does<br/>your family run the dishwasher?",
 					"sub_question" : "Slide to answer",
 					"explanation_title" : "Why are you asking me about capacity?",
 					"explanation" : "When it comes to washing dishes there is no job too big or too small. By understanding what goes into your dishwasher we can find the perfect fit for your home.",
@@ -2270,7 +2270,7 @@
 					    "step": 0.0001,
 					    "dimension" : "",
 					    "scale": [
-							"0<br />Maybe every other week","5","10","15+<br />I've lost count"
+							"0<br />Maybe every<br />other week","5","10","15+<br />I've lost count"
 					    ]
 					},
 					"answers" : {
@@ -2652,7 +2652,7 @@
 						"3" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 4,
+							"value" : 3,
 							"text" : "Any size",
 							"scoring" : {
 							}

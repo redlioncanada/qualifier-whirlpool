@@ -14,7 +14,7 @@ header.header-desktop {
 .app-content-main-top {
 	width: 1160px;
 	margin: 0 auto;
-	min-height: 128px;
+	min-height: 145px;
 
 	h2, h3 {
 		font-family: $AV-stack;
@@ -415,7 +415,6 @@ header.header-desktop {
 
 
 .body {
-	overflow: hidden;
 	max-width: 100%;
 }
 
@@ -488,7 +487,7 @@ header.header-desktop {
 		-webkit-transition: all ease-in-out 1s, padding-top 1ms;
 	    transform: translateX(200%);
 	    -webkit-transform: translateX(200%);
-	    opacity: 0;
+        opacity: 0;
 	}
 	&.ng-hide-remove-active {
 		transform: translateX(0%);
@@ -516,8 +515,8 @@ header.header-desktop {
 		-webkit-transition: all ease-in-out 1s, padding-top 1ms;
 	    transform: translateX(-200%);
 	    -webkit-transform: translateX(-200%);
-	    opacity: 0;
-	}
+        opacity: 0;
+    }
 	&.ng-hide-remove-active {
 		transform: translateX(0%);
 		-webkit-transform: translateX(0%);
