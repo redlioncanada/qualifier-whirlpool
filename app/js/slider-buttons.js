@@ -47,8 +47,6 @@ angular.module('App')
           }
           
           qs.text[0].options.realtime = true;
-      qs.text[0].verticalOptions = angular.copy(qs.text[0].options);
-      qs.text[0].verticalOptions.vertical = true;
 
       if (!!qs.text[0].options) {
         qs.text[0].options.modelLabels = angular.copy(function (value) {
@@ -88,6 +86,9 @@ angular.module('App')
           }
         }
       })
+
+      qs.text[0].verticalOptions = angular.copy(qs.text[0].options);
+      qs.text[0].verticalOptions.vertical = true;
 
         for (var t in qs.text) {        
           for (var i in qs.text[t].answers) {

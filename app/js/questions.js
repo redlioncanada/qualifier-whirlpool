@@ -24,7 +24,6 @@ angular.module('App')
 					el.css('display','block');
 					el.css({
 						'width': width + 10,
-						'margin-left': $rootScope.isTabletWidthOrLess ? -width-20 : -width/2
 					});
 				}
 			} else {
