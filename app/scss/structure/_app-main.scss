@@ -1052,7 +1052,7 @@ a.answer-box.picture-4 {
         width: 400px;   
     }
     .label-text {
-        font-size: 11px !important;
+        font-size: 14px !important;
     }
     .ng-binding::first-letter {
         text-transform: capitalize;        
@@ -1080,14 +1080,14 @@ a.answer-box.picture-4 {
 
 @media(max-width:580px) {
     .answers-main-content {
-            &.answers-category {
-                .answers-background {
-                    top: -68px !important;
-                    width: 200% !important;
-                    -webkit-transform: translate(-50%, 0);
-                    transform: translate(-50%,0);
-                }
+        &.answers-category {
+            .answers-background {
+                top: -68px !important;
+                width: 200% !important;
+                -webkit-transform: translate(-50%, 0);
+                transform: translate(-50%,0);
             }
+        }
     }
 	.slidey {
 		width: 80% !important;
@@ -1095,7 +1095,9 @@ a.answer-box.picture-4 {
 		left: -50% !important;
         /*min-height: 370px !important;*/
 	}
-
+    .label-text {
+        font-size: 11px !important;
+    }
 	div.slidey .app-answers, .slidey .answers-main-content.answer-slider, .slidey .answers-main-content.price-slider {
 		height: 270px;
 
@@ -1236,7 +1238,7 @@ a.answer-box.picture-4 {
 			font-size: 8pt;
 		}
         h3 {
-            font-size: 7pt;
+            font-size: 5pt;
         }
 	}
 
@@ -1276,9 +1278,9 @@ a.answer-box.picture-4 {
 		}
 
 		.label-wrap {
-			left: 25px;
+			left: 10px;
 			height: 100%;
-			max-width: 75%;
+			max-width: 93%;
 		}
 
 		.label-wrap .label-text {
@@ -1376,8 +1378,8 @@ a.answer-box.picture-4 {
         margin-bottom: 4px;
     }
     a.answer-box.checkbox-4 {
-        margin-top: 2.9px;
-        margin-bottom: 2.9px;
+        margin-top: 4px;
+        margin-bottom: 4px;
     }
     .boxes-icon-5-container {
         width: 320px;
@@ -1452,7 +1454,7 @@ a.answer-box.picture-4 {
     }
     .boxes-icon-2-container {
         a.answer-box {
-            width: 155px;
+            width: 135px;
             height: 150px;
             background-size: 100% 100%;
             
@@ -1492,6 +1494,13 @@ a.answer-box.picture-4 {
             left: 40px;
 		}
 	}
+    a.answer-box.boxes-icon-split {
+        .icon-wrap {
+            .normal, .hover {
+                width: 60%;
+            }
+        }
+    }
     .ranking {
         .rank-numbers-list {
             padding-left: 0 !important;
@@ -1513,8 +1522,8 @@ a.answer-box.picture-4 {
             width: 50px !important;
             height: 40px !important;
             .rank-number {
-                top: 8px !important;
-                font-size: 18px !important;
+                top: 9px !important;
+                font-size: 14px !important;
             }
         }
         .label-wrap {
@@ -1537,6 +1546,22 @@ a.answer-box.picture-4 {
         width: 130px !important;
         height: 130px !important;
         margin: 10px 90px !important;
+    }
+    .radio-2.circular {
+        .label-wrap {
+            .label-text {
+                font-size: 15px !important;
+                padding-bottom: 2px !important;
+            }
+        }
+        &:hover, &.selected {
+            .label-wrap {
+                .label-text {
+                    border-bottom: 2px #edb129 solid !important; 
+                    top: 2px;
+                }
+            }
+        }
     }
 }
 
