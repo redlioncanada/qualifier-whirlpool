@@ -575,6 +575,7 @@
 }
 .ranking {
 	position:relative;
+    overflow: hidden;
 	ul, li, a {
 		-webkit-touch-callout: none;
 	    -webkit-user-select: none;
@@ -597,6 +598,8 @@
         position:absolute;
         padding: 5px;
         margin-right: -4px;
+        height: auto !important;
+        margin-bottom: 0;
 	}
 	.rank-answers-list {
 		display: inline-block;
@@ -635,6 +638,7 @@
         background-position: 0 -2px;
         background-size: 100% 100%;
         padding-left: 80px;
+        background-color: white;
 	}
 	.label-text {
 		top: 17px;
@@ -651,7 +655,7 @@ li.dragging-rank {
     -webkit-box-shadow: 7px 7px 23px -5px rgba(0,0,0,0.5);
 	-moz-box-shadow: 7px 7px 23px -5px rgba(0,0,0,0.5);
 	box-shadow: 7px 7px 23px -5px rgba(0,0,0,0.5);
-	background-color: transparent;
+	background-color: white;
 
     .rank-number-wrap {
     	display: none;

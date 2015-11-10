@@ -16,11 +16,11 @@
 	height: 61px;
 }
 @mixin large-square-label {
-	font-family: $AV-Light;
-	font-size: 27px;
+	font-family: $AV-stack;
+	font-size: 22px;
 	// opacity: 0.54; // this should also be a colour...
-	color: #5d5d5d;
-	top: 7px;
+	color: #777;
+	top: 10px;
 	position: relative;
 }
 
