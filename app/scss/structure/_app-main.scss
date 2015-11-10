@@ -720,12 +720,17 @@ a.answer-box.picture-4 {
 	}
 
 	.app-content-main-top .extra-info-wrap {
-		top: 10px;
-		right: -32px;
-
 		.btn-text {
 			display: none;
 		}
+
+		a.btn-wrap div.btn-icon-wrapper {
+			margin-left: 0px;
+		}
+	}
+
+	.app-content-main-top .tooltip {
+		left: -6px;
 	}
 
 	.app-content-main-top-left .main-question-more {
