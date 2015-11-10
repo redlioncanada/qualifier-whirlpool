@@ -12,6 +12,32 @@ applianceDataDecorator.factory('$dataDecorator', ['$filter', function($filter) {
 		angular.forEach(data, function(item, key) {
 			item.price = parseFloat(item.colours[0].prices.CAD);
 			switch (item.appliance) {
+				case "Washers":
+	                for (var i in item.colours) {
+	                  for (var j in item.dryers[0].colours) {
+	                    if (item.dryers[0].colours[j].colourCode == item.colours[i].colourCode) {
+	                      item.colours[i].dryersku = item.dryers[0].colours[j].sku;
+	                    }
+	                  }
+	                }
+
+                  if (parseFloat(item.capacity) >= 6.1) {
+                    item.largestCapacity = true
+                  } 
+                  if (parseFloat(item.capacity) >= 5.2) {
+                    item.largerCapacity = true
+                  }
+                  if (parseFloat(item.capacity) >= 5) {
+                    item.largeCapacity = true
+                  }
+                  if (parseFloat(item.capacity) >= 4.8) {
+                    item.mediumCapacity = true
+                  }                    
+                  if (parseFloat(item.capacity) >= 4.2) {
+                    item.smallCapacity = true
+                  }
+                  console.log(item);
+                  break;
 				case "Cooktops":
 					if (item.width <= 15) {
 						item["width15"] = true
