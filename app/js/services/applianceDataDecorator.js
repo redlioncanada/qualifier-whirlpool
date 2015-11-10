@@ -1,6 +1,6 @@
 var applianceDataDecorator = angular.module('ApplianceDataDecoratorService', []);
 
-applianceDataDecorator.factory('$dataDecorator', function() {
+applianceDataDecorator.factory('$dataDecorator', ['$filter', function($filter) {
 	return function(data) {
 		// console.log(data);
 
@@ -10,6 +10,7 @@ applianceDataDecorator.factory('$dataDecorator', function() {
         }
         
 		angular.forEach(data, function(item, key) {
+			item.price = parseFloat(item.colours[0].prices.CAD);
 			switch (item.appliance) {
 				case "Cooktops":
 					if (item.width <= 15) {
@@ -115,6 +116,11 @@ applianceDataDecorator.factory('$dataDecorator', function() {
 					} else if (item.capacity > 25) {
 						item.largestCapacity = true
 					}
+
+					if (item.sku.indexOf("GI15") > -1 || item.sku.indexOf("Gl15") > -1) {
+						//imposter!
+						data.splice(key, 1);
+					}
 					break;
 				case "Wall Ovens":
 					if (item.width <= 24) {
@@ -149,6 +155,6 @@ applianceDataDecorator.factory('$dataDecorator', function() {
 				}
 			}
 		})
-		return data;
+		return $filter('orderBy')(data, '-price');
 	};
-});
+}]);
