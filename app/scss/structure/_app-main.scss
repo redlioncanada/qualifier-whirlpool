@@ -683,10 +683,6 @@ a.answer-box.picture-4 {
 		/*min-height: 586px !important;*/
 	}
     
- .left-tag.no-jslider-value.four.scale-left > div > span > table > tbody > tr > td > div.jslider-scale > span {
-        left: -19px !important;
-    }
-
 	.main {
 		overflow: hidden;
 		-webkit-overflow-scrolling: touch;
@@ -874,7 +870,7 @@ a.answer-box.picture-4 {
 		.slider-wrap {
 			width: initial;
 			height: inherit;
-			left: -15%;
+			left: -20%;
 			float: none !important;
 			position: relative;
 		}
@@ -884,7 +880,8 @@ a.answer-box.picture-4 {
 			height: 100%;
 
 			.jslider-pointer {
-				left: -40%;
+				left: -6%;
+                margin-top: -7px;
 			}
 
 			.jslider-value {
@@ -899,10 +896,9 @@ a.answer-box.picture-4 {
 
 			.jslider-bg {
 				height: 111%;
-				width: 26px;
-				background: url("../img/slider-bg-vertical.jpg");
-				background-size: contain;
-                background-repeat: no-repeat;
+				width: 36px;
+				background: url("../img/slider-bg-vertical.jpg") no-repeat;
+				background-size: 100% 100%;
 				margin-left: -18px;
 			}
 
@@ -1064,10 +1060,10 @@ a.answer-box.picture-4 {
         width: 100%;
     }
     .slider-large-label-wrap .slider-large-label {
-		font-size: 13pt !important;
+		font-size: 10pt !important;
         color: #999C9C !important;
         top: -23px !important;
-        margin-right: -9px !important;
+        margin-right: 44px !important;
 	}
     div.category-image > img.hover {
         opacity: 0 !important;
@@ -1153,16 +1149,17 @@ a.answer-box.picture-4 {
 
 		.jslider {
 			div.jslider-pointer {
-				left: 12.5px;
+				left: 23.5px;
 				width: 43px;
 				height: 37px;
 				background: url("../img/slider-pointer.png") no-repeat !important;
 				background-size: 37px 37px !important;
+                margin-top: -3px;
 			}
 
 			.jslider-bg {
 				height: 109%;
-				width: 18px;
+				width: 35px;
 				margin-left: -18px;
 			}
 
@@ -1206,22 +1203,15 @@ a.answer-box.picture-4 {
         left: 0 !important;
     }
 
-	.slider-large-label-wrap {
-
-		span.slider-large-label {
-			margin-right: 3px !important;
-		}
-	}
-
 	.jslider.vertical .jslider-value:not(.jslider-value-to) {
 		margin-top: -3px !important;
 	}
 
 	.slider-large-label-wrap .slider-large-label {
-		font-size: 11pt !important;
+		font-size: 8pt !important;
         color: #999C9C !important;
-        top: -30px !important;
-        margin-right: -13px !important;
+        top: -15px !important;
+        margin-right: -4px !important;
 	}
 
 	.answers-category {
@@ -1528,10 +1518,6 @@ a.answer-box.picture-4 {
     .price-slider {
         height: 30px !important;
     }
-    .slider-large-label-wrap .slider-large-label {
-			top: -12px !important;
-			margin-right: -1px !important;
-	}
     div.app-content-main-top {
         min-height: 60px !important; 
         width: 90% !important;
