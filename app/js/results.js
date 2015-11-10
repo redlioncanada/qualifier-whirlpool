@@ -93,7 +93,7 @@ angular.module('App')
       }
     }
     if ("dryers" in appliance) appliance.colours[0].dryer = appliance.dryers[0]
-    console.log(appliance.colours[0])
+    // console.log(appliance.colours[0])
     return appliance.colours[0]
   }
 
