@@ -10,11 +10,12 @@
             font-weight: 200;
 		}
 		.results-adjust-desc {
-			font-family: $AV-Light;
+			font-family: $AV-stack;
 			font-size: 23px;
 			line-height: 15px;
-			color: #5c5c5c;
+			color: #333;
 			margin-top: 0;
+            font-weight: 400;
 		}
 	}
 
@@ -282,7 +283,7 @@
 			padding-right: 43px;
 
 			.sales-feature-wrapper {
-				padding-top: 10px;
+				padding-top: 0px;
 			}
 
 			h4.sales-feature {
@@ -420,6 +421,16 @@
 	.product-details-wrap {
 			background-image: none !important;
 		}
+        h4.sales-feature {
+            img:first-child {
+                top: 0 !important;
+                bottom: 0;
+                width: 23px !important;
+                transform: translateY(-25%) !important;
+                -ms-transform: translateY(-25%) !important;
+                -webkit-transform: translateY(-25%) !important;
+            }
+        }
 }
 
 @media(max-width:580px) {

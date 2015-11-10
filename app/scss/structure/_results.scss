@@ -165,7 +165,6 @@ by Jacoub Bondre */
 
 @media(max-width:1023px) {
     #results {
-	padding-top: 25px;
     .price-slider {
         margin-bottom: 25px;
 		.jslider {
@@ -197,7 +196,7 @@ by Jacoub Bondre */
 			text-transform: uppercase;
 			position: relative;
 			top: 9px;
-            font-size: 16px !important;
+            font-size: 12px !important;
 		}
 
 		.price-slider-wrap {
@@ -415,6 +414,7 @@ by Jacoub Bondre */
 @media(max-width: 580px) {
 	#results {
 		.price-slider {
+            margin-top: 40px !important;
 			width: 272px !important;
 
 			.jslider-bg {
@@ -422,6 +422,10 @@ by Jacoub Bondre */
 				height: 12px !important;
 				margin-left: -15px;
 			}
+            .jslider-pointer {
+                top: -11px !important;
+                margin-left: -22px !important;
+            }
 		}
 
 		.mobile-results-nav {
