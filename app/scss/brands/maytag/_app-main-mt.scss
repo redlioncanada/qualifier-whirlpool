@@ -602,8 +602,9 @@ div[ng-class="fr_CA"] {
     .app-content-main-top {
         .app-content-main-top-left {
             padding-left: 10px;
+            margin-left: 10px;
             padding-right: 0;
-            border-left: 1px #edb129 solid;
+            border-left: 2px #edb129 solid;
         }
         h2 {
             color: #777;
