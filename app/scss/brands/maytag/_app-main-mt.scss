@@ -607,14 +607,18 @@ div[ng-class="fr_CA"] {
 		}
 	}
     .answers-main-content {
-    &.label-inches .jslider-value span::after {
-        content: "\po";
-        position: absolute;
-        top: 13px;
-        right: 4px;
-        text-transform: lowercase;
-        font-size: 19px;
+        &.label-inches .jslider-value span::after {
+            content: "\po";
+            position: absolute;
+            top: 13px;
+            right: 4px;
+            text-transform: lowercase;
+            font-size: 19px;
+        }
     }
+    .category {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
     }
 }
 

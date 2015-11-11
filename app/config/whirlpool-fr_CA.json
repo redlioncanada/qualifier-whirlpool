@@ -42,7 +42,7 @@
 			"thumbnail_text" : "Appliance",
 			"text" : [
 				{
-					"question" : "What can we help you find?",
+					"question" : "What can we help you find?(FR)",
 					"sub_question" : "Sélectionnez une réponse",
 					"type" : "categories-click",
 					"oneAnswer" : true,
@@ -52,8 +52,6 @@
 							"value" : "Appareils de lessive",
 							"displayName": "Laundry Pair",
 							"classes" : "category Appareils de lessive",
-							"image" : "img/start-laundry.png",
-							"hover" : "img/start-laundry-hover.png",
 							"thumbnail" : "img/cat-laundry.jpg",
 							"thumbnail_current" : "img/cat-laundry.jpg",
 							"thumbnail_text" : "Appareils de lessive",
@@ -68,8 +66,6 @@
 							"value" : "Stove",
 							"displayName": "Range",
 							"classes" : "category Appareils de cuisson",
-							"image" : "img/start-stove.png",
-							"hover" : "img/start-stove-hover.png",
 							"thumbnail" : "img/walloven-double.jpg",
 							"thumbnail_current" : "img/walloven-double.jpg",
 							"thumbnail_text" : "Appareils de cuisson",
@@ -84,8 +80,6 @@
 							"value" : "Fridge",
 							"displayName": "Réfrigérateurs",
 							"classes" : "category fridge",
-							"image" : "img/start-fridge.png",
-							"hover" : "img/start-fridge-hover.png",
 							"thumbnail" : "img/cat-fridge.jpg",
 							"thumbnail_current" : "img/cat-fridge.jpg",
 							"thumbnail_text" : "Réfrigérateurs",
@@ -100,8 +94,6 @@
 							"value" : "Lave-vaisselle",
 							"displayName": "Lave-vaisselle",
 							"classes" : "category Lave-vaisselle",
-							"image" : "img/start-dishwasher.png",
-							"hover" : "img/start-dishwasher-hover.png",
 							"thumbnail" : "img/cat-dishwasher.jpg",
 							"thumbnail_current" : "img/cat-dishwasher.jpg",
 							"thumbnail_text" : "Lave-vaisselle",
@@ -133,7 +125,7 @@
 							"value" : "free stand range",
 							"displayName": "Range",
 							"classes" : "sub-category ranges",
-							"image" : "img/cooking-range.png",
+							"image" : "img/range.png",
 							"thumbnail" : "img/cat-cooking-sub-free-range-1-electric.jpg",
 							"thumbnail_current" : "img/cat-cooking-sub-free-range-1-electric.jpg",
 							"thumbnail_text" : "Cuisinières",
@@ -148,7 +140,7 @@
 							"value" : "cooktops",
 							"displayName": "Tables de cuisson",
 							"classes" : "sub-category cooktops",
-							"image" : "img/cooking-walloven.png",
+							"image" : "img/cook-top.png",
 							"thumbnail" : "img/walloven-single.jpg",
 							"thumbnail_current" : "img/walloven-single.jpg",
 							"thumbnail_text" : "Tables de cuisson",
@@ -163,7 +155,7 @@
 							"value" : "wall oven",
 							"displayName": "Fours encastrés",
 							"classes" : "sub-category wallovens",
-							"image" : "img/cooking-walloven.png",
+							"image" : "img/walloven.png",
 							"thumbnail" : "img/walloven-single.jpg",
 							"thumbnail_current" : "img/walloven-single.jpg",
 							"thumbnail_text" : "Fours encastrés",
@@ -177,8 +169,8 @@
 							"text" : "Hottes à évacuation",
 							"value" : "vents and hoods",
 							"displayName": "Hottes à évacuation",
-							"classes" : "sub-category wallovens",
-							"image" : "img/cooking-walloven.png",
+							"classes" : "sub-category vents",
+							"image" : "img/vents.png",
 							"thumbnail" : "img/walloven-single.jpg",
 							"thumbnail_current" : "img/walloven-single.jpg",
 							"thumbnail_text" : "Hottes à évacuation",
@@ -208,44 +200,52 @@
 					"explanation" : "Nos fours encastrés sont offerts en différentes tailles; nous voulons nous assurer de recommander celui qui convient parfaitement à votre espace.",
 					"type" : "slider",
 					"oneAnswer" : false,
-					"classes" : "pointer-labels no-jslider-scale left-tag label-inches",
-					"answer" : 24,
+					"classes" : "pointer-labels label-inches no-jslider-value show-ticks",
+					"answer" : 0,
 					"options" : {
-						"from" : 24,
-						"to" : 30,
+						"from" : 0,
+						"to" : 3,
 					    "step": 0.0001,
-					    "dimension_label" : "LARGEUR",
-					    "scale": ["24","27","30"]
+					    "dimension_label" : "Largeur",
+					    "scale": ["Any Size(FR)","24\"","27\"","30\""]
 					},
-					"answers" : {
-						"24" : {
-							"thumbnail" : "img/icon-size.png",
-							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 24,
-							"text" : "24 po",
-							"scoring" : {
-								"width24" : 1
-							}
-						},
-						"27" : {
-							"thumbnail" : "img/icon-size.png",
-							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 27,
-							"text" : "27 po",
-							"scoring" : {
-								"width27" : 1
-							}
-						},
-						"30" : {
-							"thumbnail" : "img/icon-size.png",
-							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 30,
-							"text" : "30 po",
-							"scoring" : {
-								"width30" : 1
-							}
-						}
-					}
+                    "answers" : {
+                        "0" : {
+                            "thumbnail" : "img/icon-size.png",
+                            "thumbnail_current" : "img/icon-size-current.png",
+                            "value" : 0,
+                            "text" : "Any size(FR)",
+                            "scoring" : {
+                            }
+                        },
+                        "1" : {
+                            "thumbnail" : "img/icon-size.png",
+                            "thumbnail_current" : "img/icon-size-current.png",
+                            "value" : 1,
+                            "text" : "24\"",
+                            "scoring" : {
+                                "width24" : 1
+                            }
+                        },
+                        "2" : {
+                            "thumbnail" : "img/icon-size.png",
+                            "thumbnail_current" : "img/icon-size-current.png",
+                            "value" : 2,
+                            "text" : "27\"",
+                            "scoring" : {
+                                "width27" : 1
+                            }
+                        },
+                        "3" : {
+                            "thumbnail" : "img/icon-size.png",
+                            "thumbnail_current" : "img/icon-size-current.png",
+                            "value" : 3,
+                            "text" : "30\"",
+                            "scoring" : {
+                                "width30" : 1
+                            }
+                        }
+                    }
 				}
 			]
 		},
@@ -262,7 +262,7 @@
 					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’orientation?",
 					"explanation" : "Nous offrons différents modèles de fours. En comprenant vos préférences, nous sommes en mesure de trouver le duo parfait pour votre foyer.",
-					"type" : "boxes-picture-3-radio",
+					"type" : "boxes-picture-4-radio",
 					"oneAnswer" : true,
 					"answers" : [
 						{
@@ -270,7 +270,7 @@
 							"thumbnail_current" : "img/icon-features-current.png",
 							"text" : "Four simple",
 							"value" : "single",
-							"image" : "img/Cooking-Q2-single.png",
+							"image" : "img/Walloven-Q2-single.jpg",
 							"scoring" : {
 								"single" : 3
 							},
@@ -281,7 +281,7 @@
 							"thumbnail_current" : "img/icon-features-current.png",
 							"text" : "Four à micro-ondes combiné",
 							"value" : "combo",
-							"image" : "img/Cooking-Q2-combo.png",
+							"image" : "img/Walloven-Q2-combo.jpg",
 							"scoring" : {
 								"combination" : 3
 							},
@@ -292,11 +292,21 @@
 							"thumbnail_current" : "img/icon-features-current.png",
 							"text" : "Four double",
 							"value" : "double",
-							"image" : "img/Cooking-Q2-double.png",
+							"image" : "img/Walloven-Q2-double.jpg",
 							"scoring" : {
 								"double" : 3
 							},
 							"order" : 3
+						},
+                        {
+							"thumbnail" : "img/icon-features.png",
+							"thumbnail_current" : "img/icon-features-current.png",
+							"text" : "No Preference(FR)",
+							"value" : "nopreference",
+							"image" : "img/Walloven-Q2-nopreference.jpg",
+							"scoring" : {
+							},
+							"order" : 4
 						}
 					]
 				}
@@ -306,8 +316,8 @@
 			"next" : "Cooking - Wall Ovens - Lifestyle",
 			"previous" : "Cooking - Wall Ovens - Orientation",
 			"thumbnail_type" : "image",
-			"thumbnail_text" : "Energy",
-			"thumbnail_text_fr" : "Energie",
+			"thumbnail_text" : "Features",
+			"thumbnail_text_fr" : "Capteur",
 			"thumbnail_current" : "img/icon-energy-current.png",
 			"text" : [
 				{
@@ -468,7 +478,7 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["pas une préoccupation","Somewhat a concern","plutôt importante","très importante"]
+					    "scale": ["pas une préoccupation","Somewhat a concern(FR)","plutôt importante","très importante"]
 					},
 					"answers" : {
 						"0" : {
@@ -511,9 +521,9 @@
 			"next" : "Cooking - Ranges - Capacity",
 			"previous" : "Cooking - Pre-Qualifier 1",
 			"thumbnail_type" : "image",
-			"thumbnail_text" : "Energy",
-			"thumbnail_text_fr" : "Energie",
-			"thumbnail_current" : "img/icon-features-current.png",
+			"thumbnail_text" : "Features",
+			"thumbnail_text_fr" : "Capteur",
+			"thumbnail_current" : "img/icon-features.png",
 			"text" : [
 				{
 					"question" : "Lorsque vous magasinez une cuisinière, quelles caractéristiques vous importent le plus? ",
@@ -649,7 +659,7 @@
 			"previous" : "Cooking - Ranges - Capacity",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-lifestyle-current.png",
-			"thumbnail_text" : "Style",
+			"thumbnail_text" : "Lifestyle",
 			"thumbnail_text_fr" : "Style",
 			"text" : [
 				{
@@ -715,7 +725,7 @@
 		"Cooking - Ranges - Lifestyle" : {
 			"next" : "Cooking - Ranges - Range Style",
 			"previous" : "Cooking - Ranges - Appareils de cuisson",
-			"thumbnail_text" : "Convection",
+			"thumbnail_text" : "Lifestyle",
 			"thumbnail_text_fr" : "Appareils de cuisson",
 			"thumbnail_current" : "img/icon-lifestyle-current.png",
 			"thumbnail_type" : "image",
@@ -780,7 +790,7 @@
         "Cooking - Ranges - Range Style" : {
 			"next" : "Cooking - Ranges - Fuel Type",
 			"previous" : "Cooking - Ranges - Lifestyle",
-			"thumbnail_text" : "Fuel Type",
+			"thumbnail_text" : "Style",
 			"thumbnail_text_fr" : "Style de cuisinière",
 			"thumbnail_current" : "img/icon-style-current.png",
 			"thumbnail_type" : "image",
@@ -790,13 +800,23 @@
 					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet du style? ",
 					"explanation" : "Saviez-vous que les cuisines professionnelles comportent habituellement des cuisinières à commandes frontales? Une fois que nous comprenons vos préférences en matière de style, nous pouvons recommander la table de cuisson parfaite pour vous.",
-					"type" : "boxes-icon-split-radio",
+					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
 					"answers" : [
 						{
+							"text" : "panneau de commandes arrière",
+							"image" : "img/Range-Q6-rear.jpg",
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"value" : "no",
+							"scoring" : {
+								"frontControl" : 1
+							},
+							"order" : 2
+						},
+                        {
 							"text" : "commandes frontales",
-							"image" : "img/icon-thumb-gas.png",
-							"hover" : "img/icon-thumb-gas-active.png",
+							"image" : "img/Range-Q6-front.jpg",
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "yes",
@@ -806,21 +826,8 @@
 							"order" : 1
 						},
 						{
-							"text" : "panneau de commandes arrière",
-							"image" : "img/icon-thumb-electric.png",
-							"hover" : "img/icon-thumb-electric-active.png",
-							"thumbnail" : "img/icon-style.png",
-							"thumbnail_current" : "img/icon-style-current.png",
-							"value" : "no",
-							"scoring" : {
-								"frontControl" : 1
-							},
-							"order" : 2
-						},
-						{
 							"text" : "aucune préférence",
-							"image" : "img/icon-thumb-electric.png",
-							"hover" : "img/icon-thumb-electric-active.png",
+							"image" : "img/Range-Q6-nopreference.jpg",
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "nopref",
@@ -1019,7 +1026,8 @@
 			"previous" : "Laundry - Energy",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-speed-current.png",
-			"thumbnail_text" : "Vitesse",
+			"thumbnail_text" : "Speed",
+            "thumbnail_text_fr" : "Speed(FR)",
 			"text" : [
 				{
 					"question" : "Êtes-vous souvent pressé lorsque vous faîtes la lessive?",
@@ -1159,7 +1167,7 @@
 						{
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
-							"image" : "img/Laundry-Q4-stacked.jpg",
+							"image" : "img/Laundry-Q5-stacked.jpg",
 							"text" : "superposée",
 							"value" : "Stacked",
 							"scoring" : {
@@ -1171,7 +1179,7 @@
 						{
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
-							"image" : "img/Laundry-Q4-side-by-side.jpg",
+							"image" : "img/Laundry-Q5-side-by-side.jpg",
 							"text" : "côte à côte",
 							"value" : "Side-By-Side",
 							"scoring" : {
@@ -1182,7 +1190,7 @@
 						{
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
-							"image" : "img/Laundry-Q4no-preference.jpg",
+							"image" : "img/Laundry-Q5-no-preference.jpg",
 							"text" : "aucune préférence",
 							"value" : "aucune préférence",
 							"scoring" : {
@@ -1367,7 +1375,7 @@
 					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’usure?",
 					"explanation" : "Parce que nous tenons autant que vous à préserver l’aspect et le toucher de vos vêtements, nous avons doté nos appareils de caractéristiques uniques qui protégeront vos vêtements.",
-					"type" : "radio-4",
+					"type" : "radio-2",
 					"oneAnswer" : true,
 					"answers" : [
 						{
@@ -1936,7 +1944,7 @@
 			]
 		},
 		"Fridges - Water" : {
-			"next" : "Fridges -  Organization 2",
+			"next" : "Fridges - Organization 2",
 			"previous" : "Fridges - Organization 1",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-water-current.png",
@@ -2073,14 +2081,16 @@
 					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de mon style?",
 					"explanation" : "Saviez-vous que certains réfrigérateurs sont conçus pour s’aligner aux comptoirs? Afin de mieux recommander le réfrigérateur qui répond parfaitement à vos besoins, nous avons besoin de comprendre vos préférences.",
-					"type" : "radio-4",
+					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
 					"classes" : "three form-function",
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "un modèle à profondeur de comptoir – je veux que mon réfrigérateur soit aligné avec mon comptoir",
+							"text" : "un modèle à profondeur de comptoir",
+                            "subtext" : "je veux que mon réfrigérateur soit aligné avec mon comptoir",
+                            "image" : "img/Fridge-Q7-counter.jpg",
 							"value" : 0,
 							"scoring" : {
 								"counterDepth" : 3
@@ -2090,7 +2100,9 @@
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "un modèle à profondeur standard – il m’importe peu que mon réfrigérateur soit aligné avec mon comptoir",
+							"text" : "un modèle à profondeur standard",
+                            "subtext" : "il m’importe peu que mon réfrigérateur soit aligné avec mon comptoir",
+                            "image" : "img/Fridge-Q7-standard.jpg",
 							"value" : 1,
 							"scoring" : {
 								"counterDepth" : -30
@@ -2292,7 +2304,7 @@
 					    "step": 0.0001,
 					    "dimension" : "",
 					    "scale": [
-							"0","5","10","15+<br />J’ai perdu le compte"
+							"0<br />Maybe every<br />other week(FR)","5","10","15+<br />J’ai perdu le compte"
 					    ]
 					},
 					"answers" : {
@@ -2344,9 +2356,9 @@
 			"next" : "Dishwashers - Noise 2",
 			"previous" : "Dishwashers - Capacity",
 			"thumbnail_type" : "image",
-			"thumbnail_current" : "img/icon-noise-current.png",
-			"thumbnail_text" : "Noise",
-			"thumbnail_text_fr" : "Bruit",
+			"thumbnail_current" : "img/icon-cycles-current.png",
+			"thumbnail_text" : "Cycles",
+			"thumbnail_text_fr" : "Cycles(FR)",
 			"text" : [
 				{
 					"question" : "Quand mettez-vous habituellement le lave-vaisselle en marche?",
@@ -2579,15 +2591,15 @@
 					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet du style?",
 					"explanation" : "En nous parlant de votre style personnel, vous nous aidez à trouver l’appareil qui paraîtra le mieux dans votre foyer.",
-					"type" : "boxes-picture-2-radio",
+					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "moderne",
-							"value" : "modern",
-							"image" : "img/Dishwasher-Q6-modern.jpg",
+							"text" : "Hidden Controls(FR)",
+							"value" : "hidden",
+							"image" : "img/Dishwasher-Q7-hidden.jpg",
 							"scoring" : {
 								"FID" : 1
 							},
@@ -2596,13 +2608,25 @@
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "traditionnel",
-							"value" : "traditional",
-							"image" : "img/Dishwasher-Q6-traditional.jpg",
+							"text" : "Front Control (FR)",
+							"value" : "front",
+							"image" : "img/Dishwasher-Q7-front.jpg",
 							"scoring" : {
 								"frontConsole" : 1
 							},
 							"order" : 2
+						},
+                        {
+							"thumbnail" : "img/icon-style.png",
+							"thumbnail_current" : "img/icon-style-current.png",
+							"text" : "No Preference(FR)",
+							"value" : "nopreference",
+							"image" : "img/Dishwasher-Q7-nopreference.jpg",
+							"scoring" : {
+								"FID" : 1,
+                                "frontConsole" : 1
+							},
+							"order" : 3
 						}
 					]
 				}
@@ -2682,7 +2706,7 @@
 			"next" : "Cooking - Cooktops - Features",
 			"previous" : "Cooking - Cooktops - Size",
 			"thumbnail_type" : "image",
-			"thumbnail_text" : "Features",
+			"thumbnail_text" : "Style",
 			"thumbnail_text_fr" : "Style",
 			"thumbnail_current" : "img/icon-features-current.png",
 			"text" : [
@@ -2699,7 +2723,7 @@
 							"thumbnail_current" : "img/icon-features-current.png",
 							"text" : "traditionnel",
 							"value" : "traditional",
-							"image" : "img/Cooking-Q2-single.png",
+							"image" : "img/Cooktops-Q2-traditional.jpg",
 							"scoring" : {
 								"induction" : 1,
 								"electric" : 1
@@ -2711,7 +2735,7 @@
 							"thumbnail_current" : "img/icon-features-current.png",
 							"text" : "professionnel",
 							"value" : "professional",
-							"image" : "img/Cooking-Q2-combo.png",
+							"image" : "img/Cooktops-Q2-professional.jpg",
 							"scoring" : {
 								"gas" : 1
 							},
@@ -2812,7 +2836,7 @@
 					"oneAnswer" : true,
 					"answers" : [
 						{
-							"text" : "Gas",
+							"text" : "gaz",
 							"image" : "img/icon-thumb-gas.png",
 							"hover" : "img/icon-thumb-gas-active.png",
 							"thumbnail" : "img/icon-fueltype.png",
@@ -2821,7 +2845,7 @@
 							"order" : 1
 						},
 						{
-							"text" : "Electric",
+							"text" : "électrique",
 							"image" : "img/icon-thumb-electric.png",
 							"hover" : "img/icon-thumb-electric-active.png",
 							"thumbnail" : "img/icon-fueltype.png",
@@ -2849,7 +2873,7 @@
 					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de la taille?",
 					"explanation" : "Chaque cuisine est différente. Nous voulons nous assurer que la taille de votre hotte correspond à celle de votre table de cuisson.",
-					"type" : "radio-4",
+					"type" : "radio-2",
 					"oneAnswer" : true,
 					"classes" : "vents  singleAns",
 					"answers" : [
@@ -2897,7 +2921,7 @@
 					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’emplacement?",
 					"explanation" : "Chaque cuisine est différente. Nous avons besoin de nous faire une meilleure idée de l’emplacement de votre surface de cuisson afin de trouver la hotte la mieux adaptée à votre espace.",
-					"type" : "radio-4",
+					"type" : "radio-2",
 					"oneAnswer" : true,
 					"classes" : "vents  singleAns",
 					"answers" : [
@@ -2934,18 +2958,18 @@
 			"next" : "Cooking - Vents - Type",
 			"previous" : "Cooking - Vents - Location",
 			"thumbnail_type" : "image",
-			"thumbnail_text" : "Features",
+			"thumbnail_text" : "Speed",
 			"thumbnail_text_fr" : "Vitesse",
-			"thumbnail_current" : "img/icon-features-current.png",
+			"thumbnail_current" : "img/icon-speed-current.png",
 			"text" : [
 				{
 					"question" : "Cuisinez-vous souvent à haute température?",
 					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de la température?",
 					"explanation" : "Si vous aimez monter le feu, nous devrons vous trouver un ventilateur plus résistant.",
-					"type" : "radio-4",
+					"type" : "radio-2",
 					"oneAnswer" : true,
-					"classes" : "vents  singleAns",
+					"classes" : "vents  singleAns circular",
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-convection.png",
@@ -2983,9 +3007,9 @@
 					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de mes armoires?",
 					"explanation" : "Nous savons que chaque cuisine est différente. Si nous savons où se trouvent vos armoires actuelles, nous pouvons recommander la hotte qui convient parfaitement à votre espace.",
-					"type" : "radio-4",
+					"type" : "radio-2",
 					"oneAnswer" : true,
-					"classes" : "vents  singleAns",
+					"classes" : "vents  singleAns circular",
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-convection.png",
@@ -3019,8 +3043,8 @@
 		"Cooking - Vents - Ventilation" : {
 			"next" : "Cooking - Vents - Space",
 			"previous" : "Cooking - Vents - Type",
-			"thumbnail_text" : "Fuel Type",
-			"thumbnail_text_fr" : "Ventilation",
+			"thumbnail_text" : "Convection",
+			"thumbnail_text_fr" : "convection(FR)",
 			"thumbnail_current" : "img/icon-fueltype-current.png",
 			"thumbnail_type" : "image",
 			"text" : [
@@ -3029,13 +3053,11 @@
 					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de la ventilation?",
 					"explanation" : "Une ventilation adéquate est importante pour maintenir l’air propre dans la maison. Si nous en savons plus sur la façon dont la vôtre fonctionne, nous pouvons choisir ce qui convient le mieux.",
-					"type" : "boxes-icon-split-radio",
+					"type" : "radio-2",
 					"oneAnswer" : true,
 					"answers" : [
 						{
 							"text" : "oui - j’ai besoin d’une ventilation avec conduit",
-							"image" : "img/icon-thumb-gas.png",
-							"hover" : "img/icon-thumb-gas-active.png",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "yes",
@@ -3046,8 +3068,6 @@
 						},
 						{
 							"text" : "non - j’ai besoin d’une ventilation sans conduit",
-							"image" : "img/icon-thumb-gas.png",
-							"hover" : "img/icon-thumb-gas-active.png",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "no",
@@ -3059,8 +3079,6 @@
 						},
 						{
 							"text" : "je ne suis pas certain",
-							"image" : "img/icon-thumb-electric.png",
-							"hover" : "img/icon-thumb-electric-active.png",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "i am no sure",
@@ -3077,9 +3095,9 @@
 		"Cooking - Vents - Space" : {
 			"next" : null,
 			"previous" : "Cooking - Vents - Ventilation",
-			"thumbnail_text" : "Space",
-			"thumbnail_text_fr" : "Espace",
-			"thumbnail_current" : "img/icon-fueltype-current.png",
+			"thumbnail_text" : "Style",
+			"thumbnail_text_fr" : "Style(FR)",
+			"thumbnail_current" : "img/icon-style-current.png",
 			"thumbnail_type" : "image",
 			"text" : [
 				{
@@ -3087,13 +3105,12 @@
 					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’espace de comptoir?",
 					"explanation" : "De la même manière que vos ingrédients travaillent ensemble pour créer le repas parfait, certains de nos modèles de ventilation se rassemblent pour faire plus de place. En comprenant vos besoins, nous pouvons vous aider à trouver l’installation parfaite.",
-					"type" : "boxes-icon-split-radio",
+					"type" : "radio-2",
 					"oneAnswer" : true,
+                    "classes" : "vents singleAns circular",
 					"answers" : [
 						{
 							"text" : "Oui",
-							"image" : "img/icon-thumb-gas.png",
-							"hover" : "img/icon-thumb-gas-active.png",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "yes",
@@ -3104,8 +3121,6 @@
 						},
 						{
 							"text" : "Non",
-							"image" : "img/icon-thumb-gas.png",
-							"hover" : "img/icon-thumb-gas-active.png",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "no",
