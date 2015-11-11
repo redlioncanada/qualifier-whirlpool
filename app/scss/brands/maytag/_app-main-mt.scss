@@ -594,13 +594,20 @@ header.header-desktop {
 /*french css start*/
 div[ng-class="fr_CA"] {
 	.btn-backtoresults, .btn-startover {
-		width: 79px !important;
+        width: 90px !important;
+        border-radius: 15px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin: 0 auto !important;
+        font-size: 10px !important;
 	}
 
 	.btn-startover {
-		line-height: 22px !important;
+		line-height: 19px !important;
 	}
-
+	.btn-backtoresults {
+		padding-top: 10px !important;
+	}
 	.app-content-main-bottom-center .icon-nav-wrap {
 		.popover-content {
 			text-transform: uppercase;
@@ -619,6 +626,14 @@ div[ng-class="fr_CA"] {
     .category {
         margin-left: 15px !important;
         margin-right: 15px !important;
+        .category-name {
+            font-size: 15px !important;
+        }
+    }
+    .sub-category {
+        .category-name {
+            font-size: 12px !important;
+        }
     }
 }
 
@@ -699,7 +714,14 @@ div[ng-class="fr_CA"] {
                 font-size: 10px;
             }
         }
-    }   
+    }
+    div[ng-class="fr_CA"]{
+        .answer-option {
+            .category-name {
+                font-size: 10px !important;
+            }
+        }
+    }
 	header.header-desktop {
 		display: none;
 	}

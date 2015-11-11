@@ -666,10 +666,13 @@ a.answer-box.picture-4 {
 
 @media(max-width:1023px) {
     .answers-main-content {
+        .sub-category {
+            margin: 0 15px !important;
+        }
         .category-spacer {
             height: 100px;
             bottom: 50px !important;
-            right: -33px !important;
+            right: -15px !important;
         }
         &.answers-category {
             .answers-background {
@@ -755,7 +758,7 @@ a.answer-box.picture-4 {
     }
     
 	.app-answers .category, .app-answers .sub-category {
-		width: 80px;
+		width: 120px;
 	}
 
 	.app-answers .category img.normal[ng-src="img/start-laundry.png"] {
@@ -1112,7 +1115,7 @@ a.answer-box.picture-4 {
             float: none;
         }
         &.answers-category {
-            margin-top: -40px !important;
+            margin-top: -30px !important;
             .answers-title {
                 padding-bottom: 10px;
             }
@@ -1229,7 +1232,6 @@ a.answer-box.picture-4 {
 				position: relative;
 
 				.normal, .hover {
-					width: 138%;
 					bottom: 0 !important;
 					margin-left: -9px;
 				}
@@ -1237,6 +1239,7 @@ a.answer-box.picture-4 {
 				.normal {
 					z-index: 2;
 					position: relative;
+                    margin: 0 auto;
 				}
 
 				.hover {
