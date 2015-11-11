@@ -32,7 +32,13 @@
 		"emailMessageSent" : "Your message has been sent",
 		"emailMessageError" : "There was an error",
 		"nextQuestionAlt" : "Navigate to next question",
-		"previousQuestionAlt" : "Navigate to previous question"
+		"previousQuestionAlt" : "Navigate to previous question",
+		"facebookTitle" : "FIND YOUR PERFECT APPLIANCE",
+		"facebookDesc" : "My Whirlpool takes the guesswork out of appliance shopping. Explore our tool to discover products you want with features that suit your needs.",
+		"facebookImage" : "/img/social.jpg",
+		"twitterTitle" : "",
+		"twitterDesc" : "My Whirlpool takes the guesswork out of appliance shopping. Explore our tool to discover products you want with features that suit your needs.",
+		"twitterImage" : "/img/social.jpg"
 	},
 	"questions" : {
 		"Appliance" : {
