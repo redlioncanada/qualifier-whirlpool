@@ -2693,7 +2693,7 @@
 						"3" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : "any",
+							"value" : 3,
 							"text" : "Any size",
 							"scoring" : {
 							}

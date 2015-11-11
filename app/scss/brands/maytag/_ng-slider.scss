@@ -1076,19 +1076,8 @@ div[ng-class="fr_CA"] {
 		}*/
 	}
 
-	.price-slider.pointer-labels {
-		.jslider {
-			padding-top: 11px !important;
-
-			.jslider-value, .jslider-value * {
-				font-size: 24px !important;
-			}
-		}
-	}
-
 	.slider-large-label {
-		font-size: 18px;
-		top: 15px;
+        margin-right: -30px;
 	}
 }
 
