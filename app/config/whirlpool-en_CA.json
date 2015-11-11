@@ -174,7 +174,7 @@
 							"thumbnail_current" : "img/walloven-single.jpg",
 							"thumbnail_text" : "Vents and Hoods",
 							"scoring" : {
-								"type" : "Ventilation"
+								"type" : "Hoods"
 							},
 							"next" : "Cooking - Vents - Size",
 							"order" : 4
