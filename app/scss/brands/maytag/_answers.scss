@@ -612,7 +612,6 @@
             margin-bottom: 0;
             text-align: center;
             margin: 0px 0 6px 0;
-            display: flex;
 		}
 	}
 	.rank-numbers-list li {
@@ -631,7 +630,7 @@
 		}	
 	}
 	.label-wrap {
-		display: inline-block;
+		display: block;
 		width: 500px;
 		height: 53px;
 		background: url('../img/ranking-bg.png') no-repeat;
