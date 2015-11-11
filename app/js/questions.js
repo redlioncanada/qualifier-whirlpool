@@ -395,7 +395,7 @@ angular.module('App')
 
 		var c = $('.slidey.active').height();
 
-		if ($scope.lastHeight > c-2 && $scope.lastHeight < c+2 && typeof $scope.lastHeight !== 'undefined') {
+		if ($scope.lastHeight > c-1 && $scope.lastHeight < c+1 && typeof $scope.lastHeight !== 'undefined') {
 			return;
 		}
 		$scope.lastHeight = c;
