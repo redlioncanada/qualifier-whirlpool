@@ -736,10 +736,10 @@
 			"text" : [
 				{
 					"question" : "How would your<br />family describe you?",
-					"sub_question" : "Select all that apply",
+					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about cooking?",
 					"explanation" : "Our ranges all have unique features. We want to get a better idea of how you use it so we can recommend the perfect one for your needs.",
-					"type" : "checkbox-4",
+					"type" : "radio-4",
 					"oneAnswer" : true,
 					"answers" : [
 						{
