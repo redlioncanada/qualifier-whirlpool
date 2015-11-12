@@ -675,7 +675,7 @@ div[ng-class="fr_CA"] {
             padding-left: 10px;
             margin-left: 10px;
             padding-right: 0;
-            border-left: 2px #edb129 solid;
+            border-left: 1px #edb129 solid;
         }
         h2 {
             color: #777;
@@ -687,10 +687,11 @@ div[ng-class="fr_CA"] {
     .extra-info-wrap {
         height: 15px !important;
 		.btn-icon {
-			width: 37px !important;
-			height: 15px !important;
+			width: 40px !important;
+			height: 16px !important;
             background-color: #edb129 !important;
 			span {
+                margin-top: -2px !important;
 				font-size: 12px !important;
                 color: white !important;
 			}
