@@ -355,8 +355,9 @@ header.header-desktop {
             color: #a7a7a7 !important;
 		}
         .btn-backtoresults:hover {
-			@include button-variant(#ffffff, transparent, #edb129);
-            color: #edb129 !important;
+            background-color: #edb129 !important;
+            border-color: #edb129 !important;
+            color: white !important;
 		}
 	}
 	.startover-btn-wrap {
@@ -386,8 +387,9 @@ header.header-desktop {
             color: #a7a7a7 !important;
 		}
         .btn-startover:hover {
-			@include button-variant(#ffffff, transparent, #edb129);
-            color: #edb129 !important;
+            background-color: #edb129 !important;
+            border-color: #edb129 !important;
+            color: white !important;
 		}
 	}
 }
