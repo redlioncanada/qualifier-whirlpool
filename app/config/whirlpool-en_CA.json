@@ -21,6 +21,7 @@
 		"submit" : "Send",
 		"close" : "Close",
 		"goBack" : "Go Back",
+        "email" : "Email",
 		"emailModalTitle" : "Email Your Results",
 		"emailNameTitle" : "To:",
 		"emailNamePlaceholder" : "Your name",

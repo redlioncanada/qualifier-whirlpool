@@ -22,6 +22,7 @@
         "submit" : "Envoyer",
         "close" : "Fermer",
         "goBack" : "Retourner",
+        "email" : "Imprimer",
         "emailModalTitle" : "Envoyez vos résultats par courriel",
         "emailNameTitle" : "Pour :",
         "emailNamePlaceholder" : "Nom",

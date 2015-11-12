@@ -53,7 +53,7 @@
 		}
 		.colourBar ul li {
 			height: 24px;
-			width: 150px;
+			width: 27px;
 			display: block;
 			float: left;
 			margin-right: 2px;
@@ -167,7 +167,7 @@
 					margin-top: -2px;
 				}
 				.btn-text-email::after {
-					content: '';
+					content: url(../img/icon-email.png);
 				}
 				.btn-text-startover::after {
 					content: initial !important;
@@ -218,7 +218,7 @@
 					padding-bottom: 3px;
 				}
 				.btn-text-email::after {
-					content: '';
+					content: url(../img/icon-email.png);
 				}
 				.btn-text-email img {
 					margin-top: -2px;
@@ -343,7 +343,7 @@
 		.product-disclaimers {
 			padding: 0 25px;
             padding-top: 10px;
-            margin: 0px 15% 20px 15%;
+            margin: 0px 0px 20px 0px;
 
 			> p {
 				color: #444;
