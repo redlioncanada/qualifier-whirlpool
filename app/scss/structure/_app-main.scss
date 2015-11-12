@@ -504,9 +504,16 @@ a.answer-box.picture-4 {
         }
     }
 }
-
+//Fixes a bug with the Cooking Q1 Label
+div.slidey-wrap-all > div.slidey.app-answers.ng-scope.active > div > div.slider-large-label-wrap.ng-scope > span {
+    margin-right: -150px !important;
+}
 
 @media(max-width:1180px) and (min-width:1024px) {
+    //Fixes a bug with the Cooking Q1 Label
+    div.slidey-wrap-all > div.slidey.app-answers.ng-scope.active > div > div.slider-large-label-wrap.ng-scope > span {
+        margin-right: -113px !important;
+    }
     .answers-main-content {
         .category-spacer {
              height: 140px;
@@ -1096,7 +1103,7 @@ a.answer-box.picture-4 {
 		font-size: 10pt !important;
         color: #999C9C !important;
         top: -23px !important;
-        margin-right: 44px !important;
+        margin-right: -5px !important;
 	}
     div.category-image > img.hover {
         opacity: 0 !important;
