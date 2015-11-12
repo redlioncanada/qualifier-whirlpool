@@ -32,7 +32,13 @@
 		"emailMessageSent" : "Your message has been sent",
 		"emailMessageError" : "There was an error",
 		"nextQuestionAlt" : "Navigate to next question",
-		"previousQuestionAlt" : "Navigate to previous question"
+		"previousQuestionAlt" : "Navigate to previous question",
+		"facebookTitle" : "FIND YOUR PERFECT APPLIANCE",
+		"facebookDesc" : "My Whirlpool takes the guesswork out of appliance shopping. Explore our tool to discover products you want with features that suit your needs.",
+		"facebookImage" : "/img/social.jpg",
+		"twitterTitle" : "",
+		"twitterDesc" : "My Whirlpool takes the guesswork out of appliance shopping. Explore our tool to discover products you want with features that suit your needs.",
+		"twitterImage" : "/img/social.jpg"
 	},
 	"questions" : {
 		"Appliance" : {
@@ -63,7 +69,7 @@
 						{
 							"text" : "Cooking",
 							"value" : "Stove",
-							"displayName": "Range",
+							"displayName": "Cooking",
 							"classes" : "category cooking",
 							"thumbnail" : "img/walloven-double.jpg",
 							"thumbnail_current" : "img/walloven-double.jpg",
@@ -2265,7 +2271,7 @@
 					"explanation" : "When it comes to washing dishes there is no job too big or too small. By understanding what goes into your dishwasher we can find the perfect fit for your home.",
 					"type" : "slider",
 					"oneAnswer" : false,
-					"classes" : "slider-labels four",
+					"classes" : "slider-labels seven",
 					"answer" : 0,
 					"options" : {
 					    "from": 0,
@@ -2273,7 +2279,7 @@
 					    "step": 0.0001,
 					    "dimension" : "",
 					    "scale": [
-							"0<br />Maybe every<br />other week","5","10","15+<br />I've lost count"
+							"0<br />Maybe every<br />other week","","5","","10","","15+<br />I've lost count"
 					    ]
 					},
 					"answers" : {
@@ -2282,6 +2288,16 @@
 							"thumbnail_current" : "img/icon-capacity-current.png",
 							"value" : 0,
 							"text" : "0 - Maybe every other week",
+							"scoring" : {
+								"placeSettings13": 1,
+								"compactTallTub": 1
+							}
+						},
+						"2" : {
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-capacity-current.png",
+							"value" : 2.5,
+							"text" : "2.5",
 							"scoring" : {
 								"placeSettings13": 1,
 								"compactTallTub": 1
@@ -2297,11 +2313,31 @@
 								"placeSettings14": 1
 							}
 						},
+						"7" : {
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-capacity-current.png",
+							"value" : 7.5,
+							"text" : "7.5",
+							"scoring" : {
+								"placeSettings13": 1,
+								"placeSettings14": 1
+							}
+						},
 						"10" : {
 							"thumbnail" : "img/icon-capacity.png",
 							"thumbnail_current" : "img/icon-capacity-current.png",
 							"value" : 10,
 							"text" : "10",
+							"scoring" : {
+								"placeSettings14": 1,
+								"placeSettings15": 1
+							}
+						},
+						"12" : {
+							"thumbnail" : "img/icon-capacity.png",
+							"thumbnail_current" : "img/icon-capacity-current.png",
+							"value" : 12.5,
+							"text" : "12.5",
 							"scoring" : {
 								"placeSettings14": 1,
 								"placeSettings15": 1
