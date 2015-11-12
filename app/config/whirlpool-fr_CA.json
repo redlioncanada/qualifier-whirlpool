@@ -42,7 +42,7 @@
 			"thumbnail_text" : "Appliance",
 			"text" : [
 				{
-					"question" : "What can we help you find?(FR)",
+					"question" : "COMMENT POUVONS-NOUS VOUS AIDER?",
 					"sub_question" : "Sélectionnez une réponse",
 					"type" : "categories-click",
 					"oneAnswer" : true,
