@@ -143,7 +143,7 @@
 						{
 							"text" : "Cooktops",
 							"value" : "cooktops",
-							"displayName": "COOKTOPS",
+							"displayName": "Cooktop",
 							"classes" : "sub-category cooktops",
 							"image" : "img/cook-top.png",
 							"thumbnail" : "img/walloven-single.jpg",
@@ -173,7 +173,7 @@
 						{
 							"text" : "Vents and Hoods",
 							"value" : "vents and hoods",
-							"displayName": "VENTS AND HOODS",
+							"displayName": "Vent or Hood",
 							"classes" : "sub-category vents",
 							"image" : "img/vents.png",
 							"thumbnail" : "img/walloven-single.jpg",
