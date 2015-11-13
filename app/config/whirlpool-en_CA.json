@@ -290,6 +290,7 @@
 							"thumbnail_current" : "img/icon-features-current.png",
 							"text" : "Microwave Oven Combo",
 							"value" : "combo",
+                            "image" : "img/Walloven-Q2-combo.jpg",
 							"image_alt" : "Wall Oven Combo",
 							"scoring" : {
 								"combination" : 3
