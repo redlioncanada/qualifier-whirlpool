@@ -2495,7 +2495,7 @@
 			"thumbnail_text" : "Energy",
 			"text" : [
 				{
-					"question" : "How important is energ efficency to your household?",
+					"question" : "How important is energy efficency to your household?",
 					"sub_question" : "Slide to answer",
 					"explanation_title" : "Why are you asking me about energy?",
 					"explanation" : "All of our machines use energy differently. By understanding your energy use, it will help us find the machine that best fits your lifestyle.",
