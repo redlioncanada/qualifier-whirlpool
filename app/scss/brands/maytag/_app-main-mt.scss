@@ -345,14 +345,20 @@ header.header-desktop {
 			height: 40px;
 			font-size: 7px;
 			text-align: center;
-			//padding: 3px 18px;
-			padding-left: 4px;
-		    padding-top: 13px;
 		    line-height: 1;
 			line-spacing: 1;
 			text-transform: uppercase;
             border-radius: 50%;
             color: #a7a7a7 !important;
+            
+            span {
+                position: relative;
+                display: inline-block;
+                left: 50%;
+                top: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
 		}
         .btn-backtoresults:hover {
             background-color: #edb129 !important;
@@ -377,14 +383,21 @@ header.header-desktop {
 			height: 40px;
 			font-size: 9px;
 			//padding: 3px 18px;
-			padding-left: 6px;
-		    padding-top: 11px;
 		    text-align: center;
 		    line-height: 1;
 			line-spacing: 1;
 			text-transform: uppercase;
             border-radius: 50%;
             color: #a7a7a7 !important;
+            
+            span {
+                position: relative;
+                display: inline-block;
+                left: 50%;
+                top: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
 		}
         .btn-startover:hover {
             background-color: #edb129 !important;
