@@ -195,6 +195,7 @@
 		"Cooking - Wall Ovens - Size" : {
 			"next" : "Cooking - Wall Ovens - Orientation",
 			"previous" : "Cooking - Pre-Qualifier 1",
+			"fadeIn" : true,
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Size",
 			"thumbnail_text_fr" : "Taille",
@@ -527,6 +528,7 @@
 		"Cooking - Ranges - Features" : {
 			"next" : "Cooking - Ranges - Capacity",
 			"previous" : "Cooking - Pre-Qualifier 1",
+			"fadeIn" : true,
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Features",
 			"thumbnail_text_fr" : "Capteur",
@@ -893,6 +895,7 @@
 		"Laundry - Capacity 1" : {
 			"next" : "Laundry - Energy",
 			"previous" : "Appliance",
+			"fadeIn" : true,
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-capacity-current.png",
 			"thumbnail_text" : "Capacity",
@@ -1532,6 +1535,7 @@
 		"Fridges - Size" : {
 			"next" : "Fridges - Energy",
 			"previous" : "Appliance",
+			"fadeIn" : true,
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-size-current.png",
 			"thumbnail_text" : "Size",
@@ -2190,6 +2194,7 @@
 		"Dishwashers - Cleaning Power" : {
 			"next" : "Dishwashers - Capacity",
 			"previous" : "Appliance",
+			"fadeIn" : true,
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-cleaning-current.png",
 			"thumbnail_text" : "Cleaning",
@@ -2672,6 +2677,7 @@
 		"Cooking - Cooktops - Size" : {
 			"next" : "Cooking - Cooktops - Style",
 			"previous" : "Cooking - Pre-Qualifier 1",
+			"fadeIn" : true,
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Size",
 			"thumbnail_text_fr" : "Taille",
@@ -2763,7 +2769,8 @@
 							"image" : "img/Cooktops-Q2-traditional.jpg",
 							"scoring" : {
 								"induction" : 1,
-								"electric" : 1
+								"electric" : 1,
+								"gas" : -10
 							},
 							"order" : 1
 						},
@@ -2774,7 +2781,9 @@
 							"value" : "professional",
 							"image" : "img/Cooktops-Q2-professional.jpg",
 							"scoring" : {
-								"gas" : 1
+								"gas" : 1,
+								"induction" : -10,
+								"electric" : -10
 							},
 							"order" : 2
 						}
@@ -2900,6 +2909,7 @@
 		"Cooking - Vents - Size" : {
 			"next" : "Cooking - Vents - Location",
 			"previous" : "Cooking - Pre-Qualifier 1",
+			"fadeIn" : true,
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Size",
 			"thumbnail_text_fr" : "Taille",
