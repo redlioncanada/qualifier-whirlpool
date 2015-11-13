@@ -167,7 +167,7 @@
 					margin-top: -2px;
 				}
 				.btn-text-email::after {
-					content: '';
+					content: url(../img/icon-email.png);
 				}
 				.btn-text-startover::after {
 					content: initial !important;
@@ -218,7 +218,7 @@
 					padding-bottom: 3px;
 				}
 				.btn-text-email::after {
-					content: '';
+					content: url(../img/icon-email.png);
 				}
 				.btn-text-email img {
 					margin-top: -2px;
@@ -267,10 +267,10 @@
 			background-image: linear-gradient(to bottom, #EFEFEF 0%, #FFFFFF 20%);
 		}
 		.sales-feature-spacer {
-			margin: 10px auto;
+			margin: 20px auto 0px auto;
 			height: 1px;
 			width: 77%;
-			border-top: thin transparent solid;
+			border-bottom: thin #ccc solid;
 		}
 		.sales-feature-spacer.small {
 			margin: 15px auto;
@@ -342,9 +342,8 @@
 
 		.product-disclaimers {
 			padding: 0 25px;
-            border-top: 1px #aaa solid;
             padding-top: 10px;
-            margin: 20px 15%;
+            margin: 0px 0px 20px 0px;
 
 			> p {
 				color: #444;

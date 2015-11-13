@@ -59,8 +59,8 @@ header.header-desktop {
 			.btn-icon-wrapper {
 				position: relative;
 				display: inline-block;
-				width: 18px;
-				height: 18px;
+				width: 17px;
+				height: 17px;
 				z-index: 52;
 				margin-left: 6px;
 			}
@@ -71,20 +71,18 @@ header.header-desktop {
 				text-align: center;
 				cursor: pointer;
 				left: 1px;
-				border: 1px solid #edb129;
+				border: 1.5px solid #edb129;
 				
 				span {
-					font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                    display: block;
+                    width: 100%;
+                    font-family: Helvetica, Arial, sans-serif;
+                    font-weight: 800;
 					color: #edb129;
-					font-size: 16px;
+					font-size: 12px !important;
 					position: relative;
-					bottom: 1px;
-					display: block;
-					float: left;
-					text-align: center;
-					width: 100%;
-					font-size: 11pt;
-					margin-top: -1px;
+					bottom: 0.5px;
+                    left: 0px;
 				}
 
 			}
@@ -102,7 +100,7 @@ header.header-desktop {
 					-o-transform: rotate(45deg) ;
 					-ms-transform: rotate(45deg) ;
 					margin-top: -2px;
-					margin-left: 1px;
+					margin-left: 0.7px;
 				}
 			}
 			.btn-text {
@@ -242,7 +240,7 @@ header.header-desktop {
 			}
 		}
 		.category-name {
-			margin: 20px 0;
+			margin: 10px 0;
 			display: block;
 			color: #444;
 			text-transform: uppercase;
@@ -357,8 +355,9 @@ header.header-desktop {
             color: #a7a7a7 !important;
 		}
         .btn-backtoresults:hover {
-			@include button-variant(#ffffff, transparent, #edb129);
-            color: #edb129 !important;
+            background-color: #edb129 !important;
+            border-color: #edb129 !important;
+            color: white !important;
 		}
 	}
 	.startover-btn-wrap {
@@ -388,8 +387,9 @@ header.header-desktop {
             color: #a7a7a7 !important;
 		}
         .btn-startover:hover {
-			@include button-variant(#ffffff, transparent, #edb129);
-            color: #edb129 !important;
+            background-color: #edb129 !important;
+            border-color: #edb129 !important;
+            color: white !important;
 		}
 	}
 }
@@ -677,7 +677,7 @@ div[ng-class="fr_CA"] {
             padding-left: 10px;
             margin-left: 10px;
             padding-right: 0;
-            border-left: 2px #edb129 solid;
+            border-left: 1px #edb129 solid;
         }
         h2 {
             color: #777;
@@ -689,10 +689,11 @@ div[ng-class="fr_CA"] {
     .extra-info-wrap {
         height: 15px !important;
 		.btn-icon {
-			width: 37px !important;
-			height: 15px !important;
+			width: 40px !important;
+			height: 16px !important;
             background-color: #edb129 !important;
 			span {
+                margin-top: -2px !important;
 				font-size: 12px !important;
                 color: white !important;
 			}
@@ -816,4 +817,11 @@ div[ng-class="fr_CA"] {
         }
     }
 
+}
+@media(max-width:580px) {
+    .app-content-main-top {
+        .app-content-main-top-left {
+            margin-left: 0px;
+        }
+    }
 }

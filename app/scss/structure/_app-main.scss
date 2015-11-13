@@ -504,9 +504,16 @@ a.answer-box.picture-4 {
         }
     }
 }
-
+//Fixes a bug with the Cooking Q1 Label
+div.slidey-wrap-all > div.slidey.app-answers.ng-scope.active > div > div.slider-large-label-wrap.ng-scope > span {
+    margin-right: -150px !important;
+}
 
 @media(max-width:1180px) and (min-width:1024px) {
+    //Fixes a bug with the Cooking Q1 Label
+    div.slidey-wrap-all > div.slidey.app-answers.ng-scope.active > div > div.slider-large-label-wrap.ng-scope > span {
+        margin-right: -113px !important;
+    }
     .answers-main-content {
         .category-spacer {
              height: 140px;
@@ -758,6 +765,7 @@ a.answer-box.picture-4 {
 
 	.app-content-main-top .tooltip {
 		left: -6px;
+        width: 150px !important;
 	}
 
 	.app-content-main-top-left .main-question-more {
@@ -1095,7 +1103,7 @@ a.answer-box.picture-4 {
 		font-size: 10pt !important;
         color: #999C9C !important;
         top: -23px !important;
-        margin-right: 44px !important;
+        margin-right: -5px !important;
 	}
     div.category-image > img.hover {
         opacity: 0 !important;
@@ -1153,16 +1161,16 @@ a.answer-box.picture-4 {
                 position: absolute;
                 top: -70px;
                 left: 0;
-                width: 130%;
+                width: 105%;
             }
             .category {
                 .category-image {
-                    border: 3px #edb129 solid !important;;
+                    border: 2px #edb129 solid !important;;
                 }
                 .category-name {
                     font-size: 15px;
                     font-weight: 200;
-                    margin: 8px auto -8px auto !important;
+                    margin: 8px auto 8px auto !important;
                 }
             }
         }
@@ -1251,7 +1259,7 @@ a.answer-box.picture-4 {
 			width: 100% !important;
 
 			.category-image {
-				width: 19%;
+				width: 25%;
 				margin: 0 auto;
 				position: relative;
 
