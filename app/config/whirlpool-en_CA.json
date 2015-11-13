@@ -145,7 +145,7 @@
 						{
 							"text" : "Cooktops",
 							"value" : "cooktops",
-							"displayName": "COOKTOPS",
+							"displayName": "Cooktop",
 							"classes" : "sub-category cooktops",
 							"image" : "img/cook-top.png",
                             "image_alt" : "Whirlpool Cooktop",
@@ -177,7 +177,7 @@
 						{
 							"text" : "Vents and Hoods",
 							"value" : "vents and hoods",
-							"displayName": "VENTS AND HOODS",
+							"displayName": "Vent or Hood",
 							"classes" : "sub-category vents",
 							"image" : "img/vents.png",
                             "image_alt" : "Whirlpool Vents and Hoods",
