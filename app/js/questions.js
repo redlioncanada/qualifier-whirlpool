@@ -446,7 +446,7 @@ angular.module('App')
   		// if this question doesn't set next, then its fine
   		// if this question does, then delete everything after
   		// this should happen when stuff moves
-  		console.log($rootScope.questionsData);
+  		// console.log($rootScope.questionsData);
 
   		var q = ($location.path()).toString().replace("/question/","");
   		if ($rootScope.controls.lastLocation == 'results' && (q == 'Appliance' || q=='/questions/')) return;

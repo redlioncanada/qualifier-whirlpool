@@ -36,7 +36,6 @@ applianceDataDecorator.factory('$dataDecorator', ['$filter', function($filter) {
                   if (parseFloat(item.capacity) >= 4.2) {
                     item.smallCapacity = true
                   }
-                  console.log(item);
                   break;
 				case "Cooktops":
 					if (item.width <= 15) {

@@ -2,6 +2,10 @@
 
 angular.module('App')
   .controller('ResultsCtrl', function ($scope, $rootScope, $state, $location, $timeout, $modal, $appstate) {
+    $timeout(function() {
+      $('#results').removeClass('hiddenViaOpacity')
+    },500);
+
     if (window.innerWidth < 1024){
             $scope.useMobileTemplates = true;
         }else{
@@ -12,7 +16,6 @@ angular.module('App')
         if (window.innerWidth < 1024){
             $scope.$apply(function(){
                 $scope.useMobileTemplates = true;
-                console.log('usemobiletemplates');
             });
         }else{
             $scope.$apply(function(){
@@ -56,7 +59,7 @@ angular.module('App')
         "fakestep": 50,
         "smooth" : false,
         "step" : 1,
-        "threshold" : 250,
+        "threshold" : 550,
         "dimension": d,
         "callback" : function(value, released) {  
 
@@ -88,7 +91,6 @@ angular.module('App')
     for (var c in appliance.colours) {
       if (appliance.colours[c].colourCode == "CS" || appliance.colours[c].colourCode == "SS" || appliance.colours[c].colourCode == "PA") {
         if ("dryers" in appliance) appliance.colours[c].dryer = appliance.dryers[0];
-        console.log(appliance.colours[0])
         return appliance.colours[c]
       }
     }
