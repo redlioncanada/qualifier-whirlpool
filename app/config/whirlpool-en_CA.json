@@ -291,6 +291,7 @@
 							"thumbnail_current" : "img/icon-features-current.png",
 							"text" : "Microwave Oven Combo",
 							"value" : "combo",
+                            "image" : "img/Walloven-Q2-combo.jpg",
 							"image_alt" : "Wall Oven Combo",
 							"scoring" : {
 								"combination" : 3
@@ -1044,7 +1045,7 @@
 					"question" : "Do you often find yourself<br />doing laundry in a rush?",
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about timing?",
-					"explanation" : "Some of our laundry machines are specifically designed to get you out the door in record time. By understanding your needs we can find the machine that best suits your lifestyle.",
+					"explanation" : "Some of our laundry machines are specifically designed to get you out the door in record time. By understanding your needs, we can find the machine that best suits your lifestyle.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
 					"answers" : [
@@ -1169,7 +1170,7 @@
 					"question" : "What’s your laundry<br />pair preference?",
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about orientation?",
-					"explanation" : "We know that every laundry space is different. by understanding what orientation you prefer, we’re better able to find you the perfect pair.",
+					"explanation" : "We know that every laundry space is different. By understanding what orientation you prefer, we’re better able to find you the perfect pair.",
 					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
 					"answers" : [
@@ -1961,7 +1962,7 @@
 					"question" : "Does your kitchen have<br />an existing waterline?",
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about a waterline?",
-					"explanation" : "Did you know that your kitchen needs a water line in order for your fridge to dispense water? Some of our models provide water-dispensing features. By understanding how you consume water, we can recommend a fridge that will best suit your needs.",
+					"explanation" : "Did you know that your kitchen needs a waterline in order for your fridge to dispense water? Some of our models provide water-dispensing features. By understanding how you consume water, we can recommend a fridge that will best suit your needs.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
 					"answers" : [
