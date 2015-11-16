@@ -31,7 +31,7 @@
 							<div class="tooltip-inner" ng-bind="questionsData.question.show.explanation"></div>
 						</div>
 					</a>
-					<a class="btn-wrap" ng-if="!!questionsData.question.show.info_title" tooltip-append-to-body="true" ng-click="$root.showTooltip = !$root.showTooltip" tooltip-trigger="none" tooltip-placement="{{isTabletWidthOrLess ? 'left' : 'bottom'}}" tooltip-toggle="$root.showTooltip" tooltip="{{questionsData.question.show.info}}">
+					<a class="btn-wrap" ng-if="!!questionsData.question.show.info_title" tooltip-append-to-body="true" ng-click="$root.showTooltip = !$root.showTooltip" tooltip-trigger="none" tooltip-placement="{{isTabletWidthOrLess ? 'left' : 'bottom'}}" tooltip-toggle="$root.showTooltip" uib-tooltip-html="{{questionsData.question.show.info}}">
 						<span class="btn-icon">
 							<span>i</span>
 						</span>

@@ -162,7 +162,17 @@
 			}
 		}
 	}
-    &.radio:hover, &.radio-2:hover, &.radio-3:hover, &.radio-4:hover,&.radio.selected, &.radio-2.selected, &.radio-3.selected, &.radio-4.selected {
+	&.radio, &.radio-2, &.radio-3, &.radio-4, &.picture-3, &.picture-3, &.picture-4 {
+		.select-label-wrap.selected {
+			background: #edb129;
+			background-size: cover;
+			
+			.label-text {
+                color: white;
+            }
+		}
+	}
+    &.radio:hover, &.radio-2:hover, &.radio-3:hover, &.radio-4:hover,&.radio.selected, &.radio-2.selected, &.radio-3.selected, &.radio-4.selected, &.picture-3.selected, &.picture-3.selected, &.picture-4.selected {
 		background: #edb129;
 		background-size: cover;
         .label-wrap {

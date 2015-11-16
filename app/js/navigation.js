@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('App')
-  .controller('NavigationCtrl', function ($scope, $state, $rootScope, $filter, $location, $window, $timeout, $appstate) {
+  .controller('NavigationCtrl', function ($scope, $state, $rootScope, $filter, $location, $window, $timeout, $appstate, $sce) {
     $rootScope.$on('$locationChangeSuccess', function(event) {
         if ( ($location.path()).toString().indexOf("results") != -1 || $rootScope.restore == 'results') {
           $rootScope.atResultsPage = true;
