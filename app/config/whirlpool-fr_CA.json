@@ -318,7 +318,7 @@
                         {
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"text" : "No Preference(FR)",
+							"text" : "Aucune restriction",
 							"value" : "nopreference",
 							"image" : "img/Walloven-Q2-nopreference.jpg",
 							"scoring" : {
@@ -3110,7 +3110,7 @@
 			"next" : "Cooking - Vents - Space",
 			"previous" : "Cooking - Vents - Type",
 			"thumbnail_text" : "Convection",
-			"thumbnail_text_fr" : "convection(FR)",
+			"thumbnail_text_fr" : "convection",
 			"thumbnail_current" : "img/icon-fueltype-current.png",
 			"thumbnail_type" : "image",
 			"text" : [
@@ -3162,7 +3162,7 @@
 			"next" : null,
 			"previous" : "Cooking - Vents - Ventilation",
 			"thumbnail_text" : "Style",
-			"thumbnail_text_fr" : "Style(FR)",
+			"thumbnail_text_fr" : "Style",
 			"thumbnail_current" : "img/icon-style-current.png",
 			"thumbnail_type" : "image",
 			"text" : [
