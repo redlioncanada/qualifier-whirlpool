@@ -344,7 +344,7 @@ header.header-desktop {
 			width: 40px;
 			height: 40px;
 			font-size: 7px;
-			text-align: center;
+			text-align: initial;
 		    line-height: 1;
 			line-spacing: 1;
 			text-transform: uppercase;
@@ -409,7 +409,7 @@ header.header-desktop {
 
 .buttonnav-mobile {
    		text-transform: uppercase;
-   		margin: 15px auto 15px auto;
+   		margin: 40px auto 15px auto;
         text-align: center;
         a.banner {
             display: inline-block;
@@ -624,17 +624,12 @@ div[ng-class="fr_CA"] {
 	.btn-backtoresults, .btn-startover {
         width: 90px !important;
         border-radius: 15px !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
         margin: 0 auto !important;
         font-size: 10px !important;
 	}
 
 	.btn-startover {
 		line-height: 19px !important;
-	}
-	.btn-backtoresults {
-		padding-top: 10px !important;
 	}
 	.app-content-main-bottom-center .icon-nav-wrap {
 		.popover-content {
@@ -661,6 +656,21 @@ div[ng-class="fr_CA"] {
     .sub-category {
         .category-name {
             font-size: 12px !important;
+        }
+    }
+    .buttonnav-mobile {
+        margin-top: 50px;
+        a.banner {
+            .btn-wrapper {
+                border-radius: 15px;
+                height: 45px;
+                width: 90px;
+
+                div {
+                    font-size: 10px;
+                    line-height: 10px;
+                }
+            }
         }
     }
 }
