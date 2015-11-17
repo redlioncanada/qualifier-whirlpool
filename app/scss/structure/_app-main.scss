@@ -420,7 +420,7 @@ div.mobile-app-nav-arrows {
     }
 	.icon-img {
 		max-width: 41px;
-		max-height: 41px;
+		max-height: 42px;
         cursor: auto;
 		// &.current {
 		// 	display: none;
@@ -428,13 +428,21 @@ div.mobile-app-nav-arrows {
 	}
 	.icon-img-current {
 		// display: none;
-		max-width: 52px;
-		max-height: 53px;
+		max-width: 41px;
+		max-height: 42px;
         cursor: pointer;
 		// &.current {
 		// 	display: inline-block;
 		// }
 	}
+    .icon-img[ng-if="isTabletWidthOrLess"] {
+        max-width: 15px;
+		max-height: 15px;
+    }
+    .icon-img-current[ng-if="isTabletWidthOrLess"] {
+        max-width: 15px;
+		max-height: 15px;
+    }
 }
 .category {
     .category-image {
