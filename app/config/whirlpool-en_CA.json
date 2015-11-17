@@ -1140,7 +1140,7 @@
 					"oneAnswer" : true,
 					"answers" : [
 						{
-							"text" : "Very - our laundry is located near a bedroom",
+							"text" : "Yes - our laundry machines are near a bedroom",
 							"value" : "sensitive",
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
