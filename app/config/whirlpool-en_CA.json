@@ -235,7 +235,13 @@
 							"value" : 1,
 							"text" : "24\"",
 							"scoring" : {
-								"width24" : 1
+								"width24" : 5,
+								"width25" : -30,
+								"width26" : -30,
+								"width27" : -30,
+								"width28" : -30,
+								"width29" : -30,
+								"width30" : -30
 							}
 						},
 						"2" : {
@@ -244,7 +250,10 @@
 							"value" : 2,
 							"text" : "27\"",
 							"scoring" : {
-								"width27" : 1
+								"width27" : 5,
+								"width28" : -30,
+								"width29" : -30,
+								"width30" : -30
 							}
 						},
 						"3" : {
@@ -253,7 +262,7 @@
 							"value" : 3,
 							"text" : "30\"",
 							"scoring" : {
-								"width30" : 1
+								"width30" : 5
 							}
 						}
 					}
@@ -284,7 +293,7 @@
 							"image" : "img/Walloven-Q2-single.jpg",
                             "image_alt" : "Wall Oven Single",
 							"scoring" : {
-								"single" : 3
+								"single" : 10
 							},
 							"order" : 1
 						},
@@ -296,7 +305,7 @@
                             "image" : "img/Walloven-Q2-combo.jpg",
 							"image_alt" : "Wall Oven Combo",
 							"scoring" : {
-								"combination" : 3
+								"combination" : 10
 							},
 							"order" : 2
 						},
@@ -308,7 +317,7 @@
 							"image" : "img/Walloven-Q2-double.jpg",
                             "image_alt" : "Wall Oven Double",
 							"scoring" : {
-								"double" : 3
+								"double" : 10
 							},
 							"order" : 3
 						},
@@ -827,7 +836,8 @@
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "no",
 							"scoring" : {
-								"frontControl" : 1
+								"rearControl" : 3,
+								"frontControl" : -3
 							},
 							"order" : 2
 						},	
@@ -839,7 +849,8 @@
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "yes",
 							"scoring": {
-								"rearControl" : 1
+								"frontControl" : 3,
+								"rearControl" : -3
 							},
 							"order" : 1
 						},
@@ -851,6 +862,8 @@
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "nopref",
 							"scoring" : {
+								"frontControl" : 1,
+								"rearControl" : -1
 							},
 							"order" : 3
 						}
@@ -1998,8 +2011,9 @@
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
 							"scoring" : {
-								"filtered" : 1,
-								"exteriorWater" : 1
+								"filtered" : 3,
+								"exteriorDispenser" : 3,
+								"indoorDispenser" : 3
 							},
 							"order" : 1
 						},
@@ -2009,8 +2023,9 @@
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
 							"scoring" : {
-								"filtered" : 1,
-								"exteriorWater" : 1
+								"filtered" : -3,
+								"exteriorDispenser" : -3,
+								"indoorDispenser" : -3
 							},
 							"order" : 2
 						},
@@ -2020,7 +2035,9 @@
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
 							"scoring" : {
-								"exteriorWater" : 1
+								"filtered" : 1,
+								"exteriorDispenser" : 1,
+								"indoorDispenser" : 1
 							},
 							"order" : 3
 						},
@@ -2140,7 +2157,7 @@
                             "image_alt" : "Refrigerator Standard Depth",
 							"value" : 1,
 							"scoring" : {
-								"counterDepth" : -30
+								"counterDepth" : -3
 							},
 							"order" : 2
 						}
@@ -2674,7 +2691,8 @@
 							"image" : "img/Dishwasher-Q7-hidden.jpg",
                             "image_alt" : "Dishwasher Hidden Control",
 							"scoring" : {
-								"FID" : 1
+								"FID" : 3,
+								"frontConsole" : -3
 							},
 							"order" : 1
 						},
@@ -2686,7 +2704,8 @@
 							"image" : "img/Dishwasher-Q7-front.jpg",
                             "image_alt" : "Dishwasher Front Control",
 							"scoring" : {
-								"frontConsole" : 1
+								"frontConsole" : 3,
+								"FID" : -3
 							},
 							"order" : 2
 						},
@@ -2699,7 +2718,7 @@
                             "image_alt" : "Dishwasher No Preference",
 							"scoring" : {
 								"FID" : 1,
-                                "frontConsole" : 1
+                                "frontConsole" : -1
 							},
 							"order" : 3
 						}
