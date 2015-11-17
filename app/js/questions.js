@@ -451,7 +451,7 @@ angular.module('App')
   		var q = ($location.path()).toString().replace("/question/","");
   		if ($rootScope.controls.lastLocation == 'results' && (q == 'Appliance' || q=='/questions/')) return;
 
-  		if ($rootScope.isTabletWidthOrLess && $rootScope.isMobile) {
+  		if ($rootScope.isTabletWidthOrLess && $rootScope.isMobile && q !== 'Appliance') {
 			$("html, body").animate({scrollTop: "51px"}, 400);
 		}
 

@@ -614,7 +614,6 @@
 	.rank-answers-list {
 		display: inline-block;
         padding-left: 0;
-        height: 100% !important;
         position: relative;
         padding: 5px;
         margin-left: 62px;
@@ -660,6 +659,29 @@
 	
 }
 
+@media(max-width: 580px) {
+	.answers-main-content > .rank-answers-list {
+		display: none !important;
+		visibility: hidden !important;
+	}
+
+	li.dragging-rank {
+		height: 41px !important;
+
+	    .rank-number-wrap {
+	    	display: none;
+	    }
+	    .label-wrap {
+			height:  41px !important;
+			width: 100% !important;
+		}
+		.label-text {
+			top: 25% !important;
+			font-size: 9px !important;
+		}
+	}
+}
+
 li.dragging-rank {
 	height: 53px;
     margin-bottom: 0;
@@ -682,7 +704,7 @@ li.dragging-rank {
         border: 1px #edb129 solid;
         background-position: 0 -2px;
         background-size: 100% 100%;
-        padding-left: 80px !important;
+        padding-left: 12% !important;
         background-color: white;
 	}
 	.label-text {
@@ -692,6 +714,7 @@ li.dragging-rank {
 .as-sortable-placeholder {
     border: 1px #edb129 solid;
     border-radius: 0;
+    height: 42px;
     box-sizing: border-box;
     background: rgb(255,255,255); /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(249,249,249,1) 100%); /* FF3.6-15 */
