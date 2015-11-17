@@ -483,7 +483,7 @@ $scale2: 1.07;
 		opacity: 0;
 	}
 
-	50% {
+	25% {
 		opacity: 0;
 	}
 
@@ -496,9 +496,9 @@ $scale2: 1.07;
 	animation-name: fadeIn;
 	-moz-animation-name: fadeIn;
 
-	animation-duration: 1.5s;	
-	-webkit-animation-duration: 1.5s;
-	-moz-animation-duration: 1.5s;
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
 
 	opacity: 1;
 }

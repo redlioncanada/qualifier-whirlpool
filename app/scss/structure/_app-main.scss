@@ -167,6 +167,14 @@ html, body {
 		@include make-md-column(8);
 		height: 100%;
 	}
+	.app-content-main-top-left.ng-enter {
+		transition: 0.75s linear all;
+		transition-delay: 0.25s;
+		opacity: 0;
+	}
+	.app-content-main-top-left.ng-enter-active {
+		opacity: 1;
+	}
 	.app-content-main-top-right {
 		@include make-md-column(4);
 		text-align: right;
@@ -240,6 +248,15 @@ div.mobile-app-nav-arrows {
 		text-align: center;
 		z-index: 1;
 
+	}
+
+	.app-content-main-bottom-center.ng-enter {
+		transition: 0.75s linear all;
+		transition-delay: 0.25s;
+		opacity: 0;
+	}
+	.app-content-main-bottom-center.ng-enter-active {
+		opacity: 1;
 	}
 
 	.app-content-main-bottom-results {
