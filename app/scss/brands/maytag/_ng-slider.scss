@@ -1083,6 +1083,15 @@ div[ng-class="fr_CA"] {
 }
 
 @media(max-width:1023px) {
+	.jslider.vertical {
+		div.jslider-true-bg {
+            width: 36px !important;
+			img {
+				width: 35px;
+				height: 111%;
+			}
+		}
+	}
     .left-tag {
         .slider-wrap {
             left: 9px !important;
@@ -1110,6 +1119,15 @@ div[ng-class="fr_CA"] {
 }
 
 @media(max-width: 580px) {
+	.jslider.vertical {
+		div.jslider-true-bg {
+            width: 38px !important;
+			img {
+				width: inherit;
+				height: 111%;
+			}
+		}
+	}
     .scale-left .vertical {
         .jslider-scale {
             margin-left: -45px;

@@ -966,8 +966,8 @@ div.slidey-wrap-all > div.slidey.app-answers.ng-scope.active > div > div.slider-
 
 			.jslider-bg {
 				height: 111%;
-				width: 36px;
-				background: url("../img/slider-bg-vertical.jpg") no-repeat;
+				width: 35px;
+				background: url("../img/slider-bg-vertical-tablet.png") no-repeat;
 				background-size: 100% 100%;
 				margin-left: -18px;
 			}
@@ -1156,6 +1156,11 @@ div.slidey-wrap-all > div.slidey.app-answers.ng-scope.active > div > div.slider-
 }
 
 @media(max-width:580px) {
+    .answers-main-content {
+        .answers-title {
+            margin-top: 5px;
+        }
+	}
     .btn-next, .btn-prev {bottom: 19px;}
     .answers-main-content {
         &.answers-category {
