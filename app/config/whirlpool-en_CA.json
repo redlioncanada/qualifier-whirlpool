@@ -636,7 +636,7 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["Lasagna", "Casarole and shepherd’s<br />pie for Sunday dinner", "A feast for game night", "Holiday roast"]
+					    "scale": ["Lasagna", "Casserole and shepherd’s<br />pie for Sunday dinner", "A feast for game night", "Holiday roast"]
 					},
 					"answers" : {
 						"0" : {
@@ -652,7 +652,7 @@
 							"thumbnail" : "img/icon-capacity.png",
 							"thumbnail_current" : "img/icon-capacity-current.png",
 							"value" : 1,
-							"text" : "Casarole and shepherd’s pie for Sunday dinner",
+							"text" : "Casserole and shepherd’s pie for Sunday dinner",
 							"scoring" : {
 								"largeCapacity" : 1
 							}
