@@ -1004,9 +1004,13 @@ div.slidey-wrap-all > div.slidey.app-answers.ng-scope.active > div > div.slider-
 	}
 
 	.answers-main-content {
-		margin-top: -225px !important;
+		margin-top: -5px !important;
         
-        a.answer {
+        .answers-title {
+            margin-top: -200px;
+        }
+        
+        a.answer.category {
             margin: 0 10px 0 10px !important;
         }
 	}
