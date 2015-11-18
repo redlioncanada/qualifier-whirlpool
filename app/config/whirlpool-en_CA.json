@@ -2006,7 +2006,7 @@
 					"oneAnswer" : true,
 					"answers" : [
 						{
-							"text" : "Yes - it's great because we love water and ice<br />dispensed from our fridge",
+							"text" : "Yes - it's great because we love water and ice dispensed from our fridge",
 							"value" : "bottle of water",
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
@@ -2018,7 +2018,7 @@
 							"order" : 1
 						},
 						{
-							"text" : "No - but we would consider installing one so<br />our fridge could dispense water and ice",
+							"text" : "No - but we would consider installing one so our fridge could dispense water and ice",
 							"value" : "glass of tap water",
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
@@ -2030,7 +2030,7 @@
 							"order" : 2
 						},
 						{
-							"text" : "No - we don't have a waterline and would<br />prefer not to install one",
+							"text" : "No - we don't have a waterline and would prefer not to install one",
 							"value" : "filtered water",
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
@@ -2197,7 +2197,7 @@
 						{
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"text" : "I visit the grocery store but stick<br />to the perimeter to get the basics",
+							"text" : "I visit the grocery store but stick to the perimeter to get the basics",
 							"value" : "basics",
 							"scoring" : {
 								"freshFlowProducePreserver" : 1,
@@ -2210,7 +2210,7 @@
 						{
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"text" : "I go aisle-to-aisle at the grocery<br />store and always fill my cart",
+							"text" : "I go aisle-to-aisle at the grocery store and always fill my cart",
 							"value" : "full grocery store",
 							"scoring" : {
 
