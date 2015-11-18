@@ -19,9 +19,6 @@ angular.module('App')
                 .hide()
                 .appendTo('body');
 
-        var numElements = ($($element).find('.rank-answers-list li').height() + parseInt($($element).find('.rank-answers-list li').eq(0).css('margin-bottom'))) * ($($element).find('.rank-answers-list li').length) + 7;
-        $($element).find('.rank-answers-list').css({'height': numElements});
-
         $scope.toggleMouseMove(true);
     },0);
 
@@ -65,6 +62,9 @@ angular.module('App')
             $scope.localY = e.pageY - parentOffset.top - 20;
             
         }
+
+        var numElements = $($element).find('.rank-numbers-list').height();
+        $($element).find('.rank-answers-list').css({'height': numElements});
     };
 
     $scope.toggleMouseMove = function(sw) {

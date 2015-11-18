@@ -585,6 +585,7 @@
 }
 .ranking {
 	position:relative;
+    overflow: hidden;
 	ul, li, a {
 		-webkit-touch-callout: none;
 	    -webkit-user-select: none;
@@ -707,6 +708,7 @@ li.dragging-rank {
 	}
 	.label-text {
 		top: 17px;
+		left: 12%;
 	}
 }
 .as-sortable-placeholder {
