@@ -457,10 +457,14 @@ header.header-desktop {
 	border: 0;
 	border-radius: 0px;
 	margin-top: -4px !important;
+	border: none !important;
 
 	* {
 		font-size: 11px;
 		color: #FFF;
+	}
+	.arrow {
+		border-color: transparent !important;
 	}
 }
 
