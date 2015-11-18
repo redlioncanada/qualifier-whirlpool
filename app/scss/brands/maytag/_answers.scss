@@ -677,6 +677,7 @@
 		}
 		.label-text {
 			top: 20% !important;
+            left: 0px !important;
 		}
 	}
 }
@@ -690,7 +691,7 @@ li.dragging-rank {
     -webkit-box-shadow: 7px 7px 23px -5px rgba(0,0,0,0.5);
 	-moz-box-shadow: 7px 7px 23px -5px rgba(0,0,0,0.5);
 	box-shadow: 7px 7px 23px -5px rgba(0,0,0,0.5);
-	background-color: white;
+	background-color: #edb129;
 
     .rank-number-wrap {
     	display: none;
@@ -699,8 +700,10 @@ li.dragging-rank {
         display: inline-block;
 		width: 500px;
 		height: 53px;
-		background: url('../img/ranking-bg.png') no-repeat;
-        border: 1px #edb129 solid;
+		background: url('../img/ranking-bg-white.png') no-repeat;
+        -webkit-box-shadow:inset 0px 0px 0px 10px #edb129;
+        -moz-box-shadow:inset 0px 0px 0px 10px #edb129;
+        box-shadow:inset 0px 0px 0px 10px #edb129;
         background-position: 0 -2px;
         background-size: 100% 100%;
         padding-left: 12% !important;
@@ -709,6 +712,7 @@ li.dragging-rank {
 	.label-text {
 		top: 17px;
 		left: 12%;
+        color: white;
 	}
 }
 .as-sortable-placeholder {
