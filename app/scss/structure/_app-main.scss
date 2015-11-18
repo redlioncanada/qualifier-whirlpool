@@ -280,6 +280,7 @@ div.mobile-app-nav-arrows {
 
 			.results-menu-tab {
 				margin: 0 auto;
+                margin-top: 1px;
 				width: 90px;
 				display: block;
 			}
@@ -721,6 +722,10 @@ div.slidey-wrap-all > div.slidey.app-answers.ng-scope.active > div > div.slider-
 }
 
 @media(max-width:1023px) {
+//Fixes a bug with the Cooking Q1 Label
+div.slidey-wrap-all > div.slidey.app-answers.ng-scope.active > div > div.slider-large-label-wrap.ng-scope > span {
+    margin-right: 0px !important;
+}
     .answers-main-content {
         .sub-category {
             margin: 0 15px !important;

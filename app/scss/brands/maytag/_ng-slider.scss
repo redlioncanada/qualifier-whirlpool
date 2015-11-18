@@ -1129,8 +1129,7 @@ div[ng-class="fr_CA"] {
 		div.jslider-pointer { 
 			width: 43px;
 			height: 37px;
-			background: url('../img/slider-pointer-small.png') center center no-repeat !important;
-			background-size: 43px 37px;
+			background: url('../img/slider-pointer-small.png') center center/40px 37px no-repeat !important;
 			top: -8px !important;
 			margin-left: -23px;
 		}
