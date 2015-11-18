@@ -1220,12 +1220,12 @@ div.slidey-wrap-all > div.slidey.app-answers.ng-scope.active > div > div.slider-
 
 		.jslider {
 			div.jslider-pointer {
-				left: 23.5px;
+				left: 22.4px;
 				width: 43px;
 				height: 37px;
 				background: url("../img/slider-pointer.png") no-repeat !important;
-				background-size: 37px 37px !important;
-                margin-top: -3px;
+				background-size: 39px 39px !important;
+                margin-top: -4px;
 			}
 
 			.jslider-bg {
@@ -1349,7 +1349,8 @@ div.slidey-wrap-all > div.slidey.app-answers.ng-scope.active > div > div.slider-
 			font-size: 8pt;
 		}
         h3 {
-            font-size: 5pt;
+            font-size: 7pt;
+            max-width: 80%;
         }
 	}
 
