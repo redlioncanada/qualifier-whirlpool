@@ -1004,7 +1004,11 @@ div.slidey-wrap-all > div.slidey.app-answers.ng-scope.active > div > div.slider-
 	}
 
 	.answers-main-content {
-		margin-top: 5px !important;
+		margin-top: -225px !important;
+        
+        a.answer {
+            margin: 0 10px 0 10px !important;
+        }
 	}
 
 	.regular-4-container {
