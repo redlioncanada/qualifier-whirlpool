@@ -2852,7 +2852,7 @@
 			"thumbnail_text" : "Features",
 			"text" : [
 				{
-					"question" : "When shopping for a cooktop, what<br />features are most important to you?",
+					"question" : "When shopping for a cooktop, what features are most important to you?",
 					"question_full" : "When shopping for a cooktop, what features are most important to you?",
 					"sub_question" : "Drag to reorder: 1 is most important and 5 is least",
 					"explanation_title" : "Why are you asking me about these features?",
