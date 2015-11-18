@@ -1135,7 +1135,7 @@
 					"question_full" : "When doing laundry, is noise a concern?",
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about sound?",
-					"explanation" : "Some of our laundry pairs are specifically designed to limit noise. By understanding your needs we can find the perfect machines for your home.",
+					"explanation" : "Some of our laundry pairs are specifically designed to limit noise. By understanding your needs, we can find the perfect machines for your home.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
 					"answers" : [
@@ -3208,7 +3208,7 @@
 					"question_full" : "Do you find yourself limited by counter space?",
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about counter space?",
-					"explanation" : "Much like your ingredients work together to create the perfect meal, some of our vent models come together to save you space. By understanding your needs we can help you find the perfect fit.",
+					"explanation" : "Much like your ingredients work together to create the perfect meal, some of our vent models come together to save you space. By understanding your needs, we can help you find the perfect fit.",
 				    "type" : "radio-2",
 					"oneAnswer" : true,
 					"classes" : "vents circular singleAns",
