@@ -636,7 +636,7 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["Lasagna", "Casarole and shepherd’s<br />pie for Sunday dinner", "A feast for game night", "Holiday roast"]
+					    "scale": ["Lasagna", "Casserole and shepherd’s<br />pie for Sunday dinner", "A feast for game night", "Holiday roast"]
 					},
 					"answers" : {
 						"0" : {
@@ -652,7 +652,7 @@
 							"thumbnail" : "img/icon-capacity.png",
 							"thumbnail_current" : "img/icon-capacity-current.png",
 							"value" : 1,
-							"text" : "Casarole and shepherd’s pie for Sunday dinner",
+							"text" : "Casserole and shepherd’s pie for Sunday dinner",
 							"scoring" : {
 								"largeCapacity" : 1
 							}
@@ -1002,8 +1002,8 @@
 			"thumbnail_text" : "Energy",
 			"text" : [
 				{
-					"question" : "How important is energy<br />efficency to your household?",
-					"question_full" : "How important is energy efficency to your household?",
+					"question" : "How important is energy<br />efficiency to your household?",
+					"question_full" : "How important is energy efficiency to your household?",
 					"sub_question" : "Slide to answer",
 					"explanation_title" : "Why are you asking me about energy?",
 					"explanation" : "All of our machines are different, understanding your energy use will help us find the machine that best fits the needs of your home.",
@@ -1135,7 +1135,7 @@
 					"question_full" : "When doing laundry, is noise a concern?",
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about sound?",
-					"explanation" : "Some of our laundry pairs are specifically designed to limit noise. By understanding your needs we can find the perfect machines for your home.",
+					"explanation" : "Some of our laundry pairs are specifically designed to limit noise. By understanding your needs, we can find the perfect machines for your home.",
 					"type" : "radio-4",
 					"oneAnswer" : true,
 					"answers" : [
@@ -1796,8 +1796,8 @@
 			"thumbnail_text" : "Energy",
 			"text" : [
 				{
-					"question" : "How important is energy<br />efficency to your household?",
-					"question_full" : "How important is energy efficency to your household?",
+					"question" : "How important is energy<br />efficiency to your household?",
+					"question_full" : "How important is energy efficiency to your household?",
 					"sub_question" : "Slide to answer",
 					"explanation_title" : "Why are you asking me about energy?",
 					"explanation" : "All of our fridges are different, just like the families they're for. If we can understand your energy usage, then we can better recommend the perfect fridge to fit your needs.",
@@ -2513,7 +2513,7 @@
 						{
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
-							"text" : "Yes - My kitchen opens onto another room",
+							"text" : "Yes - my kitchen opens onto another room",
 							"image" : "/img/Dishwasher_Q5_MT-open-concept-yes.png",
                             "image_alt" : "Yes",
 							"value" : "yes",
@@ -2525,7 +2525,7 @@
 						{
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
-							"text" : "No - My kitchen is its own room",
+							"text" : "No - my kitchen is its own room",
 							"image" : "/img/Dishwasher_Q5_MT-open-concept-no.png",
                             "image_alt" : "No",
 							"value" : "no",
@@ -2545,8 +2545,8 @@
 			"thumbnail_text" : "Energy",
 			"text" : [
 				{
-					"question" : "How important is energy<br />efficency to your household?",
-					"question_full" : "How important is energy efficency to your household?",
+					"question" : "How important is energy<br />efficiency to your household?",
+					"question_full" : "How important is energy efficiency to your household?",
 					"sub_question" : "Slide to answer",
 					"explanation_title" : "Why are you asking me about energy?",
 					"explanation" : "All of our machines use energy differently. By understanding your energy use, it will help us find the machine that best fits your lifestyle.",
@@ -3208,7 +3208,7 @@
 					"question_full" : "Do you find yourself limited by counter space?",
 					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about counter space?",
-					"explanation" : "Much like your ingredients work together to create the perfect meal, some of our vent models come together to save you space. By understanding your needs we can help you find the perfect fit.",
+					"explanation" : "Much like your ingredients work together to create the perfect meal, some of our vent models come together to save you space. By understanding your needs, we can help you find the perfect fit.",
 				    "type" : "radio-2",
 					"oneAnswer" : true,
 					"classes" : "vents circular singleAns",
