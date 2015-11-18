@@ -394,8 +394,10 @@ angular.module('App')
 
 
 		var c = $('.slidey.active').height();
+		var animating = $('.slidey.active-add').length;
 
-		if ($scope.lastHeight > c-1 && $scope.lastHeight < c+1 && typeof $scope.lastHeight !== 'undefined') {
+		if ($scope.lastHeight > c-2 && $scope.lastHeight < c+2 && typeof $scope.lastHeight !== 'undefined' && !animating) {
+
 			return;
 		}
 		$scope.lastHeight = c;
@@ -451,8 +453,12 @@ angular.module('App')
   		var q = ($location.path()).toString().replace("/question/","");
   		if ($rootScope.controls.lastLocation == 'results' && (q == 'Appliance' || q=='/questions/')) return;
 
-  		if ($rootScope.isTabletWidthOrLess && $rootScope.isMobile && q !== 'Appliance') {
-			$("html, body").animate({scrollTop: "51px"}, 400);
+  		if ($rootScope.isTabletWidthOrLess && $rootScope.isMobile) {
+  			if ($location.path().indexOf('/questions/') == -1) {
+				$("html, body").animate({scrollTop: "51px"}, 400);
+			} else {
+				$("html, body").animate({scrollTop: "0px"}, 400);
+			}
 		}
 
 		if (!$rootScope.isTabletWidthOrLess && !$rootScope.isMobile && $location.path().indexOf('Appliance') != -1) {
