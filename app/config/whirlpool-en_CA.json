@@ -1002,8 +1002,8 @@
 			"thumbnail_text" : "Energy",
 			"text" : [
 				{
-					"question" : "How important is energy<br />efficency to your household?",
-					"question_full" : "How important is energy efficency to your household?",
+					"question" : "How important is energy<br />efficiency to your household?",
+					"question_full" : "How important is energy efficiency to your household?",
 					"sub_question" : "Slide to answer",
 					"explanation_title" : "Why are you asking me about energy?",
 					"explanation" : "All of our machines are different, understanding your energy use will help us find the machine that best fits the needs of your home.",
@@ -1796,8 +1796,8 @@
 			"thumbnail_text" : "Energy",
 			"text" : [
 				{
-					"question" : "How important is energy<br />efficency to your household?",
-					"question_full" : "How important is energy efficency to your household?",
+					"question" : "How important is energy<br />efficiency to your household?",
+					"question_full" : "How important is energy efficiency to your household?",
 					"sub_question" : "Slide to answer",
 					"explanation_title" : "Why are you asking me about energy?",
 					"explanation" : "All of our fridges are different, just like the families they're for. If we can understand your energy usage, then we can better recommend the perfect fridge to fit your needs.",
@@ -2545,8 +2545,8 @@
 			"thumbnail_text" : "Energy",
 			"text" : [
 				{
-					"question" : "How important is energy<br />efficency to your household?",
-					"question_full" : "How important is energy efficency to your household?",
+					"question" : "How important is energy<br />efficiency to your household?",
+					"question_full" : "How important is energy efficiency to your household?",
 					"sub_question" : "Slide to answer",
 					"explanation_title" : "Why are you asking me about energy?",
 					"explanation" : "All of our machines use energy differently. By understanding your energy use, it will help us find the machine that best fits your lifestyle.",
