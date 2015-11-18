@@ -437,12 +437,12 @@ div.mobile-app-nav-arrows {
 		// }
 	}
     .icon-img[ng-if="isTabletWidthOrLess"] {
-        max-width: 15px;
-		max-height: 15px;
+        max-width: 25px;
+		max-height: 25px;
     }
     .icon-img-current[ng-if="isTabletWidthOrLess"] {
-        max-width: 15px;
-		max-height: 15px;
+        max-width: 25px;
+		max-height: 25px;
     }
 }
 .category {
@@ -1148,6 +1148,7 @@ div.slidey-wrap-all > div.slidey.app-answers.ng-scope.active > div > div.slider-
 }
 
 @media(max-width:580px) {
+    .btn-next, .btn-prev {bottom: 19px;}
     .answers-main-content {
         &.answers-category {
             .answers-title {
@@ -1448,7 +1449,7 @@ div.slidey-wrap-all > div.slidey.app-answers.ng-scope.active > div > div.slider-
 		height: 0px; 
 		
 		a.btn-prev img, a.btn-next img {
-			height: 35px;
+			height: 25px;
 		}
 
 		a.btn-prev {
