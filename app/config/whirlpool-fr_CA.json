@@ -134,6 +134,7 @@
 							"displayName": "Cuisinières",
 							"classes" : "sub-category ranges",
 							"image" : "img/range.png",
+                            "image_alt" : "Cuisinières",
 							"thumbnail" : "img/cat-cooking-sub-free-range-1-electric.jpg",
 							"thumbnail_current" : "img/cat-cooking-sub-free-range-1-electric.jpg",
 							"thumbnail_text" : "Cuisinières",
@@ -149,6 +150,7 @@
 							"displayName": "Tables de cuisson",
 							"classes" : "sub-category cooktops",
 							"image" : "img/cook-top.png",
+                            "image_alt" : "Tables De Cuisson",
 							"thumbnail" : "img/walloven-single.jpg",
 							"thumbnail_current" : "img/walloven-single.jpg",
 							"thumbnail_text" : "Tables de cuisson",
@@ -164,6 +166,7 @@
 							"displayName": "Fours encastrés",
 							"classes" : "sub-category wallovens",
 							"image" : "img/walloven.png",
+                            "image_alt" : "Fours Encastrés",
 							"thumbnail" : "img/walloven-single.jpg",
 							"thumbnail_current" : "img/walloven-single.jpg",
 							"thumbnail_text" : "Fours encastrés",
@@ -179,6 +182,7 @@
 							"displayName": "Hottes à évacuation",
 							"classes" : "sub-category vents",
 							"image" : "img/vents.png",
+                            "image_alt" : "Hottes À Évacuation",
 							"thumbnail" : "img/walloven-single.jpg",
 							"thumbnail_current" : "img/walloven-single.jpg",
 							"thumbnail_text" : "Hottes à évacuation",
@@ -289,6 +293,7 @@
 							"text" : "Four simple",
 							"value" : "single",
 							"image" : "img/Walloven-Q2-single.jpg",
+                            "image_alt" : "Four Simple",
 							"scoring" : {
 								"single" : 10
 							},
@@ -300,6 +305,7 @@
 							"text" : "Four à micro-ondes combiné",
 							"value" : "combo",
 							"image" : "img/Walloven-Q2-combo.jpg",
+                            "image_alt" : "Four À Micro-ondes Combiné",
 							"scoring" : {
 								"combination" : 10
 							},
@@ -311,6 +317,7 @@
 							"text" : "Four double",
 							"value" : "double",
 							"image" : "img/Walloven-Q2-double.jpg",
+                            "image_alt" : "Four Double",
 							"scoring" : {
 								"double" : 10
 							},
@@ -322,6 +329,7 @@
 							"text" : "Aucune restriction",
 							"value" : "nopreference",
 							"image" : "img/Walloven-Q2-nopreference.jpg",
+                            "image_alt" : "Aucune Restriction",
 							"scoring" : {
 							},
 							"order" : 4
@@ -825,6 +833,7 @@
 						{
 							"text" : "panneau de commandes arrière",
 							"image" : "img/Range-Q6-rear.jpg",
+                            "image_alt" : "Panneau De Commandes Arrière",
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "no",
@@ -837,6 +846,7 @@
                         {
 							"text" : "commandes frontales",
 							"image" : "img/Range-Q6-front.jpg",
+                            "image_alt" : "Commandes Frontales",
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "yes",
@@ -849,6 +859,7 @@
 						{
 							"text" : "aucune préférence",
 							"image" : "img/Range-Q6-nopreference.jpg",
+                            "image_alt" : "Aucune Préférence",
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "nopref",
@@ -881,7 +892,9 @@
 						{
 							"text" : "au gaz",
 							"image" : "img/icon-thumb-gas.png",
+                            "image_alt" : "Au Gaz",
 							"hover" : "img/icon-thumb-gas-active.png",
+                            "image_hover_alt" : "Au Gaz",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "yes",
@@ -893,7 +906,9 @@
 						{
 							"text" : "électrique",
 							"image" : "img/icon-thumb-electric.png",
+                            "image_alt" : "Électrique",
 							"hover" : "img/icon-thumb-electric-active.png",
+                            "image_hover_alt" : "Électrique",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "no",
@@ -1192,6 +1207,7 @@
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
 							"image" : "img/Laundry-Q5-stacked.jpg",
+                            "image_alt" : "Superposée",
 							"text" : "superposée",
 							"value" : "Stacked",
 							"scoring" : {
@@ -1204,6 +1220,7 @@
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
 							"image" : "img/Laundry-Q5-side-by-side.jpg",
+                            "image_alt" : "Côte À Côte",
 							"text" : "côte à côte",
 							"value" : "Side-By-Side",
 							"scoring" : {
@@ -1215,6 +1232,7 @@
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
 							"image" : "img/Laundry-Q5-no-preference.jpg",
+                            "image_alt" : "Aucune Préférence",
 							"text" : "aucune préférence",
 							"value" : "aucune préférence",
 							"scoring" : {
@@ -1523,7 +1541,9 @@
 							"text" : "àu gaz",
 							"value" : "gas",
 							"image" : "img/icon-thumb-gas.png",
+                            "image_alt" : "Au Gaz",
 							"hover" : "img/icon-thumb-gas-active.png",
+                            "image_hover_alt" : "Au Gaz",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"scoring" : {
@@ -1534,6 +1554,8 @@
 							"text" : "électrique",
 							"value" : "electric",
 							"image" : "img/icon-thumb-electric.png",
+                            "image_alt" : "Électrique",
+                            "image_hover_alt" : "Électrique",
 							"hover" : "img/icon-thumb-electric-active.png",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
@@ -2120,6 +2142,7 @@
 							"text" : "un modèle à profondeur de comptoir",
                             "subtext" : "je veux que mon réfrigérateur soit aligné avec mon comptoir",
                             "image" : "img/Fridge-Q7-counter.jpg",
+                            "image_alt" : "Un Modèle À Profondeur De Comptoir",
 							"value" : 0,
 							"scoring" : {
 								"counterDepth" : 3
@@ -2132,6 +2155,7 @@
 							"text" : "un modèle à profondeur standard",
                             "subtext" : "il m’importe peu que mon réfrigérateur soit aligné avec mon comptoir",
                             "image" : "img/Fridge-Q7-standard.jpg",
+                            "image_alt" : "Un Modèle À Profondeur Standard",
 							"value" : 1,
 							"scoring" : {
 								"counterDepth" : -3
@@ -2492,6 +2516,7 @@
 							"thumbnail_current" : "img/icon-noise-current.png",
 							"text" : "oui – ma cuisine s’ouvre sur une autre pièce",
 							"image" : "/img/Dishwasher_Q5_MT-open-concept-yes.png",
+                            "image_alt" : "Oui",
 							"value" : "yes",
 							"scoring" : {
 								 "quiet" : 1
@@ -2503,6 +2528,7 @@
 							"thumbnail_current" : "img/icon-noise-current.png",
 							"text" : "non – j’ai une cuisine séparée",
 							"image" : "/img/Dishwasher_Q5_MT-open-concept-no.png",
+                            "image_alt" : "Tables De Cuisson",
 							"value" : "no",
 							"scoring" : {
 							},
@@ -2660,6 +2686,7 @@
 							"text" : "Hidden Controls(FR)",
 							"value" : "hidden",
 							"image" : "img/Dishwasher-Q7-hidden.jpg",
+                            "image_alt" : "Console Entièrement Intégrée",
 							"scoring" : {
 								"FID" : 5,
 								"frontConsole" : -3
@@ -2672,6 +2699,7 @@
 							"text" : "Commandes frontales",
 							"value" : "front",
 							"image" : "img/Dishwasher-Q7-front.jpg",
+                            "image_alt" : "Commandes Frontales",
 							"scoring" : {
 								"frontConsole" : 5,
 								"FID" : -3
@@ -2684,6 +2712,7 @@
 							"text" : "Aucune restriction",
 							"value" : "nopreference",
 							"image" : "img/Dishwasher-Q7-nopreference.jpg",
+                            "image_alt" : "Aucune Restriction",
 							"scoring" : {
 								"FID" : 1,
                                 "frontConsole" : -1
@@ -2787,6 +2816,7 @@
 							"text" : "traditionnel",
 							"value" : "traditional",
 							"image" : "img/Cooktops-Q2-traditional.jpg",
+                            "image_alt" : "Traditionnel",
 							"scoring" : {
 								"induction" : 1,
 								"electric" : 1,
@@ -2800,6 +2830,7 @@
 							"text" : "professionnel",
 							"value" : "professional",
 							"image" : "img/Cooktops-Q2-professional.jpg",
+                            "image_alt" : "Professionnel",
 							"scoring" : {
 								"gas" : 1,
 								"induction" : -10,
@@ -2904,7 +2935,9 @@
 						{
 							"text" : "gaz",
 							"image" : "img/icon-thumb-gas.png",
+                            "image_alt" : "Au Gaz",
 							"hover" : "img/icon-thumb-gas-active.png",
+                            "image_hover_alt" : "Au Gaz",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "yes",
@@ -2913,7 +2946,9 @@
 						{
 							"text" : "électrique",
 							"image" : "img/icon-thumb-electric.png",
+                            "image_alt" : "Électrique",
 							"hover" : "img/icon-thumb-electric-active.png",
+                            "image_hover_alt" : "Électrique",
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "no",

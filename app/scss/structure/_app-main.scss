@@ -1460,18 +1460,24 @@ div.slidey-wrap-all > div.slidey.app-answers.ng-scope.active > div > div.slider-
 	}
 
 	div.mobile-app-nav-arrows {
-		height: 0px; 
-		
 		a.btn-prev img, a.btn-next img {
+            position: absolute;
+            top: 35%;
 			height: 25px;
 		}
 
 		a.btn-prev {
-			left: 24px;
+			left: 10px;
+            width: 40px;
+            height: 60px;
+            bottom: -9px;
 		}
 
 		a.btn-next {
-			right: 26px;
+			right: 20px;
+            width: 40px;
+            height: 60px;
+            bottom: -9px;
 		}
 	}
 
