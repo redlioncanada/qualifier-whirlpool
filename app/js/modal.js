@@ -4,7 +4,13 @@ angular.module('App')
   .controller('ModalCtrl', ['$modalInstance', 'appliance', 'link', 'fakelink', '$scope', '$rootScope', '$timeout', function ($modalInstance, appliance, link, fakelink, $scope, $rootScope, $timeout) {
 
     var apptext = $rootScope.brandData.apptext;
-    var applianceType = appliance.appliance.slice(-1) == 's' ? appliance.appliance.slice(0, -1) : appliance.appliance;
+    var applianceType;
+    if ("type" in appliance) {
+      applianceType = appliance.type.slice(-1) == 's' ? appliance.type.slice(0, -1) : appliance.type;
+    } else {
+      applianceType = appliance.appliance.slice(-1) == 's' ? appliance.appliance.slice(0, -1) : appliance.appliance;
+    }
+    applianceType = applianceType.toLowerCase();
 
     $timeout(function() {
       $scope.setMessage();
