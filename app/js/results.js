@@ -59,7 +59,7 @@ angular.module('App')
         "fakestep": 50,
         "smooth" : false,
         "step" : 1,
-        "threshold" : 250,
+        "threshold" : 300,
         "dimension": d,
         "callback" : function(value, released) {  
 
