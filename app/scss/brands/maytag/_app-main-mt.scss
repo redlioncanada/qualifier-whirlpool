@@ -258,7 +258,7 @@ header.header-desktop {
 		cursor: default;
 	}
 	.btn-next.disabled, .btn-prev.disabled {
-		opacity: 0.5;
+		opacity: 0.4;
 	}
 	.btn-next, .btn-prev {
 		-webkit-transition: all 0.3s ease;
@@ -396,7 +396,7 @@ header.header-desktop {
                 position: relative;
                 display: inline-block;
                 left: 50%;
-                top: 50%;
+                top: 52%;
                 -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
             }
@@ -431,7 +431,7 @@ header.header-desktop {
                 div {
                     position: absolute;
                     width: 99%;
-                    top: 50%;
+                    top: 52%;
                     left: 50%;
                     -webkit-transform: translate(-50%, -50%);
                     transform: translate(-50%, -50%);
