@@ -59,7 +59,7 @@ angular.module('App')
         "fakestep": 50,
         "smooth" : false,
         "step" : 1,
-        "threshold" : 550,
+        "threshold" : 250,
         "dimension": d,
         "callback" : function(value, released) {  
 
@@ -129,8 +129,9 @@ angular.module('App')
     //console.log($appstate.generateEmailURL());
   };
 
-$scope.print = function(sku) {
-  window.open($appstate.generatePrintURL(sku));
+$scope.print = function(sku,colorsku) {
+  console.log(sku,colorsku)
+  window.open($appstate.generatePrintURL(sku,colorsku));
 }
 
 $scope.setPriceRange = function () {

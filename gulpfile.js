@@ -39,9 +39,16 @@ gulp.task('js', function () {
 gulp.task('js-prod', function () {
     return gulp.src('app/js/**/*.js')
         .pipe(stripDebug())
+        .on('error',function(e){
+            console.log(e)
+            console.log(e.stack)
+        })
         .pipe(sourcemaps.init())
         .pipe(concat('qualifier.js'))
         .pipe(uglify({'mangle':false}))
+        .on('error',function(e){
+            console.log(e)
+        })
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/js'))
         .pipe(replace('.locale = "en_CA", ".locale = "fr_CA"'))
@@ -119,6 +126,7 @@ gulp.task('views-prod', function() {
     // Any other view files from app/views
     gulp.src('app/views/**/*')
     // Will be put in the build/views folder
+    .pipe(preprocess({context: {ENV: env}}))
     .pipe(gulp.dest('build/views/'));
 });
 
