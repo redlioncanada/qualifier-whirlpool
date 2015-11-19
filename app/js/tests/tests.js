@@ -6,6 +6,7 @@ appstateModule.factory('$tests', ['$rootScope', function($rootScope) {
 	// @if ENV='development'
 	tests.run = function(appliances, questions) {
 		this.verifyScoringProperties(appliances, questions);
+		this.verifyAttrExist(appliances);
 	}
 
 	//verifys scoring properties by ensuring that each property in the scoring json exists on an appliance somewhere in the appliance api
@@ -34,6 +35,14 @@ appstateModule.factory('$tests', ['$rootScope', function($rootScope) {
 			}
 		}
 		console.log(props);
+	}
+
+	tests.verifyAttrExist = function(appliances) {
+		for (var i in appliances) {
+			if (!"compareFeatures" in appliances[i]) {
+				console.log('compareFeatures missing in '+appliances[i].name, appliances[i]);
+			}
+		}
 	}
 
 	tests.verifyQuestionPaths = function(questions) {

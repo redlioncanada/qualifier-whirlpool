@@ -29,10 +29,11 @@
         "emailAddressTitle" : "À partir de :",
         "emailAddressPlaceholder" : "ami@gmail.com",
         "emailSubject" : "J'ai utilisé l'aide de {{brand}} afin de trouver le (la) {{appliance}} idéal(e) et je souhaite partager avec toi",
-        "emailMessage" : "Trouver l'électroménager idéal est difficile. Mais avec {{brand}}, j'ai simplement répondu à quelques questions simples et j'ai réussi à trouver le (la) {{appliance}} idéal(e) et qui convient à mon style de vie. J'aimerais partager mes résultats avec toi; voici le lien que tu pourras explorer à ton tour!\r\n\r\nEssaie par toi-même ici : {{link}}",
+        "emailMessage" : "Trouver l'électroménager idéal est difficile. Mais avec {{brand}}, j'ai simplement répondu à quelques questions simples et j'ai réussi à trouver le (la) {{appliance}} idéal(e) et qui convient à mon style de vie. J'aimerais partager mes résultats avec toi; voici le lien que tu pourras explorer à ton tour!\r\n\r\nEssaie par toi-même ici : {{fakelink}}",
         "emailMessagePlaceholder" : "Saisir un message",
         "emailMessageSent" : "Votre message a bien été envoyé",
         "emailMessageError" : "There was an error(fr)",
+        "emailFakeLink" : "FindMy.Whirlpool.ca/Results",
         "nextQuestionAlt" : "Navigate to next question",
         "previousQuestionAlt" : "Navigate to previous question",
         "facebookTitle" : "FIND YOUR PERFECT APPLIANCE(fr)",
@@ -232,7 +233,7 @@
                             "value" : 1,
                             "text" : "24\"",
                             "scoring" : {
-                                "width24" : 5,
+                                "width24" : 10,
 								"width25" : -30,
 								"width26" : -30,
 								"width27" : -30,
@@ -247,7 +248,7 @@
                             "value" : 2,
                             "text" : "27\"",
                             "scoring" : {
-                                "width27" : 5,
+                                "width27" : 10,
 								"width28" : -30,
 								"width29" : -30,
 								"width30" : -30
@@ -259,7 +260,7 @@
                             "value" : 3,
                             "text" : "30\"",
                             "scoring" : {
-                                "width30" : 5
+                                "width30" : 10
                             }
                         }
                     }
@@ -944,7 +945,7 @@
 							"value" : 2,
 							"text" : "1-2",
 							"scoring" : {
-								"smallCapacity" : 1
+								"smallCapacity" : 5
 							}
 						},
 						"3" : {
@@ -953,7 +954,7 @@
 							"value" : 3,
 							"text" : "3-4",
 							"scoring" : {
-								"mediumCapacity" : 1
+								"mediumCapacity" : 5
 							}
 						},
 						"4" : {
@@ -962,7 +963,7 @@
 							"value" : 4,
 							"text" : "5-6",
 							"scoring" : {
-								"largeCapacity" : 1
+								"largeCapacity" : 5
 							}
 						},
 						"5" : {
@@ -971,7 +972,7 @@
 							"value" : 5,
 							"text" : "7+",
 							"scoring" : {
-								"largerCapacity" : 1
+								"largerCapacity" : 5
 							}
 						}
 					}
@@ -1586,7 +1587,7 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
-								"width25" : 5,
+								"width25" : 10,
 								"width26" : -30,
 								"width27" : -30,
 								"width28" : -30,
@@ -1606,7 +1607,7 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
-								"width28" : 5,
+								"width28" : 10,
 								"width29" : -30,
 								"width30" : -30,
 								"width31" : -30,
@@ -1623,7 +1624,7 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
-								"width29" : 5,
+								"width29" : 10,
 								"width30" : -30,
 								"width31" : -30,
 								"width32" : -30,
@@ -1639,7 +1640,7 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
-								"width30" : 5,
+								"width30" : 10,
 								"width31" : -30,
 								"width32" : -30,
 								"width33" : -30,
@@ -1654,7 +1655,7 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
-								"width31" : 5,
+								"width31" : 10,
 								"width32" : -30,
 								"width33" : -30,
 								"width34" : -30,
@@ -1668,7 +1669,7 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
-								"width33" : 5,
+								"width33" : 10,
 								"width34" : -30,
 								"width35" : -30,
 								"width36" : -30
@@ -1680,7 +1681,7 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
-								"width36" : 5
+								"width36" : 10
 							}
 						}
 					}								
@@ -2660,7 +2661,7 @@
 							"value" : "hidden",
 							"image" : "img/Dishwasher-Q7-hidden.jpg",
 							"scoring" : {
-								"FID" : 3,
+								"FID" : 5,
 								"frontConsole" : -3
 							},
 							"order" : 1
@@ -2672,7 +2673,7 @@
 							"value" : "front",
 							"image" : "img/Dishwasher-Q7-front.jpg",
 							"scoring" : {
-								"frontConsole" : 3,
+								"frontConsole" : 5,
 								"FID" : -3
 							},
 							"order" : 2
@@ -2725,7 +2726,7 @@
 							"value" : 0,
 							"text" : "24 po",
 							"scoring" : {
-								"width24" : 1,
+								"width24" : 10,
 								"width30" : -30,
 								"width36" : -30
 							}
@@ -2737,7 +2738,7 @@
 							"text" : "30 po",
 							"scoring" : {
 								"width24" : -30,
-								"width30" : 1,
+								"width30" : 10,
 								"width36" : -30
 							}
 						},
@@ -2749,7 +2750,7 @@
 							"scoring" : {
 								"width15" : -30,
 								"width30" : -30,
-								"width36" : 1
+								"width36" : 10
 							}
 						},
 						"3" : {

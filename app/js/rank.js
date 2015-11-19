@@ -63,8 +63,8 @@ angular.module('App')
             
         }
 
-        var numElements = $($element).find('.rank-numbers-list').height();
-        $($element).find('.rank-answers-list').css({'height': numElements});
+        // var numElements = $($element).find('.rank-numbers-list').height();
+        // $($element).find('.rank-answers-list').css({'height': numElements});
     };
 
     $scope.toggleMouseMove = function(sw) {
