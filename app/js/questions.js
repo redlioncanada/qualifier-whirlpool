@@ -413,14 +413,15 @@ angular.module('App')
             }
         }
         else {
-            if (c < 340) {
+            // if (c < 340) {
                 c = $('.slidey.active').height();
                 if (c < 340) {
-                    var minHeight = 340;
+                    var minHeight = 341;
+                    console.log('paddingTop')
                     $('.slidey.active').css('paddingTop', (minHeight-c)/2);
                     c = minHeight;
                 }
-            }
+            // }
         }
 
 		if (c > 100) {
