@@ -275,7 +275,13 @@ App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr'
           ];
 
 
-          $resource("http://mywhirlpool.wpc-stage.com/api/public/wpq/product-list/index/brand/"+$rootScope.brand+"/locale/"+$rootScope.locale).get({}, function (res, headers) {
+          // @if ENV='development'
+          var host = "http://mywhirlpool.wpc-stage.com";
+          // @endif
+          // @if ENV='production'
+          var host = $appstate.host();
+          // @endif
+          $resource(host+"/api/public/wpq/product-list/index/brand/"+$rootScope.brand+"/locale/"+$rootScope.locale).get({}, function (res, headers) {
                 $rootScope.appliances = $dataDecorator(res.products);
                 // @if ENV='development'
                 // $tests.run($rootScope.appliances, $rootScope.brandData.questions);

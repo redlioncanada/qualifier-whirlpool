@@ -31,14 +31,18 @@ gulp.task('sass', function () {
 
 // process JS files and return the stream.
 gulp.task('js', function () {
+    var env = 'development';
     return gulp.src('app/js/**/*.js')
+        .pipe(preprocess({context: {ENV: env}}))
         .pipe(gulp.dest('build/js'));
 });
 
 // process JS files and return the stream.
 gulp.task('js-prod', function () {
+    var env = 'production';
     return gulp.src('app/js/**/*.js')
         .pipe(stripDebug())
+        .pipe(preprocess({context: {ENV: env}}))
         .on('error',function(e){
             console.log(e)
             console.log(e.stack)
