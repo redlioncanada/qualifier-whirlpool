@@ -203,7 +203,7 @@ App.filter('byPrice', function($rootScope) {
 
 App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr', '$location', '$appstate', '$dataDecorator', '$tests', '$FB', function ($rootScope, $state, $resource, localStorageService, Modernizr, $location, $appstate, $dataDecorator, $tests, $FB) {
     $location.path('');
-    $FB.init('731301837002604');
+    $FB.init('1500298550265613');
     $state.go('loading');
 
     $rootScope.resultsTouched = false;
