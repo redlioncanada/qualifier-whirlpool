@@ -106,6 +106,7 @@ angular.module('App')
             $(document).off('mousemove', $scope.draggingListener);
             $(document).off('touchmove', $scope.draggingListener);
             $scope.toggleMouseMove(true);
+            gaw.trigger($element);
         },
         containment: '.answers-main-content'
     };
