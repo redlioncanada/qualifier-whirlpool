@@ -1,15 +1,10 @@
 'use strict';
 
 angular.module('App')
-  .controller('ModalCtrl', ['$modalInstance', 'appliance', 'link', 'fakelink', '$scope', '$rootScope', '$timeout', function ($modalInstance, appliance, link, fakelink, $scope, $rootScope, $timeout) {
+  .controller('ModalCtrl', ['$http', '$modalInstance', 'appliance', 'link', 'fakelink', '$scope', '$rootScope', '$timeout', function ($http, $modalInstance, appliance, link, fakelink, $scope, $rootScope, $timeout) {
 
     var apptext = $rootScope.brandData.apptext;
-    var applianceType;
-    if ("type" in appliance) {
-      applianceType = appliance.type.slice(-1) == 's' ? appliance.type.slice(0, -1) : appliance.type;
-    } else {
-      applianceType = appliance.appliance.slice(-1) == 's' ? appliance.appliance.slice(0, -1) : appliance.appliance;
-    }
+    var applianceType = appliance.appliance.slice(-1) == 's' ? appliance.appliance.slice(0, -1) : appliance.appliance;
     applianceType = applianceType.toLowerCase();
 
     $timeout(function() {
@@ -18,8 +13,27 @@ angular.module('App')
     });
 
     $scope.submit = function () {
-      $scope.email.message = $scope.email.message.replace(fakelink, link);
-      console.log($scope.email);
+      $scope.email.message = $scope.email.message.replace(fakelink, "<a href='"+link+"'>"+fakelink+"</a>");
+      var message = $.param({address: $scope.email.address, message: $scope.email.message, name: $scope.email.name, subject: $scope.email.subject});
+
+      $http({
+        method:'POST',
+        url: 'php/email/', 
+        data: message,
+        headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+      }).success(function(data, status, headers, config) {
+          if (status == 200) {
+            if (data.status !== 'error') {
+              console.log('email post success: '+data.status)
+            } else {
+              console.log('email post error: '+data.message);
+            }
+          } else {
+            console.log('email post error: status '+status);
+          }
+      }).error(function(data, status, headers, config) {
+          console.log('email post error: '+data);
+        });
       $modalInstance.close();
     }
 
