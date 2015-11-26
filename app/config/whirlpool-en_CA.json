@@ -107,7 +107,7 @@
 							"scoring" : {
 								"appliance" : "Dishwashers"
 							},
-							"next" : "Dishwashers - Cleaning Power",
+							"next" : "Dishwashers - Cleaning",
 							"order" : 4
 						}
 					]
@@ -616,7 +616,7 @@
 			]
 		},
 		"Cooking - Ranges - Capacity" : {
-			"next" : "Cooking - Ranges - Cooking",
+			"next" : "Cooking - Ranges - Lifestyle 1",
 			"previous" : "Cooking - Ranges - Features",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Capacity",
@@ -680,8 +680,8 @@
 				}
 			]
 		},
-		"Cooking - Ranges - Cooking" : {
-			"next" : "Cooking - Ranges - Lifestyle",
+		"Cooking - Ranges - Lifestyle 1" : {
+			"next" : "Cooking - Ranges - Lifestyle 2",
 			"previous" : "Cooking - Ranges - Capacity",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-lifestyle-current.png",
@@ -748,9 +748,9 @@
 				}
 			]
 		},
-		"Cooking - Ranges - Lifestyle" : {
+		"Cooking - Ranges - Lifestyle 2" : {
 			"next" : "Cooking - Ranges - Range Style",
-			"previous" : "Cooking - Ranges - Cooking",
+			"previous" : "Cooking - Ranges - Lifestyle 1",
 			"thumbnail_text" : "Lifestyle",
 			"thumbnail_current" : "img/icon-lifestyle-current.png",
 			"thumbnail_type" : "image",
@@ -815,7 +815,7 @@
 		},
 		"Cooking - Ranges - Range Style" : {
 			"next" : "Cooking - Ranges - Fuel Type",
-			"previous" : "Cooking - Ranges - Lifestyle",
+			"previous" : "Cooking - Ranges - Lifestyle 2",
 			"thumbnail_text" : "Style",
 			"thumbnail_current" : "img/icon-style-current.png",
 			"thumbnail_type" : "image",
@@ -1245,7 +1245,7 @@
 			]
 		},
 		"Laundry - Fabrics" : {
-			"next" : "Laundry - Features 1",
+			"next" : "Laundry - Features",
 			"previous" : "Laundry - Orientation",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-fabric-current.png",
@@ -1340,7 +1340,7 @@
 			]
 		},
 		"Laundry - Sensor" : {
-			"next" : "Laundry - Features 1",
+			"next" : "Laundry - Features",
 			"previous" : "Laundry - Fabrics",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-features-current.png",
@@ -1405,7 +1405,7 @@
 				}
 			]
 		},
-		"Laundry - Features 1" : {
+		"Laundry - Features" : {
 			"next" : null,
 			"previous" : "Laundry - Fabrics",
 			"thumbnail_type" : "image",
@@ -1458,7 +1458,7 @@
 		},
 		"Laundry - Features 2" : {
 			"next" : "Laundry - Fuel Type",
-			"previous" : "Laundry - Features 1",
+			"previous" : "Laundry - Features",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-wrinkles-current.png",
 			"thumbnail_text" : "Features",
@@ -1854,7 +1854,7 @@
 			]
 		},
 		"Fridges - Capacity" : {
-			"next" : "Fridges - Organization 1",
+			"next" : "Fridges - Organization",
 			"previous" : "Fridges - Energy",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-capacity-current.png",
@@ -1927,7 +1927,7 @@
 				}
 			]
 		},
-		"Fridges - Organization 1" : {
+		"Fridges - Organization" : {
 			"next" : "Fridges - Water",
 			"previous" : "Fridges - Capacity",
 			"thumbnail_type" : "image",
@@ -1991,8 +1991,8 @@
 			]
 		},
 		"Fridges - Water" : {
-			"next" : "Fridges - Organization 2",
-			"previous" : "Fridges - Organization 1",
+			"next" : "Fridges - Orientation",
+			"previous" : "Fridges - Organization",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-water-current.png",
 			"thumbnail_text" : "Water",
@@ -2055,7 +2055,7 @@
 				}
 			]
 		},
-		"Fridges - Organization 2" : {
+		"Fridges - Orientation" : {
 			"next" : "Fridges - Style",
 			"previous" : "Fridges - Water",
 			"thumbnail_type" : "image",
@@ -2121,7 +2121,7 @@
 		},
 		"Fridges - Style" : {
 			"next" : "Fridges - Features",
-			"previous" : "Fridges - Organization 2",
+			"previous" : "Fridges - Orientation",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-style-current.png",
 			"thumbnail_text" : "Style",
@@ -2233,7 +2233,7 @@
 				}
 			]
 		},
-		"Dishwashers - Cleaning Power" : {
+		"Dishwashers - Cleaning" : {
 			"next" : "Dishwashers - Capacity",
 			"previous" : "Appliance",
 			"fadeIn" : true,
@@ -2336,8 +2336,8 @@
 			]
 		},
 		"Dishwashers - Capacity" : {
-			"next" : "Dishwashers - Noise 1",
-			"previous" : "Dishwashers - Cleaning Power",
+			"next" : "Dishwashers - Cycles",
+			"previous" : "Dishwashers - Cleaning",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-capacity-current.png",
 			"thumbnail_text" : "Capacity",
@@ -2436,8 +2436,8 @@
 				}
 			]
 		},
-		"Dishwashers - Noise 1" : {
-			"next" : "Dishwashers - Noise 2",
+		"Dishwashers - Cycles" : {
+			"next" : "Dishwashers - Noise",
 			"previous" : "Dishwashers - Capacity",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-cycles-current.png",
@@ -2495,9 +2495,9 @@
 				}
 			]
 		},
-		"Dishwashers - Noise 2" : {
+		"Dishwashers - Noise" : {
 			"next" : "Dishwashers - Energy",
-			"previous" : "Dishwashers - Noise 1",
+			"previous" : "Dishwashers - Cycles",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-noise-current.png",
 			"thumbnail_text" : "Noise",
@@ -2540,7 +2540,7 @@
 		},
 		"Dishwashers - Energy" : {
 			"next" : "Dishwashers - Organization",
-			"previous" : "Dishwashers - Noise 2",
+			"previous" : "Dishwashers - Noise",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-energy-current.png",
 			"thumbnail_text" : "Energy",
@@ -2965,7 +2965,7 @@
 			]
 		},
 		"Cooking - Vents - Size" : {
-			"next" : "Cooking - Vents - Location",
+			"next" : "Cooking - Vents - Style 1",
 			"previous" : "Cooking - Pre-Qualifier 1",
 			"fadeIn" : true,
 			"thumbnail_type" : "image",
@@ -3013,7 +3013,7 @@
 				}
 			]
 		},
-		"Cooking - Vents - Location" : {
+		"Cooking - Vents - Style 1" : {
 			"next" : "Cooking - Vents - Speed",
 			"previous" : "Cooking - Vents - Size",
 			"thumbnail_type" : "image",
@@ -3060,8 +3060,8 @@
 			]
 		},
 		"Cooking - Vents - Speed" : {
-			"next" : "Cooking - Vents - Type",
-			"previous" : "Cooking - Vents - Location",
+			"next" : "Cooking - Vents - Style 2",
+			"previous" : "Cooking - Vents - Style 1",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Speed",
 			"thumbnail_current" : "img/icon-speed-current.png",
@@ -3099,8 +3099,8 @@
 				}
 			]
 		},
-		"Cooking - Vents - Type" : {
-			"next" : "Cooking - Vents - Ventilation",
+		"Cooking - Vents - Style 2" : {
+			"next" : "Cooking - Vents - Convection",
 			"previous" : "Cooking - Vents - Speed",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Style",
@@ -3145,9 +3145,9 @@
 				}
 			]
 		},
-		"Cooking - Vents - Ventilation" : {
-			"next" : "Cooking - Vents - Space",
-			"previous" : "Cooking - Vents - Type",
+		"Cooking - Vents - Convection" : {
+			"next" : "Cooking - Vents - Style 3",
+			"previous" : "Cooking - Vents - Style 2",
 			"thumbnail_text" : "Convection",
 			"thumbnail_current" : "img/icon-convection-current.png",
 			"thumbnail_type" : "image",
@@ -3197,9 +3197,9 @@
 				}
 			]
 		},
-		"Cooking - Vents - Space" : {
+		"Cooking - Vents - Style 3" : {
 			"next" : null,
-			"previous" : "Cooking - Vents - Ventilation",
+			"previous" : "Cooking - Vents - Convection",
 			"thumbnail_text" : "Style",
 			"thumbnail_current" : "img/icon-style-current.png",
 			"thumbnail_type" : "image",
