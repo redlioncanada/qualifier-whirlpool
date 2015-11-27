@@ -2056,7 +2056,7 @@
 			]
 		},
 		"Fridges - Orientation" : {
-			"next" : "Fridges - Style",
+			"next" : "Fridges - Features",
 			"previous" : "Fridges - Water",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-orientation-current.png",
@@ -2168,7 +2168,7 @@
 		},
 		"Fridges - Features" : {
 			"next" : null,
-			"previous" : "Fridges - Style",
+			"previous" : "Fridges - Orientation",
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-features-current.png",
 			"thumbnail_text" : "Features",
