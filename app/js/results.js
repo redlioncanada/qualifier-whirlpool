@@ -102,6 +102,21 @@ angular.module('App')
     return appliance.colours[0]
   }
 
+  $rootScope.setFirstColour = function (appliance) {
+    var highestPrice = appliance.colours[0];
+    for (var c in appliance.colours) {
+      if (appliance.colours[c].colourCode == "BS" || appliance.colours[c].colourCode == "CS" || appliance.colours[c].colourCode == "SS") {
+        if ("dryers" in appliance) appliance.colours[c].dryer = appliance.dryers[0];
+        return appliance.colours[c]
+      }
+      if (appliance.colours[c].price > highestPrice.price) {
+        highestPrice = appliance.colours[c];
+      }
+    }
+    if ("dryers" in appliance) highestPrice.dryer = appliance.dryers[0];
+    return highestPrice;
+  }
+
   $rootScope.setBestMatch = function(index,appliance) {
     if (index != 1) return;
     $scope.bestMatch = appliance;
