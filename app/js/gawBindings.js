@@ -47,6 +47,11 @@ gaw.bind('button-text', function(element) {
 	return $(element).closest('.answer').find('.label-text').text();
 });
 
+gaw.bind('slider-button', function(element) {
+	var a = $(element).closest('.enabled').find('.answer-button-answer').text().trim();
+    return a + '" Height';
+});
+
 gaw.bind('appliance', function(element) {
     var url = decodeURIComponent(window.location.hash.replace('#/question/', '')).split(' - ');
 	return url.length == 3 ? url[1].trim() : url[0].trim();

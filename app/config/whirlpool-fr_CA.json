@@ -1417,7 +1417,7 @@
 					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’usure?",
 					"explanation" : "Parce que nous tenons autant que vous à préserver l’aspect et le toucher de vos vêtements, nous avons doté nos appareils de caractéristiques uniques qui protégeront vos vêtements.",
-					"type" : "radio-2",
+					"type" : "radio-3",
 					"oneAnswer" : true,
 					"answers" : [
 						{
@@ -3155,7 +3155,7 @@
 					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de la ventilation?",
 					"explanation" : "Une ventilation adéquate est importante pour maintenir l’air propre dans la maison. Si nous en savons plus sur la façon dont la vôtre fonctionne, nous pouvons choisir ce qui convient le mieux.",
-					"type" : "radio-2",
+					"type" : "radio-3",
 					"oneAnswer" : true,
 					"answers" : [
 						{
