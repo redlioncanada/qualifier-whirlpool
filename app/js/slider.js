@@ -11,6 +11,7 @@ angular.module('App')
        $scope.sliderIndicator = $($element).find('.jslider:not(.vertical) .jslider-pointer').eq(0);
        $scope.sliderBackgroundVertical = $($element).parent().find('.vertical .jslider-true-bg div');
        $scope.sliderIndicatorVertical = $($element).parent().find('.vertical .jslider-pointer').eq(0);
+       $timeout(function(){$scope.setBackground();},100);
     })
 
   	$scope.setAnswer = function () {
@@ -24,6 +25,15 @@ angular.module('App')
   			}
   		}
   	}
+
+    $scope.setBackground = function() {
+      var left = parseFloat($($scope.sliderIndicator).css('left'));
+      left += $($scope.sliderIndicator).width()/2;
+      $($scope.sliderBackground).css('width', left);
+      var top = parseFloat($($scope.sliderIndicatorVertical).css('top'));
+      top += $($scope.sliderIndicatorVertical).height()/2;
+      $($scope.sliderBackgroundVertical).css('height', top);
+    }
 
     $scope.setLast = function (qs,isVertical) {
       $scope.isVertical = true;
@@ -44,7 +54,7 @@ angular.module('App')
       if (!!qs.text[0].options) {
         qs.text[0].options.modelLabels = angular.copy(function (value) {
           if (!!$rootScope.questionsData.question) {
-            //if (qs.name == $rootScope.questionsData.question.name) {  
+            //if (qs.name == $rootScope.questionsData.question.name) {
                 $rootScope.questionsData.question.text[0].roundedAnswer = value.toFixed(0);
                 $rootScope.safeApply();
                 return value.toFixed(0);
@@ -53,9 +63,9 @@ angular.module('App')
         });
       }
 
-      qs.text[0].options.callback = angular.copy(function(value, released) { 
+      qs.text[0].options.callback = angular.copy(function(value, released) {
         if (!!$rootScope.questionsData.question) {
-          if (qs.name == $rootScope.questionsData.question.name) {    
+          if (qs.name == $rootScope.questionsData.question.name) {
             if (!!released) {
               for (var a in $rootScope.questionsData.question.text[0].answers) {
                     //console.log( $rootScope.questionsData.question.text[0].answer , $rootScope.questionsData.question.text[0].options.halfway,  parseFloat($rootScope.questionsData.question.text[0].answers[a].value)- $rootScope.questionsData.question.text[0].options.halfway , parseFloat($rootScope.questionsData.question.text[0].answers[a].value)+$rootScope.questionsData.question.text[0].options.halfway   )
@@ -69,12 +79,7 @@ angular.module('App')
               //released
             } 
 
-            var left = parseFloat($($scope.sliderIndicator).css('left'));
-            left += $($scope.sliderIndicator).width()/2;
-            $($scope.sliderBackground).css('width', left);
-            var top = parseFloat($($scope.sliderIndicatorVertical).css('top'));
-            top += $($scope.sliderIndicatorVertical).height()/2;
-            $($scope.sliderBackgroundVertical).css('height', top);
+            $scope.setBackground();
           }
         }
       })
