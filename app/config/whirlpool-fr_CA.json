@@ -295,7 +295,7 @@
 							"image" : "img/Walloven-Q2-single.jpg",
                             "image_alt" : "Four Simple",
 							"scoring" : {
-								"single" : 10
+								"single" : 5
 							},
 							"order" : 1
 						},
@@ -307,7 +307,7 @@
 							"image" : "img/Walloven-Q2-combo.jpg",
                             "image_alt" : "Four À Micro-ondes Combiné",
 							"scoring" : {
-								"combination" : 10
+								"combination" : 5
 							},
 							"order" : 2
 						},
@@ -319,7 +319,7 @@
 							"image" : "img/Walloven-Q2-double.jpg",
                             "image_alt" : "Four Double",
 							"scoring" : {
-								"double" : 10
+								"double" : 5
 							},
 							"order" : 3
 						},
@@ -474,7 +474,7 @@
 							"text" : "ni un ni l’autre – notre famille s’intéresse plus aux mets à emporter",
 							"value" : "perfect",
 							"scoring" : {
-								"single" : 1
+								"single" : 5
 							},
 							"order" : 4
 						}
@@ -609,6 +609,7 @@
 							"text" : "performance professionnelle",
 							"value" : "energy",
 							"scoring" : {
+                                "gas": 1
 							},
 							"order" : 5
 						}
@@ -647,7 +648,7 @@
 							"value" : 0,
 							"text" : "lasagne",
 							"scoring" : {
-								"mediumCapacity" : 1
+								"mediumCapacity" : 3
 							}
 						},
 						"1" : {
@@ -656,7 +657,7 @@
 							"value" : 1,
 							"text" : "gratin et pâté chinois pour le souper du dimanche ",
 							"scoring" : {
-								"largeCapacity" : 1
+								"largeCapacity" : 3
 							}
 						},
 						"2" : {
@@ -665,7 +666,7 @@
 							"value" : 2,
 							"text" : "un festin pour la soirée de jeux",
 							"scoring" : {
-								"largerCapacity" : 1
+								"largerCapacity" : 3
 							}
 						},
 						"3" : {
@@ -674,7 +675,8 @@
 							"value" : 3,
 							"text" : "rôti des fêtes",
 							"scoring" : {
-								"largestCapacity" : 1
+								"largestCapacity" : 3,
+                                "maxCapacity": 1
 							}
 						}
 					}
@@ -703,7 +705,7 @@
 							"text" : "j’adore cuisiner pour d’autres personnes et recevoir des invités",
 							"value" : "family",
 							"scoring" : {
-								"double" : 2,
+								"double" : 1,
 								"warmingDrawer" : 1,
 								"rapidPreheat" : 1
 							},
@@ -794,7 +796,7 @@
 							"value" : "both",
 							"scoring" : {
 								"trueConvection" : 2,
-								"accuBake" : 1
+								"accuBake" : 2
 							},
 							"order" : 3
 						},
@@ -838,8 +840,7 @@
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "no",
 							"scoring" : {
-								"rearControl" : 3,
-								"frontControl" : -3
+								"rearControl" : 15
 							},
 							"order" : 2
 						},
@@ -851,8 +852,7 @@
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "yes",
 							"scoring": {
-								"frontControl" : 3,
-								"rearControl" : -3
+								"frontControl" : 15
 							},
 							"order" : 1
 						},
@@ -864,8 +864,7 @@
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "nopref",
 							"scoring" : {
-								"frontControl" : 1,
-								"rearControl" : -1
+								"frontControl" : 5
 							},
 							"order" : 3
 						}
@@ -899,7 +898,7 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "yes",
 							"scoring": {
-								"gas" : 1
+								"gas" : 3
 							},
 							"order" : 1
 						},
@@ -960,7 +959,8 @@
 							"value" : 2,
 							"text" : "1-2",
 							"scoring" : {
-								"smallCapacity" : 5
+								"smallCapacity" : 15,
+								"mediumCapacity" : 10
 							}
 						},
 						"3" : {
@@ -969,7 +969,8 @@
 							"value" : 3,
 							"text" : "3-4",
 							"scoring" : {
-								"mediumCapacity" : 5
+								"mediumCapacity" : 15,
+								"largeCapacity" : 10
 							}
 						},
 						"4" : {
@@ -978,7 +979,8 @@
 							"value" : 4,
 							"text" : "5-6",
 							"scoring" : {
-								"largeCapacity" : 5
+								"largeCapacity" : 15,
+								"largerCapacity" : 10
 							}
 						},
 						"5" : {
@@ -987,7 +989,7 @@
 							"value" : 5,
 							"text" : "7+",
 							"scoring" : {
-								"largerCapacity" : 5
+								"largerCapacity" : 15
 							}
 						}
 					}
@@ -1146,7 +1148,6 @@
 							"thumbnail_current" : "img/icon-noise-current.png",
 							"scoring" : {
 								"vibrationControl" : 3,
-							 	"quietDry" : 3,
 							 	"silentSteel" : 1,
 							 	"quietWash" : 1
 							},
@@ -1158,8 +1159,7 @@
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
 							"scoring" : {
-								"vibrationControl" : 2,
-							 	"quietDry" : 2
+								"vibrationControl" : 2
 							},
 							"order" : 2
 						},
@@ -1169,8 +1169,7 @@
 							"thumbnail" : "img/icon-noise.png",
 							"thumbnail_current" : "img/icon-noise-current.png",
 							"scoring" : {
-								"vibrationControl" : 1,
-							 	"quietDry" : 1
+								"vibrationControl" : 1
 							},
 							"order" : 3
 						},
@@ -1211,8 +1210,7 @@
 							"text" : "superposée",
 							"value" : "Stacked",
 							"scoring" : {
-								 "frontLoad" : 3,
-								 "topLoad" : -30
+								 "frontLoad" : 10
 							},
 							"order" : 1
 						},
@@ -1224,7 +1222,7 @@
 							"text" : "côte à côte",
 							"value" : "Side-By-Side",
 							"scoring" : {
-								"topLoad" : 1
+								"topLoad" : 10
 							},
 							"order" : 2
 						},
@@ -1236,6 +1234,7 @@
 							"text" : "aucune préférence",
 							"value" : "aucune préférence",
 							"scoring" : {
+                                "topLoad" : 5
 							},
 							"order" : 3
 						}
@@ -1276,8 +1275,7 @@
 							"text" : "tissus légers",
 							"value" : "delicates",
 							"scoring" : {
- 								"smoothWave" : 1,
- 								"quadBaffles" : 1
+ 								"smoothWave" : 1
 							},
 							"order" : 2
 						},
@@ -1297,8 +1295,7 @@
 							"text" : "collants de ballet et chaussettes de soccer",
 							"value" : "ballet tights",
 							"scoring" : {
- 								"smoothWave" : 1,
- 								"quadBaffles" : 1
+ 								"smoothWave" : 1
 							},
 							"order" : 4
 						},
@@ -1319,7 +1316,6 @@
 							"text" : "serviettes",
 							"value" : "towels",
 							"scoring" : {
- 								"quadBaffles" : 1
 							},
 							"order" : 6
 						},
@@ -1329,8 +1325,7 @@
 							"text" : "literie",
 							"value" : "bedding",
 							"scoring" : {
- 								"adaptiveWash" : 1,
- 								"quadBaffles" : 1
+ 								"adaptiveWash" : 1
 							},
 							"order" : 7
 						}
@@ -1727,15 +1722,7 @@
 							"enabled" : true,
 							"enabledWhen" : [0,1,2],
 							"scoring" : {
-								"height63" : 5,
-								"height64" : -30,
-								"height65" : -30,
-								"height66" : -30,
-								 "height67" : -30,
-								 "height68" : -30,
-								 "height69" : -30,
-								 "height70" : -30,
-								 "height71" : -30
+								"height63" : 5
 							}
 						},
 						"66" : {
@@ -1744,12 +1731,7 @@
 							"enabled" : true,
 							"enabledWhen" : [0,3,4,6],
 							"scoring" : {
-								 "height66" : 5,
-								 "height67" : -30,
-								 "height68" : -30,
-								 "height69" : -30,
-								 "height70" : -30,
-								 "height71" : -30
+								 "height66" : 5
 							}
 						},
 						"67" : {
@@ -1758,11 +1740,7 @@
 							"enabled" : true,
 							"enabledWhen" : [0,4,5,6],
 							"scoring" : {
-								 "height67" : 5,
-								 "height68" : -30,
-								 "height69" : -30,
-								 "height70" : -30,
-								 "height71" : -30
+								 "height67" : 5
 							}
 						},
 						"69" : {
@@ -1771,9 +1749,7 @@
 							"enabled" : true,
 							"enabledWhen" : [0,4,7],
 							"scoring" : {
-								 "height69" : 5,
-								 "height70" : -30,
-								 "height71" : -30
+								 "height69" : 5
 							}
 						},
 						"71" : {
@@ -1875,7 +1851,8 @@
 							"text" : "ma propre personne, pour bien m’alimenter pendant toute la semaine",
 							"value" : "myself",
 							"scoring" : {
-								"smallCapacity" : 1
+								"smallCapacity" : 3,
+								"mediumCapacity" : 1
 							},
 							"order" : 1
 						},
@@ -1885,8 +1862,8 @@
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
 							"scoring" : {
-								"smallCapacity" : 1,
-								"mediumCapacity" : 1
+								"mediumCapacity" : 3,
+                                "largeCapacity" : 1
 							},
 							"order" : 2
 						},
@@ -1896,8 +1873,8 @@
 							"text" : "ma famille; de la soirée lasagne aux rôtis du dimanche, nous sommes une bande d’affamés",
 							"value" : "family",
 							"scoring" : {
-								"mediumCapacity" : 1,
-								"largeCapacity" : 1
+								"largeCapacity" : 3,
+                                "largestCapacity" : 1
 							},
 							"order" : 3
 						},
@@ -1907,8 +1884,7 @@
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
 							"scoring" : {
-								"largeCapacity" : 1,
-								"largestCapacity" : 1
+								"largestCapacity" : 3
 							},
 							"order" : 4
 						},
@@ -1918,8 +1894,7 @@
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
 							"scoring" : {
-								"largeCapacity" : 1,
-								"largestCapacity" : 2
+								"largestCapacity" : 5
 							},
 							"order" : 5
 						}
@@ -1961,7 +1936,9 @@
 							"thumbnail_current" : "img/icon-organization-current.png",
 							"scoring" : {
 								"sideBySide" : 1,
-								"frenchDoor" : 1
+								"frenchDoor" : 1,
+								"4door" : 1,
+								"5door" : 1
 							},
 							"order" : 2
 						},
@@ -1982,7 +1959,8 @@
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
 							"scoring" : {
-								"4or5door" : 1
+								"4or5door" : 1,
+								"5door" : 1
 							},
 							"order" : 4
 						}
@@ -2012,9 +1990,9 @@
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
 							"scoring" : {
-								"filtered" : 3,
-								"exteriorDispenser" : 3,
-								"indoorDispenser" : 3
+								"filtered" : 5,
+								"exteriorDispenser" : 5,
+								"indoorDispenser" : 5
 							},
 							"order" : 1
 						},
@@ -2024,9 +2002,9 @@
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
 							"scoring" : {
-								"filtered" : -3,
-								"exteriorDispenser" : -3,
-								"indoorDispenser" : -3
+								"filtered" : -15,
+								"exteriorDispenser" : -15,
+								"indoorDispenser" : -15
 							},
 							"order" : 2
 						},
@@ -2078,8 +2056,8 @@
 							"value" : "perfect",
 							"scoring" : {
 								"sideBySide" : 1,
-								"frenchDoor" : 1,
-								"4or5door" : 1
+								"4door" : 1,
+								"5door" : 1
 							},
 							"order" : 1
 						},
@@ -2089,8 +2067,8 @@
 							"text" : "organisé et bien rempli",
 							"value" : "organized",
 							"scoring" : {
-								"frenchDoor" : 1,
-								"4or5door" : 1
+								"5door" : 2,
+								"4or5door" : 2
 							},
 							"order" : 2
 						},
@@ -2100,6 +2078,7 @@
 							"text" : "désorganisé et bien rempli",
 							"value" : "disorganized",
 							"scoring" : {
+								"sideByside" : 1,
 								"frenchDoor" : 1
 							},
 							"order" : 3
@@ -2111,7 +2090,9 @@
 							"value" : "sparse",
 							"scoring" : {
 								"topMount" : 1,
-								"bottomMount" : 1
+								"bottomMount" : 1,
+								"frenchdoor" : -3
+                                
 							},
 							"order" : 4
 						}
@@ -2368,8 +2349,9 @@
 							"value" : 0,
 							"text" : "0 - Environ toutes les deux semaines",
 							"scoring" : {
-								"placeSettings13": 1,
-								"compactTallTub": 1
+								"placeSettings13": 5,
+								"placeSettings14": 5,
+								"compactTallTub": 3
 							}
 						},
 						"2" : {
@@ -2378,8 +2360,9 @@
 							"value" : 2.5,
 							"text" : "2.5",
 							"scoring" : {
-								"placeSettings13": 1,
-								"compactTallTub": 1
+								"placeSettings13": 5,
+								"placeSettings14": 5,
+								"compactTallTub": 3
 							}
 						},
 						"5" : {
@@ -2388,8 +2371,8 @@
 							"value" : 5,
 							"text" : "5",
 							"scoring" : {
-								"placeSettings13": 1,
-								"placeSettings14": 1
+								"placeSettings14": 5,
+								"placeSettings15": 3
 							}
 						},
 						"7" : {
@@ -2398,8 +2381,8 @@
 							"value" : 7.5,
 							"text" : "7.5",
 							"scoring" : {
-								"placeSettings13": 1,
-								"placeSettings14": 1
+								"placeSettings14": 5,
+								"placeSettings15": 3
 							}
 						},
 						"10" : {
@@ -2408,8 +2391,8 @@
 							"value" : 10,
 							"text" : "10",
 							"scoring" : {
-								"placeSettings14": 1,
-								"placeSettings15": 1
+								"placeSettings15": 5,
+								"placeSettings16": 3
 							}
 						},
 						"12" : {
@@ -2418,8 +2401,8 @@
 							"value" : 12.5,
 							"text" : "12.5",
 							"scoring" : {
-								"placeSettings14": 1,
-								"placeSettings15": 1
+								"placeSettings15": 5,
+								"placeSettings16": 3
 							}
 						},
 						"15" : {
@@ -2428,8 +2411,8 @@
 							"value" : 15,
 							"text" : "15+<br />J’ai perdu le compte",
 							"scoring" : {
-								"placeSettings15": 1,
-								"placeSettings16": 1
+								"placeSettings15": 3,
+								"placeSettings16": 5
 							}
 						}
 					}
@@ -2468,7 +2451,7 @@
 							"text" : "avant d’aller me coucher",
 							"value" : "night",
 							"scoring" : {
-								"quiet" : 1
+								"quiet" : 5
 							},
 							"order" : 2
 						},
@@ -2487,7 +2470,7 @@
 							"text" : "durant les heures creuses",
 							"value" : "offpeak",
 							"scoring" : {
-								"quiet" : 1
+								"quiet" : 5
 							},
 							"order" : 4
 						}
@@ -2519,7 +2502,7 @@
                             "image_alt" : "Oui",
 							"value" : "yes",
 							"scoring" : {
-								 "quiet" : 1
+								 "quiet" : 5
 							},
 							"order" : 1
 						},
@@ -2689,7 +2672,7 @@
                             "image_alt" : "Console Entièrement Intégrée",
 							"scoring" : {
 								"FID" : 5,
-								"frontConsole" : -3
+								"frontConsole" : -5
 							},
 							"order" : 1
 						},
@@ -2702,7 +2685,7 @@
                             "image_alt" : "Commandes Frontales",
 							"scoring" : {
 								"frontConsole" : 5,
-								"FID" : -3
+								"FID" : -5
 							},
 							"order" : 2
 						},
@@ -2714,8 +2697,7 @@
 							"image" : "img/Dishwasher-Q7-nopreference.jpg",
                             "image_alt" : "Aucune Restriction",
 							"scoring" : {
-								"FID" : 1,
-                                "frontConsole" : -1
+								"FID" : 1
 							},
 							"order" : 3
 						}
@@ -2818,9 +2800,9 @@
 							"image" : "img/Cooktops-Q2-traditional.jpg",
                             "image_alt" : "Traditionnel",
 							"scoring" : {
-								"induction" : 1,
-								"electric" : 1,
-								"gas" : -10
+								"induction" : 5,
+								"electric" : 5,
+								"gas" : -5
 							},
 							"order" : 1
 						},
@@ -2832,9 +2814,7 @@
 							"image" : "img/Cooktops-Q2-professional.jpg",
                             "image_alt" : "Professionnel",
 							"scoring" : {
-								"gas" : 1,
-								"induction" : -10,
-								"electric" : -10
+								"gas" : 5
 							},
 							"order" : 2
 						}
@@ -2897,7 +2877,6 @@
 							"value" : "ease",
 							"scoring" : {
 								"electric":1,
-								"induction":1,
 								"glassTouch":1,
 								"accuSimmer":1
 							},
@@ -2909,6 +2888,7 @@
 							"text" : "performance professionnelle",
 							"value" : "performance",
 							"scoring" : {
+                                "gas": 1
 							},
 							"order" : 5
 						}
@@ -2941,6 +2921,9 @@
 							"thumbnail" : "img/icon-fueltype.png",
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "yes",
+                            "scoring" : {
+								"gas" : 3
+							},
 							"order" : 1
 						},
 						{
@@ -2953,7 +2936,7 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "no",
 							"scoring" : {
-								"gas" : -30
+								"gas" : -15
 							},
 							"order" : 2
 						}
@@ -3164,7 +3147,8 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "yes",
 							"scoring" : {
-								 "exteriorVent": 1
+                                "exterior": 2,
+                                "nonVented": -1
 							},
 							"order" : 1
 						},
@@ -3174,8 +3158,9 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "no",
 							"scoring" : {
-								 "nonVented": 1,
-								 "convertible": 1
+                                "nonVented": 2,
+                                "convertible": 2,
+                                "exterior": -10
 							},
 							"order" : 2
 						},
@@ -3185,8 +3170,8 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "i am no sure",
 							"scoring" : {
-								"easyConversion": 1,
-								"convertible": 1
+								"easyConversion": 2,
+								"convertible": 2
 							},
 							"order" : 3
 						}
@@ -3217,7 +3202,7 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "yes",
 							"scoring" : {
-								 "microWaveHoodCombination": 5
+								 "microWaveHoodCombination": 3
 							},
 							"order" : 1
 						},
@@ -3227,7 +3212,6 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "no",
 							"scoring" : {
-								"microWaveHoodCombination": -1
 							},
 							"order" : 2
 						}
