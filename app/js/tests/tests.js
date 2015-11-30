@@ -4,6 +4,20 @@ appstateModule.factory('$tests', ['$rootScope', function($rootScope) {
 	var tests = {};
 
 	// @if ENV='development'
+	window.appliance = function(app) {
+      var temp = [];
+      for (var i in $rootScope.appliances) {
+        if ($rootScope.appliances[i].sku.indexOf(app) > -1) {
+          temp.push($rootScope.appliances[i]);
+          continue;
+        }
+        if (($rootScope.appliances[i].appliance && $rootScope.appliances[i].appliance.indexOf(app) > -1) || ($rootScope.appliances[i].type && $rootScope.appliances[i].type.indexOf(app) > -1)) {
+          temp.push($rootScope.appliances[i]);
+        }
+      }
+      temp.length == 1 ? console.dir(temp[0]) : console.dir(temp);
+    }
+
 	tests.run = function(appliances, questions) {
 		this.verifyScoringProperties(appliances, questions);
 		this.verifyAttrExist(appliances);
