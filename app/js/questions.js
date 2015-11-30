@@ -232,22 +232,14 @@ angular.module('App')
 			"largeCapacity" : 0,
 			"largerCapacity" : 0,
 			"largestCapacity" : 0,
-			"width27" : 0,
-			"width30" : 0,
-			"width31" : 0,
-			"width32" : 0,
-			"width33" : 0,
-			"width34" : 0,			
-			"width35" : 0,
-			"width36" : 0,
-			"height66" : 0,
-			"height67" : 0,
-			"height68" : 0,
-			"height69" : 0,
-			"height70" : 0,
-			"height71" : 0,
 			"frontControl" : false,
 			"rearControl" : false
+		}
+		console.log($rootScope.questionsData.currentScore);
+
+		for (var i = 10; i <= 90; i++) {
+			$rootScope.questionsData.currentScore["width"+i] = 0;
+			$rootScope.questionsData.currentScore["height"+i] = 0;
 		}
 
 
@@ -305,6 +297,7 @@ angular.module('App')
 						// If answer isn't null, use it for scoring
 						if (a.answer != false) {
 							// If it is true, simply apply scoring
+							console.log(a);
 							if (a.answer == true) {
 								for (var scores in a.scoring) {
 									var s = a.scoring[scores]
@@ -523,10 +516,20 @@ angular.module('App')
 
 	}
 
+	$scope.logAppliance = function(appliance) {
+		var temp = [];
+		for (var i in $rootScope.appliances) {
+			if ($rootScope.appliances[i].appliance == appliance) {
+				temp.push($rootScope.appliances[i]);
+			}
+		}
+		console.log(temp);
+	}
+
   	$rootScope.next = function (done) {
   		// console.log($rootScope.questionsData);
-  		// console.log($rootScope.appliances);
-  		// console.log($rootScope.questionsData.questions);
+  		$scope.logAppliance('Cooking');
+  		console.log($rootScope.questionsData.questions);
   		$rootScope.showTooltip = false;
   		$rootScope.questionsData.question.disabled = true;
   		$rootScope.controls.controlClicked = 'next';
