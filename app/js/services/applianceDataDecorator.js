@@ -11,6 +11,15 @@ applianceDataDecorator.factory('$dataDecorator', ['$filter', function($filter) {
         
 		angular.forEach(data, function(item, key) {
 			item.price = parseFloat(item.colours[0].prices.CAD);
+
+			if (item.width) {
+				item["width"+Math.round(item.width)] = true;
+			}
+
+			if (item.height) {
+				item["height"+Math.round(item.height)] = true;
+			}
+
 			switch (item.appliance) {
 				case "Washers":
 					if ("dryers" in item && item.dryers.length) {
@@ -50,12 +59,6 @@ applianceDataDecorator.factory('$dataDecorator', ['$filter', function($filter) {
 					}
 					break;
 				case "Fridges":
-					var height = Math.round(item.height);
-					item["height"+height] = true;
-
-					var width = Math.round(item.width);
-					item["width"+width] = true;
-
 					if (item.capacity <= 20) {
 						item.mediumCapacity = true
 					} else if (item.capacity <= 24.2) {
@@ -74,12 +77,6 @@ applianceDataDecorator.factory('$dataDecorator', ['$filter', function($filter) {
 				case "Cooking":
 					switch(item.type) {
 						case "Ranges":
-							if (item.width <= 30) {
-								item["width30"] = true
-							} else if (item.width <= 36) {
-								item["width36"] = true
-							}
-
 							if (item.capacity <= 5.1) {
 								item.mediumCapacity = true
 							} else if (item.capacity <= 5.8) {
@@ -89,14 +86,6 @@ applianceDataDecorator.factory('$dataDecorator', ['$filter', function($filter) {
 							}
 							break;
 						case "Ovens":
-							if (item.width <= 24) {
-								item["width24"] = true
-							} else if (item.width <= 27) {
-								item["width27"] = true
-							} else if (item.width <= 30) {
-								item["width30"] = true
-							}
-
 							if (item.capacity && item.capacity !== null && item.capacity >= 5) {
 								item["5CuFt"] = true;
 							} else {
@@ -104,12 +93,6 @@ applianceDataDecorator.factory('$dataDecorator', ['$filter', function($filter) {
 							}
 							break;
 						case "Hoods":
-							if (item.width <= 30) {
-								item["width30"] = true
-							} else if (item.width <= 50) {
-								item["width36"] = true
-							}
-
 							if (item.cfm && typeof item.cfm !== null && item.cfm >= 340) {
 								item["340CFMOrHigher"] = true;
 							} else {
@@ -117,15 +100,6 @@ applianceDataDecorator.factory('$dataDecorator', ['$filter', function($filter) {
 							}
 							break;
 						case "Cooktops":
-							if (item.width <= 15) {
-								item["width15"] = true
-							} else if (item.width <= 30) {
-								item["width30"] = true
-							} else if (item.width <= 36) {
-								item["width36"] = true
-							} else if (item.width <= 48) {
-								item["width48"] = true
-							}
 							break;
 					}
 					break;

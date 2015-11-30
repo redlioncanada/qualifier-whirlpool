@@ -2748,7 +2748,17 @@
 							"text" : "24\"",
 							"scoring" : {
 								"width24" : 10,
+								"width25" : -30,
+								"width26" : -30,
+								"width27" : -30,
+								"width28" : -30,
+								"width29" : -30,
 								"width30" : -30,
+								"width31" : -30,
+								"width32" : -30,
+								"width33" : -30,
+								"width34" : -30,
+								"width35" : -30,
 								"width36" : -30
 							}
 						},
@@ -2758,8 +2768,12 @@
 							"value" : 2,
 							"text" : "30\"",
 							"scoring" : {
-								"width24" : -30,
 								"width30" : 10,
+								"width31" : -30,
+								"width32" : -30,
+								"width33" : -30,
+								"width34" : -30,
+								"width35" : -30,
 								"width36" : -30
 							}
 						},
@@ -2769,8 +2783,6 @@
 							"value" : 3,
 							"text" : "36\"",
 							"scoring" : {
-								"width15" : -30,
-								"width30" : -30,
 								"width36" : 10
 							}
 						}
