@@ -22,7 +22,9 @@ applianceDataDecorator.factory('$dataDecorator', ['$filter', function($filter) {
 		                  }
 		                }
 	            	} else {
-	            		console.log('warning: washer '+item.sku+' does not have an associated dryer')
+	            		console.log('deleting washer '+item.sku+' since it doesn\'t have an associated dryer');
+	            		delete data[item];
+	            		return;
 	            	}
 
                   if (parseFloat(item.capacity) >= 6.1) {
