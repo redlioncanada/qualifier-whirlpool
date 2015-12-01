@@ -135,7 +135,7 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 		div.jslider-true-bg {
 			position: absolute;
 			margin-left: -18px;
-			height: 100%;
+			height: 101%;
 			width: 40px;
 			top: 0;
 			z-index: 10;
@@ -957,7 +957,7 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	.price-slider.pointer-labels {
 		.jslider {
             div.jslider-pointer {
-                top: -21px;
+                top: -23px;
             }
 			.jslider-value {
 				// top: -52px;
@@ -1105,7 +1105,20 @@ div[ng-class="fr_CA"] {
 	}
 }
 
+@media(max-width:1180px) and (min-width:1024px) {
+    .multi-slider-wrap {
+        margin-bottom: -25px !important;
+    }    
+}
+
 @media(max-width:1023px) {
+    .price-slider.pointer-labels {
+        .jslider {
+            div.jslider-pointer {
+                top: -26px !important;
+            }
+        }
+    }
 	.jslider.vertical {
 		div.jslider-true-bg {
             width: 36px !important;
