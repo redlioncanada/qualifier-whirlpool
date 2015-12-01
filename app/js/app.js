@@ -292,6 +292,7 @@ App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr'
                 // $tests.run($rootScope.appliances, $rootScope.brandData.questions);
                 // @endif
                 $appstate.restore();
+                $tests.init($rootScope.appliances,$rootScope.brandData.questions);
           }, function () {
               $rootScope.errorMessage = "We're having connectivity issues. Please reload."
           });
