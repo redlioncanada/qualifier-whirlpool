@@ -32,7 +32,7 @@ applianceDataDecorator.factory('$dataDecorator', ['$filter', function($filter) {
 		                }
 	            	} else {
 	            		console.log('deleting washer '+item.sku+' since it doesn\'t have an associated dryer');
-	            		delete data[item];
+	            		delete data[key];
 	            		return;
 	            	}
 
