@@ -288,9 +288,6 @@ App.run(['$rootScope', '$state', "$resource", 'localStorageService', 'Modernizr'
           // @endif
           $resource(host+"/api/public/wpq/product-list/index/brand/"+$rootScope.brand+"/locale/"+$rootScope.locale).get({}, function (res, headers) {
                 $rootScope.appliances = $dataDecorator(res.products);
-                // @if ENV='development'
-                // $tests.run($rootScope.appliances, $rootScope.brandData.questions);
-                // @endif
                 $appstate.restore();
                 $tests.init($rootScope.appliances,$rootScope.brandData.questions);
           }, function () {
