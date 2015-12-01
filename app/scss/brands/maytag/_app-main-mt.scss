@@ -329,6 +329,13 @@ header.header-desktop {
    div.startover-mobile {
    		margin: 5px 0 15px 0;
    }
+    
+    .nav-wrapper {
+        display: inline-block; 
+        float: left;
+        text-align:center;
+        margin: 0px auto 0px auto;
+    }
 
 	.backtoresults-btn-wrap {
 		display: inline-block;
@@ -411,7 +418,7 @@ header.header-desktop {
 
 .buttonnav-mobile {
    		text-transform: uppercase;
-   		margin: 20px auto 15px auto;
+   		margin: 40px auto 15px auto;
         text-align: center;
         a.banner {
             display: inline-block;
@@ -723,7 +730,6 @@ div[ng-class="fr_CA"] {
         div[ng-controller="SliderButtonsCtrl"] .answers-main-content {
             &.answer-slider {
                 margin-top: 80px !important;
-                transition: all ease 1s; 
             }
         }
     }    
