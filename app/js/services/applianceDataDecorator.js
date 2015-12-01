@@ -86,11 +86,15 @@ applianceDataDecorator.factory('$dataDecorator', ['$filter', function($filter) {
 							}
 							break;
 						case "Ovens":
-							if (item.capacity && item.capacity !== null && item.capacity >= 5) {
-								item["5CuFt"] = true;
-							} else {
-								item["5CuFt"] = false;
-							}
+							item["5CuFt"] = false;
+							item["10CuFt"] = false;
+
+							if (item.capacity && item.capacity !== null)
+								if (item.capacity >= 5 && item.capacity < 10) {
+									item["5CuFt"] = true;
+								} else if (item.capacity >= 10) {
+									item["10CuFt"] = true;
+								}
 							break;
 						case "Hoods":
 							if (item.cfm && typeof item.cfm !== null && item.cfm >= 340) {

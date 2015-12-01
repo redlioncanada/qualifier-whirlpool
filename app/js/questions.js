@@ -135,113 +135,7 @@ angular.module('App')
 
 	$scope.recalculateResults = function () {
 		$rootScope.questionsData.currentCount = 0;
-		$rootScope.questionsData.currentScore = {	
-  			"type" : false,
-			"width" : 0,
-			"height" : 0,
-			"capacity" : 0,
-			"single" : false,
-			"double" : false,
-			"combination" : false,
-			"trueConvection" : false,
-			"soundGuard" : false,
-			"ecoBoost":false,
-			"vibrationControl" : false,
-			"audioLevel" : false,
-			"frontLoad" : false,
-			"topLoad" : false,
-			"convertible": false,
-			"aquaLift":false,
-			"digitalThermometer":false,
-			"easyConversion":false,
-			"adaptiveWash":false,
-			"energyStar" : false,
-			"comboOven":false,
-			"stacked" : false,
-			"rapidWash" : false,
-			"rapidDry" : false,
-			"fanFresh" : false,
-			"silentSteel" : false,
-			"loadAndGo" : false,
-			"rapidPreheat":false,
-			"cycleOptions" : false,
-			"sensorDry" : false,
-			"wrinkleControl" : false,
-			"steamEnhanced" : false,
-			"placeSettings13" : 0,
-			"placeSettings14" : 0,
-			"wrinkleShield" : false,
-			"steamRefresh" : false,
-			"filtered" : false,
-			"quietDry":false,
-			"placeSettings15" : 0,
-			"decibels" : 0,
-			"quiet" : 0,
-			"premiumAdjusters" : false,
-			"fid" : false,
-			"console" : false,
-			"powerCold" : false,
-			"topMount" : false,
-			"colorLast":false,
-			"smoothWave":false,
-			"advancedMoistureSensing":false,
-			"exteriorWater" : false,
-			"induction" : false,
-			"islandMount" : false,
-			"wallMount":false,
-			"underCabinet":false,
-			"dishwasherSafeKnobs" : false,
-			"freshFlowProducePreserver" : false,
-			"freshStor" : false,
-			"accuDry":false,
-			"accuFresh" : false,
-			"accuBake" : false,
-			"tripleCrisper" : false,
-			"anyWarePlusBasket" : false,
-			"glassTouch":false,
-			"340CFMOrHigher":false,
-			"accuSimmer":false,
-			"accuChill" : false,
-			"targetClean" : false,
-			"totalCoverageArm" : false,
-			"sensorCycle" : false,
-			"compactTallTub" : false,
-			"silverwareSpray" : false,
-			"accuSense" : false,
-			"ez2Lift" : false,
-			"bottomMount" : false,
-			"frenchDoor" : false,
-			"indoorDispenser" : false,
-			"4or5door" : false,
-			"counterDepth" : false,
-			"nonVented" : false,
-			"freshFlow" : false,
-			"tempControlPantry" : false,
-			"dualCool" : false,
-			"sideBySide" : false,
-			"gas" : false,
-			"maxCapacity" : false,
-			"warmingDrawer" : false,
-			"electric" : false,
-			"powerBurner" : false,
-			"frozenBake":false,
-			"powerPreheat" : false,
-			"slideIn" : 0,
-			"freestanding" : 0,
-			"mediumCapacity" : 0,
-			"largeCapacity" : 0,
-			"largerCapacity" : 0,
-			"largestCapacity" : 0,
-			"frontControl" : false,
-			"rearControl" : false
-		}
-		console.log($rootScope.questionsData.currentScore);
-
-		for (var i = 10; i <= 90; i++) {
-			$rootScope.questionsData.currentScore["width"+i] = 0;
-			$rootScope.questionsData.currentScore["height"+i] = 0;
-		}
-
+		$rootScope.questionsData.currentScore = {};
 
 		for (var question in $rootScope.questionsData.scoringQuestions) {
 			var q = $rootScope.questionsData.scoringQuestions[question]
@@ -259,8 +153,12 @@ angular.module('App')
 									$rootScope.questionsData.currentScore[scores] = null
 								} else if (typeof s == "string") {
 									$rootScope.questionsData.currentScore[scores] = s
-								} else if (!isNaN(s) && $rootScope.questionsData.currentScore[scores] != null) {
-									$rootScope.questionsData.currentScore[scores] = $rootScope.questionsData.currentScore[scores] + s
+								} else if (!isNaN(s)) {
+									if (scores in $rootScope.questionsData.currentScore) {
+										$rootScope.questionsData.currentScore[scores] = $rootScope.questionsData.currentScore[scores] + s
+									} else {
+										$rootScope.questionsData.currentScore[scores] = s
+									}
 								}
 							}
 						} else if (isNaN(parseInt(a.answer)) == false) {
@@ -282,8 +180,12 @@ angular.module('App')
 									$rootScope.questionsData.currentScore[scores] = null
 								} else if (typeof s == "string") {
 									$rootScope.questionsData.currentScore[scores] = s * t
-								} else if (!isNaN(s) && $rootScope.questionsData.currentScore[scores] != null) {
-									$rootScope.questionsData.currentScore[scores] = $rootScope.questionsData.currentScore[scores] + (s * t)
+								} else if (!isNaN(s)) {
+									if (scores in $rootScope.questionsData.currentScore) {
+										$rootScope.questionsData.currentScore[scores] = $rootScope.questionsData.currentScore[scores] + s*t
+									} else {
+										$rootScope.questionsData.currentScore[scores] = s*t
+									}
 								}
 							}									
 						}
@@ -297,7 +199,6 @@ angular.module('App')
 						// If answer isn't null, use it for scoring
 						if (a.answer != false) {
 							// If it is true, simply apply scoring
-							console.log(a);
 							if (a.answer == true) {
 								for (var scores in a.scoring) {
 									var s = a.scoring[scores]
@@ -306,8 +207,12 @@ angular.module('App')
 										$rootScope.questionsData.currentScore[scores] = null
 									} else if (typeof s == "string") {
 										$rootScope.questionsData.currentScore[scores] = s
-									} else if (!isNaN(s) && $rootScope.questionsData.currentScore[scores] != null) {
-										$rootScope.questionsData.currentScore[scores] = $rootScope.questionsData.currentScore[scores] + s
+									} else if (!isNaN(s)) {
+										if (scores in $rootScope.questionsData.currentScore) {
+											$rootScope.questionsData.currentScore[scores] = $rootScope.questionsData.currentScore[scores] + s
+										} else {
+											$rootScope.questionsData.currentScore[scores] = s
+										}
 									}
 								}
 							}
