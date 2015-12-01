@@ -411,7 +411,7 @@ header.header-desktop {
 
 .buttonnav-mobile {
    		text-transform: uppercase;
-   		margin: 40px auto 15px auto;
+   		margin: 20px auto 15px auto;
         text-align: center;
         a.banner {
             display: inline-block;
@@ -718,6 +718,17 @@ div[ng-class="fr_CA"] {
 	}
 }
 
+@media(max-width:1180px) and (min-width:1024px) {
+    .slidey {
+        div[ng-controller="SliderButtonsCtrl"] .answers-main-content {
+            &.answer-slider {
+                margin-top: 80px !important;
+                transition: all ease 1s; 
+            }
+        }
+    }    
+}
+
 /* Media Queries Start */
 /* Added by Jacoub Bondre Sept 8th 2015 */
 /* If time allots lets refactor progress bar styles into its own .scss file */
@@ -866,7 +877,6 @@ div[ng-class="fr_CA"] {
             }
         }
     }
-
 }
 @media(max-width:580px) {
     .app-content-main-top {
