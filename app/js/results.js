@@ -89,19 +89,6 @@ angular.module('App')
       }
   
 
-
-  $rootScope.setFirstColour = function (appliance) {
-    for (var c in appliance.colours) {
-      if (appliance.colours[c].colourCode == "BS" || appliance.colours[c].colourCode == "CS" || appliance.colours[c].colourCode == "SS" || appliance.colours[c].colourCode == "PA") {
-        if ("dryers" in appliance) appliance.colours[c].dryer = appliance.dryers[0];
-        return appliance.colours[c]
-      }
-    }
-    if ("dryers" in appliance) appliance.colours[0].dryer = appliance.dryers[0]
-    // console.log(appliance.colours[0])
-    return appliance.colours[0]
-  }
-
   $rootScope.setFirstColour = function (appliance) {
     var highestPrice = appliance.colours[0];
     for (var c in appliance.colours) {
