@@ -669,6 +669,21 @@
 	
 }
 
+.ranking .answer:hover {
+    .label-wrap {
+		background: url('../img/ranking-bg-white.png') no-repeat;
+        -webkit-box-shadow:inset 0px 0px 0px 10px #edb129;
+        -moz-box-shadow:inset 0px 0px 0px 10px #edb129;
+        box-shadow:inset 0px 0px 0px 10px #edb129;
+        background-position: 0 -2px;
+        background-size: 100% 100%;
+        background-color: white;
+	}
+    .label-text {
+        color: white;
+    }
+}
+
 @media(max-width: 580px) {
 	.answers-main-content > .rank-answers-list {
 		display: none !important;
