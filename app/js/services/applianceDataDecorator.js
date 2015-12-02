@@ -57,6 +57,7 @@ applianceDataDecorator.factory('$dataDecorator', ['$filter', function($filter) {
 					if (parseFloat(item.decibels) <= 47) {
 						item.quiet = true
 					}
+					item["placeSettings"+item.placeSettings] = true;
 					break;
 				case "Fridges":
 					if (item.capacity <= 20) {
