@@ -28,6 +28,7 @@ angular.module('App')
                 qs.text[0].answers[i].order = qs.text[0].answers[i].answer
             }
         }
+        $rootScope.controls.questionHasAnswer = true;
     }
 
     $scope.draggingListener = function(e) {
@@ -89,8 +90,6 @@ angular.module('App')
 
     $scope.sortable.dragControlListeners = {
         orderChanged: function(event) {
-            $rootScope.controls.questionHasAnswer = true
-
             for (var i in $rootScope.questionsData.question.show.answers) {
                 $rootScope.questionsData.question.show.answers[i].answer = i
             }
