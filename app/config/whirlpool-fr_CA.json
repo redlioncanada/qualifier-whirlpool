@@ -513,7 +513,7 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["pas une préoccupation","Somewhat a concern(FR)","plutôt importante","très importante"]
+					    "scale": ["pas une préoccupation","plus ou moins important","plutôt importante","très importante"]
 					},
 					"answers" : {
 						"0" : {
@@ -1075,7 +1075,7 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-speed-current.png",
 			"thumbnail_text" : "Speed",
-            "thumbnail_text_fr" : "Speed(FR)",
+            "thumbnail_text_fr" : "Vitesse",
 			"text" : [
 				{
 					"question" : "Êtes-vous souvent pressé lorsque vous faîtes la lessive?",
@@ -1580,8 +1580,7 @@
 			"thumbnail_text_fr" : "Taille",
 			"text" : [
 				{
-					"question" : "Nous avons le réfrigérateur parfait pour votre famille.",
-					"question_more" : "Il suffit de nous indiquer l’espace que vous avez à combler. ",
+					"question" : "Quelles sont les restrictions de hauteur et de largeur de votre réfrigérateur?",
 					"sub_question" : "Faites glisser et cliquez pour répondre",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de la taille?",
 					"explanation" : "Nos réfrigérateurs sont offerts en de nombreuses tailles; nous voulons nous assurer de recommander celui qui convient parfaitement à votre espace.",
@@ -2380,7 +2379,7 @@
 					    "step": 0.0001,
 					    "dimension" : "",
 					    "scale": [
-							"0<br />Maybe every<br />other week(FR)","","5","","10","","15+<br />J’ai perdu le compte"
+							"0<br />Environ chaque 2 semaines","","5","","10","","15+<br />J’ai perdu le compte"
 					    ]
 					},
 					"answers" : {
@@ -2466,7 +2465,7 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-cycles-current.png",
 			"thumbnail_text" : "Cycles",
-			"thumbnail_text_fr" : "Cycles(FR)",
+			"thumbnail_text_fr" : "Cycles",
 			"text" : [
 				{
 					"question" : "Quand mettez-vous habituellement le lave-vaisselle en marche?",
@@ -2707,7 +2706,7 @@
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "Hidden Controls(FR)",
+							"text" : "Entièrement intégrée",
 							"value" : "hidden",
 							"image" : "img/Dishwasher-Q7-hidden.jpg",
                             "image_alt" : "Console Entièrement Intégrée",
