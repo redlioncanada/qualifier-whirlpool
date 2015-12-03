@@ -236,13 +236,15 @@
 							"value" : 1,
 							"text" : "24\"",
 							"scoring" : {
+								"width23" : 10,
 								"width24" : 10,
-								"width25" : -30,
-								"width26" : -30,
-								"width27" : -30,
-								"width28" : -30,
-								"width29" : -30,
-								"width30" : -30
+								"width25" : 10,
+								"width26" : -50,
+								"width27" : -50,
+								"width28" : -50,
+								"width29" : -50,
+								"width30" : -50,
+								"width31" : -50
 							}
 						},
 						"2" : {
@@ -251,13 +253,15 @@
 							"value" : 2,
 							"text" : "27\"",
 							"scoring" : {
-								"width24" : -30,
-								"width25" : -30,
-								"width26" : -30,
+                                "width23" : -50,
+								"width24" : -50,
+								"width25" : -50,
+								"width26" : 10,
 								"width27" : 10,
-								"width28" : -30,
-								"width29" : -30,
-								"width30" : -30
+								"width28" : 10,
+								"width29" : -50,
+								"width30" : -50,
+								"width31" : -50
 							}
 						},
 						"3" : {
@@ -266,13 +270,15 @@
 							"value" : 3,
 							"text" : "30\"",
 							"scoring" : {
-								"width24" : -30,
-								"width25" : -30,
-								"width26" : -30,
-								"width27" : -30,
-								"width28" : -30,
-								"width29" : -30,
-								"width30" : 10
+                                "width23" : -50,
+								"width24" : -50,
+								"width25" : -50,
+								"width26" : -50,
+								"width27" : -50,
+								"width28" : -50,
+								"width29" : 10,
+								"width30" : 10,
+								"width31" : 10
 							}
 						}
 					}
@@ -303,7 +309,7 @@
 							"image" : "img/Walloven-Q2-single.jpg",
                             "image_alt" : "Wall Oven Single",
 							"scoring" : {
-								"single" : 5
+								"single" : 20
 							},
 							"order" : 1
 						},
@@ -315,7 +321,7 @@
                             "image" : "img/Walloven-Q2-combo.jpg",
 							"image_alt" : "Wall Oven Combo",
 							"scoring" : {
-								"combination" : 5
+								"combination" : 20
 							},
 							"order" : 2
 						},
@@ -327,7 +333,7 @@
 							"image" : "img/Walloven-Q2-double.jpg",
                             "image_alt" : "Wall Oven Double",
 							"scoring" : {
-								"double" : 5
+								"double" : 20
 							},
 							"order" : 3
 						},
@@ -368,8 +374,7 @@
 							"text" : "Space to cook large dishes",
 							"value" : "space",
 							"scoring" : {
-								"double" : 1,
-								"combination" : 1
+								"5CuFt" : 2
 							},
 							"order" : 1
 						},
@@ -656,7 +661,7 @@
 							"value" : 0,
 							"text" : "Lasagna",
 							"scoring" : {
-								"mediumCapacity" : 3
+								"mediumCapacity" : 5
 							}
 						},
 						"1" : {
@@ -665,7 +670,7 @@
 							"value" : 1,
 							"text" : "Casserole and shepherd’s pie for Sunday dinner",
 							"scoring" : {
-								"largeCapacity" : 3
+								"largeCapacity" : 5
 							}
 						},
 						"2" : {
@@ -674,7 +679,7 @@
 							"value" : 2,
 							"text" : "A feast for game night",
 							"scoring" : {
-								"largerCapacity" : 3
+								"largerCapacity" : 5
 							}
 						},
 						"3" : {
@@ -683,7 +688,7 @@
 							"value" : 3,
 							"text" : "Holiday roast",
 							"scoring" : {
-								"largestCapacity" : 3,
+								"largestCapacity" : 5,
                                 "maxCapacity" : 1
 							}
 						}
@@ -714,7 +719,7 @@
 							"value" : "family",
 							"scoring" : {
 								"double" : 1,
-								"warmingDrawer" : 1,
+								"warmingDrawer" : 2,
 								"rapidPreheat" : 1
 							},
 							"order" : 1
@@ -751,7 +756,7 @@
 							"scoring" : {
 								"electric" : 1,
 								"single" : 1,
-								"frozenBake" : 1
+								"frozenBake" : 2
 							},
 							"order" : 4
 						}
@@ -848,7 +853,7 @@
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "no",
 							"scoring" : {
-								"rearControl" : 15
+								"rearControl" : 20
 							},
 							"order" : 2
 						},	
@@ -860,7 +865,7 @@
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "yes",
 							"scoring": {
-								"frontControl" : 15
+								"frontControl" : 20
 							},
 							"order" : 1
 						},
@@ -872,7 +877,7 @@
 							"thumbnail_current" : "img/icon-style-current.png",
 							"value" : "nopref",
 							"scoring" : {
-								"frontControl" : 5
+								"frontControl" : 10
 							},
 							"order" : 3
 						}
@@ -1093,7 +1098,6 @@
 							"value" : "yes",
 							"scoring" : {
  								"quickWash" : 2,
- 								"quickDry" : 2,
  								"fanFresh" : 1,
  								"loadAndGo" : 1
 							},
@@ -1106,7 +1110,7 @@
 							"value" : "sometimes",
 							"scoring" : {
  								"quickWash" : 1,
- 								"quickDry" : 2
+ 								"loadAndGo" : 1
 							},
 							"order" : 2
 						},
@@ -1116,7 +1120,7 @@
 							"text" : "Only when there is an unexpected spill",
 							"value" : "not often",
 							"scoring" : {
- 								"quickDry" : 1
+ 								"quickWash" : 1
 							},
 							"order" : 3
 						},
@@ -1218,7 +1222,7 @@
 							"text" : "Stacked",
 							"value" : "Stacked",
 							"scoring" : {
-								 "frontLoad" : 13
+								 "frontLoad" : 10
 							},
 							"order" : 1
 						},
@@ -1603,6 +1607,7 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
+                                "5door" : 1
 							}
 						},
 						"1" : {
@@ -1612,17 +1617,17 @@
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
 								"width25" : 10,
-								"width26" : -30,
-								"width27" : -30,
-								"width28" : -30,
-								"width29" : -30,
-								"width30" : -30,
-								"width31" : -30,
-								"width32" : -30,
-								"width33" : -30,
-								"width34" : -30,
-								"width35" : -30,
-								"width36" : -30
+								"width26" : -100,
+								"width27" : -100,
+								"width28" : -100,
+								"width29" : -100,
+								"width30" : -100,
+								"width31" : -100,
+								"width32" : -100,
+								"width33" : -100,
+								"width34" : -100,
+								"width35" : -100,
+								"width36" : -100
 							}
 						},
 						"2" : {
@@ -1631,18 +1636,18 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
-								"width25" : 10,
+								"width25" : -100,
 								"width26" : 10,
 								"width27" : 10,
 								"width28" : 10,
-								"width29" : -30,
-								"width30" : -30,
-								"width31" : -30,
-								"width32" : -30,
-								"width33" : -30,
-								"width34" : -30,
-								"width35" : -30,
-								"width36" : -30
+								"width29" : -100,
+								"width30" : -100,
+								"width31" : -100,
+								"width32" : -100,
+								"width33" : -100,
+								"width34" : -100,
+								"width35" : -100,
+								"width36" : -100
 							}
 						},
 						"3" : {
@@ -1651,18 +1656,18 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
-								"width25" : 10,
-								"width26" : -30,
-								"width27" : -30,
-								"width28" : -30,
+								"width25" : -100,
+								"width26" : -100,
+								"width27" : -100,
+								"width28" : -100,
 								"width29" : 10,
-								"width30" : -30,
-								"width31" : -30,
-								"width32" : -30,
-								"width33" : -30,
-								"width34" : -30,
-								"width35" : -30,
-								"width36" : -30
+								"width30" : -100,
+								"width31" : -100,
+								"width32" : -100,
+								"width33" : -100,
+								"width34" : -100,
+								"width35" : -100,
+								"width36" : -100
 							}
 						},
 						"4" : {
@@ -1671,18 +1676,18 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
-								"width25" : 10,
-								"width26" : -30,
-								"width27" : -30,
-								"width28" : -30,
-								"width29" : -30,
+								"width25" : -100,
+								"width26" : -100,
+								"width27" : -100,
+								"width28" : -100,
+								"width29" : -100,
 								"width30" : 10,
-								"width31" : -30,
-								"width32" : -30,
-								"width33" : -30,
-								"width34" : -30,
-								"width35" : -30,
-								"width36" : -30
+								"width31" : -100,
+								"width32" : -100,
+								"width33" : -100,
+								"width34" : -100,
+								"width35" : -100,
+								"width36" : -100
 							}
 						},
 						"5" : {
@@ -1691,18 +1696,18 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
-								"width25" : -30,
-								"width26" : -30,
-								"width27" : -30,
-								"width28" : -30,
-								"width29" : -30,
-								"width30" : -30,
+								"width25" : -100,
+								"width26" : -100,
+								"width27" : -100,
+								"width28" : -100,
+								"width29" : -100,
+								"width30" : -100,
 								"width31" : 10,
-								"width32" : -30,
-								"width33" : -30,
-								"width34" : -30,
-								"width35" : -30,
-								"width36" : -30
+								"width32" : -100,
+								"width33" : -100,
+								"width34" : -100,
+								"width35" : -100,
+								"width36" : -100
 							}
 						},
 						"6" : {
@@ -1711,18 +1716,18 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
-								"width25" : -30,
-								"width26" : -30,
-								"width27" : -30,
-								"width28" : -30,
-								"width29" : -30,
-								"width30" : -30,
-								"width31" : -30,
+								"width25" : -100,
+								"width26" : -100,
+								"width27" : -100,
+								"width28" : -100,
+								"width29" : -100,
+								"width30" : -100,
+								"width31" : -100,
 								"width32" : 10,
 								"width33" : 10,
-								"width34" : -30,
-								"width35" : -30,
-								"width36" : -30
+								"width34" : -100,
+								"width35" : -100,
+								"width36" : -100
 							}
 						},
 						"7" : {
@@ -1731,15 +1736,15 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
-								"width25" : -30,
-								"width26" : -30,
-								"width27" : -30,
-								"width28" : -30,
-								"width29" : -30,
-								"width30" : -30,
-								"width31" : -30,
-								"width32" : -30,
-								"width33" : -30,
+								"width25" : -100,
+								"width26" : -100,
+								"width27" : -100,
+								"width28" : -100,
+								"width29" : -100,
+								"width30" : -100,
+								"width31" : -100,
+								"width32" : -100,
+								"width33" : -100,
 								"width34" : 10,
 								"width35" : 10,
 								"width36" : 10
@@ -1758,6 +1763,7 @@
                             "enabled" : true,
                             "enabledWhen" : [0,1,2,3,4,5,6,7],
                             "scoring" : {
+                                "5door" : 1
                             }
                         },
 						"63" : {
@@ -1766,7 +1772,7 @@
 							"enabled" : true,
 							"enabledWhen" : [0,1,2],
 							"scoring" : {
-								"height63" : 5
+								"height63" : 10
 							}
 						},
 						"66" : {
@@ -1775,7 +1781,7 @@
 							"enabled" : true,
 							"enabledWhen" : [0,3,4,6],
 							"scoring" : {
-								 "height66" : 5
+								 "height66" : 10
 							}
 						},
 						"67" : {
@@ -1784,7 +1790,7 @@
 							"enabled" : true,
 							"enabledWhen" : [0,4,5,6],
 							"scoring" : {
-								 "height67" : 5
+								 "height67" : 10
 							}
 						},
 						"69" : {
@@ -1793,7 +1799,7 @@
 							"enabled" : true,
 							"enabledWhen" : [0,4,7],
 							"scoring" : {
-								 "height69" : 5
+								 "height69" : 10
 							}
 						},
 						"71" : {
@@ -1802,7 +1808,7 @@
 							"enabled" : true,
 							"enabledWhen" : [0,6,7],
 							"scoring" : {
-								 "height71" : 5
+								 "height71" : 10
 							}
 						}
 					}								
@@ -1857,7 +1863,7 @@
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"text" : "Somewhat important",
 							"scoring" : {
-								"energyStar" : 2
+								"energyStar" : 3
 							}
 						},
 						"3" : {
@@ -1866,7 +1872,7 @@
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"text" : "Very important",
 							"scoring" : {
-								"energyStar" : 3
+								"energyStar" : 5
 							}
 						}
 					}
@@ -1895,7 +1901,6 @@
 							"text" : "Myself, to keep me fueled all week",
 							"value" : "myself",
 							"scoring" : {
-								"smallCapacity" : 3
 							},
 							"order" : 1
 						},
@@ -1905,7 +1910,7 @@
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
 							"scoring" : {
-								"mediumCapacity" : 3
+								"mediumCapacity" : 10
 							},
 							"order" : 2
 						},
@@ -1915,7 +1920,8 @@
 							"text" : "My family, from lasagna night to<br />Sunday roasts, we’re a hungry bunch",
 							"value" : "family",
 							"scoring" : {
-								"largeCapacity" : 3
+								"largeCapacity" : 10,
+                                "5door" : 3
 							},
 							"order" : 3
 						},
@@ -1925,7 +1931,8 @@
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
 							"scoring" : {
-								"largestCapacity" : 3
+								"largestCapacity" : 10,
+                                "5door" : 4
 							},
 							"order" : 4
 						},
@@ -1935,7 +1942,8 @@
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
 							"scoring" : {
-								"largestCapacity" : 5
+								"largestCapacity" : 10,
+                                "5door" : 6
 							},
 							"order" : 5
 						}
@@ -1976,7 +1984,6 @@
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
 							"scoring" : {
-								"sideBySide" : 1,
 								"frenchDoor" : 1,
                                 "4door" : 1,
                                 "5door" : 1
@@ -2000,7 +2007,7 @@
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
 							"scoring" : {
-								"4or5door" : 1,
+								"4door" : 1,
 								"5door" : 2
 							},
 							"order" : 4
@@ -2043,9 +2050,9 @@
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
 							"scoring" : {
-								"filtered" : -15,
-								"exteriorDispenser" : -15,
-								"indoorDispenser" : -15
+								"filtered" : -30,
+								"exteriorDispenser" : -30,
+								"indoorDispenser" : -30
 							},
 							"order" : 2
 						},
@@ -2055,9 +2062,9 @@
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
 							"scoring" : {
-								"filtered" : 1,
-								"exteriorDispenser" : 1,
-								"indoorDispenser" : 1
+								"filtered" : 2,
+								"exteriorDispenser" : 2,
+								"indoorDispenser" : 2
 							},
 							"order" : 3
 						},
@@ -2096,7 +2103,6 @@
 							"text" : "Perfectly organized",
 							"value" : "perfect",
 							"scoring" : {
-								"sideBySide" : 1,
 								"4door" : 1,
 								"5door" : 1
 							},
@@ -2109,7 +2115,7 @@
 							"value" : "organized",
 							"scoring" : {
 								"5door" : 2,
-								"4or5door" : 2
+								"4door" : 2
 							},
 							"order" : 2
 						},
@@ -2119,7 +2125,6 @@
 							"text" : "Disorganized with lots of stuff",
 							"value" : "disorganized",
 							"scoring" : {
-								"sideByside" : 1,
 								"frenchDoor" : 1
 							},
 							"order" : 3
@@ -2389,8 +2394,7 @@
 							"value" : 0,
 							"text" : "0 - Maybe every other week",
 							"scoring" : {
-								"placeSettings13": 5,
-								"placeSettings14": 5,
+								"placeSettings8": 5,
 								"compactTallTub": 3
 							}
 						},
@@ -2400,9 +2404,8 @@
 							"value" : 2.5,
 							"text" : "2.5",
 							"scoring" : {
-								"placeSettings13": 5,
-								"placeSettings14": 5,
-								"compactTallTub": 3
+								"placeSettings12": 5,
+								"compactTallTub": 2
 							}
 						},
 						"5" : {
@@ -2411,8 +2414,8 @@
 							"value" : 5,
 							"text" : "5",
 							"scoring" : {
-								"placeSettings14": 5,
-								"placeSettings15": 3
+								"placeSettings13": 5,
+								"placeSettings12": 5
 							}
 						},
 						"7" : {
@@ -2421,8 +2424,8 @@
 							"value" : 7.5,
 							"text" : "7.5",
 							"scoring" : {
-								"placeSettings14": 5,
-								"placeSettings15": 3
+								"placeSettings13": 5,
+								"placeSettings15": 5
 							}
 						},
 						"10" : {
@@ -2432,7 +2435,7 @@
 							"text" : "10",
 							"scoring" : {
 								"placeSettings15": 5,
-								"placeSettings16": 3
+								"placeSettings16": 5
 							}
 						},
 						"12" : {
@@ -2442,7 +2445,7 @@
 							"text" : "12.5",
 							"scoring" : {
 								"placeSettings15": 5,
-								"placeSettings16": 3
+								"placeSettings16": 5
 							}
 						},
 						"15" : {
@@ -2451,7 +2454,6 @@
 							"value" : 15,
 							"text" : "15+<br />I've lost count",
 							"scoring" : {
-								"placeSettings15": 3,
 								"placeSettings16": 5
 							}
 						}
@@ -2542,7 +2544,7 @@
                             "image_alt" : "Yes",
 							"value" : "yes",
 							"scoring" : {
-								 "quiet" : 5
+								 "quiet" : 3
 							},
 							"order" : 1
 						},
@@ -2647,7 +2649,7 @@
                             "image_alt" : "Dishwasher Full and Tidy",
 							"scoring" : {
 								"anyWarePlusBasket" : 2,
-								"ez2Lift" : 1
+								"ez2Lift" : 2
 							},
 							"order" : 1
 						},
@@ -2715,8 +2717,8 @@
 							"image" : "img/Dishwasher-Q7-hidden.jpg",
                             "image_alt" : "Dishwasher Hidden Control",
 							"scoring" : {
-								"FID" : 5,
-								"frontConsole" : -5
+								"FID" : 10,
+								"frontConsole" : -10
 							},
 							"order" : 1
 						},
@@ -2728,8 +2730,8 @@
 							"image" : "img/Dishwasher-Q7-front.jpg",
                             "image_alt" : "Dishwasher Front Control",
 							"scoring" : {
-								"frontConsole" : 5,
-								"FID" : -5
+								"frontConsole" : 10,
+								"FID" : -10
 							},
 							"order" : 2
 						},
@@ -2741,7 +2743,8 @@
 							"image" : "img/Dishwasher-Q7-nopreference.jpg",
                             "image_alt" : "Dishwasher No Preference",
 							"scoring" : {
-								"FID" : 1
+								"FID" : 5,
+                                "frontConsole" : -5
 							},
 							"order" : 3
 						}
@@ -2788,19 +2791,20 @@
 							"value" : 1,
 							"text" : "24\"",
 							"scoring" : {
+								"width23" : 10,
 								"width24" : 10,
-								"width25" : -30,
-								"width26" : -30,
-								"width27" : -30,
-								"width28" : -30,
-								"width29" : -30,
-								"width30" : -30,
-								"width31" : -30,
-								"width32" : -30,
-								"width33" : -30,
-								"width34" : -30,
-								"width35" : -30,
-								"width36" : -30
+								"width25" : 10,
+								"width26" : -50,
+								"width27" : -50,
+								"width28" : -50,
+								"width29" : -50,
+								"width30" : -50,
+								"width31" : -50,
+								"width32" : -50,
+								"width33" : -50,
+								"width34" : -50,
+								"width35" : -50,
+								"width36" : -50
 							}
 						},
 						"3" : {
@@ -2809,19 +2813,19 @@
 							"value" : 2,
 							"text" : "30\"",
 							"scoring" : {
-								"width24" : -30,
-								"width25" : -30,
-								"width26" : -30,
-								"width27" : -30,
-								"width28" : -30,
-								"width29" : -30,
+								"width24" : -50,
+								"width25" : -50,
+								"width26" : -50,
+								"width27" : -50,
+								"width28" : -50,
+								"width29" : 10,
 								"width30" : 10,
-								"width31" : -30,
-								"width32" : -30,
-								"width33" : -30,
-								"width34" : -30,
-								"width35" : -30,
-								"width36" : -30
+								"width31" : 10,
+								"width32" : -50,
+								"width33" : -50,
+								"width34" : -50,
+								"width35" : -50,
+								"width36" : -50
 							}
 						},
 						"4" : {
@@ -2830,19 +2834,20 @@
 							"value" : 3,
 							"text" : "36\"",
 							"scoring" : {
-								"width24" : -30,
-								"width25" : -30,
-								"width26" : -30,
-								"width27" : -30,
-								"width28" : -30,
-								"width29" : -30,
-								"width30" : -30,
-								"width31" : -30,
-								"width32" : -30,
-								"width33" : -30,
-								"width34" : -30,
-								"width35" : -30,
-								"width36" : 10
+								"width24" : -50,
+								"width25" : -50,
+								"width26" : -50,
+								"width27" : -50,
+								"width28" : -50,
+								"width29" : -50,
+								"width30" : -50,
+								"width31" : -50,
+								"width32" : -50,
+								"width33" : -50,
+								"width34" : -50,
+								"width35" : 10,
+								"width36" : 10,
+								"width37" : 10
 							}
 						}
 					}
@@ -2887,7 +2892,9 @@
 							"image" : "img/Cooktops-Q2-professional.jpg",
                             "image_alt" : "Cooktops Professional",
 							"scoring" : {
-								"gas" : 5
+								"induction" : -5,
+								"electric" : -5,
+								"gas": 5
 							},
 							"order" : 2
 						}
@@ -2996,7 +3003,7 @@
 							"value" : "yes",
                             "scoring" : {
 								"gas" : 3,
-                                "electric": -10
+                                "electric": -20
 							},
 							"order" : 1
 						},
@@ -3010,7 +3017,7 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "no",
 							"scoring" : {
-								"gas" : -15
+								"gas" : -30
 							},
 							"order" : 2
 						}
@@ -3042,13 +3049,13 @@
 							"text" : "30\" or less",
 							"value" : "wall",
 							"scoring" : {
-								"width30" : 5,
-								"width31" : -30,
-								"width32" : -30,
-								"width33" : -30,
-								"width34" : -30,
-								"width35" : -30,
-								"width36" : -30
+								"width24" : 5,
+								"width25" : 5,
+								"width26" : 5,
+								"width27" : 5,
+								"width28" : 5,
+								"width29" : 5,
+								"width30" : 5
 							},
 							"order" : 1
 						},
@@ -3059,13 +3066,9 @@
 							"text" : "36\" or more",
 							"value" : "island",
 							"scoring" : {
-								"width30" : -30,
-								"width31" : -30,
-								"width32" : -30,
-								"width33" : -30,
-								"width34" : -30,
-								"width35" : -30,
-								"width36" : 5
+                                "width35": 5,
+								"width36": 5,
+								"width37": 5
 							},
 							"order" : 2
 						}
@@ -3097,8 +3100,7 @@
 							"value" : "wall",
 							"scoring" : {
 								"islandMount" : -30,
-								"wallMount":1,
-								"underCabinet":1
+								"wallMount": 5
 							},
 							"order" : 1
 						},
@@ -3109,9 +3111,8 @@
 							"text" : "On an island",
 							"value" : "island",
 							"scoring" : {
-								"islandMount" : 1,
-								"wallMount":-30,
-								"underCabinet":-30
+								"islandMount" : 5,
+								"wallMount": -30
 							},
 							"order" : 2
 						}
@@ -3142,7 +3143,7 @@
 							"text" : "Yes",
 							"value" : "high speed",
 							"scoring" : {
-								"340CFMOrHigher" : 1
+								"340CFMOrHigher" : 10
 							},
 							"order" : 1
 						},
@@ -3227,8 +3228,8 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "yes",
 							"scoring" : {
-                                "exterior": 2,
-                                "nonVented": -1
+                                "exterior": 5,
+                                "nonVented": -30
 							},
 							"order" : 1
 						},
@@ -3238,9 +3239,9 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "no",
 							"scoring" : {
-                                "nonVented": 2,
-                                "convertible": 2,
-                                "exterior": -10
+                                "nonVented": 5,
+                                "convertible": 5,
+                                "exterior": -30
 							},
 							"order" : 2
 						},
@@ -3250,8 +3251,8 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "i am no sure",
 							"scoring" : {
-								"easyConversion": 2,
-								"convertible": 2
+								"easyConversion": 5,
+								"convertible": 5
 							},
 							"order" : 3
 						}
@@ -3282,7 +3283,7 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "yes",
 							"scoring" : {
-								 "microWaveHoodCombination": 3
+								 "microWaveHoodCombination": 5
 							},
 							"order" : 1
 						},
