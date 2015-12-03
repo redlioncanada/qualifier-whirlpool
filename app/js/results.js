@@ -118,7 +118,7 @@ angular.module('App')
     function objectInArrayHasKeyValue(obj,k,v) {
       for (var i in obj) {
           if (!(k in obj[i])) continue;
-          if (obj[i][k] == v) {console.log('true');return true;}
+          if (obj[i][k] == v) {return true;}
       }
       return false;
     }
