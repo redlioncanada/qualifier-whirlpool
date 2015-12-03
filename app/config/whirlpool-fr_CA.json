@@ -27,7 +27,7 @@
         "emailNameTitle" : "Pour :",
         "emailNamePlaceholder" : "Nom",
         "emailAddressTitle" : "À partir de :",
-        "emailAddressPlaceholder" : "ami@gmail.com",
+        "emailAddressPlaceholder" : "ami@email.com",
         "emailSubject" : "J'ai trouvé le(a) parfait(e) {{appliance}} et souhaiterais partager cela avec toi.",
         "emailMessage" : "C'est difficile de trouver l'électroménager idéal. Mais en utilisant le nouvel outil de sélection de Whirlpool, j'ai simplement répondu à quelques questions et j'ai trouvé le(a) {{appliance}} idéal(e) pour mon style de vie. J’aimerais partager mes résultats ainsi que le lien pour que tu puisses l'explorer toi aussi. \r\n\r\nEssaie par toi-même ici : {{fakelink}}",
         "emailMessagePlaceholder" : "Saisir un message",
@@ -220,14 +220,14 @@
 						"to" : 3,
 					    "step": 0.0001,
 					    "dimension_label" : "Largeur",
-					    "scale": ["Any Size(FR)","24\"","27\"","30\""]
+					    "scale": ["Aucune restriction","24\"","27\"","30\""]
 					},
                     "answers" : {
                         "0" : {
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "value" : 0,
-                            "text" : "Any size(FR)",
+                            "text" : "Aucune restriction",
                             "scoring" : {
                             }
                         },
@@ -252,10 +252,13 @@
                             "value" : 2,
                             "text" : "27\"",
                             "scoring" : {
+                                "width24" : -30,
+                                "width25" : -30,
+                                "width26" : -30,
                                 "width27" : 10,
-								"width28" : -30,
-								"width29" : -30,
-								"width30" : -30
+                                "width28" : -30,
+                                "width29" : -30,
+                                "width30" : -30
                             }
                         },
                         "3" : {
@@ -264,6 +267,12 @@
                             "value" : 3,
                             "text" : "30\"",
                             "scoring" : {
+                                "width24" : -30,
+                                "width25" : -30,
+                                "width26" : -30,
+                                "width27" : -30,
+                                "width28" : -30,
+                                "width29" : -30,
                                 "width30" : 10
                             }
                         }
@@ -348,7 +357,7 @@
 			"text" : [
 				{
 					"question" : "Lorsque vous magasinez un four encastré, qu’est-ce qui est le plus important pour vous?",
-					"sub_question" : "Faîtes glisser pour reclasser les caractéristiques : 1 correspond à la plus importante et 5 à la moins importante",
+					"sub_question" : "Faîtes glisser pour reclasser les caractéristiques : <span>1</span> correspond à la plus importante et <span>5</span> à la moins importante",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de mes préférences?",
 					"explanation" : "En comprenant vos priorités en matière de cuisson, nous pouvons mieux déterminer les caractéristiques qui conviennent à votre style de vie.",
 					"type" : "rank",
@@ -554,7 +563,7 @@
 			"text" : [
 				{
 					"question" : "Lorsque vous magasinez une cuisinière, quelles caractéristiques vous importent le plus? ",
-					"sub_question" : "Faites glisser pour reclasser par ordre d’omportance, 1 étant  la caractéristique la plus importante et 5 à la moins importante",
+					"sub_question" : "Faites glisser pour reclasser par ordre d’omportance, <span>1</span> étant  la caractéristique la plus importante et <span>5</span> à la moins importante",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de mes préférences?",
 					"explanation" : "En comprenant vos priorités en matière de cuisson, nous pouvons mieux déterminer les caractéristiques qui conviennent à votre style de vie.",
 					"type" : "rank",
@@ -898,7 +907,8 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "yes",
 							"scoring": {
-								"gas" : 3
+								"gas" : 3,
+                                "electric": -10
 							},
 							"order" : 1
 						},
@@ -959,8 +969,7 @@
 							"value" : 2,
 							"text" : "1-2",
 							"scoring" : {
-								"smallCapacity" : 15,
-								"mediumCapacity" : 10
+								"smallCapacity" : 15
 							}
 						},
 						"3" : {
@@ -969,8 +978,7 @@
 							"value" : 3,
 							"text" : "3-4",
 							"scoring" : {
-								"mediumCapacity" : 15,
-								"largeCapacity" : 10
+								"mediumCapacity" : 15
 							}
 						},
 						"4" : {
@@ -979,8 +987,7 @@
 							"value" : 4,
 							"text" : "5-6",
 							"scoring" : {
-								"largeCapacity" : 15,
-								"largerCapacity" : 10
+								"largeCapacity" : 15
 							}
 						},
 						"5" : {
@@ -1624,6 +1631,9 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
+								"width25" : -30,
+								"width26" : 10,
+								"width27" : 10,
 								"width28" : 10,
 								"width29" : -30,
 								"width30" : -30,
@@ -1641,6 +1651,10 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
+								"width25" : -30,
+								"width26" : -30,
+								"width27" : -30,
+								"width28" : -30,
 								"width29" : 10,
 								"width30" : -30,
 								"width31" : -30,
@@ -1657,6 +1671,11 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
+								"width25" : -30,
+								"width26" : -30,
+								"width27" : -30,
+								"width28" : -30,
+								"width29" : -30,
 								"width30" : 10,
 								"width31" : -30,
 								"width32" : -30,
@@ -1672,6 +1691,12 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
+								"width25" : -30,
+								"width26" : -30,
+								"width27" : -30,
+								"width28" : -30,
+								"width29" : -30,
+								"width30" : -30,
 								"width31" : 10,
 								"width32" : -30,
 								"width33" : -30,
@@ -1686,6 +1711,14 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
+								"width25" : -30,
+								"width26" : -30,
+								"width27" : -30,
+								"width28" : -30,
+								"width29" : -30,
+								"width30" : -30,
+								"width31" : -30,
+								"width32" : 10,
 								"width33" : 10,
 								"width34" : -30,
 								"width35" : -30,
@@ -1698,6 +1731,17 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
+								"width25" : -30,
+								"width26" : -30,
+								"width27" : -30,
+								"width28" : -30,
+								"width29" : -30,
+								"width30" : -30,
+								"width31" : -30,
+								"width32" : -30,
+								"width33" : -30,
+								"width34" : 10,
+								"width35" : 10,
 								"width36" : 10
 							}
 						}
@@ -1851,8 +1895,7 @@
 							"text" : "ma propre personne, pour bien m’alimenter pendant toute la semaine",
 							"value" : "myself",
 							"scoring" : {
-								"smallCapacity" : 3,
-								"mediumCapacity" : 1
+								"smallCapacity" : 3
 							},
 							"order" : 1
 						},
@@ -1862,8 +1905,7 @@
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
 							"scoring" : {
-								"mediumCapacity" : 3,
-                                "largeCapacity" : 1
+								"mediumCapacity" : 3
 							},
 							"order" : 2
 						},
@@ -1873,8 +1915,7 @@
 							"text" : "ma famille; de la soirée lasagne aux rôtis du dimanche, nous sommes une bande d’affamés",
 							"value" : "family",
 							"scoring" : {
-								"largeCapacity" : 3,
-                                "largestCapacity" : 1
+								"largeCapacity" : 3
 							},
 							"order" : 3
 						},
@@ -2735,6 +2776,14 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"value" : 0,
+							"text" : "Any size",
+							"scoring" : {
+							}
+						},
+						"1" : {
+							"thumbnail" : "img/icon-size.png",
+							"thumbnail_current" : "img/icon-size-current.png",
+							"value" : 1,
 							"text" : "24 po",
 							"scoring" : {
 								"width24" : 10,
@@ -2752,12 +2801,18 @@
 								"width36" : -30
 							}
 						},
-						"1" : {
+						"2" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 1,
+							"value" : 2,
 							"text" : "30 po",
 							"scoring" : {
+								"width24" : -30,
+								"width25" : -30,
+								"width26" : -30,
+								"width27" : -30,
+								"width28" : -30,
+								"width29" : -30,
 								"width30" : 10,
 								"width31" : -30,
 								"width32" : -30,
@@ -2767,21 +2822,25 @@
 								"width36" : -30
 							}
 						},
-						"2" : {
-							"thumbnail" : "img/icon-size.png",
-							"thumbnail_current" : "img/icon-size-current.png",
-							"value" : 2,
-							"text" : "36 po",
-							"scoring" : {
-								"width36" : 10
-							}
-						},
 						"3" : {
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"value" : 3,
-							"text" : "Any size",
+							"text" : "36 po",
 							"scoring" : {
+								"width24" : -30,
+								"width25" : -30,
+								"width26" : -30,
+								"width27" : -30,
+								"width28" : -30,
+								"width29" : -30,
+								"width30" : -30,
+								"width31" : -30,
+								"width32" : -30,
+								"width33" : -30,
+								"width34" : -30,
+								"width35" : -30,
+								"width36" : 10
 							}
 						}
 					}
@@ -2844,7 +2903,7 @@
 			"text" : [
 				{
 					"question" : "Lorsque vous magasiner une table de cuisson, quelles caractéristiques vous importent le plus?",
-					"sub_question" : "Faites glisser pour reclasser par ordre d’omportance, 1 étant  la caractéristique la plus importante et 5 à la moins importante",
+					"sub_question" : "Faites glisser pour reclasser par ordre d’omportance, <span>1</span> étant  la caractéristique la plus importante et <span>5</span> à la moins importante",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de ces caractéristiques?",
 					"explanation" : "En comprenant ce qui vous importe le plus, nous pouvons vous aider à choisir la table de cuisson qui répond le mieux à vos besoins.",
 					"type" : "rank",
@@ -2934,7 +2993,8 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "yes",
                             "scoring" : {
-								"gas" : 3
+								"gas" : 3,
+                                "electric": -10
 							},
 							"order" : 1
 						},
@@ -2997,6 +3057,12 @@
 							"text" : "36 po ou plus",
 							"value" : "island",
 							"scoring" : {
+								"width30" : -30,
+								"width31" : -30,
+								"width32" : -30,
+								"width33" : -30,
+								"width34" : -30,
+								"width35" : -30,
 								"width36" : 5
 							},
 							"order" : 2

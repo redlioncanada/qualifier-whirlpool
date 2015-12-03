@@ -26,7 +26,7 @@
 		"emailNameTitle" : "To:",
 		"emailNamePlaceholder" : "Your name",
 		"emailAddressTitle" : "From:",
-		"emailAddressPlaceholder" : "yourfriend@gmail.com",
+		"emailAddressPlaceholder" : "yourfriend@email.com",
 		"emailSubject" : "I found the perfect {{appliance}} and wanted to share with you",
 		"emailMessage" : "Finding the right appliance is hard. But I used {{brand}}'s new tool to answer a few simple questions and found the perfect {{appliance}} for my lifestyle. I wanted to share my results with you and also the link so you can explore, too!\r\n\r\nTry it for yourself here: {{fakelink}}",
 		"emailMessagePlaceholder" : "Enter a message",
@@ -251,6 +251,9 @@
 							"value" : 2,
 							"text" : "27\"",
 							"scoring" : {
+								"width24" : -30,
+								"width25" : -30,
+								"width26" : -30,
 								"width27" : 10,
 								"width28" : -30,
 								"width29" : -30,
@@ -263,6 +266,12 @@
 							"value" : 3,
 							"text" : "30\"",
 							"scoring" : {
+								"width24" : -30,
+								"width25" : -30,
+								"width26" : -30,
+								"width27" : -30,
+								"width28" : -30,
+								"width29" : -30,
 								"width30" : 10
 							}
 						}
@@ -347,7 +356,7 @@
 				{
 					"question" : "When shopping for a wall oven,<br />what's most important to you?",
                     "question_full" : "When shopping for a wall oven, what's most important to you?",
-					"sub_question" : "Drag to reorder: 1 is most important and 6 is least",
+					"sub_question" : "Drag to reorder: <span>1</span> is most important and <span>5</span> is least",
 					"explanation_title" : "Why are you asking me about my preferences?",
 					"explanation" : "By understanding your cooking priorities, we can better understand what features you need that will suit your lifestyle.",
 					"type" : "rank",
@@ -553,7 +562,7 @@
 				{
 					"question" : "When shopping for a range, what<br />features are most important to you?",
                     "question_full" : "When shopping for a range, what features are most important to you?",
-					"sub_question" : "Drag to reorder: 1 is most important and 5 is least",
+					"sub_question" : "Drag to reorder: <span>1</span> is most important and <span>5</span> is least",
 					"explanation_title" : "Why are you asking me about preference?",
 					"explanation" : "By understanding your cooking priorities, we can better understand what features you need to suit your lifestyle.",
 					"type" : "rank",
@@ -898,7 +907,8 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "yes",
 							"scoring": {
-								"gas" : 3
+								"gas" : 3,
+                                "electric": -10
 							},
 							"order" : 1
 						},
@@ -960,8 +970,7 @@
 							"value" : 2,
 							"text" : "1-2",
 							"scoring" : {
-								"smallCapacity" : 15,
-								"mediumCapacity" : 10
+								"smallCapacity" : 15
 							}
 						},
 						"3" : {
@@ -970,8 +979,7 @@
 							"value" : 3,
 							"text" : "3-4",
 							"scoring" : {
-								"mediumCapacity" : 15,
-								"largeCapacity" : 10
+								"mediumCapacity" : 15
 							}
 						},
 						"4" : {
@@ -980,8 +988,7 @@
 							"value" : 4,
 							"text" : "5-6",
 							"scoring" : {
-								"largeCapacity" : 15,
-								"largerCapacity" : 10
+								"largeCapacity" : 15
 							}
 						},
 						"5" : {
@@ -1624,6 +1631,9 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
+								"width25" : 10,
+								"width26" : 10,
+								"width27" : 10,
 								"width28" : 10,
 								"width29" : -30,
 								"width30" : -30,
@@ -1641,6 +1651,10 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
+								"width25" : 10,
+								"width26" : -30,
+								"width27" : -30,
+								"width28" : -30,
 								"width29" : 10,
 								"width30" : -30,
 								"width31" : -30,
@@ -1657,6 +1671,11 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
+								"width25" : 10,
+								"width26" : -30,
+								"width27" : -30,
+								"width28" : -30,
+								"width29" : -30,
 								"width30" : 10,
 								"width31" : -30,
 								"width32" : -30,
@@ -1672,6 +1691,12 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
+								"width25" : -30,
+								"width26" : -30,
+								"width27" : -30,
+								"width28" : -30,
+								"width29" : -30,
+								"width30" : -30,
 								"width31" : 10,
 								"width32" : -30,
 								"width33" : -30,
@@ -1686,6 +1711,14 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
+								"width25" : -30,
+								"width26" : -30,
+								"width27" : -30,
+								"width28" : -30,
+								"width29" : -30,
+								"width30" : -30,
+								"width31" : -30,
+								"width32" : 10,
 								"width33" : 10,
 								"width34" : -30,
 								"width35" : -30,
@@ -1698,6 +1731,17 @@
 							"thumbnail" : "img/icon-size.png",
 							"thumbnail_current" : "img/icon-size-current.png",
 							"scoring" : {
+								"width25" : -30,
+								"width26" : -30,
+								"width27" : -30,
+								"width28" : -30,
+								"width29" : -30,
+								"width30" : -30,
+								"width31" : -30,
+								"width32" : -30,
+								"width33" : -30,
+								"width34" : 10,
+								"width35" : 10,
 								"width36" : 10
 							}
 						}
@@ -1851,8 +1895,7 @@
 							"text" : "Myself, to keep me fueled all week",
 							"value" : "myself",
 							"scoring" : {
-								"smallCapacity" : 3,
-								"mediumCapacity" : 1
+								"smallCapacity" : 3
 							},
 							"order" : 1
 						},
@@ -1862,8 +1905,7 @@
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
 							"scoring" : {
-								"mediumCapacity" : 3,
-                                "largeCapacity" : 1
+								"mediumCapacity" : 3
 							},
 							"order" : 2
 						},
@@ -1873,8 +1915,7 @@
 							"text" : "My family, from lasagna night to<br />Sunday roasts, we’re a hungry bunch",
 							"value" : "family",
 							"scoring" : {
-								"largeCapacity" : 3,
-                                "largestCapacity" : 1
+								"largeCapacity" : 3
 							},
 							"order" : 3
 						},
@@ -2768,6 +2809,12 @@
 							"value" : 2,
 							"text" : "30\"",
 							"scoring" : {
+								"width24" : -30,
+								"width25" : -30,
+								"width26" : -30,
+								"width27" : -30,
+								"width28" : -30,
+								"width29" : -30,
 								"width30" : 10,
 								"width31" : -30,
 								"width32" : -30,
@@ -2783,6 +2830,18 @@
 							"value" : 3,
 							"text" : "36\"",
 							"scoring" : {
+								"width24" : -30,
+								"width25" : -30,
+								"width26" : -30,
+								"width27" : -30,
+								"width28" : -30,
+								"width29" : -30,
+								"width30" : -30,
+								"width31" : -30,
+								"width32" : -30,
+								"width33" : -30,
+								"width34" : -30,
+								"width35" : -30,
 								"width36" : 10
 							}
 						}
@@ -2846,7 +2905,7 @@
 				{
 					"question" : "When shopping for a cooktop, what features are most important to you?",
 					"question_full" : "When shopping for a cooktop, what features are most important to you?",
-					"sub_question" : "Drag to reorder: 1 is most important and 5 is least",
+					"sub_question" : "Drag to reorder: <span>1</span> is most important and <span>5</span> is least",
 					"explanation_title" : "Why are you asking me about these features?",
 					"explanation" : "By understanding what matters most, we can help you choose the best cooktop for your needs.",
 					"type" : "rank",
@@ -2936,7 +2995,8 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "yes",
                             "scoring" : {
-								"gas" : 3
+								"gas" : 3,
+                                "electric": -10
 							},
 							"order" : 1
 						},
@@ -2999,6 +3059,12 @@
 							"text" : "36\" or more",
 							"value" : "island",
 							"scoring" : {
+								"width30" : -30,
+								"width31" : -30,
+								"width32" : -30,
+								"width33" : -30,
+								"width34" : -30,
+								"width35" : -30,
 								"width36" : 5
 							},
 							"order" : 2
