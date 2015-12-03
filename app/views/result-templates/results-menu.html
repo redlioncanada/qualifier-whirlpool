@@ -10,7 +10,7 @@
                     <div><img ng-src="img/icon-{{q.thumbnail_text.replace(' ','').toLowerCase()}}{{(q.name == questionsData.question.name) && '-current' || '' }}.png" /></div>
 		    	</div>
 
-		    	<div data-ga-label><div>{{q.text[0].question_full}}</div></div>
+		    	<div class="name" data-name="{{q.name}}" data-ga-label><div>{{(q.text[0].question_full) ? q.text[0].question_full : q.text[0].question }}</div></div>
 			</li>
 		</ul>
 	</div>

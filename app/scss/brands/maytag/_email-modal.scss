@@ -208,3 +208,28 @@ $accentColor: #f0b213;
 		background-color: #DDD;
 	}
 }
+
+.modal-content:lang(fr) {
+        .modal-header {
+            .modal-title-accent {
+                position: absolute;
+                top: 24px;
+                z-index: 3;
+            }
+            .modal-title {
+                font-size: 9pt;
+            }
+        }
+    }
+
+
+.modal-body:lang(fr) {
+    .input-wrapper {
+        .email {
+            padding-left: 45px !important;
+        }
+        .name {
+            padding-left: 85px !important;
+        }
+    }
+}
