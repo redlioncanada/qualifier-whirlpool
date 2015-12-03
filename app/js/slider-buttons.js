@@ -4,6 +4,21 @@ angular.module('App')
   .controller('SliderButtonsCtrl', function ($scope, $rootScope, $timeout, $element) {
     // jslider-value
 
+    $rootScope.$watch('navigateTo', function() {
+      if ($rootScope.navigateTo == $scope.question.name) {
+        //navigating to this element
+        $timeout(function(){
+          $scope.setBackground()
+        });
+      }
+    });
+
+    $rootScope.$watch('navigateFrom', function() {
+      if ($rootScope.navigateTo == $scope.name) {
+        //navigating from this element
+      }
+    });
+
     $timeout(function(){
       $($element).find('.jslider:not(.vertical) td').append('<div class="jslider-true-bg"><div></div><img src="img/slider-true-bg.png"/></div>');
       $($element).find('.jslider.vertical td').append('<div class="jslider-true-bg"><div></div><img src="img/slider-true-bg-vertical.png"/></div>');
@@ -11,6 +26,7 @@ angular.module('App')
        $scope.sliderIndicator = $($element).find('.jslider:not(.vertical) .jslider-pointer').eq(0);
        $scope.sliderBackgroundVertical = $($element).parent().find('.vertical .jslider-true-bg div');
        $scope.sliderIndicatorVertical = $($element).parent().find('.vertical .jslider-pointer').eq(0);
+       $timeout(function(){$scope.setBackground();},100);
     })
 
     $scope.setAnswer = function () {
@@ -34,7 +50,18 @@ angular.module('App')
         $scope.setAnswer();
     }
 
+    $scope.setBackground = function() {
+      var left = parseFloat($($scope.sliderIndicator).css('left'));
+      left += $($scope.sliderIndicator).width()/2-20;
+      $($scope.sliderBackground).css('width', left);
+      var top = parseFloat($($scope.sliderIndicatorVertical).css('top'));
+      top += $($scope.sliderIndicatorVertical).height()/2-20;
+      $($scope.sliderBackgroundVertical).css('height', top);
+    }
+
     $scope.setLast = function (qs,isVertical) {
+      $scope.question = qs;
+
           qs.text[0].options.round = 5
           var last = null
           for (var a in qs.text[0].answers) {

@@ -3,6 +3,32 @@
 angular.module('App')
    .controller('SliderMultipleCtrl', function ($element, $scope, $rootScope) {
   	// jslider-value
+
+    $rootScope.$watch('navigateTo', function() {
+      if ($rootScope.navigateTo == $scope.question.name) {
+        //navigating to this element
+        $timeout(function(){
+          $scope.setBackground()
+        });
+      }
+    });
+
+    $rootScope.$watch('navigateFrom', function() {
+      if ($rootScope.navigateTo == $scope.name) {
+        //navigating from this element
+      }
+    });
+
+    $timeout(function(){
+      $($element).find('.jslider:not(.vertical) td').append('<div class="jslider-true-bg"><div></div><img src="img/slider-true-bg.png"/></div>');
+      $($element).find('.jslider.vertical td').append('<div class="jslider-true-bg"><div></div><img src="img/slider-true-bg-vertical.png"/></div>');
+       $scope.sliderBackground = $($element).find('.jslider:not(.vertical) .jslider-true-bg div');
+       $scope.sliderIndicator = $($element).find('.jslider:not(.vertical) .jslider-pointer').eq(0);
+       $scope.sliderBackgroundVertical = $($element).parent().find('.vertical .jslider-true-bg div');
+       $scope.sliderIndicatorVertical = $($element).parent().find('.vertical .jslider-pointer').eq(0);
+       $timeout(function(){$scope.setBackground();},100);
+    })
+    
   	$scope.setAnswer = function () {
       $rootScope.showTooltip = false;
       for (var t in $rootScope.questionsData.question.text) {
@@ -16,6 +42,16 @@ angular.module('App')
     		}
       }
   	}
+
+    $scope.setBackground = function() {
+      var left = parseFloat($($scope.sliderIndicator).css('left'));
+      left += $($scope.sliderIndicator).width()/2;
+      $($scope.sliderBackground).css('width', left);
+      var top = parseFloat($($scope.sliderIndicatorVertical).css('top'));
+      top += $($scope.sliderIndicatorVertical).height()/2;
+      $($scope.sliderBackgroundVertical).css('height', top);
+    }
+
     $scope.setLast = function (qs,isVertical) {
       for (var t in qs.text) {     
 

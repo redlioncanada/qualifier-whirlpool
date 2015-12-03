@@ -389,6 +389,12 @@ angular.module('App')
 		  		})
 	  		}
 	  	}
+
+	  	var from = $location.path().split("/");
+	  	from = from[from.length-1];
+	  	if (from.length) $rootScope.navigateFrom = from;
+	  	$rootScope.navigateTo = name;
+
 		// End - Make sure to delete future questions if this answer has changed the path
 		$scope.recalculateResults();
 		if (!!name && !done) {

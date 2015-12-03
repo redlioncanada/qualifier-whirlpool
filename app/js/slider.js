@@ -4,6 +4,21 @@ angular.module('App')
   .controller('SliderCtrl', function ($scope, $rootScope, $timeout, $element) {
   	// jslider-value
 
+    $rootScope.$watch('navigateTo', function() {
+      if ($rootScope.navigateTo == $scope.question.name) {
+        //navigating to this element
+        $timeout(function(){
+          $scope.setBackground()
+        });
+      }
+    });
+
+    $rootScope.$watch('navigateFrom', function() {
+      if ($rootScope.navigateTo == $scope.name) {
+        //navigating from this element
+      }
+    });
+
     $timeout(function(){
       $($element).find('.jslider:not(.vertical) td').append('<div class="jslider-true-bg"><div></div><img src="img/slider-true-bg.png"/></div>');
       $($element).find('.jslider.vertical td').append('<div class="jslider-true-bg"><div></div><img src="img/slider-true-bg-vertical.png"/></div>');
@@ -36,6 +51,8 @@ angular.module('App')
     }
 
     $scope.setLast = function (qs,isVertical) {
+      $scope.question = qs;
+
       $scope.isVertical = true;
 
       qs.text[0].options.round = 5;
