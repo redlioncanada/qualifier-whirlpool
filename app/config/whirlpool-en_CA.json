@@ -1772,7 +1772,8 @@
 							"enabled" : true,
 							"enabledWhen" : [0,1,2],
 							"scoring" : {
-								"height63" : 10
+								"height62" : 10,
+                                "height63" : 10
 							}
 						},
 						"66" : {
@@ -1781,6 +1782,7 @@
 							"enabled" : true,
 							"enabledWhen" : [0,3,4,6],
 							"scoring" : {
+								 "height65" : 10,
 								 "height66" : 10
 							}
 						},
@@ -1799,6 +1801,7 @@
 							"enabled" : true,
 							"enabledWhen" : [0,4,7],
 							"scoring" : {
+								 "height68" : 10,
 								 "height69" : 10
 							}
 						},
@@ -1808,6 +1811,7 @@
 							"enabled" : true,
 							"enabledWhen" : [0,6,7],
 							"scoring" : {
+								 "height70" : 10,
 								 "height71" : 10
 							}
 						}
