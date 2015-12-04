@@ -3296,6 +3296,7 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "no",
 							"scoring" : {
+                                "microWaveHoodCombination": -10
 							},
 							"order" : 2
 						}
