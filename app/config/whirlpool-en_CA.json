@@ -913,7 +913,7 @@
 							"value" : "yes",
 							"scoring": {
 								"gas" : 3,
-                                "electric": -10
+                                "electric": -20
 							},
 							"order" : 1
 						},
@@ -928,7 +928,7 @@
 							"thumbnail_current" : "img/icon-fueltype-current.png",
 							"value" : "no",
 							"scoring" : {
-								"gas" : -30
+								"gas" : -40
 							},
 							"order" : 2
 						}
