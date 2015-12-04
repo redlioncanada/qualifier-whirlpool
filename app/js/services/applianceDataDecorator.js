@@ -38,13 +38,13 @@ applianceDataDecorator.factory('$dataDecorator', ['$filter', function($filter) {
 
                   if (parseFloat(item.capacity) >= 7.3) {
                     item.largestCapacity = true
-                  } else if (parseFloat(item.capacity) >= 6.8) {
-                    item.largerCapacity = true
                   } else if (parseFloat(item.capacity) >= 6.1) {
+                    item.largerCapacity = true
+                  } else if (parseFloat(item.capacity) >= 5.2) {
                     item.largeCapacity = true
-                  } else if (parseFloat(item.capacity) >= 5.5) {
-                    item.mediumCapacity = true
                   } else if (parseFloat(item.capacity) >= 5.0) {
+                    item.mediumCapacity = true
+                  } else if (parseFloat(item.capacity) >= 4.8) {
                     item.smallCapacity = true
                   }
                   break;
