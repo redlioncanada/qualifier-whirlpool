@@ -1221,7 +1221,8 @@
 							"text" : "superposée",
 							"value" : "Stacked",
 							"scoring" : {
-								 "frontLoad" : 10
+								 "frontLoad" : 10,
+								 "topLoad": -10
 							},
 							"order" : 1
 						},
@@ -1233,7 +1234,8 @@
 							"text" : "côte à côte",
 							"value" : "Side-By-Side",
 							"scoring" : {
-								"topLoad" : 10
+								"topLoad" : 10,
+								"frontLoad" : -10
 							},
 							"order" : 2
 						},
