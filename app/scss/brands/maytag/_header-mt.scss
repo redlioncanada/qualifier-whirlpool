@@ -448,6 +448,16 @@
     overflow: visible;
 }
 
+html[lang="fr"] {
+    #header-wrap .lower .menu {
+        .submenu.laundry {
+            .header_container .gaHeaderMenuItem::after {
+                right: 12px;
+            }
+        }
+    }
+}
+
 header.header-desktop {
   display: block;
 }
