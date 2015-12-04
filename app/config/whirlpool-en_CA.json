@@ -1889,11 +1889,11 @@
 				{
 					"question" : "On a regular basis,<br />my fridge feeds...",
 					"question_full" : "On a regular basis, my fridge feeds...",
-					"sub_question" : "Select all that apply",
+					"sub_question" : "Select one",
 					"explanation_title" : "Why are you asking me about capacity?",
 					"explanation" : "We want to get a better idea of how you use your fridge and what you put in it so we can find you the one that fits your lifestyle.",
-					"type" : "checkbox-4",
-					"oneAnswer" : false,
+					"type" : "radio-4",
+					"oneAnswer" : true,
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-organization.png",
