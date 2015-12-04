@@ -36,19 +36,15 @@ applianceDataDecorator.factory('$dataDecorator', ['$filter', function($filter) {
 	            		return;
 	            	}
 
-                  if (parseFloat(item.capacity) >= 6.1) {
+                  if (parseFloat(item.capacity) >= 7.3) {
                     item.largestCapacity = true
-                  } 
-                  if (parseFloat(item.capacity) >= 5.2) {
+                  } else if (parseFloat(item.capacity) >= 6.8) {
                     item.largerCapacity = true
-                  }
-                  if (parseFloat(item.capacity) >= 5) {
+                  } else if (parseFloat(item.capacity) >= 6.1) {
                     item.largeCapacity = true
-                  }
-                  if (parseFloat(item.capacity) >= 4.8) {
+                  } else if (parseFloat(item.capacity) >= 5.5) {
                     item.mediumCapacity = true
-                  }                    
-                  if (parseFloat(item.capacity) >= 4.2) {
+                  } else if (parseFloat(item.capacity) >= 5.0) {
                     item.smallCapacity = true
                   }
                   break;
