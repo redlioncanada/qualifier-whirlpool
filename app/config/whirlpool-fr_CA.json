@@ -1888,11 +1888,11 @@
 			"text" : [
 				{
 					"question" : "Régulièrement, mon réfrigérateur permet de nourrir...",
-					"sub_question" : "Sélectionnez toutes les réponses pertinentes",
+					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de la capacité?",
 					"explanation" : "Nous voulons nous faire une meilleure idée de la façon dont vous utilisez votre frigo et de ce que vous y mettez afin de pouvoir trouver celui qui convient à votre style de vie.",
-					"type" : "checkbox-4",
-					"oneAnswer" : false,
+					"type" : "radio-4",
+					"oneAnswer" : true,
 					"answers" : [
 						{
 							"thumbnail" : "img/icon-organization.png",
