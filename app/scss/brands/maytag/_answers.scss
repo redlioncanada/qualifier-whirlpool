@@ -701,8 +701,9 @@
 			width: 100% !important;
 		}
 		.label-text {
-			top: 20% !important;
+			top: 25% !important;
             left: 0px !important;
+            font-size: 10px !important;
 		}
 	}
 }
@@ -736,12 +737,11 @@ li.dragging-rank {
         box-shadow:inset 0px 0px 0px 10px #edb129;
         background-position: 0 -2px;
         background-size: 100% 100%;
-        padding-left: 12% !important;
         background-color: white;
 	}
 	.label-text {
 		top: 17px;
-		left: 6%;
+		padding-left: 80px;
         color: white;
 	}
 }

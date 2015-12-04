@@ -251,11 +251,8 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 		}
 		.jslider-bg {
 			position: relative; 
-			width: 860px;
+			width: 833px;
 			height: 40px;
-			// background: url('../img/slider-bg.png') no-repeat center;
-            background-size: contain;
-			margin-left: -30px;
 			z-index: 10;
 			i { 
 				height: 5px; 
@@ -426,12 +423,9 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 			margin-left: -43px; 
 			cursor: pointer; 
 			cursor: hand; 
-
-
 			display: block;
 			// width: 72px;
 			// height: 66px;
-
 			z-index: 50;
 			width: 82px;
 			height: 74px;
@@ -500,7 +494,7 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 			position: relative; 
 			top: 17px;
 			width: 97%;
-			//margin-left: 20px;
+			margin-left: -3px;
 
 			& > :first-child, & > :last-child {
 				border-left: 1px solid #CCC !important;
@@ -557,14 +551,15 @@ div.people6 .jslider.vertical .jslider-value:not(.jslider-value-to) {
 }
 
 .left-tag .jslider .jslider-bg {
-	width: 945px;
+	width: 932px;
 	height: 44px;
 }
 
 .left-tag .jslider {
 	width: 104%;
 	.jslider-scale { 
-		width: 97%;
+        width: 95%;
+        margin-left: -2px;
 	}
 }
 
