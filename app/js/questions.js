@@ -444,13 +444,9 @@ angular.module('App')
 				temp.push($rootScope.appliances[i]);
 			}
 		}
-		console.log(temp);
 	}
 
   	$rootScope.next = function (done) {
-  		// console.log($rootScope.questionsData);
-  		$scope.logAppliance('Cooking');
-  		console.log($rootScope.questionsData.questions);
   		$rootScope.showTooltip = false;
   		$rootScope.questionsData.question.disabled = true;
   		$rootScope.controls.controlClicked = 'next';
