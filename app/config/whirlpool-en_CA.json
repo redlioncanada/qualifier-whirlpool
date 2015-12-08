@@ -374,7 +374,10 @@
 							"text" : "Space to cook large dishes",
 							"value" : "space",
 							"scoring" : {
-								"5CuFt" : 2
+                                "double" : 1,
+								"comboOven" : 1,
+								"5CuFt" : 1,
+								"10CuFt" : 1
 							},
 							"order" : 1
 						},
