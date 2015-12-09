@@ -48,14 +48,14 @@
 
                             </a>      
                         </div>
+                        <div ng-repeat="q in questionsData.questions | nextQuestions:questionsData.scoringQuestions as nextQs" class="icon-nav-wrap" ng-if="!!q.thumbnail_type">
+                            <a class="icon-nav">
+                                <!-- img/icon-{{q.thumbnail_text.replace(' ','').toLowerCase()}}{{(q.name == questionsData.question.name) && '-current' || '-next' }}.png -->
+                                <img ng-if="isTabletWidthOrLess" ng-src="img/mbl/icon-{{q.thumbnail_text.replace(' ','').toLowerCase()}}{{(q.name == questionsData.question.name) && '-current' || '-next' }}.png" ng-class="{ 'icon-img-current' : (q.name == questionsData.question.name), 'icon-img' : (q.name != questionsData.question.name)}" />
+                                <img ng-if="!isTabletWidthOrLess" ng-src="img/icon-{{q.thumbnail_text.replace(' ','').toLowerCase()}}{{(q.name == questionsData.question.name) && '-current' || '-next' }}.png" ng-class="{ 'icon-img-current' : (q.name == questionsData.question.name), 'icon-img' : (q.name != questionsData.question.name)}" />
+                            </a>      
+                        </div>
                     </div>
-					<div ng-repeat="q in questionsData.questions | nextQuestions:questionsData.scoringQuestions as nextQs" class="icon-nav-wrap" ng-if="!!q.thumbnail_type">
-				    	<a class="icon-nav">
-                            <!-- img/icon-{{q.thumbnail_text.replace(' ','').toLowerCase()}}{{(q.name == questionsData.question.name) && '-current' || '-next' }}.png -->
-					      	<img ng-if="isTabletWidthOrLess" ng-src="img/mbl/icon-{{q.thumbnail_text.replace(' ','').toLowerCase()}}{{(q.name == questionsData.question.name) && '-current' || '-next' }}.png" ng-class="{ 'icon-img-current' : (q.name == questionsData.question.name), 'icon-img' : (q.name != questionsData.question.name)}" />
-                            <img ng-if="!isTabletWidthOrLess" ng-src="img/icon-{{q.thumbnail_text.replace(' ','').toLowerCase()}}{{(q.name == questionsData.question.name) && '-current' || '-next' }}.png" ng-class="{ 'icon-img-current' : (q.name == questionsData.question.name), 'icon-img' : (q.name != questionsData.question.name)}" />
-				    	</a>      
-					</div>
 
 					<div class="buttonnav-mobile">
 				        <a class="banner backtoresults-mobile" data-ga-action="Clicked Back To Results" data-ga-label="@question-name Question" ng-click="next(true)" ng-if="!!resultsTouched && !!questionsData.question && isTabletWidthOrLess">
