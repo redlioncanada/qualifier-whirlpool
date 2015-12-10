@@ -331,7 +331,6 @@ header.header-desktop {
     
     .nav-wrapper {
         display: inline-block; 
-        float: left;
         text-align:center;
         margin: 0px auto 0px auto;
     }
@@ -417,7 +416,7 @@ header.header-desktop {
 
 .buttonnav-mobile {
    		text-transform: uppercase;
-   		margin: 40px auto 15px auto;
+   		margin: 20px auto 15px auto;
         text-align: center;
         a.banner {
             display: inline-block;
