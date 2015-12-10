@@ -1059,6 +1059,25 @@ div.fridge-capacity.people5 .jslider .jslider-value:not(.jslider-value-to) {
 	}
 }
 
+div[ng-class="fr_CA"] {
+    .answers-main-content.answer-buttons {
+        ul {
+            li:nth-child(n+2) {
+                .answer-button-answer {
+                    position: relative;
+                    bottom: -13px;
+                    font-size: 9pt;
+                }
+                .answer-button-label {
+                    position: relative;
+                    bottom: 13px;
+                    font-size: 7pt;
+                }
+            }
+        }
+    }
+}
+
 .answer-buttons.label-inches {
 	.answer-button-wrapper:not(:first-child) .answer-button-answer::after {
 		content: ' "';

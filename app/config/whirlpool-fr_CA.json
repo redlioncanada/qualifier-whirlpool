@@ -26,7 +26,7 @@
         "emailModalTitle" : "Envoyez vos résultats par courriel",
         "emailNameTitle" : "Pour :",
         "emailNamePlaceholder" : "Nom",
-        "emailAddressTitle" : "À partir de :",
+        "emailAddressTitle" : "De:",
         "emailAddressPlaceholder" : "ami@email.com",
         "emailSubject" : "J'ai trouvé le(a) parfait(e) {{appliance}} et souhaiterais partager cela avec toi.",
         "emailMessage" : "C'est difficile de trouver l'électroménager idéal. Mais en utilisant le nouvel outil de sélection de Whirlpool, j'ai simplement répondu à quelques questions et j'ai trouvé le(a) {{appliance}} idéal(e) pour mon style de vie. J’aimerais partager mes résultats ainsi que le lien pour que tu puisses l'explorer toi aussi. \r\n\r\nEssaie par toi-même ici : {{fakelink}}",
@@ -50,7 +50,7 @@
 			"thumbnail_text" : "Appliance",
 			"text" : [
 				{
-					"question" : "COMMENT POUVONS-NOUS VOUS AIDER?",
+					"question" : "Que recherchez-vous?",
 					"sub_question" : "Sélectionnez une réponse",
 					"type" : "categories-click",
 					"oneAnswer" : true,
@@ -358,7 +358,7 @@
 			"previous" : "Cooking - Wall Ovens - Orientation",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Features",
-			"thumbnail_text_fr" : "Capteur",
+			"thumbnail_text_fr" : "Charactéristiques",
 			"thumbnail_current" : "img/icon-energy-current.png",
 			"text" : [
 				{
@@ -845,7 +845,7 @@
 					"question" : "Quel style de cuisine préférez-vous?",
 					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet du style? ",
-					"explanation" : "Saviez-vous que les cuisines professionnelles comportent habituellement des cuisinières à commandes frontales? Une fois que nous comprenons vos préférences en matière de style, nous pouvons recommander la table de cuisson parfaite pour vous.",
+					"explanation" : "Saviez-vous que les cuisines professionnelles comportent habituellement des cuisinières à commandes frontales? Une fois que nous comprenons vos préférences en matière de style, nous pouvons recommander la cuisinière parfaite pour vous.",
 					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
 					"answers" : [
@@ -1209,7 +1209,7 @@
 			"thumbnail_text_fr" : "Orientation",
 			"text" : [
 				{
-					"question" : "Quelduo de lessive préférez-vous?",
+					"question" : "Quel duo de lessive préférez-vous?",
 					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’orientation?",
 					"explanation" : "Nous comprenons que chaque espace de lessive est différent. En comprenant vos préférences, nous sommes en mesure de trouver le duo parfait pour votre foyer.",
@@ -1763,7 +1763,7 @@
 					"answers" : {
 						"0" : {
                             "value" : 0,
-                            "text" : "Any",
+                            "text" : "TOUTE",
                             "enabled" : true,
                             "enabledWhen" : [0,1,2,3,4,5,6,7],
                             "scoring" : {
@@ -1978,7 +1978,7 @@
 						{
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
-							"text" : "garde les boissons au froid – du lait aux jus de fruit en passant par tout ce qu’il a entre les deux",
+							"text" : "garde les boissons au froid, du lait aux jus de fruits",
 							"value" : "drinks",
 							"scoring" : {
 								"topMount" : 1,
@@ -2010,7 +2010,7 @@
 							"order" : 3
 						},
 						{
-							"text" : "conserve notre bouffe pour les réceptions, les fêtes et les anniversaires",
+							"text" : "conserve tous nos aliments pour les réceptions, les fêtes et les anniversaires",
 							"value" : "parties",
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
@@ -2077,7 +2077,7 @@
 							"order" : 3
 						},
 						{
-							"text" : "Je ne suis pas sûr",
+							"text" : "Je ne suis pas certain",
 							"value" : "cooler",
 							"thumbnail" : "img/icon-water.png",
 							"thumbnail_current" : "img/icon-water-current.png",
@@ -2233,7 +2233,7 @@
 						{
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"text" : "je passe à l’épicerie, mais je reste dans le périmètre du magasin pour me procurer les articles essentiels",
+							"text" : "J'achète les articles de base à l'épicerie",
 							"value" : "basics",
 							"scoring" : {
 								"freshFlowProducePreserver" : 1,
@@ -2379,7 +2379,8 @@
 			"thumbnail_text_fr" : "Capacité",
 			"text" : [
 				{
-					"question" : "Combien de fois par semaine votre famille utilise-t-elle le lave-vaisselle?",
+					"question" : "Combien de fois par semaine votre famille<br />utilise-t-elle le lave-vaisselle?",
+					"question_full" : "Combien de fois par semaine votre famille utilise-t-elle le lave-vaisselle?",
 					"sub_question" : "Faites glisser pour répondre",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de la capacité?",
 					"explanation" : "Lorsqu’il s’agit de laver la vaisselle, il n’y a pas de tâche trop grande ou trop petite. En comprenant ce que vous mettez au lave-vaisselle, nous pouvons trouver ce qui convient parfaitement à votre foyer.",
@@ -2476,7 +2477,7 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-cycles-current.png",
 			"thumbnail_text" : "Cycles",
-			"thumbnail_text_fr" : "Cycles",
+			"thumbnail_text_fr" : "Programmes",
 			"text" : [
 				{
 					"question" : "Quand mettez-vous habituellement le lave-vaisselle en marche?",
@@ -2594,14 +2595,14 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["pas une préoccupation","plutôt une préoccupation","plutôt importante","très importante"]
+					    "scale": ["pas importante","plus ou moins importante","plutôt importante","très importante"]
 					},
 					"answers" : {
 						"0" : {
 							"thumbnail" : "img/icon-energy.png",
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"value" : 0,
-							"text" : "pas une préoccupation",
+							"text" : "pas importante",
 							"scoring" : {
 							}
 						},
@@ -2609,7 +2610,7 @@
 							"thumbnail" : "img/icon-energy.png",
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"value" : 1,
-							"text" : "plutôt une préoccupation",
+							"text" : "plus ou moins importante",
 							"scoring" : {
 							}
 						},
@@ -2664,7 +2665,7 @@
 						{
 							"thumbnail" : "img/icon-organization.png",
 							"thumbnail_current" : "img/icon-organization-current.png",
-							"text" : "plein mal organisé",
+							"text" : "plein et mal organisé",
 							"value" : "Full and messy",
 							"image" : "img/dishwasher-full-and-messy.jpg",
 							"scoring" : {
@@ -2710,7 +2711,7 @@
 					"question" : "Sélectionnez votre style...",
 					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet du style?",
-					"explanation" : "En nous parlant de votre style personnel, vous nous aidez à trouver l’appareil qui paraîtra le mieux dans votre foyer.",
+					"explanation" : "En nous parlant de votre style personnel, vous nous aidez à trouver l’appareil qui cadrera le mieux dans votre foyer.",
 					"type" : "boxes-picture-3-radio",
 					"oneAnswer" : true,
 					"answers" : [
@@ -2917,7 +2918,7 @@
 			"thumbnail_text_fr" : "Caractéristiques",
 			"text" : [
 				{
-					"question" : "Lorsque vous magasiner une table de cuisson, quelles caractéristiques vous importent le plus?",
+					"question" : "Lorsque vous magasinez une table de cuisson, quelles caractéristiques vous importent le plus?",
 					"sub_question" : "Faites glisser pour reclasser par ordre d’omportance, <span>1</span> étant  la caractéristique la plus importante et <span>5</span> à la moins importante",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de ces caractéristiques?",
 					"explanation" : "En comprenant ce qui vous importe le plus, nous pouvons vous aider à choisir la table de cuisson qui répond le mieux à vos besoins.",
@@ -2993,8 +2994,8 @@
 				{
 					"question" : "Votre cuisine est-elle équipée pour une alimentation au gaz ou électrique?",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’alimentation au gaz?",
-					"explanation" : "En nous faisant savoir ce qui fonctionne dans votre cuisine, vous nous aidez à faire la meilleure recommandation.",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet du type d'alimentation?",
+					"explanation" : "En nous faisant savior de quel type d'alimentation est équipée votre cuisine, nous pouvons mieux vous recommander l'appariel idéal.",
 					"type" : "boxes-icon-split-radio",
 					"oneAnswer" : true,
 					"answers" : [
