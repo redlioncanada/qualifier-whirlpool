@@ -1706,6 +1706,10 @@ div.slidey-wrap-all > div.slidey.app-answers.ng-scope.active > div > div.slider-
             }
         }
     }
+    .label-text:lang(fr) {
+        font-size: 9px !important;
+        line-height: 9px !important;
+    }
 }
 
 .print-page {
@@ -1846,9 +1850,4 @@ div.slidey-wrap-all > div.slidey.app-answers.ng-scope.active > div > div.slider-
 
 .hiddenViaOpacity {
 	opacity: 0 !important;
-}
-
-.label-text:lang(fr) {
-    font-size: 9px !important;
-    line-height: 9px !important;
 }
