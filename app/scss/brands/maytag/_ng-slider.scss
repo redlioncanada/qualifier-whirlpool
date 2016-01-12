@@ -1117,6 +1117,12 @@ div[ng-class="fr_CA"] {
 	.slider-large-label {
         margin-right: -30px;
 	}
+
+	.answer-buttons.label-inches {
+		.answer-button-wrapper:not(:first-child) .answer-button-answer::after {
+			content: '';
+		}
+	}
 }
 
 @media(max-width:1180px) and (min-width:1024px) {

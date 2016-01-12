@@ -9,7 +9,7 @@
          "msrp": "PDSF",
          "oneLastStep": "RÉVISEZ VOTRE FOURCHETTE DE PRIX AFIN DE PRÉCISER VOS RÉSULTATS",
          "moreInfo": "Informations supplémentaires",
-         "print": "Impression",
+         "print": "Imprimer",
          "email": "Imprimer",
          "colourPreference": "Sélectionnez votre couleur",
          "yourBestMatch": "Votre Meilleur Résultat",
@@ -58,7 +58,7 @@
 						{
 							"text" : "Appareils de lessive",
 							"value" : "Appareils de lessive",
-							"displayName": "Appareils de lessive",
+							"displayName": "Laveuse/sécheuse",
 							"classes" : "category Appareils de lessive",
 							"thumbnail" : "img/cat-laundry.jpg",
 							"thumbnail_current" : "img/cat-laundry.jpg",
@@ -72,7 +72,6 @@
 						{
 							"text" : "Appareils de cuisson",
 							"value" : "Stove",
-							"displayName": "Cooking",
 							"classes" : "category Appareils de cuisson",
 							"thumbnail" : "img/walloven-double.jpg",
 							"thumbnail_current" : "img/walloven-double.jpg",
@@ -86,7 +85,7 @@
 						{
 							"text" : "Réfrigérateurs",
 							"value" : "Fridge",
-							"displayName": "Réfrigérateurs",
+							"displayName": "Réfrigérateur",
 							"classes" : "category fridge",
 							"thumbnail" : "img/cat-fridge.jpg",
 							"thumbnail_current" : "img/cat-fridge.jpg",
@@ -131,7 +130,7 @@
 						{
 							"text" : "Cuisinières",
 							"value" : "free stand range",
-							"displayName": "Cuisinières",
+							"displayName": "Cuisinière",
 							"classes" : "sub-category ranges",
 							"image" : "img/range.png",
                             "image_alt" : "Cuisinières",
@@ -147,7 +146,7 @@
 						{
 							"text" : "Tables de cuisson",
 							"value" : "cooktops",
-							"displayName": "Tables de cuisson",
+							"displayName": "Table de cuisson",
 							"classes" : "sub-category cooktops",
 							"image" : "img/cook-top.png",
                             "image_alt" : "Tables De Cuisson",
@@ -163,7 +162,7 @@
 						{
 							"text" : "Fours encastrés",
 							"value" : "wall oven",
-							"displayName": "Fours encastrés",
+							"displayName": "Fours encastré",
 							"classes" : "sub-category wallovens",
 							"image" : "img/walloven.png",
                             "image_alt" : "Fours Encastrés",
@@ -179,7 +178,7 @@
 						{
 							"text" : "Hottes à évacuation",
 							"value" : "vents and hoods",
-							"displayName": "Hottes à évacuation",
+							"displayName": "Système de ventilation",
 							"classes" : "sub-category vents",
 							"image" : "img/vents.png",
                             "image_alt" : "Hottes À Évacuation",
@@ -220,7 +219,7 @@
 						"to" : 3,
 					    "step": 0.0001,
 					    "dimension_label" : "Largeur",
-					    "scale": ["Aucune restriction","24\"","27\"","30\""]
+					    "scale": ["Aucune restriction","24 po","27 po","30 po"]
 					},
                     "answers" : {
                         "0" : {
@@ -235,7 +234,7 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "value" : 1,
-                            "text" : "24\"",
+                            "text" : "24 po",
                             "scoring" : {
                                 "width23" : 10,
 								"width24" : 10,
@@ -252,7 +251,7 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "value" : 2,
-                            "text" : "27\"",
+                            "text" : "27 po",
                             "scoring" : {
                                 "width23" : -50,
 								"width24" : -50,
@@ -269,7 +268,7 @@
                             "thumbnail" : "img/icon-size.png",
                             "thumbnail_current" : "img/icon-size-current.png",
                             "value" : 3,
-                            "text" : "30\"",
+                            "text" : "30 po",
                             "scoring" : {
                                 "width23" : -50,
 								"width24" : -50,
@@ -358,7 +357,7 @@
 			"previous" : "Cooking - Wall Ovens - Orientation",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Features",
-			"thumbnail_text_fr" : "Charactéristiques",
+			"thumbnail_text_fr" : "Caractéristiques",
 			"thumbnail_current" : "img/icon-energy-current.png",
 			"text" : [
 				{
@@ -477,7 +476,7 @@
 						{
 							"thumbnail" : "img/icon-features.png",
 							"thumbnail_current" : "img/icon-features-current.png",
-							"text" : "je suis passé maître dans l’art de préparer des petits gâteaux et des lasagnes",
+							"text" : "les deux – je suis passé maître dans l’art de préparer des petits gâteaux et des lasagnes",
 							"value" : "host parties",
 							"scoring" : {
 								"trueConvection" : 2,
@@ -504,7 +503,7 @@
 			"previous" : "Cooking - Wall Ovens - Lifestyle",
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Energy",
-			"thumbnail_text_fr" : "Energie",
+			"thumbnail_text_fr" : "Énergie",
 			"thumbnail_current" : "img/icon-energy-current.png",
 			"text" : [
 				{
@@ -521,14 +520,14 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["pas une préoccupation","plus ou moins important","plutôt importante","très importante"]
+					    "scale": ["pas importante","plus ou moins importante","importante","très importante"]
 					},
 					"answers" : {
 						"0" : {
 							"thumbnail" : "img/icon-energy.png",
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"value" : 0,
-							"text" : "pas une préoccupation",
+							"text" : "pas importante",
 							"scoring" : {
 							}
 						},
@@ -536,7 +535,7 @@
 							"thumbnail" : "img/icon-energy.png",
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"value" : 1,
-							"text" : "plutôt une préoccupation",
+							"text" : "plus ou moins importante",
 							"scoring" : {
 							}
 						},
@@ -544,7 +543,7 @@
 							"thumbnail" : "img/icon-energy.png",
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"value" : 2,
-							"text" : "plutôt importante",
+							"text" : "importante",
 							"scoring" : {
 							}
 						},
@@ -571,7 +570,7 @@
 			"text" : [
 				{
 					"question" : "Lorsque vous magasinez une cuisinière, quelles caractéristiques vous importent le plus? ",
-					"sub_question" : "Faites glisser pour reclasser par ordre d’omportance, <span>1</span> étant  la caractéristique la plus importante et <span>5</span> à la moins importante",
+					"sub_question" : "faites glisser pour réarranger : <span>1</span> correspond à la caractéristique la plus importante et <span>5</span> à la moins importante",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de mes préférences?",
 					"explanation" : "En comprenant vos priorités en matière de cuisson, nous pouvons mieux déterminer les caractéristiques qui conviennent à votre style de vie.",
 					"type" : "rank",
@@ -755,7 +754,7 @@
 						{
 							"thumbnail" : "img/icon-lifestyle.png",
 							"thumbnail_current" : "img/icon-lifestyle-current.png",
-							"text" : "je cuisine par nécessité, surtout des repas",
+							"text" : "je cuisine par nécessité, surtout des repas congelés",
 							"value" : "frozen",
 							"scoring" : {
 								"electric" : 1,
@@ -778,10 +777,10 @@
 			"text" : [
 				{
 					"question" : "Comment votre famille vous décrirait-elle?",
-					"sub_question" : "Sélectionnez toutes les réponses pertinentes",
+					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de la cuisine?",
 					"explanation" : "Nos cuisinières sont toutes dotées de caractéristiques uniques. Nous voulons nous faire une meilleure idée de l’utilisation que vous en faites afin de pouvoir recommander celle qui convient parfaitement à vos besoins.",
-					"type" : "checkbox-4",
+					"type" : "radio-4",
 					"oneAnswer" : true,
 					"answers" : [
 						{
@@ -798,7 +797,7 @@
 						{
 							"thumbnail" : "img/icon-lifestyle.png",
 							"thumbnail_current" : "img/icon-lifestyle-current.png",
-							"text" : "un chef maison j’adore essayer de nouvelles recettes",
+							"text" : "un chef maison – j’adore essayer de nouvelles recettes",
 							"value" : "home chef",
 							"scoring" : {
 								"trueConvection" : 1,
@@ -900,7 +899,7 @@
 				{
 					"question" : "Votre cuisine est-elle équipée pour une alimentation au gaz ou électrique?",
 					"sub_question" : "Sélectionnez une réponse",
-					"explanation_title" : "Pourquoi me posez-vous une question au sujet de l’alimentation au gaz?",
+					"explanation_title" : "Pourquoi me posez-vous une question au sujet du type d’alimentation ?",
 					"explanation" : "Certaines cuisines sont équipées pour l’alimentation au gaz, d’autres non. Nous avons besoin de connaître cette information pour recommander la cuisinière parfaite.",
 					"type" : "boxes-icon-split-radio",
 					"oneAnswer" : true,
@@ -1017,7 +1016,7 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-energy-current.png",
 			"thumbnail_text" : "Energy",
-			"thumbnail_text_fr" : "Energie",
+			"thumbnail_text_fr" : "Énergie",
 			"text" : [
 				{
 					"question" : "Dans quelle mesure l’économie d’énergie est-elle importante pour votre ménage?",
@@ -1033,14 +1032,14 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["pas une préoccupation","plutôt une préoccupation","plutôt importante","très importante"]
+					    "scale": ["pas importante","plus ou moins importante","importante","très importante"]
 					},
 					"answers" : {
 						"0" : {
 							"thumbnail" : "img/icon-energy.png",
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"value" : 0,
-							"text" : "pas une préoccupation",
+							"text" : "pas importante",
 							"scoring" : {
 							}
 						},
@@ -1048,7 +1047,7 @@
 							"thumbnail" : "img/icon-energy.png",
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"value" : 1,
-							"text" : "plutôt une préoccupation",
+							"text" : "plus ou moins importante",
  							"scoring" : {
  								"energyStar" : 1
 							}
@@ -1057,7 +1056,7 @@
 							"thumbnail" : "img/icon-energy.png",
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"value" : 2,
-							"text" : "plutôt importante",
+							"text" : "importante",
 							"scoring" : {
 								"energyStar" : 2,
 								"ecoBoost" : 1
@@ -1220,8 +1219,8 @@
 							"thumbnail" : "img/icon-orientation.png",
 							"thumbnail_current" : "img/icon-orientation-current.png",
 							"image" : "img/Laundry-Q5-stacked.jpg",
-                            "image_alt" : "Superposée",
-							"text" : "superposée",
+                            "image_alt" : "Superposé",
+							"text" : "superposé",
 							"value" : "Stacked",
 							"scoring" : {
 								 "frontLoad" : 10,
@@ -1250,7 +1249,7 @@
 							"text" : "aucune préférence",
 							"value" : "aucune préférence",
 							"scoring" : {
-                                "topLoad" : 5
+                                "topLoad" : 10
 							},
 							"order" : 3
 						}
@@ -1758,7 +1757,7 @@
 				},
 				{
 					"classes": "label-inches",
-					"dimension_label" : "HAUTER",
+					"dimension_label" : "HAUTEUR",
 					"answer" : 0,
 					"answers" : {
 						"0" : {
@@ -1845,14 +1844,14 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["pas une préoccupation","plutôt une préoccupation","plutôt importante","très importante"]
+					    "scale": ["pas importante","plus ou moins importante","importante","très importante"]
 					},
 					"answers" : {
 						"0" : {
 							"value" : 0,
 							"thumbnail" : "img/icon-energy.png",
 							"thumbnail_current" : "img/icon-energy-current.png",
-							"text" : "pas une préoccupation",
+							"text" : "pas importante",
 							"scoring" : {
 							}
 						},
@@ -1860,7 +1859,7 @@
 							"value" : 1,
 							"thumbnail" : "img/icon-energy.png",
 							"thumbnail_current" : "img/icon-energy-current.png",
-							"text" : "plutôt une préoccupation",
+							"text" : "plus ou moins importante",
 							"scoring" : {
 								"energyStar" : 1
 							}
@@ -1869,7 +1868,7 @@
 							"value" : 2,
 							"thumbnail" : "img/icon-energy.png",
 							"thumbnail_current" : "img/icon-energy-current.png",
-							"text" : "plutôt importante",
+							"text" : "importante",
 							"scoring" : {
 								"energyStar" : 3
 							}
@@ -2579,7 +2578,7 @@
 			"thumbnail_type" : "image",
 			"thumbnail_current" : "img/icon-energy-current.png",
 			"thumbnail_text" : "Energy",
-			"thumbnail_text_fr" : "Energie",
+			"thumbnail_text_fr" : "Énergie",
 			"text" : [
 				{
 					"question" : "Dans quelle mesure l’économie d’énergie est-elle importante pour votre ménage?",
@@ -2595,7 +2594,7 @@
 					    "to": 3,
 					    "step": 0.0001,
 					    "dimension": "",
-					    "scale": ["pas importante","plus ou moins importante","plutôt importante","très importante"]
+					    "scale": ["pas importante","plus ou moins importantee","importante","très importante"]
 					},
 					"answers" : {
 						"0" : {
@@ -2610,7 +2609,7 @@
 							"thumbnail" : "img/icon-energy.png",
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"value" : 1,
-							"text" : "plus ou moins importante",
+							"text" : "plus ou moins importantee",
 							"scoring" : {
 							}
 						},
@@ -2618,7 +2617,7 @@
 							"thumbnail" : "img/icon-energy.png",
 							"thumbnail_current" : "img/icon-energy-current.png",
 							"value" : 2,
-							"text" : "plutôt importante",
+							"text" : "importante",
 							"scoring" : {
 							}
 						},
@@ -2718,10 +2717,10 @@
 						{
 							"thumbnail" : "img/icon-style.png",
 							"thumbnail_current" : "img/icon-style-current.png",
-							"text" : "Entièrement intégrée",
+							"text" : "Entièrement intégré",
 							"value" : "hidden",
 							"image" : "img/Dishwasher-Q7-hidden.jpg",
-                            "image_alt" : "Console Entièrement Intégrée",
+                            "image_alt" : "Console Entièrement Intégré",
 							"scoring" : {
 								"FID" : 10,
 								"frontConsole" : -10
@@ -2871,7 +2870,7 @@
 			"text" : [
 				{
 					"question" : "Comment décririez-vous l’aspect esthétique de votre cuisine?",
-					"sub_question" : "Sélectionnez une réponse",
+					"sub_question" : "Faites glisser pour réarranger : <span>1</span> correspond à la caractéristique la plus importante et <span>5</span> à la moins importante",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet du style?",
 					"explanation" : "Saviez-vous que les cuisines professionnelles comportent habituellement des tables de cuisson à commandes frontales? Une fois que nous comprenons vos préférences en matière de style, nous pouvons recommander la table de cuisson parfaite pour vous.",
 					"type" : "boxes-picture-3-radio",
@@ -2919,7 +2918,7 @@
 			"text" : [
 				{
 					"question" : "Lorsque vous magasinez une table de cuisson, quelles caractéristiques vous importent le plus?",
-					"sub_question" : "Faites glisser pour reclasser par ordre d’omportance, <span>1</span> étant  la caractéristique la plus importante et <span>5</span> à la moins importante",
+					"sub_question" : "Faites glisser pour réarranger : <span1</span correspond à la caractéristique la plus importante et <span>5</span> à la moins importante",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de ces caractéristiques?",
 					"explanation" : "En comprenant ce qui vous importe le plus, nous pouvons vous aider à choisir la table de cuisson qui répond le mieux à vos besoins.",
 					"type" : "rank",
@@ -3217,12 +3216,12 @@
 			"next" : "Cooking - Vents - Style 3",
 			"previous" : "Cooking - Vents - Style 2",
 			"thumbnail_text" : "Convection",
-			"thumbnail_text_fr" : "convection",
+			"thumbnail_text_fr" : "Ventilation",
 			"thumbnail_current" : "img/icon-fueltype-current.png",
 			"thumbnail_type" : "image",
 			"text" : [
 				{
-					"question" : "Votre système de ventilation est-il conduit vers l’extérieur de la maison?",
+					"question" : "Votre système de ventilation mène-t-il vers l’extérieur de la maison?",
 					"sub_question" : "Sélectionnez une réponse",
 					"explanation_title" : "Pourquoi me posez-vous une question au sujet de la ventilation?",
 					"explanation" : "Une ventilation adéquate est importante pour maintenir l’air propre dans la maison. Si nous en savons plus sur la façon dont la vôtre fonctionne, nous pouvons choisir ce qui convient le mieux.",
