@@ -33,7 +33,7 @@
         "emailMessagePlaceholder" : "Saisir un message",
         "emailMessageSent" : "Votre message a bien été envoyé",
         "emailMessageError" : "There was an error(fr)",
-        "emailFakeLink" : "FindMy.Whirlpool.ca/Results",
+        "emailFakeLink" : "TrouverMon.Whirlpool.ca/Results",
         "nextQuestionAlt" : "Navigate to next question",
         "previousQuestionAlt" : "Navigate to previous question",
         "facebookTitle" : "FIND YOUR PERFECT APPLIANCE(fr)",
@@ -162,7 +162,7 @@
 						{
 							"text" : "Fours encastrés",
 							"value" : "wall oven",
-							"displayName": "Fours encastré",
+							"displayName": "Four encastré",
 							"classes" : "sub-category wallovens",
 							"image" : "img/walloven.png",
                             "image_alt" : "Fours Encastrés",
