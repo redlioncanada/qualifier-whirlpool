@@ -128,10 +128,19 @@
                     }
                 }
                 .submenu.laundry {
-                    width: 233px;
+                    width: 533px;
                     left: 32px;
                     margin-left: -116.5px;
 
+                    .subsubmenu {
+                      width: 233px;
+                    }
+                    .subsubmenu.findmy {
+                      margin-left: 25px;
+                      width: 230px;
+                      a {height:100%;width:100%;}
+                      img {width:100%;}
+                    }
                     .header_container {
                         left: 102px !important;
                     }
