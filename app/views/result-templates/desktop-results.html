@@ -1,4 +1,4 @@
-<ul class="results-list" ng-if="questionsData.currentCount !=0" data-ga-category="@Results Page Navigation">
+<ul class="results-list" ng-if="questionsData.currentCount !=0" data-ga-category="Results Page Navigation">
 			<li ng-repeat="(index,a) in appliances | filter:{score : '!!'} | orderBy:'-score' | byPrice:controls.price | limitTo:3 | rearrange as filteredAppliances" class="result">
 				<div class="result-wrap">
 					<div class="result-inner">
