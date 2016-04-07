@@ -48,6 +48,10 @@ angular.module('App')
 	},500);
 
     $scope.$on('$locationChangeSuccess', function(event) {
+    	  ga('set', 'page', $location.path())
+	      console.log($location.path())
+	      ga('send', 'pageview')
+
     	// console.log('question location change');
     		var q = ($location.path()).toString().replace("/question/","");
 
