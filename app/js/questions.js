@@ -49,8 +49,11 @@ angular.module('App')
 
     $scope.$on('$locationChangeSuccess', function(event) {
     	  ga('set', 'page', $location.path())
-	      console.log($location.path())
-	      ga('send', 'pageview')
+	    console.log($location.path())
+	    // ga('send', 'pageview', $location.path())
+	    ga('send', {'hitType':'pageview','page':$location.path(),'title':'Qualifier: '+$location.path()})
+
+	    document.title = $scope.getTitle()+" | Whirlpool Qualifier Consumer App"
 
     	// console.log('question location change');
     		var q = ($location.path()).toString().replace("/question/","");
