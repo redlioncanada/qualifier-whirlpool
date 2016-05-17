@@ -43,3 +43,16 @@ or
 ```
 $rootScope.locale = "fr_CA";
 ```
+
+##Deployment
+To compile the app for production, simply run
+```
+gulp prod
+```
+This will compile the app to /build, combining all .js into a single .js file without comments, and excluding any development-specific code. 
+
+To view the app in French mode, run
+```
+gulp prod
+```
+then copy the contents of ```/build/fr``` to ```/build```, replacing any existing files
