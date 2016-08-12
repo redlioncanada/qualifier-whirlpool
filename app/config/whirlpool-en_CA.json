@@ -118,6 +118,7 @@
 		"Cooking - Pre-Qualifier 1" : {
 			"previous" : "Appliance",
 			"thumbnail_type" : "image",
+			"isFirstQuestion": true,
 			"thumbnail_text" : "Cooking",
 			"thumbnail_current" : "img/nav-placeholder-current.png",
 			"text" : [
@@ -199,6 +200,7 @@
 		"Cooking - Wall Ovens - Size" : {
 			"next" : "Cooking - Wall Ovens - Orientation",
 			"previous" : "Cooking - Pre-Qualifier 1",
+			"isFirstQuestion": true,
 			"fadeIn" : true,
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Size",
@@ -561,6 +563,7 @@
 		},
 		"Cooking - Ranges - Features" : {
 			"next" : "Cooking - Ranges - Capacity",
+			"isFirstQuestion": true,
 			"previous" : "Cooking - Pre-Qualifier 1",
 			"fadeIn" : true,
 			"thumbnail_type" : "image",
@@ -941,6 +944,7 @@
 		},
 		"Laundry - Capacity 1" : {
 			"next" : "Laundry - Energy",
+			"isFirstQuestion": true,
 			"previous" : "Appliance",
 			"fadeIn" : true,
 			"thumbnail_type" : "image",
@@ -1582,6 +1586,7 @@
 		},
 		"Fridges - Size" : {
 			"next" : "Fridges - Energy",
+			"isFirstQuestion": true,
 			"previous" : "Appliance",
 			"fadeIn" : true,
 			"thumbnail_type" : "image",
@@ -2270,6 +2275,7 @@
 		},
 		"Dishwashers - Cleaning" : {
 			"next" : "Dishwashers - Capacity",
+			"isFirstQuestion": true,
 			"previous" : "Appliance",
 			"fadeIn" : true,
 			"thumbnail_type" : "image",
@@ -2764,6 +2770,7 @@
 		"Cooking - Cooktops - Size" : {
 			"next" : "Cooking - Cooktops - Style",
 			"previous" : "Cooking - Pre-Qualifier 1",
+			"isFirstQuestion": true,
 			"fadeIn" : true,
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Size",
@@ -3037,6 +3044,7 @@
 		"Cooking - Vents - Size" : {
 			"next" : "Cooking - Vents - Style 1",
 			"previous" : "Cooking - Pre-Qualifier 1",
+			"isFirstQuestion": true,
 			"fadeIn" : true,
 			"thumbnail_type" : "image",
 			"thumbnail_text" : "Size",
